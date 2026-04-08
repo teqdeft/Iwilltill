@@ -47,7 +47,7 @@ export function SectionHeader({
       <h2 className="text-3xl md:text-4xl lg:text-[42px] font-bold leading-tight mb-4">
         {title}{" "}
         {titleAccent && (
-          <span className="text-accent font-script font-normal text-4xl md:text-5xl">
+          <span className="text-[#A06BAF] font-script font-normal text-4xl md:text-5xl">
             {titleAccent}
           </span>
         )}

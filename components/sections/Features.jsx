@@ -23,7 +23,7 @@ export default function Features() {
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
             Designed Around Your{" "}
-            <span className="font-script font-normal text-4xl md:text-5xl text-accent">
+            <span className="font-script font-normal text-4xl md:text-5xl text-white">
               Everyday Life
             </span>
           </h2>

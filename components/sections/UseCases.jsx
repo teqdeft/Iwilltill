@@ -11,7 +11,7 @@ const cards = [
     ctaStyle: "green",
   },
   {
-    title: "Employers",
+    title: "Employers / Organizations",
     image: "/images/employers-image.jpg",
     cta: "Book a Demo",
     ctaLink: "/employers",
@@ -72,7 +72,7 @@ export default function UseCases() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
                     <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                      <h3 className="text-white text-xl md:text-2xl font-bold mb-3">
+                      <h3 className="text-white text-xl md:text-xl font-bold mb-3">
                         {card.title}
                       </h3>
                       <a href={card.ctaLink} className={buttonClass}>

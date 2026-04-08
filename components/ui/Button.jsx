@@ -11,7 +11,7 @@ const variants = {
     "border-2 border-primary text-primary hover:bg-primary hover:text-white",
   "outline-white":
     "border-2 border-white text-white hover:bg-white hover:text-primary",
-  ghost: "text-primary hover:bg-primary-50",
+  ghost: "text-primary border hover:bg-primary-50",
   white: "bg-white text-primary hover:bg-gray-100 shadow-lg",
 };
 

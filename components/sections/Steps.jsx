@@ -75,7 +75,7 @@ export default function Steps() {
       </div>
 
       <div className="text-center">
-        <Button variant="primary" size="lg" href="/get-started">
+        <Button variant="ghost" size="lg" href="/get-started">
           Start Your Journey
           <ArrowRight className="w-4 h-4" />
         </Button>
