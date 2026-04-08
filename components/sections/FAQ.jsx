@@ -31,7 +31,7 @@ const faqItems = [
 
 export default function FAQ() {
   return (
-    <SectionWrapper id="faq">
+    <SectionWrapper gray  id="faq">
       <SectionHeader
         title="Frequently Asked Questions"
         description="Everything you need to know about our services, plans, and how to get started."

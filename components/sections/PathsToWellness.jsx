@@ -42,7 +42,7 @@ const services = [
   {
     icon: PawPrint,
     title: "TeleVet Pet Care",
-    image: "/images/service-televet.png",
+    image: "/images/service-televet.jpg",
     description:
       "On-demand veterinary consultations for your furry family members. Available 24/7, 365 days a year.",
     features: [

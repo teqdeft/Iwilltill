@@ -7,7 +7,7 @@ import Button from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { label: "Home", href: "/" },
+  { label: "Medical", href: "/" },
   {
     label: "Counseling",
     href: "/counseling",
@@ -18,11 +18,11 @@ const navLinks = [
     ],
   },
   {
-    label: "Lab",
-    href: "/lab",
+    label: "TeleVet Pet",
+    href: "/TeleVet",
   },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Blog", href: "/blog" },
+  { label: "EAP", href: "/EAP" },
+  { label: "Pricing", href: "/Pricing" },
 ];
 
 export default function Navbar() {
@@ -33,11 +33,9 @@ export default function Navbar() {
       {/* Announcement Bar */}
       <div className="announcement-bar text-white text-xs py-2 text-center section-padding">
         <p>
-          Need immediate support? Call or text our 24/7 crisis line:{" "}
-          <a href="tel:988" className="font-bold underline">
-            988
-          </a>{" "}
-          |{" "}
+        Confidential virtual care | Medical, Behavioral | TeleVet support — for individuals, families, and employees.
+         
+          |
           <a href="/services" className="font-semibold hover:underline">
             View services and providers
           </a>
@@ -55,7 +53,7 @@ export default function Navbar() {
               alt="iWILL 'til i'mWELL"
               width={200}
               height={48}
-              className="h-14 w-auto"
+              className="h-16 w-auto"
               priority
             />
           </a>
@@ -92,13 +90,9 @@ export default function Navbar() {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <a
-              href="tel:+18001234567"
-              className="flex items-center gap-2 text-sm font-medium text-white hover:text-primary hover:bg-primary-50 px-4 py-2.5 rounded-lg transition-colors"
-            >
-              <Phone className="w-4 h-4" />
-              <span className="hidden xl:inline">1-800-123-4567</span>
-            </a>
+           <Button variant="white" size="sm" href="/get-started">
+              Login
+            </Button>
             <Button variant="primary" size="sm" href="/get-started">
               Get Started
             </Button>

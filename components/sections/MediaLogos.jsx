@@ -1,11 +1,12 @@
 export default function MediaLogos() {
   const logos = [
-    "FOX",
-    "NBC",
-    "USA Today",
-    "CBS",
-    "Daily Herald",
-    "InkeyNews",
+    { name: "FOX", src: "/images/svg/fox.svg" },
+    { name: "NBC", src: "/images/svg/nbc-news.png" },
+    { name: "USA Today", src: "/images/svg/usa-today.svg" },
+    { name: "CBS", src: "/images/svg/ncn.svg" },
+    { name: "Daily Herald", src: "/images/svg/daily-heart.svg" },
+    { name: "InkeyNews", src: "/images/svg/daily-news.svg" },
+
   ];
 
   return (
@@ -17,15 +18,19 @@ export default function MediaLogos() {
           </span>
           {logos.map((logo) => (
             <div
-              key={logo}
-              className="text-gray-400 hover:text-gray-600 transition-colors cursor-default"
+              key={logo.name}
+              className=" cursor-default"
             >
-              <span className="text-xl md:text-2xl font-extrabold tracking-tight whitespace-nowrap">
-                {logo}
-              </span>
+              <img
+                src={logo.src}
+                alt={logo.name}
+                className="h-8 md:h-10 w-auto object-contain"
+              />
             </div>
           ))}
+           
         </div>
+      
       </div>
     </section>
   );

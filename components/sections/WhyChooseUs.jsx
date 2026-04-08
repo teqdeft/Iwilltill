@@ -1,11 +1,6 @@
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import Button from "@/components/ui/Button";
-import {
-  Zap,
-  LifeBuoy,
-  UserCheck,
-  ArrowRight,
-} from "lucide-react";
+import { Zap, LifeBuoy, UserCheck, ArrowRight } from "lucide-react";
 
 const reasons = [
   {
@@ -32,12 +27,12 @@ export default function WhyChooseUs() {
   return (
     <SectionWrapper gray>
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
-        {/* Left - Image stretches to match right column height */}
-        <div className="rounded-2xl overflow-hidden h-full min-h-[400px]">
+        {/* Left - Image */}
+        <div className="relative rounded-2xl overflow-hidden min-h-[400px] lg:min-h-0">
           <img
-            src="/images/service-medical.jpg"
+            src="/images/dfd.png"
             alt="Person using telehealth platform"
-            className="w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover"
           />
         </div>
 

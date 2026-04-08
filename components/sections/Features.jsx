@@ -1,34 +1,5 @@
 "use client";
 
-import { Smartphone, Clock, CalendarCheck, Sparkles } from "lucide-react";
-
-const features = [
-  {
-    icon: Smartphone,
-    title: "Care That Fits the Way You Live",
-    description:
-      "Whether you're at home, at work, or on the go, our telehealth platform gives you access to quality care — anytime, anywhere. No travel, no waiting rooms, no hassle.",
-  },
-  {
-    icon: Clock,
-    title: "Convenient and easy to access",
-    description:
-      "Connect to practitioners right at your fingertips, or schedule visits at a time that fits your busy schedule. Access all your healthcare needs from one convenient place.",
-  },
-  {
-    icon: CalendarCheck,
-    title: "Saves time and reduces delays",
-    description:
-      "Skip appointment lines with a simple way to schedule consultations right from your device. No more long waits or scheduling hassles.",
-  },
-  {
-    icon: Sparkles,
-    title: "Built for better everyday care",
-    description:
-      "Our platform is designed to help you stay on top of your health. Track visits, manage prescriptions, and make informed health decisions — all in one place.",
-  },
-];
-
 export default function Features() {
   return (
     <section
@@ -58,47 +29,13 @@ export default function Features() {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <div
-                key={feature.title}
-                className="group relative animate-fade-up"
-                style={{
-                  animationDelay: `${index * 120}ms`,
-                  animationFillMode: "both",
-                }}
-              >
-                {/* Soft glow on hover */}
-                <div className="absolute -inset-0.5 bg-gradient-to-br from-white/30 to-white/0 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-opacity duration-500" />
-
-                <div className="relative h-full bg-white/[0.08] backdrop-blur-md rounded-2xl p-7 border border-white/15 hover:border-white/30 hover:bg-white/[0.12] hover:-translate-y-1.5 transition-all duration-500 ease-out">
-                  {/* Icon */}
-                  <div className="relative w-14 h-14 mb-5">
-                    <div className="absolute inset-0 rounded-2xl bg-white/15 group-hover:bg-white/25 transition-colors duration-500" />
-                    <div className="absolute inset-0 rounded-2xl border border-white/20 group-hover:scale-110 transition-transform duration-500" />
-                    <div className="relative w-full h-full flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-500" />
-                    </div>
-                  </div>
-
-                  {/* Title */}
-                  <h3 className="text-lg font-bold text-white mb-3 leading-snug">
-                    {feature.title}
-                  </h3>
-
-                  {/* Description */}
-                  <p className="text-sm text-white/75 leading-relaxed">
-                    {feature.description}
-                  </p>
-
-                  {/* Subtle bottom accent line */}
-                  <div className="mt-5 h-px w-10 bg-gradient-to-r from-green-300 to-green-500 group-hover:w-full transition-all duration-700/40 to-transparent group-hover:w-full transition-all duration-700 ease-out" />
-                </div>
-              </div>
-            );
-          })}
+        {/* Dashboard Mockup */}
+        <div className="relative animate-fade-up">
+          <img
+            src="/images/svg/Dashboard-Mockup.svg"
+            alt="Dashboard preview"
+            className="w-full h-auto max-w-6xl mx-auto"
+          />
         </div>
       </div>
 

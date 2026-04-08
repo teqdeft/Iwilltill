@@ -43,7 +43,7 @@ export default function Hero() {
             <div className="text-white space-y-6 max-w-xl">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-medium">
                 <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-                Let us help you care
+                Let us help you smile
               </span>
 
               <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold leading-[1.1] tracking-tight">
@@ -51,11 +51,11 @@ export default function Hero() {
                 <span className="text-accent">Health Care!</span>
               </h1>
 
-              <p className="text-lg text-white/80 leading-relaxed font-medium">
+              <p className="text-lg text-white/80 leading-relaxed  font-bold">
                 Talk to a Doctor, Therapist or Veterinarian Right Now!
               </p>
 
-              <p className="text-white/70 leading-relaxed">
+              <p className="text-white/70 leading-relaxed text-lg">
                 Access doctors, therapists, and board-certified providers on
                 your terms. We'll keep it simple, affordable, and on your time.
               </p>
