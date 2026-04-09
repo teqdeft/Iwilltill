@@ -4,96 +4,58 @@ import { useState, useEffect, useRef } from "react";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import Button from "@/components/ui/Button";
 
-const whatToExpectCards = [
- 
-  {
-    title: "Ear Infection",
-    image: "/images/medical-care/ear-infection.png",
-    description:
-      "An ear infection causes pain, fluid drainage, and sometimes fever due to bacteria or viruses. Prompt treatment helps relieve discomfort and prevent complications.",
-  },
-  {
-    title: "Pharmacists",
-    image: "/images/medical-care/pharmacyinventory.png",
-    description:
-      "Ensures safe medication use, explains drug interactions, and supports healing by guiding proper dosages with deep care and knowledge.",
-  },
-  {
-    title: "Sports Medicine",
-    image: "/images/medical-care/sports-medicine.png",
-    description:
-      "This is a branch of medicine that deals with physical fitness and the treatment and prevention of injuries related to sports and exercise.",
-  },
-  {
-    title: "Women's Health",
-    image: "/images/medical-care/womens-health.png",
-    description:
-      "Your dedication to women's health - reproductive care, prenatal support, menopause guidance, and wellness - deeply empowers and uplifts every stage of womanhood.",
-  },
-  {
-    title: "Alternative Medicine",
-    image: "/images/medical-care/alternative-medicine.png",
-    description:
-      "I admire your work in alternative medicine - your approach promotes healing, balance, and emotional well-being through natural, whole-person care methods.",
-  },
-  {
-    title: "General Practitioners",
-    image: "/images/medical-care/general-practitioners.png",
-    description:
-      "Your care for both acute and chronic illness, alongside prevention, builds trust, promotes healing, and strengthens long-term patient well-being daily.",
-  },
-  {
-    title: "Dentist",
-    image: "/images/medical-care/dentist-v3.png",
-    description:
-      "Looking for a Dentist to provide through care in preventing, diagnosing, and treating gum disease and oral health conditions.",
-  },
+const cards = [
   {
     title: "Weight Loss Program",
-    image: "/images/medical-care/weight-loss-program.png",
+    image: "/images/eap/weight-loss-program.png",
     description:
       "A medically supervised weight loss program using Semaglutide, a GLP-1 receptor agonist, to help reduce appetite, support healthy blood sugar levels, and promote gradual, sustainable weight loss in adults struggling with obesity or excess weight.",
   },
   {
-    title: "High Blood Pressure",
-    image: "/images/medical-care/hpb-v1.png",
+    title: "Care Coordinators",
+    image: "/images/eap/care-coordinators.png",
     description:
-      "We provide personalized care to manage and treat high blood pressure, helping you to reduce risks and improve your overall heart health.",
+      "Care Coordinators guide, support, and uplift individuals by connecting them to personalized care plans that restore dignity and build trust.",
   },
   {
-    title: "Diabetes",
-    image: "/images/medical-care/diabetes-v1.png",
+    title: "Message A Specialist",
+    image: "/images/eap/message-a-specialist.png",
     description:
-      "We offer personalized care to manage and treat diabetes, helping you to maintain stable blood sugar levels and improve overall health.",
+      "Message a Specialist to receive direct, thoughtful guidance from someone who listens, understands deeply, and prioritizes your emotional well-being.",
   },
   {
-    title: "Easy Scheduling",
-    image: "/images/medical-care/easy-scheduling-v1.png",
+    title: "Medical Care",
+    image: "/images/eap/medical-care-2-min.png",
     description:
-      "Easily schedule appointments and manage your care with just a few clicks.",
+      "iWILL 'til i'mWell Access expert medical care anytime, anywhere, with personalized treatment and support tailored to your health needs.",
   },
   {
-    title: "Registered Dietitians",
-    image: "/images/medical-care/registered-dietitian-v1.png",
+    title: "Mental Health",
+    image: "/images/eap/mental-health-care-3-min.png",
     description:
-      "Looking for a Registered Dietitian to provide expert, personalized nutrition guidance for healthy eating, disease prevention, and lifestyle improvement.",
-  },
-   {
-    title: "Pediatricians",
-    image: "/images/medical-care/pediatrician-v1.png",
-    description:
-      "Seeking a Pediatrician to deliver comprehensive, compassionate care for children’s physical, emotional, and mental health from birth through adolescence.",
+      "Professional mental health support from licensed therapists and psychiatrists, available 24/7 to help your team manage stress, anxiety, and more.",
   },
   {
-    title: "Cold and Flu Symptoms",
-    image: "/images/medical-care/cold-and-flu-symptoms.png",
+    title: "TeleVet Care",
+    image: "/images/eap/pet-care-min.png",
     description:
-      "We treat cold anf flu symptoms which include congestion, cough, sore throat, body aches, fatigue, and fever.",
+      "Access expert veterinary consultations from the comfort of your home. Our TeleVet service connects you with Licensed Veterinarians for advice and follow-up care, ensuring your pet gets the attention they need, without the need for an in-person visit.",
   },
- 
+  {
+    title: "Prescription Plans",
+    image: "/images/eap/prescription-plan-min.png",
+    description:
+      "Our Prescription Plan offers unbeatable savings, including 37 essential medications for $0 and over 200 medications for just $5, plus additional discounts at participating pharmacies. We're dedicated to making healthcare more affordable by ensuring you have access to the medications you need at a fraction of the cost.",
+  },
+  {
+    title: "Musculoskeletal Care",
+    image: "/images/eap/musculoskeletal-care-min.png",
+    description:
+      "iWill 'til i'mWell Expert care to address pain, injuries, and conditions affecting muscles, bones, and joints, helping you regain mobility and improve quality of life.",
+  },
 ];
 
-export default function WhatToExpectCarousel() {
+export default function WhatToExpectEAP() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(4);
   const [isPaused, setIsPaused] = useState(false);
@@ -105,13 +67,12 @@ export default function WhatToExpectCarousel() {
       else if (window.innerWidth < 1024) setItemsPerView(2);
       else setItemsPerView(4);
     };
-
     updateItemsPerView();
     window.addEventListener("resize", updateItemsPerView);
     return () => window.removeEventListener("resize", updateItemsPerView);
   }, []);
 
-  const maxIndex = Math.max(0, whatToExpectCards.length - itemsPerView);
+  const maxIndex = Math.max(0, cards.length - itemsPerView);
 
   useEffect(() => {
     if (isPaused) return;
@@ -130,29 +91,49 @@ export default function WhatToExpectCarousel() {
   return (
     <section className="section-padding py-16 md:py-24 bg-gray-50">
       <div className="container-main">
-        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+        <div className="text-center max-w-4xl mx-auto mb-12 md:mb-16">
           <span className="inline-block px-4 py-1.5 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-4">
             What to Expect
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-5">
             What to <span className="text-primary">Expect?</span>
           </h2>
-          <p className="text-gray-600 leading-relaxed text-base md:text-lg">
-            At iWILL 'til i'mWELL, we make accessing medical care simple,
-            seamless, and tailored to your needs. Whether you need to message
-            a specialist, routine, urgent, specialized, or primary care, we
-            connect you with licensed, board-certified providers who
-            prioritize your well-being every step of the way.
-          </p>
+          <div className="space-y-4 text-gray-600 leading-relaxed text-base">
+            <p>
+              With iWILL 'til i'mWELL, employees can expect convenient,
+              confidential access to a host of many different professionals
+              ensuring holistic care. This is{" "}
+              <span className="font-bold italic">cura personalis</span> - care
+              for the whole person.
+            </p>
+            <p>
+              Whether it's medical concerns, mental health concerns,
+              musculoskeletal concerns, weight loss concerns, pet health care
+              concerns, or prescription needs,{" "}
+              <span className="font-bold">we are here for you.</span>
+            </p>
+            <p>
+              Through our virtual urgent care, virtual primary care,
+              teletherapy with a counselor, psychologist or psychiatrist,
+              employees will receive personalized care tailored to their
+              unique needs. Employees can also enjoy musculoskeletal care,
+              participate in our weight loss management program, utilize our
+              discounted medication program, or meet with a licensed
+              veterinarian,{" "}
+              <span className="font-bold">because pets are family, too.</span>
+            </p>
+            <p className="font-bold text-gray-700">
+              All of this while maintaining privacy and flexibility from the
+              privacy of the employee's home or any desired safe space.
+            </p>
+          </div>
         </div>
 
-        {/* Carousel */}
         <div
           className="relative"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          {/* Navigation Buttons */}
           <button
             onClick={goPrev}
             aria-label="Previous slide"
@@ -169,7 +150,6 @@ export default function WhatToExpectCarousel() {
             <ChevronRight className="w-5 h-5" />
           </button>
 
-          {/* Slides */}
           <div className="overflow-hidden">
             <div
               className="flex transition-transform duration-700 ease-out"
@@ -177,7 +157,7 @@ export default function WhatToExpectCarousel() {
                 transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`,
               }}
             >
-              {whatToExpectCards.map((card) => (
+              {cards.map((card) => (
                 <div
                   key={card.title}
                   className="shrink-0 px-3 lg:px-4"
@@ -208,7 +188,6 @@ export default function WhatToExpectCarousel() {
             </div>
           </div>
 
-          {/* Dot Indicators */}
           <div className="flex items-center justify-center gap-2 mt-8">
             {Array.from({ length: maxIndex + 1 }).map((_, i) => (
               <button

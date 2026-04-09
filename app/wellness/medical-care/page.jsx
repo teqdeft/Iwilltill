@@ -354,7 +354,7 @@ export default function MedicalCarePage() {
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-lg">
                   <img
-                    src="/images/easy-scheduling-v1.png"
+                    src="/images/medical-care/iwilltilimwell-medical-11252024-003.jpg"
                     alt="Medical provider"
                     className="w-full h-auto object-cover aspect-[4/5]"
                   />
@@ -365,14 +365,14 @@ export default function MedicalCarePage() {
               <div className="space-y-6">
                 <div className="rounded-2xl overflow-hidden shadow-lg">
                   <img
-                    src="/images/alternative-medicine.png"
+                    src="/images/medical-care/iwilltilimwell-medical-11252024-001.jpg"
                     alt="Medical team meeting"
                     className="w-full h-auto object-cover aspect-[4/3]"
                   />
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-lg">
                   <img
-                    src="/images/pediatrician-v1.png"
+                    src="/images/medical-care/iwilltilimwell-medical-11252024-004.jpg"
                     alt="Specialist"
                     className="w-full h-auto object-cover aspect-[4/3]"
                   />
@@ -395,7 +395,7 @@ export default function MedicalCarePage() {
             {/* Full width image at bottom */}
             <div className="mt-6 rounded-2xl overflow-hidden shadow-lg max-w-xl">
               <img
-                src="/images/alternative-medicine.png"
+                src="/images/medical-care/iwilltilimwell-medical-11252024-002.jpg"
                 alt="Medical specialist"
                 className="w-full h-auto object-cover aspect-[4/3]"
               />

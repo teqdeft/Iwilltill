@@ -4,96 +4,58 @@ import { useState, useEffect, useRef } from "react";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import Button from "@/components/ui/Button";
 
-const whatToExpectCards = [
- 
+const cards = [
   {
-    title: "Ear Infection",
-    image: "/images/medical-care/ear-infection.png",
+    title: "Grief and Lost",
+    image: "/images/counseling/strategies-new-v2.png",
     description:
-      "An ear infection causes pain, fluid drainage, and sometimes fever due to bacteria or viruses. Prompt treatment helps relieve discomfort and prevent complications.",
-  },
-  {
-    title: "Pharmacists",
-    image: "/images/medical-care/pharmacyinventory.png",
-    description:
-      "Ensures safe medication use, explains drug interactions, and supports healing by guiding proper dosages with deep care and knowledge.",
+      "We offer compassionate care to help you process grief, honor your loss, and find a path toward healing.",
   },
   {
-    title: "Sports Medicine",
-    image: "/images/medical-care/sports-medicine.png",
+    title: "Loneliness",
+    image: "/images/counseling/wanna-talk-about-it.png",
     description:
-      "This is a branch of medicine that deals with physical fitness and the treatment and prevention of injuries related to sports and exercise.",
+      "We're here to provide connection and support, reminding you that you don't have to face life's challenges alone.",
   },
   {
-    title: "Women's Health",
-    image: "/images/medical-care/womens-health.png",
+    title: "Parenting",
+    image: "/images/counseling/parenting.jpg",
     description:
-      "Your dedication to women's health - reproductive care, prenatal support, menopause guidance, and wellness - deeply empowers and uplifts every stage of womanhood.",
+      "We provide resources and counseling to help you build strong, nurturing relationships with your children while managing the challenges of parenthood.",
   },
   {
-    title: "Alternative Medicine",
-    image: "/images/medical-care/alternative-medicine.png",
+    title: "Stress",
+    image: "/images/counseling/strategies-new.png",
     description:
-      "I admire your work in alternative medicine - your approach promotes healing, balance, and emotional well-being through natural, whole-person care methods.",
+      "Our team offers practical tools and strategies to help you cope with stress and restore balance to your daily life.",
   },
   {
-    title: "General Practitioners",
-    image: "/images/medical-care/general-practitioners.png",
+    title: "Marriage",
+    image: "/images/counseling/marriage.jpg",
     description:
-      "Your care for both acute and chronic illness, alongside prevention, builds trust, promotes healing, and strengthens long-term patient well-being daily.",
+      "Our counseling services are designed to help couples improve communication, resolve conflicts, and strengthen their bond.",
   },
   {
-    title: "Dentist",
-    image: "/images/medical-care/dentist-v3.png",
+    title: "Anxiety",
+    image: "/images/counseling/anxiety.jpg",
     description:
-      "Looking for a Dentist to provide through care in preventing, diagnosing, and treating gum disease and oral health conditions.",
+      "We help you understand and manage anxiety with personalized strategies to bring calm and control to your life.",
   },
   {
-    title: "Weight Loss Program",
-    image: "/images/medical-care/weight-loss-program.png",
+    title: "Abuse",
+    image: "/images/counseling/family-concerns-v1.png",
     description:
-      "A medically supervised weight loss program using Semaglutide, a GLP-1 receptor agonist, to help reduce appetite, support healthy blood sugar levels, and promote gradual, sustainable weight loss in adults struggling with obesity or excess weight.",
+      "Our counseling services are designed to help couples improve communication, resolve conflicts, and strengthen their bond.",
   },
   {
-    title: "High Blood Pressure",
-    image: "/images/medical-care/hpb-v1.png",
+    title: "Family Concerns",
+    image: "/images/counseling/family-concerns.jpg",
     description:
-      "We provide personalized care to manage and treat high blood pressure, helping you to reduce risks and improve your overall heart health.",
+      "Our counselors provide guidance and support to navigate family challenges and foster healthier relationships.",
   },
-  {
-    title: "Diabetes",
-    image: "/images/medical-care/diabetes-v1.png",
-    description:
-      "We offer personalized care to manage and treat diabetes, helping you to maintain stable blood sugar levels and improve overall health.",
-  },
-  {
-    title: "Easy Scheduling",
-    image: "/images/medical-care/easy-scheduling-v1.png",
-    description:
-      "Easily schedule appointments and manage your care with just a few clicks.",
-  },
-  {
-    title: "Registered Dietitians",
-    image: "/images/medical-care/registered-dietitian-v1.png",
-    description:
-      "Looking for a Registered Dietitian to provide expert, personalized nutrition guidance for healthy eating, disease prevention, and lifestyle improvement.",
-  },
-   {
-    title: "Pediatricians",
-    image: "/images/medical-care/pediatrician-v1.png",
-    description:
-      "Seeking a Pediatrician to deliver comprehensive, compassionate care for children’s physical, emotional, and mental health from birth through adolescence.",
-  },
-  {
-    title: "Cold and Flu Symptoms",
-    image: "/images/medical-care/cold-and-flu-symptoms.png",
-    description:
-      "We treat cold anf flu symptoms which include congestion, cough, sore throat, body aches, fatigue, and fever.",
-  },
- 
 ];
 
-export default function WhatToExpectCarousel() {
+export default function WhatToExpectCounselling() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(4);
   const [isPaused, setIsPaused] = useState(false);
@@ -105,13 +67,12 @@ export default function WhatToExpectCarousel() {
       else if (window.innerWidth < 1024) setItemsPerView(2);
       else setItemsPerView(4);
     };
-
     updateItemsPerView();
     window.addEventListener("resize", updateItemsPerView);
     return () => window.removeEventListener("resize", updateItemsPerView);
   }, []);
 
-  const maxIndex = Math.max(0, whatToExpectCards.length - itemsPerView);
+  const maxIndex = Math.max(0, cards.length - itemsPerView);
 
   useEffect(() => {
     if (isPaused) return;
@@ -128,31 +89,32 @@ export default function WhatToExpectCarousel() {
   const goToSlide = (index) => setCurrentIndex(Math.min(index, maxIndex));
 
   return (
-    <section className="section-padding py-16 md:py-24 bg-gray-50">
+    <section className="section-padding py-16 md:py-24 bg-white">
       <div className="container-main">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <span className="inline-block px-4 py-1.5 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-4">
             What to Expect
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-5">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
             What to <span className="text-primary">Expect?</span>
           </h2>
+          <p className="text-xl md:text-2xl font-script text-accent mb-5">
+            We Hear. We Listen. We Care.
+          </p>
           <p className="text-gray-600 leading-relaxed text-base md:text-lg">
-            At iWILL 'til i'mWELL, we make accessing medical care simple,
-            seamless, and tailored to your needs. Whether you need to message
-            a specialist, routine, urgent, specialized, or primary care, we
-            connect you with licensed, board-certified providers who
-            prioritize your well-being every step of the way.
+            At iWILL 'til i'mWELL, we make accessing counseling simple,
+            seamless, and tailored to your needs. Whether you're seeking
+            emotional support, therapy, or specialized care, we connect you
+            with licensed, board-certified professionals who prioritize your
+            mental well-being every step of the way.
           </p>
         </div>
 
-        {/* Carousel */}
         <div
           className="relative"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          {/* Navigation Buttons */}
           <button
             onClick={goPrev}
             aria-label="Previous slide"
@@ -169,7 +131,6 @@ export default function WhatToExpectCarousel() {
             <ChevronRight className="w-5 h-5" />
           </button>
 
-          {/* Slides */}
           <div className="overflow-hidden">
             <div
               className="flex transition-transform duration-700 ease-out"
@@ -177,7 +138,7 @@ export default function WhatToExpectCarousel() {
                 transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`,
               }}
             >
-              {whatToExpectCards.map((card) => (
+              {cards.map((card) => (
                 <div
                   key={card.title}
                   className="shrink-0 px-3 lg:px-4"
@@ -208,7 +169,6 @@ export default function WhatToExpectCarousel() {
             </div>
           </div>
 
-          {/* Dot Indicators */}
           <div className="flex items-center justify-center gap-2 mt-8">
             {Array.from({ length: maxIndex + 1 }).map((_, i) => (
               <button

@@ -11,9 +11,9 @@ const navLinks = [
   { label: "Medical", href: "/wellness/medical-care" },
   {
     label: "Counseling",
-    href: "/counseling",
+    
     children: [
-      { label: "Individual Therapy", href: "/counseling/individual" },
+      { label: "Counseling-Care-Services", href: "/counseling/counseling-care-services" },
       { label: "Couples Therapy", href: "/counseling/couples" },
       { label: "Family Therapy", href: "/counseling/family" },
     ],
@@ -22,20 +22,38 @@ const navLinks = [
     label: "TeleVet Pet",
     href: "/TeleVet",
   },
-  { label: "EAP", href: "/EAP" },
+  {
+    label: "EAP",
+    
+    children: [
+      { label: "Enterprise-Eap", href: "/eap/enterprise-eap" },
+      { label: "Virtual Primary Care", href: "/eap/virtual-primary-care" },
+      { label: "Virtual Behavioral Health", href: "/eap/virtual-behavioral-health" },
+    ],
+  },
   { label: "Pricing", href: "/Pricing" },
 ];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [openSubmenu, setOpenSubmenu] = useState(null);
+
+  const toggleSubmenu = (label) => {
+    setOpenSubmenu(openSubmenu === label ? null : label);
+  };
+
+  const closeAll = () => {
+    setMobileOpen(false);
+    setOpenSubmenu(null);
+  };
 
   return (
     <header className="w-full z-50 sticky top-0">
       {/* Announcement Bar */}
       <div className="announcement-bar text-white text-xs py-2 text-center section-padding">
         <p>
-          Confidential virtual care | Medical, Behavioral | TeleVet support — for individuals, families, and employees.
-          {" "}|{" "}
+          Confidential virtual care | Medical, Behavioral | TeleVet support —
+          for individuals, families, and employees. |{" "}
           <Link href="/services" className="font-semibold hover:underline">
             View services and providers
           </Link>
@@ -45,11 +63,17 @@ export default function Navbar() {
       {/* Main Nav */}
       <nav
         className="section-padding"
-        style={{ background: "linear-gradient(135deg, #604376 0%, #AC73B9 100%)" }}
+        style={{
+          background: "linear-gradient(135deg, #604376 0%, #AC73B9 100%)",
+        }}
       >
         <div className="container-main flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center shrink-0" aria-label="Home">
+          <Link
+            href="/"
+            className="flex items-center shrink-0"
+            aria-label="Home"
+          >
             <Image
               src="/images/logo-white.svg"
               alt="iWILL 'til i'mWELL"
@@ -64,16 +88,28 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (
               <div key={link.label} className="relative group">
-                <Link
-                  href={link.href}
-                  className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-white hover:text-primary rounded-lg hover:bg-primary-50 transition-colors"
-                >
-                  {link.label}
-                  {link.children && <ChevronDown className="w-3.5 h-3.5" />}
-                </Link>
+                {link.children ? (
+                  // Parent with children — button that doesn't navigate
+                  <button
+                    type="button"
+                    className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-white hover:text-primary rounded-lg hover:bg-primary-50 transition-colors"
+                    aria-haspopup="true"
+                  >
+                    {link.label}
+                    <ChevronDown className="w-3.5 h-3.5" />
+                  </button>
+                ) : (
+                  <Link
+                    href={link.href}
+                    className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-white hover:text-primary rounded-lg hover:bg-primary-50 transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                )}
+
                 {link.children && (
                   <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                    <div className="bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[200px]">
+                    <div className="bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[220px]">
                       {link.children.map((child) => (
                         <Link
                           key={child.label}
@@ -106,7 +142,11 @@ export default function Navbar() {
             className="lg:hidden p-2 text-white hover:text-primary"
             aria-label="Toggle menu"
           >
-            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
@@ -114,20 +154,58 @@ export default function Navbar() {
         <div
           className={cn(
             "lg:hidden overflow-hidden transition-all duration-300",
-            mobileOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+            mobileOpen ? "max-h-[700px] opacity-100" : "max-h-0 opacity-0",
           )}
         >
-          <div className="py-4 space-y-1 border-t border-gray-100">
-            {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                onClick={() => setMobileOpen(false)}
-                className="block px-4 py-3 text-sm font-medium text-white hover:text-primary hover:bg-primary-50 rounded-lg transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
+          <div className="py-4 space-y-1 border-t border-white/10">
+            {navLinks.map((link) =>
+              link.children ? (
+                <div key={link.label}>
+                  <button
+                    type="button"
+                    onClick={() => toggleSubmenu(link.label)}
+                    className="w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-white hover:bg-white/10 rounded-lg transition-colors"
+                    aria-expanded={openSubmenu === link.label}
+                  >
+                    <span>{link.label}</span>
+                    <ChevronDown
+                      className={cn(
+                        "w-4 h-4 transition-transform duration-300",
+                        openSubmenu === link.label && "rotate-180"
+                      )}
+                    />
+                  </button>
+                  <div
+                    className={cn(
+                      "overflow-hidden transition-all duration-300",
+                      openSubmenu === link.label ? "max-h-96" : "max-h-0"
+                    )}
+                  >
+                    <div className="pl-4 py-1 space-y-1">
+                      {link.children.map((child) => (
+                        <Link
+                          key={child.label}
+                          href={child.href}
+                          onClick={closeAll}
+                          className="block px-4 py-2.5 text-sm text-white/85 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  onClick={closeAll}
+                  className="block px-4 py-3 text-sm font-medium text-white hover:bg-white/10 rounded-lg transition-colors"
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
             <div className="pt-3 px-4">
               <Button variant="accent" className="w-full" href="/get-started">
                 Get Started
