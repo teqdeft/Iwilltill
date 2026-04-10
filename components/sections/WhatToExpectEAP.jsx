@@ -92,9 +92,7 @@ export default function WhatToExpectEAP() {
     <section className="section-padding py-16 md:py-24 bg-gray-50">
       <div className="container-main">
         <div className="text-center max-w-4xl mx-auto mb-12 md:mb-16">
-          <span className="inline-block px-4 py-1.5 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-4">
-            What to Expect
-          </span>
+         
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-5">
             What to <span className="text-primary">Expect?</span>
           </h2>

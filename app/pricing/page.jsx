@@ -23,7 +23,7 @@ export default function PricingPage() {
         {/* Hero */}
         <section className="relative overflow-hidden h-[420px] md:h-[480px]">
           <img
-            src="/images/easy-scheduling-v1.png"
+            src="/images/pricing/business-8676549_1920.jpg"
             alt="Pricing"
             className="absolute inset-0 w-full h-full object-cover"
           />

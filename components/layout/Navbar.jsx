@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import Button from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
+import GoogleTranslate from "../ui/GoogleTranslate";
 
 const navLinks = [
   { label: "Medical", href: "/wellness/medical-care" },
@@ -21,6 +22,10 @@ const navLinks = [
   {
     label: "TeleVet Pet",
     href: "/TeleVet",
+  },
+  {
+    label: "About Us",
+    href: "/about-us",
   },
   {
     label: "EAP",
@@ -128,14 +133,16 @@ export default function Navbar() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="hidden lg:flex items-center gap-3">
-            <Button variant="white" size="sm" href="/get-started">
-              Login
-            </Button>
-            <Button variant="accent" size="sm" href="/get-started">
-              Get Started
-            </Button>
-          </div>
+     <div className="hidden lg:flex items-center gap-3">
+
+  <Button variant="white" size="sm" href="/get-started">
+    Login
+  </Button>
+  <Button variant="accent" size="sm" href="/get-started">
+    Get Started
+  </Button>
+    <GoogleTranslate />
+</div>
 
           {/* Mobile Toggle */}
           <button
@@ -159,6 +166,7 @@ export default function Navbar() {
           )}
         >
           <div className="py-4 space-y-1 border-t border-white/10">
+           <GoogleTranslate />
             {navLinks.map((link) =>
               link.children ? (
                 <div key={link.label}>

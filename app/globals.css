@@ -82,3 +82,56 @@
 .announcement-bar {
   background: #60428b;
 }
+
+
+/* ===== Hide Google Translate UI completely ===== */
+
+/* Hide the top "Google Translate" banner that pushes content down */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-banner-frame,
+iframe.goog-te-banner-frame {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+}
+
+/* Prevent body offset */
+body {
+  top: 0 !important;
+  position: static !important;
+}
+
+html {
+  margin-top: 0 !important;
+}
+
+/* Hide the entire Google widget — we use our custom dropdown */
+#google_translate_element,
+.goog-te-gadget,
+.goog-logo-link,
+.goog-te-gadget span,
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+/* Remove the highlight tooltip when hovering translated text */
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Hide the "Powered by Google" footer that sometimes appears */
+.skiptranslate {
+  display: none !important;
+}
+
+/* Keep our custom dropdown visible (override the skiptranslate hide) */
+#google_translate_element.skiptranslate {
+  display: none !important;
+}
