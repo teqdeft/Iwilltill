@@ -29,9 +29,10 @@ const navLinks = [
       { label: "Enterprise-Eap", href: "/eap/enterprise-eap" },
       { label: "Virtual Primary Care", href: "/eap/virtual-primary-care" },
       { label: "Virtual Behavioral Health", href: "/eap/virtual-behavioral-health" },
+      { label: "Musculoskeletal Program", href: "/eap/musculoskeletal-program" },
     ],
   },
-  { label: "Pricing", href: "/Pricing" },
+  { label: "Pricing", href: "/pricing" },
 ];
 
 export default function Navbar() {
