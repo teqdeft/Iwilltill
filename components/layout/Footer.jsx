@@ -14,6 +14,7 @@ const quickLinks = [
   { label: "Terms & Conditions", href: "/terms-conditions" },
   { label: "Insurance Disclaimer", href: "/insurance-disclaimer" },
   { label: "Join the Community", href: "/join-the-mission-a" },
+  { label: "FAQ", href: "/faq" },
 ];
 
 const certifications = [
