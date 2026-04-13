@@ -373,15 +373,16 @@ export default function AboutUsPage() {
         {/* A Word From Our CEO */}
         <section className="section-padding py-16 md:py-20 bg-white">
           <div className="container-main max-w-6xl">
-            <div className="mb-10">
+            <div className="">
               <span className="inline-block px-4 py-1.5 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-4">
                 Leadership
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2">
+             
+            </div>
+             <h2 className="text-3xl md:text-4xl mb-5 font-bold text-gray-900 inline-block border-b-2 border-primary pb-2">
                 A Word From Our{" "}
                 <span className="text-primary font-script">CEO</span>
               </h2>
-            </div>
 
             <div className="grid lg:grid-cols-[1.3fr_1fr] gap-10 lg:gap-16 items-start">
               {/* Left - CEO Message */}

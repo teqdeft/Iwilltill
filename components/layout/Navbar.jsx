@@ -15,8 +15,8 @@ const navLinks = [
     
     children: [
       { label: "Counseling-Care-Services", href: "/counseling/counseling-care-services" },
-      { label: "Couples Therapy", href: "/counseling/couples" },
-      { label: "Family Therapy", href: "/counseling/family" },
+      // { label: "Couples Therapy", href: "/counseling/couples" },
+      // { label: "Family Therapy", href: "/counseling/family" },
     ],
   },
   {
