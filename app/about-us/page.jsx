@@ -105,11 +105,6 @@ export default function AboutUsPage() {
 
           <div className="relative h-full container-main section-padding flex flex-col justify-center items-center text-center">
             <div className="max-w-4xl text-white">
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-sm font-medium mb-6">
-                <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-                About Us
-              </span>
-
               <h1 className="text-4xl md:text-5xl lg:text-[60px] font-bold leading-[1.1] tracking-tight mb-6">
                 Wellness starts with a promise.
               </h1>
@@ -128,10 +123,10 @@ export default function AboutUsPage() {
         {/* Mission & Vision */}
         <section className="section-padding py-16 md:py-20 bg-white">
           <div className="container-main max-w-5xl">
+            <span className="inline-block px-4 py-1.5 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-4">
+              Who We Are
+            </span>
             <div className="mb-10">
-              <span className="inline-block px-4 py-1.5 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-4">
-                Who We Are
-              </span>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2">
                 Our Mission &{" "}
                 <span className="text-primary font-script">Vision</span>
@@ -302,10 +297,13 @@ export default function AboutUsPage() {
               <span className="inline-block px-4 py-1.5 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-4">
                 Our Services
               </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-5 inline-block border-b-2 border-primary pb-2">
-                How Can We{" "}
-                <span className="text-primary font-script">Help?</span>
-              </h2>
+              <div className="mb-10">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2">
+                  How Can We{" "}
+                  <span className="text-primary font-script">Help?</span>
+                </h2>
+              </div>
+
               <div className="space-y-3 text-gray-700 leading-relaxed text-base mt-6">
                 <p>
                   iWILL 'til i'mWELL offers premiere services that are designed

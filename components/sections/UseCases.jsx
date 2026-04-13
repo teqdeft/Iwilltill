@@ -42,7 +42,7 @@ export default function UseCases() {
             {/* Left - Heading */}
             <div className="text-white">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.15] mb-5">
-                Care built for everyday life and workplace <br /> <span className="text-accent font-script font-normal text-4xl md:text-5xl">well-being</span>
+                Care built for everyday life and workplace <br /> <span className="text-white font-script font-normal text-4xl md:text-5xl">well-being</span>
               </h2>
               <p className="text-white/75 text-base md:text-lg leading-relaxed max-w-md">
                 Choose the path that fits your needs and explore care designed
