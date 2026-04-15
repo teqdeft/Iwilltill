@@ -369,7 +369,6 @@ export default function AboutUsPage() {
             </div>
           </div>
         </section>
-
         {/* A Word From Our CEO */}
         <section className="section-padding py-16 md:py-20 bg-white">
           <div className="container-main max-w-6xl">

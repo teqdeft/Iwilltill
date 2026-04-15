@@ -15,13 +15,16 @@ const navLinks = [
     
     children: [
       { label: "Counseling-Care-Services", href: "/counseling/counseling-care-services" },
-      // { label: "Couples Therapy", href: "/counseling/couples" },
+      { label: "Speak To A Therapist", href: "/counseling/speak-to-a-therapist" },
       // { label: "Family Therapy", href: "/counseling/family" },
     ],
   },
   {
     label: "TeleVet Pet",
-    href: "/TeleVet",
+    children: [
+      { label: "Televet Pet Care", href: "/televet-pet-care" },
+      { label: "Speak To A Veterinarian", href: "/televet-pet-care/speak-to-a-veterinarian" },
+    ],
   },
   {
     label: "About Us",
