@@ -55,13 +55,21 @@ export default function SpeakToADoctorPage() {
             alt="Speak to a Doctor"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div
+        <div
             className="absolute inset-0"
-            style={{
+          style={{
               background:
-                "linear-gradient(135deg, rgba(0, 0, 0, 0.55) 0%, rgba(96, 67, 118, 0.35) 100%)",
-            }}
+                "linear-gradient(135deg, rgba(96, 67, 118, 0.80) 0%, rgba(172, 115, 185, 0.55) 100%)",
+            }} 
           />
+            {/* Decorative lotus */}
+          <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-15 -translate-y-1/2 translate-x-1/4 pointer-events-none hidden lg:block">
+            <img
+              src="/images/logo-favi.svg"
+              alt=""
+              className="w-full h-full object-contain"
+            />
+          </div>
 
           <div className="relative h-full container-main section-padding flex flex-col justify-center">
             <div className="max-w-3xl text-white">

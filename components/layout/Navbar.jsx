@@ -3,29 +3,26 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import Button from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import GoogleTranslate from "../ui/GoogleTranslate";
 
 const navLinks = [
-  { label: "Medical", 
+  { label: "Medical",
      children: [
       { label: "Medical Care Services", href: "/wellness/medical-care" },
+      { label: "Speak To A Doctor", href: "/wellness/speak-to-a-doctor" },
       { label: "Silver Prescription Plan", href: "/wellness/silver-prescription-plan" },
       { label: "Gold Prescription Plan", href: "/wellness/gold-prescription-plan" },
       { label: "Platinum Prescription Plan", href: "/wellness/platinum-prescription-plan" },
     ],
-    
-
    },
   {
     label: "Counseling",
-    
     children: [
       { label: "Counseling-Care-Services", href: "/counseling/counseling-care-services" },
       { label: "Speak To A Therapist", href: "/counseling/speak-to-a-therapist" },
-      // { label: "Family Therapy", href: "/counseling/family" },
     ],
   },
   {
@@ -41,7 +38,6 @@ const navLinks = [
   },
   {
     label: "EAP",
-    
     children: [
       { label: "Enterprise-Eap", href: "/eap/enterprise-eap" },
       { label: "Virtual Primary Care", href: "/eap/virtual-primary-care" },
@@ -55,6 +51,7 @@ const navLinks = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
+  const [showAnnouncement, setShowAnnouncement] = useState(true);
 
   const toggleSubmenu = (label) => {
     setOpenSubmenu(openSubmenu === label ? null : label);
@@ -68,15 +65,27 @@ export default function Navbar() {
   return (
     <header className="w-full z-50 sticky top-0">
       {/* Announcement Bar */}
-      <div className="announcement-bar text-white text-xs py-2 text-center section-padding">
-        <p>
-          Confidential virtual care | Medical, Behavioral | TeleVet support —
-          for individuals, families, and employees. |{" "}
-          <Link href="/services" className="font-semibold hover:underline">
-            View services and providers
-          </Link>
-        </p>
-      </div>
+      {showAnnouncement && (
+        <div className="announcement-bar text-white text-xs py-2 section-padding relative">
+          <div className="container-main flex items-center justify-center gap-3">
+            <p className="text-center pr-8">
+              Confidential virtual care | Medical, Behavioral | TeleVet support —
+              for individuals, families, and employees. |{" "}
+              <Link href="/services" className="font-semibold hover:underline">
+                View services and providers
+              </Link>
+            </p>
+            <button
+              type="button"
+              onClick={() => setShowAnnouncement(false)}
+              className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 p-1 hover:bg-white/10 rounded-md transition-colors"
+              aria-label="Close announcement"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Main Nav */}
       <nav
@@ -87,11 +96,7 @@ export default function Navbar() {
       >
         <div className="container-main flex items-center justify-between h-20">
           {/* Logo */}
-          <Link
-            href="/"
-            className="flex items-center shrink-0"
-            aria-label="Home"
-          >
+          <Link href="/" className="flex items-center shrink-0" aria-label="Home">
             <Image
               src="/images/logo-white.svg"
               alt="iWILL 'til i'mWELL"
@@ -107,7 +112,6 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <div key={link.label} className="relative group">
                 {link.children ? (
-                  // Parent with children — button that doesn't navigate
                   <button
                     type="button"
                     className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-white hover:text-primary rounded-lg hover:bg-primary-50 transition-colors"
@@ -145,16 +149,15 @@ export default function Navbar() {
           </div>
 
           {/* CTA Buttons */}
-     <div className="hidden lg:flex items-center gap-3">
-
-  <Button variant="white" size="sm" href="/get-started">
-    Login
-  </Button>
-  <Button variant="accent" size="sm" href="/get-started">
-    Get Started
-  </Button>
-    <GoogleTranslate />
-</div>
+          <div className="hidden lg:flex items-center gap-3">
+            <Button variant="white" size="sm" href="/get-started">
+              Login
+            </Button>
+            <Button variant="accent" size="sm" href="/get-started">
+              Get Started
+            </Button>
+            <GoogleTranslate />
+          </div>
 
           {/* Mobile Toggle */}
           <button
@@ -162,11 +165,7 @@ export default function Navbar() {
             className="lg:hidden p-2 text-white hover:text-primary"
             aria-label="Toggle menu"
           >
-            {mobileOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
+            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
@@ -178,7 +177,7 @@ export default function Navbar() {
           )}
         >
           <div className="py-4 space-y-1 border-t border-white/10">
-           <GoogleTranslate />
+            <GoogleTranslate />
             {navLinks.map((link) =>
               link.children ? (
                 <div key={link.label}>
