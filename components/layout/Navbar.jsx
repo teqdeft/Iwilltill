@@ -9,7 +9,16 @@ import { cn } from "@/lib/utils";
 import GoogleTranslate from "../ui/GoogleTranslate";
 
 const navLinks = [
-  { label: "Medical", href: "/wellness/medical-care" },
+  { label: "Medical", 
+     children: [
+      { label: "Medical Care Services", href: "/wellness/medical-care" },
+      { label: "Silver Prescription Plan", href: "/wellness/silver-prescription-plan" },
+      { label: "Gold Prescription Plan", href: "/wellness/gold-prescription-plan" },
+      { label: "Platinum Prescription Plan", href: "/wellness/platinum-prescription-plan" },
+    ],
+    
+
+   },
   {
     label: "Counseling",
     

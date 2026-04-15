@@ -131,7 +131,7 @@ export default function MedicalCarePage() {
         <section className="relative overflow-hidden h-[540px] md:h-[600px]">
           {/* Background image */}
           <img
-            src="/images/womens-health.png"
+            src="/images/banner-new-new-v1.png"
             alt="Medical team"
             className="absolute inset-0 w-full h-full object-cover"
           />

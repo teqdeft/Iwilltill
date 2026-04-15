@@ -31,11 +31,19 @@ export default function SpeakToATherapistPage() {
           />
           <div
             className="absolute inset-0"
-            style={{
+          style={{
               background:
-                "linear-gradient(135deg, rgba(50, 50, 60, 0.65) 0%, rgba(96, 67, 118, 0.45) 100%)",
-            }}
+                "linear-gradient(135deg, rgba(96, 67, 118, 0.80) 0%, rgba(172, 115, 185, 0.55) 100%)",
+            }} 
           />
+            {/* Decorative lotus */}
+          <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-15 -translate-y-1/2 translate-x-1/4 pointer-events-none hidden lg:block">
+            <img
+              src="/images/logo-favi.svg"
+              alt=""
+              className="w-full h-full object-contain"
+            />
+          </div>
 
           <div className="relative h-full container-main section-padding flex flex-col justify-end pb-14 md:pb-16">
             <div className="max-w-3xl text-white">

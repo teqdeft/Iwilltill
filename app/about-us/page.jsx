@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 import { ArrowRight, Check } from "lucide-react";
 import WhatToExpectEAP from "@/components/sections/WhatToExpectEAP";
+import CountUp from "@/components/ui/CountUp";
 
 export const metadata = {
   title: "About Us | iWILL 'til i'mWELL",
@@ -69,9 +70,9 @@ const helpCards = [
 ];
 
 const stats = [
-  { number: "5,000", label: "Medical Doctors" },
-  { number: "25,000", label: "Mental Health Therapists" },
-  { number: "500", label: "TeleVet Veterinarians" },
+  { number: 5000, suffix: "+", label: "Members Served" },
+  { number: 25000, suffix: "+", label: "Consultations Completed" },
+  { number: 500, suffix: "+", label: "Licensed Providers" },
 ];
 
 export default function AboutUsPage() {
@@ -359,7 +360,11 @@ export default function AboutUsPage() {
               {stats.map((stat) => (
                 <div key={stat.label}>
                   <div className="text-5xl md:text-6xl font-bold text-white mb-2">
-                    {stat.number}
+                    <CountUp
+                      end={stat.number}
+                      suffix={stat.suffix}
+                      duration={2000}
+                    />
                   </div>
                   <div className="text-sm md:text-base text-white/90 font-semibold">
                     {stat.label}
@@ -376,12 +381,11 @@ export default function AboutUsPage() {
               <span className="inline-block px-4 py-1.5 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-4">
                 Leadership
               </span>
-             
             </div>
-             <h2 className="text-3xl md:text-4xl mb-5 font-bold text-gray-900 inline-block border-b-2 border-primary pb-2">
-                A Word From Our{" "}
-                <span className="text-primary font-script">CEO</span>
-              </h2>
+            <h2 className="text-3xl md:text-4xl mb-5 font-bold text-gray-900 inline-block border-b-2 border-primary pb-2">
+              A Word From Our{" "}
+              <span className="text-primary font-script">CEO</span>
+            </h2>
 
             <div className="grid lg:grid-cols-[1.3fr_1fr] gap-10 lg:gap-16 items-start">
               {/* Left - CEO Message */}
