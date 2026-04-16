@@ -14,11 +14,30 @@ export const metadata = {
     "Gold Prescription Plan — Easiest Way to Save on Your Medications. Chronic Medication Prescription Plan by iWILL 'til i'mWELL.",
 };
 
-const programCoversCol1 = ["Allergy", "Arthritis/Pain", "Asthma", "Blood Pressure/Heart"];
-const programCoversCol2 = ["Cholesterol", "Cold/Cough", "Diabetes", "Men's/Women's Health"];
-const programCoversCol3 = ["Mental Health", "Pink Eye", "Poison Ivy", "and More!"];
+const programCoversCol1 = [
+  "Allergy",
+  "Arthritis/Pain",
+  "Asthma",
+  "Blood Pressure/Heart",
+];
+const programCoversCol2 = [
+  "Cholesterol",
+  "Cold/Cough",
+  "Diabetes",
+  "Men's/Women's Health",
+];
+const programCoversCol3 = [
+  "Mental Health",
+  "Pink Eye",
+  "Poison Ivy",
+  "and More!",
+];
 
-const drugsLikeCol1 = ["Amoxicillin", "Azithromycin (Z-Pak)", "Cialis (generic)"];
+const drugsLikeCol1 = [
+  "Amoxicillin",
+  "Azithromycin (Z-Pak)",
+  "Cialis (generic)",
+];
 const drugsLikeCol2 = ["Glipizide", "Omeprazole", "Sprintec"];
 const drugsLikeCol3 = ["Viagra (generic)", "Warfarin", "and much more!"];
 
@@ -36,12 +55,12 @@ export default function GoldPrescriptionPlanPage() {
           />
           <div
             className="absolute inset-0"
-          style={{
+            style={{
               background:
                 "linear-gradient(135deg, rgba(96, 67, 118, 0.80) 0%, rgba(172, 115, 185, 0.55) 100%)",
-            }} 
+            }}
           />
-            {/* Decorative lotus */}
+          {/* Decorative lotus */}
           <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-15 -translate-y-1/2 translate-x-1/4 pointer-events-none hidden lg:block">
             <img
               src="/images/logo-favi.svg"
@@ -83,7 +102,11 @@ export default function GoldPrescriptionPlanPage() {
                       at $15 each PLUS all prescriptions in our Silver
                       Prescription Plan.
                     </p>
-                    <Button variant="primary" size="sm" href="/get-started">
+                    <Button
+                      variant="primary"
+                      size="sm"
+                      href="https://app.iwilltilimwell.com/register"
+                    >
                       Get Started
                     </Button>
                   </div>
@@ -141,7 +164,10 @@ export default function GoldPrescriptionPlanPage() {
               <div className="grid md:grid-cols-3 gap-x-8 gap-y-3">
                 <div className="space-y-3">
                   {programCoversCol1.map((item) => (
-                    <div key={item} className="flex items-center gap-2 text-gray-700 text-[15px]">
+                    <div
+                      key={item}
+                      className="flex items-center gap-2 text-gray-700 text-[15px]"
+                    >
                       <CheckSquare className="w-4 h-4 text-primary flex-shrink-0" />
                       <span>{item}</span>
                     </div>
@@ -149,7 +175,10 @@ export default function GoldPrescriptionPlanPage() {
                 </div>
                 <div className="space-y-3">
                   {programCoversCol2.map((item) => (
-                    <div key={item} className="flex items-center gap-2 text-gray-700 text-[15px]">
+                    <div
+                      key={item}
+                      className="flex items-center gap-2 text-gray-700 text-[15px]"
+                    >
                       <CheckSquare className="w-4 h-4 text-primary flex-shrink-0" />
                       <span>{item}</span>
                     </div>
@@ -157,7 +186,10 @@ export default function GoldPrescriptionPlanPage() {
                 </div>
                 <div className="space-y-3">
                   {programCoversCol3.map((item) => (
-                    <div key={item} className="flex items-center gap-2 text-gray-700 text-[15px]">
+                    <div
+                      key={item}
+                      className="flex items-center gap-2 text-gray-700 text-[15px]"
+                    >
                       <CheckSquare className="w-4 h-4 text-primary flex-shrink-0" />
                       <span>{item}</span>
                     </div>
@@ -175,7 +207,10 @@ export default function GoldPrescriptionPlanPage() {
               <div className="grid md:grid-cols-3 gap-x-8 gap-y-3">
                 <div className="space-y-3">
                   {drugsLikeCol1.map((item) => (
-                    <div key={item} className="flex items-center gap-2 text-gray-700 text-[15px]">
+                    <div
+                      key={item}
+                      className="flex items-center gap-2 text-gray-700 text-[15px]"
+                    >
                       <CheckSquare className="w-4 h-4 text-primary flex-shrink-0" />
                       <span>{item}</span>
                     </div>
@@ -183,7 +218,10 @@ export default function GoldPrescriptionPlanPage() {
                 </div>
                 <div className="space-y-3">
                   {drugsLikeCol2.map((item) => (
-                    <div key={item} className="flex items-center gap-2 text-gray-700 text-[15px]">
+                    <div
+                      key={item}
+                      className="flex items-center gap-2 text-gray-700 text-[15px]"
+                    >
                       <CheckSquare className="w-4 h-4 text-primary flex-shrink-0" />
                       <span>{item}</span>
                     </div>
@@ -191,7 +229,10 @@ export default function GoldPrescriptionPlanPage() {
                 </div>
                 <div className="space-y-3">
                   {drugsLikeCol3.map((item) => (
-                    <div key={item} className="flex items-center gap-2 text-gray-700 text-[15px]">
+                    <div
+                      key={item}
+                      className="flex items-center gap-2 text-gray-700 text-[15px]"
+                    >
                       <CheckSquare className="w-4 h-4 text-primary flex-shrink-0" />
                       <span>{item}</span>
                     </div>
@@ -216,9 +257,9 @@ export default function GoldPrescriptionPlanPage() {
                   <p className="text-gray-700 text-[15px] leading-relaxed mb-4">
                     You will receive an electronic member card that can be
                     presented at any retail pharmacy (over 70,000 in network)
-                    and if on the formulary, you only pay $5.00. If it is not
-                    on the $5.00 formulary, your out-of-pocket cost will be
-                    based on a deeply discounted price.
+                    and if on the formulary, you only pay $5.00. If it is not on
+                    the $5.00 formulary, your out-of-pocket cost will be based
+                    on a deeply discounted price.
                   </p>
 
                   <p className="text-gray-700 text-[15px] leading-relaxed mb-6">
@@ -231,7 +272,9 @@ export default function GoldPrescriptionPlanPage() {
                   <Button
                     variant="primary"
                     size="md"
-                    href="/downloads/gold-prescription-plan.pdf"
+                    href="/pdf/gold-prescriptions.pdf"
+                    target="_blank"
+                    download
                   >
                     Download PDF Now
                   </Button>
@@ -270,11 +313,15 @@ export default function GoldPrescriptionPlanPage() {
               Save on Chronic Medications Today
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
-              Join the Gold Prescription Plan and access 200 common
-              medications at just $15 each.
+              Join the Gold Prescription Plan and access 200 common medications
+              at just $15 each.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="accent" size="lg" href="/get-started">
+              <Button
+                variant="accent"
+                size="lg"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started
                 <ArrowRight className="w-4 h-4" />
               </Button>

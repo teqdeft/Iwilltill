@@ -92,7 +92,6 @@ export default function WhatToExpectEAP() {
     <section className="section-padding py-16 md:py-24 bg-gray-50">
       <div className="container-main">
         <div className="text-center max-w-4xl mx-auto mb-12 md:mb-16">
-         
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-5">
             What to <span className="text-primary">Expect?</span>
           </h2>
@@ -111,13 +110,12 @@ export default function WhatToExpectEAP() {
               <span className="font-bold">we are here for you.</span>
             </p>
             <p>
-              Through our virtual urgent care, virtual primary care,
-              teletherapy with a counselor, psychologist or psychiatrist,
-              employees will receive personalized care tailored to their
-              unique needs. Employees can also enjoy musculoskeletal care,
-              participate in our weight loss management program, utilize our
-              discounted medication program, or meet with a licensed
-              veterinarian,{" "}
+              Through our virtual urgent care, virtual primary care, teletherapy
+              with a counselor, psychologist or psychiatrist, employees will
+              receive personalized care tailored to their unique needs.
+              Employees can also enjoy musculoskeletal care, participate in our
+              weight loss management program, utilize our discounted medication
+              program, or meet with a licensed veterinarian,{" "}
               <span className="font-bold">because pets are family, too.</span>
             </p>
             <p className="font-bold text-gray-700">
@@ -203,7 +201,7 @@ export default function WhatToExpectEAP() {
         </div>
 
         <div className="text-center mt-10">
-          <Button variant="ghost" size="lg" href="/learn-more">
+          <Button variant="ghost" size="lg" href="/faq">
             Learn More
             <ArrowRight className="w-4 h-4" />
           </Button>

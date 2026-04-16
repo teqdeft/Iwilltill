@@ -15,7 +15,14 @@ export const metadata = {
     "Counseling Care Services — iWILL 'til i'mWELL offers premiere services designed to meet your needs for mental wellbeing with Licensed Therapists, Psychologists, and Psychiatrists.",
 };
 
-const SupportEmail = () => <a href="mailto:support@iwilltilimwell.com" className="text-primary hover:underline">support@iwilltilimwell.com</a>;
+const SupportEmail = () => (
+  <a
+    href="mailto:support@iwilltilimwell.com"
+    className="text-primary hover:underline"
+  >
+    support@iwilltilimwell.com
+  </a>
+);
 
 export default function SpeakToATherapistPage() {
   return (
@@ -31,12 +38,12 @@ export default function SpeakToATherapistPage() {
           />
           <div
             className="absolute inset-0"
-          style={{
+            style={{
               background:
                 "linear-gradient(135deg, rgba(96, 67, 118, 0.80) 0%, rgba(172, 115, 185, 0.55) 100%)",
-            }} 
+            }}
           />
-            {/* Decorative lotus */}
+          {/* Decorative lotus */}
           <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-15 -translate-y-1/2 translate-x-1/4 pointer-events-none hidden lg:block">
             <img
               src="/images/logo-favi.svg"
@@ -55,12 +62,12 @@ export default function SpeakToATherapistPage() {
               </h1>
 
               <p className="text-base md:text-lg text-white/95 font-semibold leading-relaxed max-w-2xl">
-                iWILL 'til i'mWELL offers premiere services that are designed
-                to meet your needs for mental wellbeing. Communication with
-                Mental Health Counselors, Licensed Therapists, Licensed
-                Psychologists, Board Certified, Licensed Psychiatrists in both
-                English and Spanish. The highest quality care for your mental
-                wellbeing is offered at a flexible affordable value.
+                iWILL 'til i'mWELL offers premiere services that are designed to
+                meet your needs for mental wellbeing. Communication with Mental
+                Health Counselors, Licensed Therapists, Licensed Psychologists,
+                Board Certified, Licensed Psychiatrists in both English and
+                Spanish. The highest quality care for your mental wellbeing is
+                offered at a flexible affordable value.
               </p>
             </div>
           </div>
@@ -78,9 +85,8 @@ export default function SpeakToATherapistPage() {
                 <span className="font-bold text-gray-900">
                   iWILL 'til i'mWELL
                 </span>{" "}
-                offers convenient, accessible, and personalized care designed
-                to support your mental well-being and promote good mental
-                health.
+                offers convenient, accessible, and personalized care designed to
+                support your mental well-being and promote good mental health.
               </p>
             </div>
 
@@ -94,10 +100,12 @@ export default function SpeakToATherapistPage() {
                 <p className="text-gray-600 leading-relaxed text-[14px]">
                   iWILL 'til i'mWELL offers accessible, compassionate virtual
                   counseling to support your mental well-being, right when you
-                  need it most. Our master's-level counselors provide
-                  real-time, <span className="font-bold text-gray-900">"In-The-Moment" support</span> for
-                  stress, anxiety, depression, and more, ensuring you receive
-                  confidential, empathetic care whenever life feels
+                  need it most. Our master's-level counselors provide real-time,{" "}
+                  <span className="font-bold text-gray-900">
+                    "In-The-Moment" support
+                  </span>{" "}
+                  for stress, anxiety, depression, and more, ensuring you
+                  receive confidential, empathetic care whenever life feels
                   overwhelming.
                 </p>
               </div>
@@ -110,13 +118,13 @@ export default function SpeakToATherapistPage() {
                 <p className="text-gray-600 leading-relaxed text-[14px]">
                   Members can receive{" "}
                   <span className="font-bold text-gray-900">
-                    clinically determined, weekly therapy sessions or opt for
-                    up to six sessions
+                    clinically determined, weekly therapy sessions or opt for up
+                    to six sessions
                   </span>{" "}
-                  with a licensed master's-level therapist or psychologist.
-                  This solution-focused care is designed to help you build
-                  resilience and navigate life's challenges - all included at
-                  one low, monthly cost.
+                  with a licensed master's-level therapist or psychologist. This
+                  solution-focused care is designed to help you build resilience
+                  and navigate life's challenges - all included at one low,
+                  monthly cost.
                 </p>
               </div>
 
@@ -136,8 +144,7 @@ export default function SpeakToATherapistPage() {
                   </span>{" "}
                   or a{" "}
                   <span className="font-bold text-gray-900">
-                    psychiatrist for long-term support and medication
-                    management
+                    psychiatrist for long-term support and medication management
                   </span>
                   .
                 </p>
@@ -152,8 +159,8 @@ export default function SpeakToATherapistPage() {
                 and available from the comfort of your home.
               </p>
               <p className="text-gray-700 text-[15px] md:text-base leading-relaxed">
-                You can also sign up for our Prescription Plan PC-B to get
-                some of your{" "}
+                You can also sign up for our Prescription Plan PC-B to get some
+                of your{" "}
                 <span className="font-bold text-gray-900 underline">
                   psychotropic medications at $5.00 each
                 </span>
@@ -175,8 +182,6 @@ export default function SpeakToATherapistPage() {
             </div>
           </div>
         </section>
-
-  
 
         {/* Need Support */}
         <section className="section-padding py-16 md:py-20 bg-white">
@@ -237,7 +242,11 @@ export default function SpeakToATherapistPage() {
               Spanish — from the comfort of your home.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="accent" size="lg" href="/get-started">
+              <Button
+                variant="accent"
+                size="lg"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started
                 <ArrowRight className="w-4 h-4" />
               </Button>

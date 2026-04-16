@@ -56,17 +56,25 @@ export default function TeleVetPage() {
               </h1>
 
               <p className="text-base md:text-lg text-white/95 font-semibold leading-relaxed mb-8 max-w-xl">
-                We believe that your pets deserve the best care, no matter
-                where you are. Enjoy convenient, remote access to Licensed
+                We believe that your pets deserve the best care, no matter where
+                you are. Enjoy convenient, remote access to Licensed
                 Veterinarians for expert advice and care, all from the comfort
                 of your home. Pets are family, too.
               </p>
 
               <div className="flex flex-wrap gap-3">
-                <Button variant="white" size="md" href="/login">
+                <Button
+                  variant="white"
+                  size="md"
+                  href="https://app.iwilltilimwell.com/login"
+                >
                   Login
                 </Button>
-                <Button variant="accent" size="md" href="/get-started">
+                <Button
+                  variant="accent"
+                  size="md"
+                  href="https://app.iwilltilimwell.com/register"
+                >
                   Get Started
                 </Button>
               </div>
@@ -78,15 +86,16 @@ export default function TeleVetPage() {
         <section className="section-padding py-16 md:py-20 bg-[#faf8f3]">
           <div className="container-main max-w-6xl">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-8">
-              Pets Are Our <span className="text-primary font-script">Family</span>
+              Pets Are Our{" "}
+              <span className="text-primary font-script">Family</span>
             </h2>
 
             <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-base mb-10 max-w-5xl">
               <p>
-                We understand that your pets are more than just animals,
-                they're family. That's why we offer TeleVet services to
-                provide your pets with the high-quality care they deserve, no
-                matter where you are.
+                We understand that your pets are more than just animals, they're
+                family. That's why we offer TeleVet services to provide your
+                pets with the high-quality care they deserve, no matter where
+                you are.
               </p>
               <p>
                 Our TeleVet service makes it easier than ever to care for your
@@ -94,24 +103,23 @@ export default function TeleVetPage() {
               </p>
               <p>
                 Whether it's a routine wellness check, questions about a minor
-                illness, or guidance on ongoing health management, our
-                TeleVet service offers you the convenience and peace of mind
-                of having a veterinary expert at your fingertips.
+                illness, or guidance on ongoing health management, our TeleVet
+                service offers you the convenience and peace of mind of having a
+                veterinary expert at your fingertips.
               </p>
               <p className="font-bold text-gray-900">
                 Unlimited access to a dedicated team of Licensed Veterinarians,
                 24/7/365 days a year.
               </p>
               <p>
-                Consultations take place in real-time via phone or video on
-                your mobile device or computer.
+                Consultations take place in real-time via phone or video on your
+                mobile device or computer.
               </p>
               <p>
                 <span className="font-bold text-gray-900">
                   Includes a Pet Drug Savings Prescription Discount
                 </span>{" "}
-                card with up to 75% savings at 68,000 participating
-                pharmacies.
+                card with up to 75% savings at 68,000 participating pharmacies.
               </p>
             </div>
 
@@ -129,9 +137,9 @@ export default function TeleVetPage() {
                       TeleVet Pet Care -
                     </span>{" "}
                     Around-the-clock, 24/7/365 unlimited access to a dedicated
-                    team of Licensed Veterinarians. The consultation takes
-                    place in real-time via phone or video on your mobile
-                    device or computer.
+                    team of Licensed Veterinarians. The consultation takes place
+                    in real-time via phone or video on your mobile device or
+                    computer.
                   </p>
                   <Button variant="accent" size="md" href="/pricing">
                     Choose a plan
@@ -146,11 +154,11 @@ export default function TeleVetPage() {
                       Pet Prescription Discount Virtual Card -
                     </span>{" "}
                     A card that can be used at over 68,000 participating
-                    pharmacies nationwide. This card provides a discount of
-                    up to 75% on prescription medications for your pet,
-                    helping you save on the cost of necessary treatments
+                    pharmacies nationwide. This card provides a discount of up
+                    to 75% on prescription medications for your pet, helping you
+                    save on the cost of necessary treatments
                   </p>
-                  <Button variant="accent" size="md" href="/learn-more">
+                  <Button variant="accent" size="md" href="/faq">
                     Learn More
                     <ArrowRight className="w-4 h-4" />
                   </Button>
@@ -224,10 +232,10 @@ export default function TeleVetPage() {
                 </h3>
                 <p className="text-gray-700 leading-relaxed text-[15px] md:text-base">
                   Cats are the second most popular pet in the U.S., with an
-                  estimated 42.1 million households welcoming these
-                  independent yet affectionate companions into their homes.
-                  Known for their playful nature and soothing purrs, cats
-                  bring comfort and joy to families across the country.
+                  estimated 42.1 million households welcoming these independent
+                  yet affectionate companions into their homes. Known for their
+                  playful nature and soothing purrs, cats bring comfort and joy
+                  to families across the country.
                 </p>
               </div>
             </div>
@@ -257,11 +265,15 @@ export default function TeleVetPage() {
               Care for Your Pet, Anytime
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
-              Connect with licensed veterinarians 24/7 from the comfort of
-              your home.
+              Connect with licensed veterinarians 24/7 from the comfort of your
+              home.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="accent" size="lg" href="/get-started">
+              <Button
+                variant="accent"
+                size="lg"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started
                 <ArrowRight className="w-4 h-4" />
               </Button>

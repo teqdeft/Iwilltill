@@ -18,8 +18,7 @@ export const metadata = {
 const counsellingServices = [
   {
     title: "Personalized Support",
-    description:
-      "We focus on the unique needs of each individual.",
+    description: "We focus on the unique needs of each individual.",
   },
   {
     title: "In-the-Moment Counseling",
@@ -118,11 +117,19 @@ export default function CounsellingCareServicesPage() {
               </p>
 
               <div className="flex flex-wrap gap-3">
-                <Button variant="white" size="lg" href="/login">
+                <Button
+                  variant="white"
+                  size="lg"
+                  href="https://app.iwilltilimwell.com/login"
+                >
                   Login
                   <ArrowRight className="w-4 h-4" />
                 </Button>
-                <Button variant="accent" size="lg" href="/get-started">
+                <Button
+                  variant="accent"
+                  size="lg"
+                  href="https://app.iwilltilimwell.com/register"
+                >
                   Get Started
                   <ArrowRight className="w-4 h-4" />
                 </Button>
@@ -145,11 +152,13 @@ export default function CounsellingCareServicesPage() {
                   iWILL 'til i'mWELL is{" "}
                   <span className="font-bold">rooted in "Cura Personalis"</span>{" "}
                   - a Latin term -{" "}
-                  <span className="font-bold">caring for the whole person.</span>
+                  <span className="font-bold">
+                    caring for the whole person.
+                  </span>
                 </p>
                 <p>
-                  We are committed to empowering individuals to achieve
-                  complete well-being - mentally, physically, emotionally, and
+                  We are committed to empowering individuals to achieve complete
+                  well-being - mentally, physically, emotionally, and
                   spiritually.
                 </p>
                 <p>
@@ -161,8 +170,7 @@ export default function CounsellingCareServicesPage() {
                   and a supportive community until they truly feel well.
                 </p>
                 <p>
-                  We embrace a holistic approach to wellness, understanding
-                  that{" "}
+                  We embrace a holistic approach to wellness, understanding that{" "}
                   <span className="font-bold">
                     healing is a journey and every person's journey is unique.
                   </span>{" "}
@@ -252,7 +260,7 @@ export default function CounsellingCareServicesPage() {
             </div>
 
             <div className="mt-10">
-              <Button variant="ghost" size="lg" href="/learn-more">
+              <Button variant="ghost" size="lg" href="/faq">
                 Learn More
                 <ArrowRight className="w-4 h-4" />
               </Button>
@@ -365,7 +373,11 @@ export default function CounsellingCareServicesPage() {
               who prioritize your mental well-being.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="accent" size="lg" href="/get-started">
+              <Button
+                variant="accent"
+                size="lg"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started
                 <ArrowRight className="w-4 h-4" />
               </Button>

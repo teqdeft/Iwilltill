@@ -164,7 +164,11 @@ export default function GLP1Page() {
                     <br />
                     Program
                   </h3>
-                  <Button variant="accent" size="md" href="/get-started">
+                  <Button
+                    variant="accent"
+                    size="md"
+                    href="https://app.iwilltilimwell.com/register"
+                  >
                     Get Started
                   </Button>
                 </div>
@@ -184,9 +188,9 @@ export default function GLP1Page() {
                   sustainable results. Designed to support you through every
                   step of your journey, our holistic program combines GLP-1
                   medications with personalized nutrition and lifestyle
-                  coaching. We move beyond quick fixes and fad diets and
-                  empower you to embrace a healthier, more confident life of
-                  weight loss that lasts.
+                  coaching. We move beyond quick fixes and fad diets and empower
+                  you to embrace a healthier, more confident life of weight loss
+                  that lasts.
                 </p>
 
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-1.5 mb-5">
@@ -379,7 +383,11 @@ export default function GLP1Page() {
               personalized clinical support.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="accent" size="lg" href="/get-started">
+              <Button
+                variant="accent"
+                size="lg"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started
                 <ArrowRight className="w-4 h-4" />
               </Button>

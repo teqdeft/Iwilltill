@@ -108,19 +108,23 @@ export default function JoinTheMissionPage() {
           </div>
 
           <div className="relative h-full container-main section-padding flex flex-col justify-center items-center text-center">
-            
-
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-8">
               Join the Community
             </h1>
 
-         
-
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="white" size="md" href="/login">
+              <Button
+                variant="white"
+                size="md"
+                href="https://app.iwilltilimwell.com/login"
+              >
                 Login
               </Button>
-              <Button variant="accent" size="md" href="/get-started">
+              <Button
+                variant="accent"
+                size="md"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started
               </Button>
             </div>
@@ -134,7 +138,8 @@ export default function JoinTheMissionPage() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight inline-block border-b-2 border-primary pb-3">
                 Welcome to the iWILL 'til i'mWELL
                 <br />
-                Community of <span className="text-primary font-script">Care!</span>
+                Community of{" "}
+                <span className="text-primary font-script">Care!</span>
               </h2>
             </div>
 
@@ -152,8 +157,8 @@ export default function JoinTheMissionPage() {
               </p>
               <p>
                 Together, we will address barriers to healthcare, promote
-                affordable and accessible solutions, and offer guidance
-                tailored to your unique needs.
+                affordable and accessible solutions, and offer guidance tailored
+                to your unique needs.
               </p>
               <p>
                 Thank you for being the better part of us and trusting us to
@@ -250,11 +255,15 @@ export default function JoinTheMissionPage() {
               Become Part of the Mission
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
-              Join a community where care is a shared commitment and wellness
-              is a shared goal.
+              Join a community where care is a shared commitment and wellness is
+              a shared goal.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="accent" size="lg" href="/get-started">
+              <Button
+                variant="accent"
+                size="lg"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started
                 <ArrowRight className="w-4 h-4" />
               </Button>

@@ -55,14 +55,14 @@ export default function SpeakToADoctorPage() {
             alt="Speak to a Doctor"
             className="absolute inset-0 w-full h-full object-cover"
           />
-        <div
+          <div
             className="absolute inset-0"
-          style={{
+            style={{
               background:
                 "linear-gradient(135deg, rgba(96, 67, 118, 0.80) 0%, rgba(172, 115, 185, 0.55) 100%)",
-            }} 
+            }}
           />
-            {/* Decorative lotus */}
+          {/* Decorative lotus */}
           <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-15 -translate-y-1/2 translate-x-1/4 pointer-events-none hidden lg:block">
             <img
               src="/images/logo-favi.svg"
@@ -81,11 +81,11 @@ export default function SpeakToADoctorPage() {
               </h1>
 
               <p className="text-base md:text-lg text-white/95 font-semibold leading-relaxed max-w-2xl">
-                iWILL 'til i'mWELL offers premiere services that are designed
-                to meet your medical needs. Communication with Licensed
-                Physicians in English and Spanish, 24/7, 365 days a year. The
-                highest quality care for your body is offered at a flexible
-                affordable value.
+                iWILL 'til i'mWELL offers premiere services that are designed to
+                meet your medical needs. Communication with Licensed Physicians
+                in English and Spanish, 24/7, 365 days a year. The highest
+                quality care for your body is offered at a flexible affordable
+                value.
               </p>
             </div>
           </div>
@@ -163,8 +163,6 @@ export default function SpeakToADoctorPage() {
           </div>
         </section>
 
-    
-
         {/* Need Support */}
         <section className="section-padding py-16 md:py-20 bg-white">
           <div className="container-main max-w-6xl">
@@ -213,7 +211,11 @@ export default function SpeakToADoctorPage() {
               anywhere, at an affordable value.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="accent" size="lg" href="/get-started">
+              <Button
+                variant="accent"
+                size="lg"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started
                 <ArrowRight className="w-4 h-4" />
               </Button>

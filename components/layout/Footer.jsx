@@ -5,7 +5,10 @@ import Button from "@/components/ui/Button";
 
 const quickLinks = [
   { label: "Join the Mission", href: "/join-the-mission" },
-  { label: "Speak to a Therapist", href: "/counseling/counseling-care-services" },
+  {
+    label: "Speak to a Therapist",
+    href: "/counseling/counseling-care-services",
+  },
   { label: "Speak to a Veterinarian", href: "/televet" },
   { label: "Request a Demo", href: "/request-a-demo" },
   { label: "Enterprise EAP", href: "/eap/enterprise-eap" },
@@ -22,7 +25,10 @@ const certifications = [
   { name: "SBA WOSB Certified", image: "/images/footer/wosb-logo-v2.png" },
   { name: "HIPAA Compliant", image: "/images/footer/hipaa-logo-new-v2.png" },
   { name: "BBB Accredited Business", image: "/images/footer/bbb-logo-v1.png" },
-  { name: "USPCC Certified", image: "/images/footer/verified-vendor-seal-2025-med.png" },
+  {
+    name: "USPCC Certified",
+    image: "/images/footer/verified-vendor-seal-2025-med.png",
+  },
 ];
 
 export default function Footer() {
@@ -87,8 +93,8 @@ export default function Footer() {
                   <li>Mental health and behavioral health consultations.</li>
                   <li>Pet and veterinary consultations.</li>
                   <li>
-                    Membership access to third-party drug discount programs
-                    that members may use at participating pharmacies.
+                    Membership access to third-party drug discount programs that
+                    members may use at participating pharmacies.
                   </li>
                 </ol>
                 <p className="text-[13px] leading-relaxed">
@@ -143,10 +149,18 @@ export default function Footer() {
 
               {/* Login & Get Started Buttons */}
               <div className="flex gap-3 mb-6">
-                <Button variant="white" size="sm" href="/login">
+                <Button
+                  variant="white"
+                  size="sm"
+                  href="https://app.iwilltilimwell.com/login"
+                >
                   Login
                 </Button>
-                <Button variant="white" size="sm" href="/get-started">
+                <Button
+                  variant="white"
+                  size="sm"
+                  href="https://app.iwilltilimwell.com/register"
+                >
                   Get Started
                 </Button>
               </div>
@@ -177,7 +191,9 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-2 text-xs text-white/70">
               <ShieldCheck className="w-4 h-4 text-accent" />
-              <span>HIPAA Compliant &middot; Licensed Providers &middot; Secure</span>
+              <span>
+                HIPAA Compliant &middot; Licensed Providers &middot; Secure
+              </span>
             </div>
           </div>
         </div>

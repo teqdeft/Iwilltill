@@ -9,27 +9,46 @@ import { cn } from "@/lib/utils";
 import GoogleTranslate from "../ui/GoogleTranslate";
 
 const navLinks = [
-  { label: "Medical",
-     children: [
+  {
+    label: "Medical",
+    children: [
       { label: "Medical Care Services", href: "/wellness/medical-care" },
       { label: "Speak To A Doctor", href: "/wellness/speak-to-a-doctor" },
-      { label: "Silver Prescription Plan", href: "/wellness/silver-prescription-plan" },
-      { label: "Gold Prescription Plan", href: "/wellness/gold-prescription-plan" },
-      { label: "Platinum Prescription Plan", href: "/wellness/platinum-prescription-plan" },
+      {
+        label: "Silver Prescription Plan",
+        href: "/wellness/silver-prescription-plan",
+      },
+      {
+        label: "Gold Prescription Plan",
+        href: "/wellness/gold-prescription-plan",
+      },
+      {
+        label: "Platinum Prescription Plan",
+        href: "/wellness/platinum-prescription-plan",
+      },
     ],
-   },
+  },
   {
     label: "Counseling",
     children: [
-      { label: "Counseling-Care-Services", href: "/counseling/counseling-care-services" },
-      { label: "Speak To A Therapist", href: "/counseling/speak-to-a-therapist" },
+      {
+        label: "Counseling-Care-Services",
+        href: "/counseling/counseling-care-services",
+      },
+      {
+        label: "Speak To A Therapist",
+        href: "/counseling/speak-to-a-therapist",
+      },
     ],
   },
   {
     label: "TeleVet Pet",
     children: [
       { label: "Televet Pet Care", href: "/televet-pet-care" },
-      { label: "Speak To A Veterinarian", href: "/televet-pet-care/speak-to-a-veterinarian" },
+      {
+        label: "Speak To A Veterinarian",
+        href: "/televet-pet-care/speak-to-a-veterinarian",
+      },
     ],
   },
   {
@@ -41,8 +60,14 @@ const navLinks = [
     children: [
       { label: "Enterprise-Eap", href: "/eap/enterprise-eap" },
       { label: "Virtual Primary Care", href: "/eap/virtual-primary-care" },
-      { label: "Virtual Behavioral Health", href: "/eap/virtual-behavioral-health" },
-      { label: "Musculoskeletal Program", href: "/eap/musculoskeletal-program" },
+      {
+        label: "Virtual Behavioral Health",
+        href: "/eap/virtual-behavioral-health",
+      },
+      {
+        label: "Musculoskeletal Program",
+        href: "/eap/musculoskeletal-program",
+      },
     ],
   },
   { label: "Pricing", href: "/pricing" },
@@ -69,8 +94,8 @@ export default function Navbar() {
         <div className="announcement-bar text-white text-xs py-2 section-padding relative">
           <div className="container-main flex items-center justify-center gap-3">
             <p className="text-center pr-8">
-              Confidential virtual care | Medical, Behavioral | TeleVet support —
-              for individuals, families, and employees. |{" "}
+              Confidential virtual care | Medical, Behavioral | TeleVet support
+              — for individuals, families, and employees. |{" "}
               <Link href="/services" className="font-semibold hover:underline">
                 View services and providers
               </Link>
@@ -96,7 +121,11 @@ export default function Navbar() {
       >
         <div className="container-main flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center shrink-0" aria-label="Home">
+          <Link
+            href="/"
+            className="flex items-center shrink-0"
+            aria-label="Home"
+          >
             <Image
               src="/images/logo-white.svg"
               alt="iWILL 'til i'mWELL"
@@ -150,10 +179,18 @@ export default function Navbar() {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <Button variant="white" size="sm" href="/get-started">
+            <Button
+              variant="white"
+              size="sm"
+              href="https://app.iwilltilimwell.com/login"
+            >
               Login
             </Button>
-            <Button variant="accent" size="sm" href="/get-started">
+            <Button
+              variant="accent"
+              size="sm"
+              href="https://app.iwilltilimwell.com/register"
+            >
               Get Started
             </Button>
             <GoogleTranslate />
@@ -165,7 +202,11 @@ export default function Navbar() {
             className="lg:hidden p-2 text-white hover:text-primary"
             aria-label="Toggle menu"
           >
-            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
@@ -191,14 +232,14 @@ export default function Navbar() {
                     <ChevronDown
                       className={cn(
                         "w-4 h-4 transition-transform duration-300",
-                        openSubmenu === link.label && "rotate-180"
+                        openSubmenu === link.label && "rotate-180",
                       )}
                     />
                   </button>
                   <div
                     className={cn(
                       "overflow-hidden transition-all duration-300",
-                      openSubmenu === link.label ? "max-h-96" : "max-h-0"
+                      openSubmenu === link.label ? "max-h-96" : "max-h-0",
                     )}
                   >
                     <div className="pl-4 py-1 space-y-1">
@@ -224,10 +265,14 @@ export default function Navbar() {
                 >
                   {link.label}
                 </Link>
-              )
+              ),
             )}
             <div className="pt-3 px-4">
-              <Button variant="accent" className="w-full" href="/get-started">
+              <Button
+                variant="accent"
+                className="w-full"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started
               </Button>
             </div>

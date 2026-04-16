@@ -22,7 +22,7 @@ export default function FAQPage() {
         {/* Hero */}
         <section className="relative overflow-hidden h-[440px] md:h-[500px]">
           <img
-            src="/images/womens-health.png"
+            src="/images/faq/faq-banner-v1.png"
             alt="FAQ"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -63,10 +63,18 @@ export default function FAQPage() {
               </p>
 
               <div className="flex flex-wrap gap-3">
-                <Button variant="white" size="md" href="/login">
+                <Button
+                  variant="white"
+                  size="md"
+                  href="https://app.iwilltilimwell.com/login"
+                >
                   Login
                 </Button>
-                <Button variant="accent" size="md" href="/get-started">
+                <Button
+                  variant="accent"
+                  size="md"
+                  href="https://app.iwilltilimwell.com/register"
+                >
                   Get Started
                 </Button>
               </div>

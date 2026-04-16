@@ -92,7 +92,6 @@ export default function WhatToExpectCounselling() {
     <section className="section-padding py-16 md:py-24 bg-white">
       <div className="container-main">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
             What to <span className="text-primary">Expect?</span>
           </h2>
@@ -102,9 +101,9 @@ export default function WhatToExpectCounselling() {
           <p className="text-gray-600 leading-relaxed text-base md:text-lg">
             At iWILL 'til i'mWELL, we make accessing counseling simple,
             seamless, and tailored to your needs. Whether you're seeking
-            emotional support, therapy, or specialized care, we connect you
-            with licensed, board-certified professionals who prioritize your
-            mental well-being every step of the way.
+            emotional support, therapy, or specialized care, we connect you with
+            licensed, board-certified professionals who prioritize your mental
+            well-being every step of the way.
           </p>
         </div>
 
@@ -184,7 +183,7 @@ export default function WhatToExpectCounselling() {
         </div>
 
         <div className="text-center mt-10">
-          <Button variant="ghost" size="lg" href="/learn-more">
+          <Button variant="ghost" size="lg" href="/faq">
             Learn More
             <ArrowRight className="w-4 h-4" />
           </Button>

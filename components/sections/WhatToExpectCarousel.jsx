@@ -5,7 +5,6 @@ import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 const whatToExpectCards = [
- 
   {
     title: "Ear Infection",
     image: "/images/medical-care/ear-infection.png",
@@ -78,7 +77,7 @@ const whatToExpectCards = [
     description:
       "Looking for a Registered Dietitian to provide expert, personalized nutrition guidance for healthy eating, disease prevention, and lifestyle improvement.",
   },
-   {
+  {
     title: "Pediatricians",
     image: "/images/medical-care/pediatrician-v1.png",
     description:
@@ -90,7 +89,6 @@ const whatToExpectCards = [
     description:
       "We treat cold anf flu symptoms which include congestion, cough, sore throat, body aches, fatigue, and fever.",
   },
- 
 ];
 
 export default function WhatToExpectCarousel() {
@@ -131,16 +129,15 @@ export default function WhatToExpectCarousel() {
     <section className="section-padding py-16 md:py-24 bg-gray-50">
       <div className="container-main">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-         
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-5">
             What to <span className="text-primary">Expect?</span>
           </h2>
           <p className="text-gray-600 leading-relaxed text-base md:text-lg">
             At iWILL 'til i'mWELL, we make accessing medical care simple,
-            seamless, and tailored to your needs. Whether you need to message
-            a specialist, routine, urgent, specialized, or primary care, we
-            connect you with licensed, board-certified providers who
-            prioritize your well-being every step of the way.
+            seamless, and tailored to your needs. Whether you need to message a
+            specialist, routine, urgent, specialized, or primary care, we
+            connect you with licensed, board-certified providers who prioritize
+            your well-being every step of the way.
           </p>
         </div>
 
@@ -224,7 +221,7 @@ export default function WhatToExpectCarousel() {
         </div>
 
         <div className="text-center mt-10">
-          <Button variant="ghost" size="lg" href="/learn-more">
+          <Button variant="ghost" size="lg" href="/faq">
             Learn More
             <ArrowRight className="w-4 h-4" />
           </Button>

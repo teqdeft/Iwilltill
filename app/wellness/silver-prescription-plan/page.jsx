@@ -14,7 +14,13 @@ export const metadata = {
     "Silver Prescription Plan — $10 Cost Medication Program. Acute Medication Subscription Program by iWILL 'til i'mWELL.",
 };
 
-const programCovers = ["Antibiotics", "Ear Infections", "Bronchitis", "Asthma", "Cough"];
+const programCovers = [
+  "Antibiotics",
+  "Ear Infections",
+  "Bronchitis",
+  "Asthma",
+  "Cough",
+];
 
 const drugsLikeCol1 = [
   "Amoxicillin",
@@ -50,14 +56,14 @@ export default function SilverPrescriptionPlanPage() {
             alt="Silver Prescription Plan"
             className="absolute inset-0 w-full h-full object-cover"
           />
-         <div
+          <div
             className="absolute inset-0"
-          style={{
+            style={{
               background:
                 "linear-gradient(135deg, rgba(96, 67, 118, 0.80) 0%, rgba(172, 115, 185, 0.55) 100%)",
-            }} 
+            }}
           />
-            {/* Decorative lotus */}
+          {/* Decorative lotus */}
           <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-15 -translate-y-1/2 translate-x-1/4 pointer-events-none hidden lg:block">
             <img
               src="/images/logo-favi.svg"
@@ -97,7 +103,11 @@ export default function SilverPrescriptionPlanPage() {
                     <p className="text-gray-900 font-semibold text-lg leading-snug mb-4">
                       Thirty-seven common medications at $10 each.
                     </p>
-                    <Button variant="primary" size="sm" href="/get-started">
+                    <Button
+                      variant="primary"
+                      size="sm"
+                      href="https://app.iwilltilimwell.com/register"
+                    >
                       Get Started
                     </Button>
                   </div>
@@ -129,9 +139,9 @@ export default function SilverPrescriptionPlanPage() {
 
                 <p className="text-gray-700 text-[15px] leading-relaxed mb-4">
                   <span className="font-bold">iWILL 'til i'mWELL</span> has
-                  created an Acute Medication Subscription Program that
-                  provides 37 drugs at no charge just for you, plus great
-                  discounts on all other medications.
+                  created an Acute Medication Subscription Program that provides
+                  37 drugs at no charge just for you, plus great discounts on
+                  all other medications.
                 </p>
 
                 <p className="text-gray-700 text-[15px] leading-relaxed">
@@ -154,7 +164,10 @@ export default function SilverPrescriptionPlanPage() {
 
               <div className="grid md:grid-cols-3 gap-x-8 gap-y-3">
                 {programCovers.map((item) => (
-                  <div key={item} className="flex items-center gap-2 text-gray-700 text-[15px]">
+                  <div
+                    key={item}
+                    className="flex items-center gap-2 text-gray-700 text-[15px]"
+                  >
                     <CheckSquare className="w-4 h-4 text-primary flex-shrink-0" />
                     <span>{item}</span>
                   </div>
@@ -171,7 +184,10 @@ export default function SilverPrescriptionPlanPage() {
               <div className="grid md:grid-cols-3 gap-x-8 gap-y-3">
                 <div className="space-y-3">
                   {drugsLikeCol1.map((item) => (
-                    <div key={item} className="flex items-center gap-2 text-gray-700 text-[15px]">
+                    <div
+                      key={item}
+                      className="flex items-center gap-2 text-gray-700 text-[15px]"
+                    >
                       <CheckSquare className="w-4 h-4 text-primary flex-shrink-0" />
                       <span>{item}</span>
                     </div>
@@ -179,7 +195,10 @@ export default function SilverPrescriptionPlanPage() {
                 </div>
                 <div className="space-y-3">
                   {drugsLikeCol2.map((item) => (
-                    <div key={item} className="flex items-center gap-2 text-gray-700 text-[15px]">
+                    <div
+                      key={item}
+                      className="flex items-center gap-2 text-gray-700 text-[15px]"
+                    >
                       <CheckSquare className="w-4 h-4 text-primary flex-shrink-0" />
                       <span>{item}</span>
                     </div>
@@ -187,7 +206,10 @@ export default function SilverPrescriptionPlanPage() {
                 </div>
                 <div className="space-y-3">
                   {drugsLikeCol3.map((item) => (
-                    <div key={item} className="flex items-center gap-2 text-gray-700 text-[15px]">
+                    <div
+                      key={item}
+                      className="flex items-center gap-2 text-gray-700 text-[15px]"
+                    >
                       <CheckSquare className="w-4 h-4 text-primary flex-shrink-0" />
                       <span>{item}</span>
                     </div>
@@ -218,16 +240,17 @@ export default function SilverPrescriptionPlanPage() {
                   </p>
 
                   <p className="text-gray-700 text-[15px] leading-relaxed mb-6">
-                    Present your Rx Card to the pharmacy of your choice. Your
-                    Rx Card will display your BIN, Group Number and PCN to
-                    present to the pharmacist. You will pay nothing at the
-                    pharmacy.
+                    Present your Rx Card to the pharmacy of your choice. Your Rx
+                    Card will display your BIN, Group Number and PCN to present
+                    to the pharmacist. You will pay nothing at the pharmacy.
                   </p>
 
                   <Button
                     variant="primary"
                     size="md"
-                    href="/downloads/silver-prescription-plan.pdf"
+                    href="/pdf/silver-prescriptions.pdf"
+                    target="_blank"
+                    download
                   >
                     Download PDF Now
                   </Button>
@@ -266,11 +289,15 @@ export default function SilverPrescriptionPlanPage() {
               Start Saving on Prescriptions Today
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
-              Join the Silver Prescription Plan and access 37 common
-              medications at just $10 each.
+              Join the Silver Prescription Plan and access 37 common medications
+              at just $10 each.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="accent" size="lg" href="/get-started">
+              <Button
+                variant="accent"
+                size="lg"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started
                 <ArrowRight className="w-4 h-4" />
               </Button>

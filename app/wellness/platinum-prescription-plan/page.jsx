@@ -3,7 +3,16 @@ import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 import { ArrowRight } from "lucide-react";
 
-const BestChoiceLink = () => <a href="https://BestChoiceRx.com" target="_blank" rel="noopener noreferrer" className="font-bold text-primary hover:underline">BestChoiceRx.com</a>;
+const BestChoiceLink = () => (
+  <a
+    href="https://BestChoiceRx.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-bold text-primary hover:underline"
+  >
+    BestChoiceRx.com
+  </a>
+);
 
 export const metadata = {
   title: "Platinum Prescription Plan | iWILL 'til i'mWELL",
@@ -22,8 +31,8 @@ export default function PlatinumPrescriptionPlanPage() {
       <Navbar />
       <main>
         {/* Hero */}
-        
-             <section className="relative overflow-hidden h-[540px] md:h-[600px]">
+
+        <section className="relative overflow-hidden h-[540px] md:h-[600px]">
           <img
             src="/images/alternative-medicine.png"
             alt="Counselling support"
@@ -53,12 +62,12 @@ export default function PlatinumPrescriptionPlanPage() {
           />
           <div
             className="absolute inset-0"
-             style={{
+            style={{
               background:
                 "linear-gradient(135deg, rgba(96, 67, 118, 0.80) 0%, rgba(172, 115, 185, 0.55) 100%)",
-            }} 
+            }}
           />
-            {/* Decorative lotus */}
+          {/* Decorative lotus */}
           <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-15 -translate-y-1/2 translate-x-1/4 pointer-events-none hidden lg:block">
             <img
               src="/images/logo-favi.svg"
@@ -96,10 +105,14 @@ export default function PlatinumPrescriptionPlanPage() {
                 <div className="absolute inset-0 flex items-center justify-center p-6">
                   <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center shadow-lg max-w-xs">
                     <p className="text-gray-900 text-[15px] leading-snug mb-4">
-                      Don't go without the medications you need. Over 1000
-                      acute and chronic medications at $20 each
+                      Don't go without the medications you need. Over 1000 acute
+                      and chronic medications at $20 each
                     </p>
-                    <Button variant="primary" size="sm" href="/get-started">
+                    <Button
+                      variant="primary"
+                      size="sm"
+                      href="https://app.iwilltilimwell.com/register"
+                    >
                       Get Started
                     </Button>
                   </div>
@@ -115,15 +128,14 @@ export default function PlatinumPrescriptionPlanPage() {
 
                 <p className="text-gray-700 text-[15px] leading-relaxed mb-4">
                   <span className="font-bold">iWILL 'til i'mWELL</span> has
-                  partnered with BestChoiceRx to bring you the best
-                  prescription prices possible. As a member of iWILL 'til
-                  i'mWELL, there is no need to worry about the high cost of
-                  over 1,000 commonly prescribed medications. That's because as
-                  a member of iWILL 'til i'm WELL, you get to take advantage of
-                  BestChoiceRx's $0 ENHANCED MEDICATION PROGRAM that includes
-                  37 ACUTE and 95 ACA (Affordable Care Act) medications, plus
-                  over 1,000 routinely prescribed CHRONIC drugs at no cost to
-                  you.
+                  partnered with BestChoiceRx to bring you the best prescription
+                  prices possible. As a member of iWILL 'til i'mWELL, there is
+                  no need to worry about the high cost of over 1,000 commonly
+                  prescribed medications. That's because as a member of iWILL
+                  'til i'm WELL, you get to take advantage of BestChoiceRx's $0
+                  ENHANCED MEDICATION PROGRAM that includes 37 ACUTE and 95 ACA
+                  (Affordable Care Act) medications, plus over 1,000 routinely
+                  prescribed CHRONIC drugs at no cost to you.
                 </p>
 
                 <p className="text-gray-700 text-[15px] leading-relaxed">
@@ -158,7 +170,9 @@ export default function PlatinumPrescriptionPlanPage() {
                   <Button
                     variant="primary"
                     size="md"
-                    href="/downloads/platinum-prescription-plan.pdf"
+                    href="/pdf/platinum-prescriptions.pdf"
+                    target="_blank"
+                    download
                   >
                     Download PDF Now
                   </Button>
@@ -201,7 +215,11 @@ export default function PlatinumPrescriptionPlanPage() {
               BestChoiceRx's enhanced medication program.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="accent" size="lg" href="/get-started">
+              <Button
+                variant="accent"
+                size="lg"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started
                 <ArrowRight className="w-4 h-4" />
               </Button>

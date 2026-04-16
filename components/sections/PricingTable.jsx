@@ -10,13 +10,23 @@ const plans = {
     { name: "BASIC", price: "$35", icon: Leaf },
     { name: "STANDARD", price: "$50", icon: Shield },
     { name: "PLUS", price: "$55", icon: Crown },
-    { name: "PREMIUM", price: "$60", icon: Gem, note: "($25 co-pay with PCP visits only)" },
+    {
+      name: "PREMIUM",
+      price: "$60",
+      icon: Gem,
+      note: "($25 co-pay with PCP visits only)",
+    },
   ],
   family: [
     { name: "BASIC", price: "$45", icon: Leaf },
     { name: "STANDARD", price: "$60", icon: Shield },
     { name: "PLUS", price: "$65", icon: Crown },
-    { name: "PREMIUM", price: "$75", icon: Gem, note: "($25 co-pay with PCP visits only)" },
+    {
+      name: "PREMIUM",
+      price: "$75",
+      icon: Gem,
+      note: "($25 co-pay with PCP visits only)",
+    },
   ],
 };
 
@@ -28,12 +38,14 @@ const features = [
   },
   {
     name: "Care Coordinators",
-    description: "24/7/365 access to care coordinators to help you to manage your care.",
+    description:
+      "24/7/365 access to care coordinators to help you to manage your care.",
     plans: { Basic: true, Standard: true, Plus: true, Premium: true },
   },
   {
     name: "Message A Specialist",
-    description: "Consultations with Pediatricians, Ophthalmologists, Women's Health Physicians, Sports Medicine Doctors, Nutritionists, Registered Dietitians, Fitness Coaches, Dentists, Pharmacists, and more via your member portal only.",
+    description:
+      "Consultations with Pediatricians, Ophthalmologists, Women's Health Physicians, Sports Medicine Doctors, Nutritionists, Registered Dietitians, Fitness Coaches, Dentists, Pharmacists, and more via your member portal only.",
     plans: { Basic: true, Standard: true, Plus: true, Premium: true },
   },
   {
@@ -43,12 +55,14 @@ const features = [
   },
   {
     name: "Advanced Behavioral Health Care",
-    description: "An app with Assessment Measures (Anxiety, Depression, & Substance Use), a Mood Calendar, Voice & Written Journal Capabilities, Safety Plans, Emergency Resources, Affirmations Sharing, and more.",
+    description:
+      "An app with Assessment Measures (Anxiety, Depression, & Substance Use), a Mood Calendar, Voice & Written Journal Capabilities, Safety Plans, Emergency Resources, Affirmations Sharing, and more.",
     plans: { Basic: false, Standard: false, Plus: true, Premium: true },
   },
   {
     name: "*Virtual Primary Care",
-    description: "All of the above PLUS Unlimited VPC, Medication Management, Lab Panels, Health Risk Assessments, and Virtual Dermatology.",
+    description:
+      "All of the above PLUS Unlimited VPC, Medication Management, Lab Panels, Health Risk Assessments, and Virtual Dermatology.",
     plans: { Basic: false, Standard: false, Plus: false, Premium: true },
   },
 ];
@@ -82,7 +96,11 @@ export default function PricingTable() {
   const [activeTab, setActiveTab] = useState("self");
   const currentPlans = plans[activeTab];
 
-  const FaqLink = () => <a href="/faq" className="font-bold text-primary hover:underline">FAQ Page.</a>;
+  const FaqLink = () => (
+    <a href="/faq" className="font-bold text-primary hover:underline">
+      FAQ Page.
+    </a>
+  );
 
   return (
     <section className="section-padding py-16 md:py-20 bg-white">
@@ -91,10 +109,11 @@ export default function PricingTable() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-3">
-              Choose your <span className="text-primary font-script">plan</span>
+              Choose your <span className="text-primary font-script">Plan</span>
             </h2>
             <p className="text-gray-600 text-sm md:text-base mt-3">
-              For a detailed description of all our services, please visit our <FaqLink />
+              For a detailed description of all our services, please visit our{" "}
+              <FaqLink />
             </p>
           </div>
 
@@ -107,7 +126,7 @@ export default function PricingTable() {
                 "px-6 py-2.5 text-sm font-semibold rounded-lg transition-all duration-300",
                 activeTab === "self"
                   ? "bg-primary text-white shadow-md"
-                  : "text-gray-600 hover:text-primary"
+                  : "text-gray-600 hover:text-primary",
               )}
             >
               Self
@@ -119,7 +138,7 @@ export default function PricingTable() {
                 "px-6 py-2.5 text-sm font-semibold rounded-lg transition-all duration-300",
                 activeTab === "family"
                   ? "bg-primary text-white shadow-md"
-                  : "text-gray-600 hover:text-primary"
+                  : "text-gray-600 hover:text-primary",
               )}
             >
               Self + Family
@@ -170,10 +189,18 @@ export default function PricingTable() {
               {/* Table header */}
               <div className="grid grid-cols-[1fr_60px_60px_60px_60px] gap-2 px-5 py-4 bg-gray-50 border-b border-gray-200 items-center">
                 <div className="text-sm font-bold text-gray-900">Feature</div>
-                <div className="text-xs font-bold text-gray-700 text-center">Basic</div>
-                <div className="text-xs font-bold text-gray-700 text-center">Standard</div>
-                <div className="text-xs font-bold text-gray-700 text-center">Plus</div>
-                <div className="text-xs font-bold text-gray-700 text-center">Premium</div>
+                <div className="text-xs font-bold text-gray-700 text-center">
+                  Basic
+                </div>
+                <div className="text-xs font-bold text-gray-700 text-center">
+                  Standard
+                </div>
+                <div className="text-xs font-bold text-gray-700 text-center">
+                  Plus
+                </div>
+                <div className="text-xs font-bold text-gray-700 text-center">
+                  Premium
+                </div>
               </div>
 
               {/* Table rows */}
@@ -182,17 +209,26 @@ export default function PricingTable() {
                   key={feature.name}
                   className={cn(
                     "grid grid-cols-[1fr_60px_60px_60px_60px] gap-2 px-5 py-4 items-start",
-                    i !== features.length - 1 && "border-b border-gray-100"
+                    i !== features.length - 1 && "border-b border-gray-100",
                   )}
                 >
                   <div className="text-[13px] text-gray-700 leading-relaxed">
-                    <span className="font-bold text-gray-900">{feature.name}</span> - {feature.description}
+                    <span className="font-bold text-gray-900">
+                      {feature.name}
+                    </span>{" "}
+                    - {feature.description}
                   </div>
                   {tierKeys.map((tier) => (
-                    <div key={tier} className="flex items-center justify-center pt-1">
+                    <div
+                      key={tier}
+                      className="flex items-center justify-center pt-1"
+                    >
                       {feature.plans[tier] ? (
                         <div className="w-6 h-6 rounded-full border-2 border-accent flex items-center justify-center">
-                          <Check className="w-3.5 h-3.5 text-accent" strokeWidth={3} />
+                          <Check
+                            className="w-3.5 h-3.5 text-accent"
+                            strokeWidth={3}
+                          />
                         </div>
                       ) : (
                         <span className="text-gray-300">—</span>
@@ -216,7 +252,7 @@ export default function PricingTable() {
                   key={addon.name}
                   className={cn(
                     "flex items-center justify-between gap-3 px-5 py-4",
-                    i !== addOns.length - 1 && "border-b border-gray-100"
+                    i !== addOns.length - 1 && "border-b border-gray-100",
                   )}
                 >
                   <span className="text-[13px] font-medium text-gray-700 flex-1">
@@ -225,7 +261,8 @@ export default function PricingTable() {
                   <span
                     className="text-xs font-bold text-white px-3 py-1.5 rounded-md whitespace-nowrap"
                     style={{
-                      background: "linear-gradient(135deg, #604376 0%, #AC73B9 100%)",
+                      background:
+                        "linear-gradient(135deg, #604376 0%, #AC73B9 100%)",
                     }}
                   >
                     {addon.price}
@@ -236,13 +273,7 @@ export default function PricingTable() {
           </div>
         </div>
 
-        {/* Get Started CTA */}
-        <div className="text-center mt-12">
-          <Button variant="accent" size="lg" href="/get-started">
-            Get Started
-          </Button>
-        </div>
-
+       
         {/* Footnotes + EAPs */}
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 mt-16">
           {/* Footnotes */}
@@ -272,13 +303,19 @@ export default function PricingTable() {
                   key={plan.name}
                   className={cn(
                     "flex items-center justify-between gap-3 px-5 py-4",
-                    i !== businessPlans.length - 1 && "border-b border-gray-100"
+                    i !== businessPlans.length - 1 &&
+                      "border-b border-gray-100",
                   )}
                 >
                   <span className="text-[14px] font-medium text-gray-700">
                     {plan.name}
                   </span>
-                  <a href="/request-demo" className="text-sm font-bold text-primary hover:underline">Request a Demo</a>
+                  <a
+                    href="/request-a-demo"
+                    className="text-sm font-bold text-primary hover:underline"
+                  >
+                    Request a Demo
+                  </a>
                 </div>
               ))}
             </div>

@@ -31,7 +31,7 @@ export default function CTABanner() {
           </p>
 
           <div className="flex flex-wrap gap-3">
-            <Button variant="accent" size="lg" href="/get-started">
+            <Button variant="accent" size="lg" href="https://app.iwilltilimwell.com/register">
               Get Started
               <ArrowRight className="w-4 h-4" />
             </Button>

@@ -60,14 +60,14 @@ export default function SpeakToAVeterinarianPage() {
             alt="TeleVet Pet Health Care"
             className="absolute inset-0 w-full h-full object-cover"
           />
-         <div
+          <div
             className="absolute inset-0"
-          style={{
+            style={{
               background:
                 "linear-gradient(135deg, rgba(96, 67, 118, 0.80) 0%, rgba(172, 115, 185, 0.55) 100%)",
-            }} 
+            }}
           />
-            {/* Decorative lotus */}
+          {/* Decorative lotus */}
           <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-15 -translate-y-1/2 translate-x-1/4 pointer-events-none hidden lg:block">
             <img
               src="/images/logo-favi.svg"
@@ -86,10 +86,10 @@ export default function SpeakToAVeterinarianPage() {
               </h1>
 
               <p className="text-base md:text-lg text-white/95 font-semibold leading-relaxed max-w-2xl mx-auto">
-                iWILL 'til i'mWELL offers premiere services that are designed
-                to meet your pet health care needs. Communication with Licensed
-                Veterinarians in English and Spanish, 24/7, 365 days a year.
-                The highest quality care for your pets is offered at a flexible
+                iWILL 'til i'mWELL offers premiere services that are designed to
+                meet your pet health care needs. Communication with Licensed
+                Veterinarians in English and Spanish, 24/7, 365 days a year. The
+                highest quality care for your pets is offered at a flexible
                 affordable value.
               </p>
             </div>
@@ -206,7 +206,11 @@ export default function SpeakToAVeterinarianPage() {
               from the comfort of your home, at an affordable value.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="accent" size="lg" href="/get-started">
+              <Button
+                variant="accent"
+                size="lg"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started
                 <ArrowRight className="w-4 h-4" />
               </Button>

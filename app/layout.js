@@ -1,4 +1,4 @@
-import PageLoader from "@/components/layout/PageLoader";
+// import PageLoader from "@/components/layout/PageLoader";
 import "./globals.css";
 
 export const metadata = {
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col">
-        <PageLoader />
+        {/* <PageLoader /> */}
         {children}</body>
     </html>
   );

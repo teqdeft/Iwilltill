@@ -172,7 +172,11 @@ export default function AboutUsPage() {
             </div>
 
             <div className="mt-8">
-              <Button variant="accent" size="lg" href="/get-started">
+              <Button
+                variant="accent"
+                size="lg"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started Today
                 <ArrowRight className="w-4 h-4" />
               </Button>
@@ -439,7 +443,7 @@ export default function AboutUsPage() {
                 <p className="text-sm text-gray-600 mb-4">
                   Entrepreneur, Psychologist, Co-Founder of iWill 'til i'mWell
                 </p>
-                <Button variant="accent" size="md" href="/learn-more">
+                <Button variant="accent" size="md" href="/faq">
                   Learn More
                   <ArrowRight className="w-4 h-4" />
                 </Button>
@@ -472,7 +476,11 @@ export default function AboutUsPage() {
               holistic healthcare for body, mind, and soul.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="accent" size="lg" href="/get-started">
+              <Button
+                variant="accent"
+                size="lg"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started
                 <ArrowRight className="w-4 h-4" />
               </Button>

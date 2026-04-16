@@ -21,7 +21,8 @@ const offers = [
       "Employees can connect with licensed mental health therapists and psychologists.",
   },
   {
-    title: "Long Term Therapy Support with Discounted Psychology & Psychiatry Services",
+    title:
+      "Long Term Therapy Support with Discounted Psychology & Psychiatry Services",
     description:
       "Accessible ongoing mental health care with psychologists and psychiatrists.",
   },
@@ -32,8 +33,7 @@ const offers = [
   },
   {
     title: "Personalized Journals, Daily Affirmations & Voice Recordings",
-    description:
-      "Recordings and affirmations encouraging positive self-care.",
+    description: "Recordings and affirmations encouraging positive self-care.",
   },
 ];
 
@@ -54,13 +54,11 @@ const impacts = [
   },
   {
     title: "Healthier Workplace Culture.",
-    description:
-      "Creating a supportive, high-performing environment.",
+    description: "Creating a supportive, high-performing environment.",
   },
   {
     title: "Cost Savings for Employers.",
-    description:
-      "Reduced healthcare costs and improved workforce performance.",
+    description: "Reduced healthcare costs and improved workforce performance.",
   },
 ];
 
@@ -110,7 +108,7 @@ export default function VirtualBehavioralHealthPage() {
               </p>
 
               <div className="flex flex-wrap gap-3">
-                <Button variant="white" size="lg" href="/request-demo">
+                <Button variant="white" size="lg" href="/request-a-demo">
                   Request a Demo
                   <ArrowRight className="w-4 h-4" />
                 </Button>
@@ -154,16 +152,18 @@ export default function VirtualBehavioralHealthPage() {
                   <span className="inline-block px-4 py-1.5 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-4">
                     What We Offer
                   </span>
-                  
                 </div>
                 <h2 className="text-3xl md:text-4xl mb-3 font-bold text-gray-900 inline-block border-b-2 border-primary pb-2">
-                    iWILL 'til i'mWELL{" "}
-                    <span className="text-primary font-script">Offers</span>
-                  </h2>
+                  iWILL 'til i'mWELL{" "}
+                  <span className="text-primary font-script">Offers</span>
+                </h2>
 
                 <ul className="space-y-5">
                   {offers.map((offer) => (
-                    <li key={offer.title} className="flex gap-3 items-start group">
+                    <li
+                      key={offer.title}
+                      className="flex gap-3 items-start group"
+                    >
                       <div className="w-8 h-8 rounded-lg bg-primary-100 group-hover:bg-primary-200 flex items-center justify-center shrink-0 transition-colors duration-300 mt-0.5">
                         <Check className="w-4 h-4 text-primary" />
                       </div>
@@ -229,7 +229,10 @@ export default function VirtualBehavioralHealthPage() {
 
                 <ul className="space-y-4">
                   {impacts.map((impact) => (
-                    <li key={impact.title} className="flex gap-3 items-start group">
+                    <li
+                      key={impact.title}
+                      className="flex gap-3 items-start group"
+                    >
                       <div className="w-7 h-7 rounded-lg bg-accent/10 group-hover:bg-accent/20 flex items-center justify-center shrink-0 transition-colors duration-300 mt-0.5">
                         <Check className="w-4 h-4 text-accent" />
                       </div>
@@ -244,7 +247,7 @@ export default function VirtualBehavioralHealthPage() {
                 </ul>
 
                 <div className="mt-8">
-                  <Button variant="ghost" size="lg" href="/learn-more">
+                  <Button variant="ghost" size="lg" href="/faq">
                     Learn More
                     <ArrowRight className="w-4 h-4" />
                   </Button>
@@ -278,7 +281,7 @@ export default function VirtualBehavioralHealthPage() {
               success with comprehensive virtual behavioral health services.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="white" size="lg" href="/request-demo">
+              <Button variant="white" size="lg" href="/request-a-demo">
                 Request a Demo
                 <ArrowRight className="w-4 h-4" />
               </Button>

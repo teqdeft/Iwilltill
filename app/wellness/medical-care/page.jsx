@@ -6,7 +6,7 @@ import WhatToExpectCarousel from "@/components/sections/WhatToExpectCarousel";
 
 export const metadata = {
   title: "Medical Wellness | iWILL 'til i'mWELL",
-   icons: {
+  icons: {
     icon: "./../images/logo-favi.svg",
     shortcut: "./../images/logo-favi.svg",
     apple: "./../images/logo-favi.svg",
@@ -170,11 +170,19 @@ export default function MedicalCarePage() {
               </p>
 
               <div className="flex flex-wrap gap-3">
-                <Button variant="white" size="lg" href="/login">
+                <Button
+                  variant="white"
+                  size="lg"
+                  href="https://app.iwilltilimwell.com/login"
+                >
                   Login
                   <ArrowRight className="w-4 h-4" />
                 </Button>
-                <Button variant="accent" size="lg" href="/get-started">
+                <Button
+                  variant="accent"
+                  size="lg"
+                  href="https://app.iwilltilimwell.com/register"
+                >
                   Get Started
                   <ArrowRight className="w-4 h-4" />
                 </Button>
@@ -192,8 +200,7 @@ export default function MedicalCarePage() {
                 Healthcare should be as flexible as your lifestyle. Whether you
                 need a routine checkup, urgent care, specialized treatment, or
                 primary care, we connect you with trusted providers who match
-                your preference - giving you control over your health
-                decisions.
+                your preference - giving you control over your health decisions.
               </p>
             </div>
           </div>
@@ -207,7 +214,8 @@ export default function MedicalCarePage() {
                 Our Services
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                Medical <span className="text-primary font-script">Services</span>
+                Medical{" "}
+                <span className="text-primary font-script">Services</span>
               </h2>
             </div>
 
@@ -271,7 +279,7 @@ export default function MedicalCarePage() {
             </div>
 
             <div className="mt-10">
-              <Button variant="ghost" size="lg" href="/learn-more">
+              <Button variant="ghost" size="lg" href="/faq">
                 Learn More
                 <ArrowRight className="w-4 h-4" />
               </Button>
@@ -287,7 +295,8 @@ export default function MedicalCarePage() {
                 Savings
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                Prescription <span className="text-primary font-script">Plan</span>
+                Prescription{" "}
+                <span className="text-primary font-script">Plan</span>
               </h2>
             </div>
 
@@ -383,10 +392,10 @@ export default function MedicalCarePage() {
                   </h3>
                   <p className="text-sm md:text-base text-gray-600 leading-relaxed">
                     Easily connect with different healthcare specialists via
-                    email for personalized advice and support. Whether you
-                    have questions or need follow-up care, our specialists are
-                    here to assist you remotely, ensuring you get the guidance
-                    you need, when you need it.
+                    email for personalized advice and support. Whether you have
+                    questions or need follow-up care, our specialists are here
+                    to assist you remotely, ensuring you get the guidance you
+                    need, when you need it.
                   </p>
                 </div>
               </div>
@@ -404,7 +413,7 @@ export default function MedicalCarePage() {
         </section>
 
         {/* What to Expect */}
-       <WhatToExpectCarousel />
+        <WhatToExpectCarousel />
 
         {/* CTA Banner */}
         <section
@@ -430,7 +439,11 @@ export default function MedicalCarePage() {
               health decisions.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="accent" size="lg" href="/get-started">
+              <Button
+                variant="accent"
+                size="lg"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started
                 <ArrowRight className="w-4 h-4" />
               </Button>

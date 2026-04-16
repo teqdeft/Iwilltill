@@ -21,8 +21,9 @@ const services = [
       "Preventive care and wellness",
     ],
     color: "primary",
-    ctaLabel: "Get Started",
-    learnMore: "/services/medical",
+    ctaLabel: "Speak to a Doctor",
+    href:"/wellness/speak-to-a-doctor"
+    
   },
   {
     icon: Brain,
@@ -36,8 +37,8 @@ const services = [
       "Self-help tools and coping techniques",
     ],
     color: "accent",
-    ctaLabel: "Get Started",
-    learnMore: "/services/behavioral",
+    ctaLabel: "Speak to a Therapist",
+    href:"/counseling/speak-to-a-therapist"
   },
   {
     icon: PawPrint,
@@ -51,8 +52,8 @@ const services = [
       "Triage help for pet emergencies",
     ],
     color: "primary",
-    ctaLabel: "Get Started",
-    learnMore: "/services/televet",
+    ctaLabel: "Speak to a Veterinarian",
+    href:"/televet-pet-care/speak-to-a-veterinarian"
   },
 ];
 
@@ -121,17 +122,17 @@ export default function PathsToWellness() {
                 </ul>
 
                 <div className="flex gap-2">
-                  <Button variant="accent" size="sm" href="/get-started">
+                  <Button variant="ghost" size="sm" href={service.href}>
                     {service.ctaLabel}
                   </Button>
-                  <Button
+                  {/* <Button
                     variant="ghost"
                     size="sm"
-                    href={service.learnMore}
+                    href="/faq"
                   >
                     Learn more
                     <ArrowRight className="w-3.5 h-3.5" />
-                  </Button>
+                  </Button> */}
                 </div>
               </CardContent>
             </Card>

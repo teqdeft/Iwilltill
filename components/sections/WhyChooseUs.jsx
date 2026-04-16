@@ -71,7 +71,7 @@ export default function WhyChooseUs() {
           </div>
 
           <div className="mt-10">
-            <Button variant="ghost" size="lg" href="/get-started">
+            <Button variant="ghost" size="lg" href="https://app.iwilltilimwell.com/register">
               Get Started
               <ArrowRight className="w-4 h-4" />
             </Button>

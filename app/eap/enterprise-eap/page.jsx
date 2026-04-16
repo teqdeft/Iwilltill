@@ -156,11 +156,19 @@ export default function EnterpriseEAPPage() {
               </p>
 
               <div className="flex flex-wrap gap-3">
-                <Button variant="white" size="lg" href="/login">
+                <Button
+                  variant="white"
+                  size="lg"
+                  href="https://app.iwilltilimwell.com/login"
+                >
                   Login
                   <ArrowRight className="w-4 h-4" />
                 </Button>
-                <Button variant="accent" size="lg" href="/get-started">
+                <Button
+                  variant="accent"
+                  size="lg"
+                  href="https://app.iwilltilimwell.com/register"
+                >
                   Get Started
                   <ArrowRight className="w-4 h-4" />
                 </Button>
@@ -279,7 +287,9 @@ export default function EnterpriseEAPPage() {
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight max-w-3xl mx-auto">
                 Holistic Approach to{" "}
-                <span className="text-primary font-script">Employee Wellbeing</span>
+                <span className="text-primary font-script">
+                  Employee Wellbeing
+                </span>
               </h2>
               <p className="text-gray-600 mt-4 text-base md:text-lg">
                 The program goes beyond treating immediate health concerns.
@@ -319,9 +329,9 @@ export default function EnterpriseEAPPage() {
               </h2>
               <p className="text-gray-600 leading-relaxed text-base md:text-lg">
                 The iWILL 'til i'mWELL Employee Assistance Program (EAP)
-                provides Telemedicine and confidential Mental Health
-                Counseling. These are some of our most prominent services for
-                companies, groups, and organizations.
+                provides Telemedicine and confidential Mental Health Counseling.
+                These are some of our most prominent services for companies,
+                groups, and organizations.
               </p>
             </div>
 
@@ -394,11 +404,11 @@ export default function EnterpriseEAPPage() {
                     Supporting the Health of our Workforce
                   </h3>
                   <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                    At iWILL 'til i'mWELL, we provide accessible healthcare
-                    that empowers employees to take control of their health,
-                    improving well-being and productivity. From routine care
-                    to mental health support, we're here for your team,
-                    whenever they need us.
+                    At iWILL 'til i'mWELL, we provide accessible healthcare that
+                    empowers employees to take control of their health,
+                    improving well-being and productivity. From routine care to
+                    mental health support, we're here for your team, whenever
+                    they need us.
                   </p>
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-lg">
@@ -438,11 +448,11 @@ export default function EnterpriseEAPPage() {
                     A Healthier Workforce Starts Here
                   </h3>
                   <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                    We believe in the power of proactive care. With our
-                    flexible telehealth services, employees can receive the
-                    medical and mental health support they need, without the
-                    hassle. iWILL 'til i'mWELL makes it easier to stay healthy
-                    and focused, both at work and at home.
+                    We believe in the power of proactive care. With our flexible
+                    telehealth services, employees can receive the medical and
+                    mental health support they need, without the hassle. iWILL
+                    'til i'mWELL makes it easier to stay healthy and focused,
+                    both at work and at home.
                   </p>
                 </div>
               </div>
@@ -477,7 +487,11 @@ export default function EnterpriseEAPPage() {
               measurable business benefits for your organization.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="accent" size="lg" href="/get-started">
+              <Button
+                variant="accent"
+                size="lg"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started
                 <ArrowRight className="w-4 h-4" />
               </Button>

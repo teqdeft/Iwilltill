@@ -46,18 +46,15 @@ export default function PricingPage() {
 
           <div className="relative h-full container-main section-padding flex flex-col justify-center">
             <div className="max-w-3xl text-white">
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-sm font-medium mb-5">
-                <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-                Pricing
-              </span>
+             
 
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-6">
                 Pricing
               </h1>
 
               <p className="text-base md:text-lg text-white/90 leading-relaxed mb-8 max-w-2xl">
-                iWILL 'til i'mWELL offers premiere services that are designed
-                to meet your medical and mental health needs. We offer{" "}
+                iWILL 'til i'mWELL offers premiere services that are designed to
+                meet your medical and mental health needs. We offer{" "}
                 <span className="font-bold">24/7/365 Communication</span> with
                 Licensed Physicians, Mental Health Specialists, & Licensed
                 Veterinarians in English and Spanish. The highest quality care
@@ -66,11 +63,19 @@ export default function PricingPage() {
               </p>
 
               <div className="flex flex-wrap gap-3">
-                <Button variant="white" size="lg" href="/login">
+                <Button
+                  variant="white"
+                  size="lg"
+                  href="https://app.iwilltilimwell.com/login"
+                >
                   Login
                   <ArrowRight className="w-4 h-4" />
                 </Button>
-                <Button variant="accent" size="lg" href="/get-started">
+                <Button
+                  variant="accent"
+                  size="lg"
+                  href="https://app.iwilltilimwell.com/register"
+                >
                   Get Started
                   <ArrowRight className="w-4 h-4" />
                 </Button>
@@ -106,7 +111,11 @@ export default function PricingPage() {
               journey today.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="accent" size="lg" href="/get-started">
+              <Button
+                variant="accent"
+                size="lg"
+                href="https://app.iwilltilimwell.com/register"
+              >
                 Get Started
                 <ArrowRight className="w-4 h-4" />
               </Button>

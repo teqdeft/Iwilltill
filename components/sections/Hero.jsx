@@ -61,12 +61,12 @@ export default function Hero() {
               </p>
 
               <div className="flex flex-wrap gap-3 pt-2">
-                <Button variant="accent" size="lg" href="/get-started">
+                <Button variant="accent" size="lg" href="https://app.iwilltilimwell.com/register">
                   Get Started
                   <ArrowRight className="w-4 h-4" />
                 </Button>
-                <Button variant="white" size="lg" href="/services">
-                  Our Services
+                <Button variant="white" size="lg" href="/faq">
+                  Learn More
                   <ArrowRight className="w-4 h-4" />
                 </Button>
               </div>

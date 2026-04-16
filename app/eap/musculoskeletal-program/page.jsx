@@ -74,7 +74,7 @@ export default function IntegratedMusculoskeletalCarePage() {
               </p>
 
               <div className="flex flex-wrap gap-3">
-                <Button variant="white" size="lg" href="/request-demo">
+                <Button variant="white" size="lg" href="/request-a-demo">
                   Request a Demo
                   <ArrowRight className="w-4 h-4" />
                 </Button>
@@ -225,16 +225,12 @@ export default function IntegratedMusculoskeletalCarePage() {
 
             {/* Care team grid */}
             <div className="">
-              
-                <img
-                  src="/images/eap/msk-collage-of-pictures.png"
-                  alt="Care team member"
-                  className="w-full h-full object-cover"
-                />
-              
+              <img
+                src="/images/eap/msk-collage-of-pictures.png"
+                alt="Care team member"
+                className="w-full h-full object-cover"
+              />
             </div>
-
-           
           </div>
         </section>
 
@@ -263,7 +259,7 @@ export default function IntegratedMusculoskeletalCarePage() {
               costs.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button variant="white" size="lg" href="/request-demo">
+              <Button variant="white" size="lg" href="/request-a-demo">
                 Request a Demo
                 <ArrowRight className="w-4 h-4" />
               </Button>

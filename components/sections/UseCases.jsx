@@ -1,20 +1,21 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const cards = [
   {
     title: "Individual / Family",
     image: "/images/family-image.jpg",
     cta: "Get Started",
-    ctaLink: "/get-started",
+    ctaLink: "https://app.iwilltilimwell.com/register",
     ctaStyle: "green",
   },
   {
     title: "Employers / Organizations",
     image: "/images/employers-image.jpg",
     cta: "Book a Demo",
-    ctaLink: "/employers",
+    ctaLink: "https://app.iwilltilimwell.com/register",
     ctaStyle: "white",
   },
 ];
@@ -75,10 +76,10 @@ export default function UseCases() {
                       <h3 className="text-white text-xl md:text-xl font-bold mb-3">
                         {card.title}
                       </h3>
-                      <a href={card.ctaLink} className={buttonClass}>
+                      <Link href={card.ctaLink} className={buttonClass}>
                         {card.cta}
                         <ArrowRight className="w-4 h-4" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 );
