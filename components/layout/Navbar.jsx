@@ -56,6 +56,10 @@ const navLinks = [
     href: "/about-us",
   },
   {
+    label: "Media Hub",
+    href: "/media-hub",
+  },
+  {
     label: "EAP",
     children: [
       { label: "Enterprise-Eap", href: "/eap/enterprise-eap" },
@@ -147,7 +151,7 @@ export default function Navbar() {
                     aria-haspopup="true"
                   >
                     {link.label}
-                    <ChevronDown className="w-3.5 h-3.5" />
+                    <ChevronDown className="w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180" />{" "}
                   </button>
                 ) : (
                   <Link

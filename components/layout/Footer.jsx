@@ -4,12 +4,14 @@ import { Mail, ShieldCheck } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 const quickLinks = [
-  { label: "Join the Mission", href: "/join-the-mission" },
   {
     label: "Speak to a Therapist",
     href: "/counseling/counseling-care-services",
   },
-  { label: "Speak to a Veterinarian", href: "/televet" },
+  {
+    label: "Speak to a Veterinarian",
+    href: "/televet-pet-care/speak-to-a-veterinarian",
+  },
   { label: "Request a Demo", href: "/request-a-demo" },
   { label: "Enterprise EAP", href: "/eap/enterprise-eap" },
   { label: "Privacy Policy", href: "/privacy-policy" },

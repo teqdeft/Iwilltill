@@ -443,10 +443,10 @@ export default function AboutUsPage() {
                 <p className="text-sm text-gray-600 mb-4">
                   Entrepreneur, Psychologist, Co-Founder of iWill 'til i'mWell
                 </p>
-                <Button variant="accent" size="md" href="/faq">
+                {/* <Button variant="accent" size="md" href="/faq">
                   Learn More
                   <ArrowRight className="w-4 h-4" />
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
