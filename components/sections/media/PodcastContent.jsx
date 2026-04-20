@@ -5,7 +5,7 @@ import Button from "@/components/ui/Button";
 const podcasts = [
   {
     image: "/images/about-us/ceo.jpeg",
-    title: "Finding Your Jill |",
+    title: "Dr Jill",
     category: "Podcast",
     date: "27 August 2025",
   },
