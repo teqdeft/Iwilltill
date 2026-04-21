@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 const trustBadges = [
-  { icon: Clock, label: "24/7 Access" },
+  { icon: Clock, label: "24/7 Access." },
   { icon: ShieldCheck, label: "Licensed Providers" },
   { icon: Video, label: "Virtual & Secure" },
   { icon: Globe, label: "English & Spanish" },
