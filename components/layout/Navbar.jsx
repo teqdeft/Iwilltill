@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Button from "@/components/ui/Button";
@@ -130,14 +129,7 @@ export default function Navbar() {
             className="flex items-center shrink-0"
             aria-label="Home"
           >
-            <Image
-              src="/images/logo-white.svg"
-              alt="iWILL 'til i'mWELL"
-              width={200}
-              height={48}
-              className="h-16 w-auto"
-              priority
-            />
+            <img src="/images/logo-white.svg" alt="iWILL 'til i'mWELL" className="h-16 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
