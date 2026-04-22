@@ -48,7 +48,7 @@ export default function Hero() {
 
               <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold leading-[1.1] tracking-tight">
                 Self-Care is the New{" "}
-                <span className="text-accent">Health Care!</span>
+                <span className="text-accent">HealthCare!</span>
               </h1>
 
               <p className="text-lg text-white/80 leading-relaxed  font-bold">
