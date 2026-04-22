@@ -407,8 +407,8 @@ export default function AboutUsPage() {
                 </p>
                 <p>
                   Dr. Rovaris, fondly known as "Dr. Jill", is a visionary leader
-                  with over 40 years experience in the mental health field and
-                  13 years experience managing Student Health Centers - doctors,
+                  with over 40 of years experience in the mental health field and
+                  13 years of experience managing Student Health Centers - doctors,
                   nurses, and various healthcare professionals. As the founder
                   and CEO of iWILL 'til i'mWELL, she is committed to
                   transforming healthcare through a holistic, faith-based

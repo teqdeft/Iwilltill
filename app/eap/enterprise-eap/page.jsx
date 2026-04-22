@@ -83,7 +83,7 @@ const wellnessEcosystemLeft = [
       "Around-the-clock, 24/7/365 access to a counselor for in-the-moment care and access to a therapist, psychologist, or psychiatrist for scheduled mental health care.",
   },
   {
-    title: "Musculoskelelal Care",
+    title: "Musculoskeletal Care",
     description:
       "This service focuses on diagnosing and treating conditions related to muscles, bones, joints, and connective tissues to improve mobility and reduce pain. It also includes mental healthcare.",
   },

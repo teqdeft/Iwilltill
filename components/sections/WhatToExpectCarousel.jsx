@@ -87,7 +87,7 @@ const whatToExpectCards = [
     title: "Cold and Flu Symptoms",
     image: "/images/medical-care/cold-and-flu-symptoms.png",
     description:
-      "We treat cold anf flu symptoms which include congestion, cough, sore throat, body aches, fatigue, and fever.",
+      "We treat cold and flu symptoms which include congestion, cough, sore throat, body aches, fatigue, and fever.",
   },
 ];
 

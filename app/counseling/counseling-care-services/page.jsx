@@ -5,14 +5,14 @@ import WhatToExpectCounselling from "@/components/sections/WhatToExpectCounselli
 import { ArrowRight, ChevronRight, Check } from "lucide-react";
 
 export const metadata = {
-  title: "Counselling Care Services | iWILL 'til i'mWELL",
+  title: "Counseling Care Services | iWILL 'til i'mWELL",
   icons: {
     icon: "./../images/logo-favi.svg",
     shortcut: "./../images/logo-favi.svg",
     apple: "./../images/logo-favi.svg",
   },
   description:
-    "Life is beautiful — but even beauty has its struggles. Compassionate counselling, therapy, and mental wellness support, on your terms.",
+    "Life is beautiful — but even beauty has its struggles. Compassionate Counseling, therapy, and mental wellness support, on your terms.",
 };
 
 const counsellingServices = [
@@ -75,7 +75,7 @@ export default function CounsellingCareServicesPage() {
         <section className="relative overflow-hidden h-[540px] md:h-[600px]">
           <img
             src="/images/alternative-medicine.png"
-            alt="Counselling support"
+            alt="Counseling support"
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div
@@ -99,7 +99,7 @@ export default function CounsellingCareServicesPage() {
             <div className="max-w-2xl text-white">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-sm font-medium mb-5">
                 <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-                Counselling Care
+                Counseling Care
               </span>
 
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-4">
@@ -369,7 +369,7 @@ export default function CounsellingCareServicesPage() {
               We Hear. We Listen. We Care.
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
-              Start your counselling journey today with licensed professionals
+              Start your Counseling journey today with licensed professionals
               who prioritize your mental well-being.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
