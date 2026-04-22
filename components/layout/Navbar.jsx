@@ -99,8 +99,8 @@ export default function Navbar() {
             <p className="text-center pr-8">
               Confidential virtual care | Medical, Behavioral | TeleVet support
               — for individuals, families, and employees. |{" "}
-              <Link href="/services" className="font-semibold hover:underline">
-                View services and providers
+              <Link href="/request-a-demo" className="font-semibold hover:underline">
+                Request a demo
               </Link>
             </p>
             <button

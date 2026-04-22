@@ -64,10 +64,10 @@ export default function ContactUsPage() {
               <p className="text-base md:text-lg text-white/95 font-medium leading-relaxed mb-8 max-w-2xl">
                 iWILL 'til i'mWELL offers premiere services that are designed to
                 meet your medical and mental health needs. Communication with a
-                hosts of specialists, including Licensed Physicians, Licensed
+                host of specialists, including Licensed Physicians, Licensed
                 Mental Health Therapists, Licensed Veterinarians and Care
                 Coordinators in English and Spanish, 24/7, 365 days a year.
-                Receive the highest quality care for your body, mind, and soul
+                The highest quality care for your body, mind, and soul
                 is offered at a flexible affordable value.
               </p>
 

@@ -77,7 +77,7 @@ export default function PathsToWellness() {
         badge="Our Services"
         title="Our Paths to"
         titleAccent="Wellness"
-        description="Accessible healthcare for your body, mind, and pets — with trusted, virtual support designed to fit everyday life."
+        description="Accessible healthcare for your body, mind, and pets — with trusted virtual support designed to fit everyday life."
       />
 
       <div className="grid md:grid-cols-3 gap-6 lg:gap-8 ">

@@ -69,7 +69,7 @@ export default function IntegratedMusculoskeletalCarePage() {
               <p className="text-base md:text-lg text-white/90 leading-relaxed mb-8 max-w-2xl">
                 Our all-in-one clinical support for chronic pain makes it easy
                 to get expert care for joints and muscles. Help your employees
-                to feel better, move better, and work better leading to fewer
+                feel better, move better, and work better leading to fewer
                 sick days, higher productivity, and lower healthcare costs.
               </p>
 
