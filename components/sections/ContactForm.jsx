@@ -4,7 +4,11 @@ import { useState } from "react";
 import { Check } from "lucide-react";
 import Button from "@/components/ui/Button";
 
-const TermsLink = () => <a href="/terms" className="font-semibold text-primary hover:underline">terms &amp; conditions.</a>;
+const TermsLink = () => (
+  <a href="/terms" className="font-semibold text-primary hover:underline">
+    terms &amp; conditions.
+  </a>
+);
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -15,6 +19,8 @@ export default function ContactForm() {
     agreed: false,
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -24,21 +30,49 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.agreed) return;
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-        agreed: false,
-      });
-    }, 3000);
+
+    setLoading(true);
+
+    try {
+      const res = await fetch(
+        "https://iwilltilimwell.com/backend/wp-json/custom/v1/contact",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+          }),
+        },
+      );
+
+      const data = await res.json();
+
+      if (res.ok) {
+        setSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+          agreed: false,
+        });
+        setTimeout(() => setSubmitted(false), 3000);
+      } else {
+        setError(data?.message || "Something went wrong. Please try again.");
+        setTimeout(() => setError(""), 4000);
+      }
+    } catch (err) {
+      setError("Unable to reach the server. Please check your connection.");
+      setTimeout(() => setError(""), 4000);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -116,14 +150,17 @@ export default function ContactForm() {
             </span>
           </label>
 
+          {error && <p className="text-red-500 text-sm">{error}</p>}
+
           <div className="pt-2">
             <Button
               type="submit"
               variant="accent"
+              disabled={!formData.agreed || loading}
               size="md"
               className="w-full sm:w-auto"
             >
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </Button>
           </div>
         </form>
