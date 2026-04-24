@@ -6,14 +6,14 @@ import Link from "next/link";
 const cards = [
   {
     title: "Individual / Family",
-    image: "/images/family-image.jpg",
+    image: "/images/happy-family.jpg",
     cta: "Get Started",
     ctaLink: "https://app.iwilltilimwell.com/register",
     ctaStyle: "green",
   },
   {
     title: "Employers / Organizations",
-    image: "/images/employers-image.jpg",
+    image: "/images/happy-employes.jpg",
     cta: "Book a Demo",
     ctaLink: "https://app.iwilltilimwell.com/register",
     ctaStyle: "white",
@@ -44,7 +44,10 @@ export default function UseCases() {
             {/* Left - Heading */}
             <div className="text-white">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.15] mb-5">
-                Care built for everyday life and workplace <br /> <span className="text-white font-script font-normal text-4xl md:text-5xl">well-being</span>
+                Care built for everyday life and workplace <br />{" "}
+                <span className="text-white font-script font-normal text-4xl md:text-5xl">
+                  well-being
+                </span>
               </h2>
               <p className="text-white/75 text-base md:text-lg leading-relaxed max-w-md">
                 Choose the path that fits your needs and explore care designed
@@ -71,8 +74,13 @@ export default function UseCases() {
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                       loading="lazy"
                     />
-
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                    <div
+                      className="absolute inset-0 z-[0] opacity-20 "
+                      style={{
+                        background: "black",
+                      }}
+                    />
+                    {/* <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" /> */}
 
                     <div className="absolute inset-0 p-6 flex flex-col justify-end">
                       <h3 className="text-white text-xl md:text-xl font-bold mb-3">

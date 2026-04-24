@@ -62,7 +62,7 @@ const navLinks = [
   {
     label: "EAP",
     children: [
-      { label: "Enterprise-Eap", href: "/eap/enterprise-eap" },
+      { label: "Enterprise-EAP", href: "/eap/enterprise-eap" },
       { label: "Virtual Primary Care", href: "/eap/virtual-primary-care" },
       {
         label: "Virtual Behavioral Health",

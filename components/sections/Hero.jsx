@@ -62,7 +62,11 @@ export default function Hero() {
               </p>
 
               <div className="flex flex-wrap gap-3 pt-2">
-                <Button variant="accent" size="lg" href="https://app.iwilltilimwell.com/register">
+                <Button
+                  variant="accent"
+                  size="lg"
+                  href="https://app.iwilltilimwell.com/register"
+                >
                   Get Started
                   <ArrowRight className="w-4 h-4" />
                 </Button>
@@ -105,10 +109,24 @@ export default function Hero() {
             {/* Right Image */}
             <div className="relative hidden lg:block">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <img
+                <div
+                  className="absolute inset-0 z-[0] opacity-10"
+                  style={{
+                    background: "black",
+                  }}
+                />
+                {/* <img
                   src="/images/hero-woman.png"
                   alt="Woman using tablet for telehealth consultation"
                   className="w-full h-auto object-cover aspect-[4/3]"
+                /> */}
+                <video
+                  className="w-full h-auto object-cover aspect-[4/3] z-[1]"
+                  src="/videos/home-hero.mov"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                 />
               </div>
 
@@ -128,24 +146,24 @@ export default function Hero() {
           </div>
 
           {/* Trust Badges Bar */}
-         {/* Trust Badges Bar */}
-<div className="relative bg-[#604376] mb-10 rounded-xl px-4 sm:px-6 lg:px-8">
-  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-2 py-5">
-    {trustBadges.map(({ icon: Icon, label }) => (
-      <div
-        key={label}
-        className="flex items-center justify-center lg:justify-start gap-2.5 px-2 py-2 min-w-0"
-      >
-        <div className="w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center shrink-0">
-          <Icon className="w-4 h-4 text-primary" />
-        </div>
-        <span className="text-xs sm:text-sm font-semibold text-white leading-tight break-words min-w-0">
-          {label}
-        </span>
-      </div>
-    ))}
-  </div>
-</div>
+          {/* Trust Badges Bar */}
+          <div className="relative bg-[#604376] mb-10 rounded-xl px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-2 py-5">
+              {trustBadges.map(({ icon: Icon, label }) => (
+                <div
+                  key={label}
+                  className="flex items-center justify-center lg:justify-start gap-2.5 px-2 py-2 min-w-0"
+                >
+                  <div className="w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center shrink-0">
+                    <Icon className="w-4 h-4 text-primary" />
+                  </div>
+                  <span className="text-xs sm:text-sm font-semibold text-white leading-tight break-words min-w-0">
+                    {label}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

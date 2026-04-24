@@ -7,8 +7,9 @@ import Button from "@/components/ui/Button";
 import MediaTabs from "@/components/sections/media/MediaTabs";
 import MediaGrid from "@/components/sections/media/MediaGrid";
 import PostDetail from "@/components/sections/media/PostDetail";
-import { ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import axios from "axios";
+import Link from "next/link";
 
 export default function MediaHubPage() {
   const [posts, setPosts] = useState([]);
@@ -75,6 +76,13 @@ export default function MediaHubPage() {
           <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-10 -translate-y-1/2 translate-x-1/4 pointer-events-none hidden lg:block">
             <img src="/images/logo-favi.svg" alt="" className="w-full h-full object-contain" />
           </div>
+            <Link
+            href="/"
+            className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Home
+          </Link>
           <div className="relative container-main section-padding text-center text-white">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
               Media Hub

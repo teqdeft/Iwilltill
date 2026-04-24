@@ -1,7 +1,8 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
-import { ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const BestChoiceLink = () => (
   <a
@@ -34,49 +35,25 @@ export default function PlatinumPrescriptionPlanPage() {
 
         <section className="relative overflow-hidden h-[540px] md:h-[600px]">
           <img
-            src="/images/alternative-medicine.png"
-            alt="Counselling support"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(135deg, rgba(96, 67, 118, 0.80) 0%, rgba(172, 115, 185, 0.55) 100%)",
-            }}
-          />
-
-          {/* Decorative lotus */}
-          <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-15 -translate-y-1/2 translate-x-1/4 pointer-events-none hidden lg:block">
-            <img
-              src="/images/logo-favi.svg"
-              alt=""
-              className="w-full h-full object-contain"
-            />
-          </div>
-
-          <img
             src="/images/plans/platinum-img-1.png"
             alt="Platinum Prescription Plan"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover opacity-70 z-[1]"
           />
           <div
-            className="absolute inset-0"
+            className="absolute inset-0 z-[0]"
             style={{
-              background:
-                "linear-gradient(135deg, rgba(96, 67, 118, 0.80) 0%, rgba(172, 115, 185, 0.55) 100%)",
+              background: "black",
             }}
           />
-          {/* Decorative lotus */}
-          <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-15 -translate-y-1/2 translate-x-1/4 pointer-events-none hidden lg:block">
-            <img
-              src="/images/logo-favi.svg"
-              alt=""
-              className="w-full h-full object-contain"
-            />
-          </div>
+          <Link
+            href="/"
+            className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Home
+          </Link>
 
-          <div className="relative h-full container-main section-padding flex flex-col justify-center">
+          <div className="relative z-[3] h-full container-main section-padding flex flex-col justify-center">
             <div className="max-w-3xl text-white">
               <h1
                 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-4"
@@ -106,7 +83,7 @@ export default function PlatinumPrescriptionPlanPage() {
                   <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center shadow-lg max-w-xs">
                     <p className="text-gray-900 text-[15px] leading-snug mb-4">
                       Don't go without the medications you need. Over 1000 acute
-                      and chronic medications at $20 each
+                      and chronic medications.
                     </p>
                     <Button
                       variant="primary"

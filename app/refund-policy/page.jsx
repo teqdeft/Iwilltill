@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { Check } from "lucide-react";
+import { ArrowLeft, Check } from "lucide-react";
+import Link from "next/link";
 
 export const metadata = {
   title: "Refund Policy | iWILL 'til i'mWELL",
@@ -13,7 +14,14 @@ export const metadata = {
     "iWILL 'til i'mWELL Telemedicine Refund Policy — subscription commitments, billing cycles, and refund processing details.",
 };
 
-const SupportLink = () => <a href="mailto:support@iwilltilimwell.com" className="text-primary hover:underline">support@iwilltilimwell.com</a>;
+const SupportLink = () => (
+  <a
+    href="mailto:support@iwilltilimwell.com"
+    className="text-primary hover:underline"
+  >
+    support@iwilltilimwell.com
+  </a>
+);
 
 const sections = [
   {
@@ -135,6 +143,13 @@ export default function RefundPolicyPage() {
               className="w-full h-full object-contain"
             />
           </div>
+          <Link
+            href="/"
+            className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Home
+          </Link>
 
           <div className="relative h-full container-main section-padding flex flex-col justify-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight max-w-3xl">
@@ -161,9 +176,13 @@ export default function RefundPolicyPage() {
                       >
                         <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                         <span>
-                          {item.bold && <span className="font-bold">{item.bold}</span>}
+                          {item.bold && (
+                            <span className="font-bold">{item.bold}</span>
+                          )}
                           {item.rest}
-                          {item.boldEnd && <span className="font-bold">{item.boldEnd}</span>}
+                          {item.boldEnd && (
+                            <span className="font-bold">{item.boldEnd}</span>
+                          )}
                           {item.showLink && <SupportLink />}
                           {item.afterLink}
                         </span>

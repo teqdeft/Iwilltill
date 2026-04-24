@@ -1,7 +1,8 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
-import { CheckSquare, ArrowRight } from "lucide-react";
+import { CheckSquare, ArrowRight, ArrowLeft } from "lucide-react";
+import Link from "next/link";
 
 export const metadata = {
   title: "Gold Prescription Plan | iWILL 'til i'mWELL",
@@ -51,25 +52,23 @@ export default function GoldPrescriptionPlanPage() {
           <img
             src="/images/plans/medications.jpg"
             alt="Gold Prescription Plan"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover opacity-70 z-[1]"
           />
           <div
-            className="absolute inset-0"
+            className="absolute inset-0 z-[0]"
             style={{
-              background:
-                "linear-gradient(135deg, rgba(96, 67, 118, 0.80) 0%, rgba(172, 115, 185, 0.55) 100%)",
+              background: "black",
             }}
           />
-          {/* Decorative lotus */}
-          <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-15 -translate-y-1/2 translate-x-1/4 pointer-events-none hidden lg:block">
-            <img
-              src="/images/logo-favi.svg"
-              alt=""
-              className="w-full h-full object-contain"
-            />
-          </div>
+          <Link
+            href="/"
+            className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Home
+          </Link>
 
-          <div className="relative h-full container-main section-padding flex flex-col justify-center">
+          <div className="relative z-[3] h-full container-main section-padding flex flex-col justify-center">
             <div className="max-w-3xl text-white">
               <h1
                 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-4"

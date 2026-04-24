@@ -1,8 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { ShieldCheck, ShieldX } from "lucide-react";
-
-
+import { ArrowLeft, ShieldCheck, ShieldX } from "lucide-react";
+import Link from "next/link";
 
 export const metadata = {
   title: "Insurance Disclaimer | iWILL 'til i'mWELL",
@@ -63,13 +62,15 @@ const comparisonRows = [
   },
 ];
 
-
 function StatusCell({ status }) {
   const isYes = status.type === "yes";
   return (
     <div className="flex items-center gap-2">
       {isYes ? (
-        <ShieldCheck className="w-5 h-5 text-accent shrink-0" strokeWidth={2.2} />
+        <ShieldCheck
+          className="w-5 h-5 text-accent shrink-0"
+          strokeWidth={2.2}
+        />
       ) : (
         <ShieldX className="w-5 h-5 text-red-500 shrink-0" strokeWidth={2.2} />
       )}
@@ -94,10 +95,17 @@ export default function InsuranceDisclaimerPage() {
           <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-15 -translate-y-1/2 translate-x-1/4 pointer-events-none hidden lg:block">
             <img
               src="/images/logo-favi.svg"
-              alt=""
+              alt="logo"
               className="w-full h-full object-contain"
             />
           </div>
+          <Link
+            href="/"
+            className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Home
+          </Link>
 
           <div className="relative h-full container-main section-padding flex flex-col justify-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight max-w-3xl">
@@ -115,33 +123,32 @@ export default function InsuranceDisclaimerPage() {
                 Patient Disclaimer
               </h2>
               <p className="text-gray-700 leading-relaxed text-[15px]">
-                iWILL 'til i'mWELL is a virtual wellness platform that
-                provides comprehensive support for mental health, primary
-                care, urgent care, and more through telehealth. It is not a
-                substitute for major medical insurance and does not cover
-                in-person procedures, hospitalizations, or emergencies. If
-                your condition requires in-office care, our licensed providers
-                will refer you appropriately. Always call 911 or go to the
-                nearest emergency room for life-threatening concerns.
+                iWILL 'til i'mWELL is a virtual wellness platform that provides
+                comprehensive support for mental health, primary care, urgent
+                care, and more through telehealth. It is not a substitute for
+                major medical insurance and does not cover in-person procedures,
+                hospitalizations, or emergencies. If your condition requires
+                in-office care, our licensed providers will refer you
+                appropriately. Always call 911 or go to the nearest emergency
+                room for life-threatening concerns.
               </p>
             </div>
 
             {/* FAQ */}
             <div className="mb-12">
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
-                FAQ: Is iWILL 'til i'mWELL a replacement for traditional
-                health insurance?
+                FAQ: Is iWILL 'til i'mWELL a replacement for traditional health
+                insurance?
               </h2>
               <p className="text-gray-700 leading-relaxed text-[15px]">
-                No. iWILL 'til i'mWELL is not intended to replace major
-                medical insurance. It is a virtual care solution designed to
-                complement your current coverage or serve as an affordable
-                option when traditional insurance is not available. We offer
-                unlimited access to care for everyday health needs, chronic
-                condition support, and behavioral health—but we do not cover
-                hospital stays, surgeries, or procedures that require
-                in-person care. When necessary, our providers will refer you
-                to in-office care.
+                No. iWILL 'til i'mWELL is not intended to replace major medical
+                insurance. It is a virtual care solution designed to complement
+                your current coverage or serve as an affordable option when
+                traditional insurance is not available. We offer unlimited
+                access to care for everyday health needs, chronic condition
+                support, and behavioral health—but we do not cover hospital
+                stays, surgeries, or procedures that require in-person care.
+                When necessary, our providers will refer you to in-office care.
               </p>
             </div>
 
@@ -178,9 +185,7 @@ export default function InsuranceDisclaimerPage() {
                     {comparisonRows.map((row, i) => (
                       <tr
                         key={row.feature}
-                        className={
-                          i % 2 === 0 ? "bg-gray-50" : "bg-white"
-                        }
+                        className={i % 2 === 0 ? "bg-gray-50" : "bg-white"}
                       >
                         <td className="p-4 md:p-5 text-[14px] md:text-[15px] text-gray-700 align-middle">
                           {row.feature}

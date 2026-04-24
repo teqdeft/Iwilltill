@@ -1,8 +1,9 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
-import { ArrowRight, ChevronRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Dot } from "lucide-react";
 import WhatToExpectCarousel from "@/components/sections/WhatToExpectCarousel";
+import Link from "next/link";
 
 export const metadata = {
   title: "Medical Wellness | iWILL 'til i'mWELL",
@@ -69,6 +70,8 @@ const tools = [
 const prescriptionPlans = [
   {
     title: "Silver Prescription Plan",
+    image: "/images/plans/acute-medication-v1.png",
+    href: "/wellness/silver-prescription-plan",
     intro: "Consider us your Pharmacy Savings Advocate.",
     body: [
       "As a subscriber to iWILL 'til i'mWELL, you won't have to worry about the expensive cost of 37 commonly prescribed medications.",
@@ -78,6 +81,8 @@ const prescriptionPlans = [
   },
   {
     title: "Gold Prescription Plan",
+    image: "/images/plans/medications.jpg",
+    href: "/wellness/gold-prescription-plan",
     intro:
       "As a subscriber to iWILL 'til i'mWELL, you won't have to worry about the expensive cost of 200 common medications.",
     body: [
@@ -87,38 +92,13 @@ const prescriptionPlans = [
   },
   {
     title: "Platinum Prescription",
+    image: "/images/plans/platinum-img-1.png",
+    href: "/wellness/platinum-prescription-plan",
     intro:
       "iWILL 'til i'mWELL has partnered with BestChoiceRx to bring you the best prescription prices possible.",
     body: [
       "As a member of iWILL 'til i'mWELL, there is no need to worry about the high cost of over 1,000 commonly prescribed medications. That's because as a member of iWILL 'til i'm WELL, you get to take advantage of BestChoiceRx's $0 ENHANCED MEDICATION PROGRAM that includes 37 ACUTE and 95 ACA (Affordable Care Act) medications, plus over 1,000 routinely prescribed CHRONIC drugs at no cost to you.",
     ],
-  },
-];
-
-const whatToExpectCards = [
-  {
-    title: "Pediatricians",
-    image: "/images/pediatrician-v1.png",
-    description:
-      "Seeking a Pediatrician to deliver comprehensive, compassionate care for children's physical, emotional, and mental health from birth through adolescence.",
-  },
-  {
-    title: "Cold and Flu Symptoms",
-    image: "/images/cold-and-flu-symptoms.png",
-    description:
-      "We treat cold and flu symptoms which include congestion, cough, sore throat, body aches, fatigue, and fever.",
-  },
-  {
-    title: "Ear Infection",
-    image: "/images/ear-infection.png",
-    description:
-      "An ear infection causes pain, fluid drainage, and sometimes fever due to bacteria or viruses. Prompt treatment helps relieve discomfort and prevent complications.",
-  },
-  {
-    title: "Pharmacists",
-    image: "/images/pharmacyinventory.png",
-    description:
-      "Ensures safe medication use, explains drug interactions, and supports healing by guiding proper dosages with deep care and knowledge.",
   },
 ];
 
@@ -129,37 +109,30 @@ export default function MedicalCarePage() {
       <main>
         {/* Hero with image background */}
         <section className="relative overflow-hidden h-[540px] md:h-[600px]">
-          {/* Background image */}
+          {/* Purple overlay in the back */}
+          <div
+            className="absolute inset-0 z-[0] "
+            style={{
+              background: "black",
+            }}
+          />
+          {/* Image in front with 60% opacity */}
           <img
             src="/images/banner-new-new-v1.png"
             alt="Medical team"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          {/* Purple overlay to match brand */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(135deg, rgba(96, 67, 118, 0.75) 0%, rgba(172, 115, 185, 0.55) 100%)",
-            }}
+            className="absolute inset-0 w-full h-full object-cover opacity-70 z-[1]"
           />
 
-          {/* Decorative lotus */}
-          <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-15 -translate-y-1/2 translate-x-1/4 pointer-events-none hidden lg:block">
-            <img
-              src="/images/logo-favi.svg"
-              alt=""
-              className="w-full h-full object-contain"
-            />
-          </div>
+          <Link
+            href="/"
+            className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Home
+          </Link>
 
-          <div className="relative h-full container-main section-padding flex flex-col justify-center">
+          <div className="relative z-[3] h-full container-main section-padding flex flex-col justify-center">
             <div className="max-w-2xl text-white">
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-sm font-medium mb-5">
-                <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-                Medical Wellness
-              </span>
-
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-6">
                 Medical Wellness
               </h1>
@@ -226,7 +199,7 @@ export default function MedicalCarePage() {
                   className="group bg-white rounded-2xl border border-gray-100 p-6 md:p-7 hover:shadow-lg hover:border-primary/20 transition-all duration-300 flex gap-4 items-start"
                 >
                   <div className="w-10 h-10 rounded-xl bg-primary-100 group-hover:bg-primary-200 flex items-center justify-center shrink-0 transition-colors duration-300">
-                    <ChevronRight className="w-5 h-5 text-primary" />
+                    <Dot className="w-5 h-5 text-primary" />
                   </div>
                   <p className="text-gray-700 leading-relaxed text-[15px] pt-1.5">
                     <span className="font-bold text-gray-900">
@@ -266,7 +239,7 @@ export default function MedicalCarePage() {
                   className="group bg-gray-50 rounded-2xl border border-gray-100 p-6 md:p-7 hover:shadow-lg hover:border-accent/20 hover:bg-white transition-all duration-300 flex gap-4 items-start"
                 >
                   <div className="w-10 h-10 rounded-xl bg-accent/10 group-hover:bg-accent/20 flex items-center justify-center shrink-0 transition-colors duration-300">
-                    <ChevronRight className="w-5 h-5 text-accent" />
+                    <Dot className="w-5 h-5 text-accent" />
                   </div>
                   <p className="text-gray-700 leading-relaxed text-[15px] pt-1.5">
                     <span className="font-bold text-gray-900">
@@ -301,36 +274,63 @@ export default function MedicalCarePage() {
             </div>
 
             <div className="space-y-8">
-              {prescriptionPlans.map((plan) => (
+              {prescriptionPlans.map((plan, index) => (
                 <div
                   key={plan.title}
-                  className="bg-white rounded-2xl border border-gray-100 p-7 md:p-8 hover:shadow-lg transition-all duration-300"
+                  className="bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300"
                 >
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                    {plan.title}
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed text-[15px] font-medium mb-4">
-                    {plan.intro}
-                  </p>
-                  <div className="space-y-3">
-                    {plan.body.map((paragraph, i) => (
-                      <p
-                        key={i}
-                        className="text-gray-600 leading-relaxed text-[15px]"
-                      >
-                        {paragraph}
+                  <div
+                    className={`grid lg:grid-cols-2 gap-0 ${index % 2 !== 0 ? "lg:direction-rtl" : ""}`}
+                  >
+                    {/* Image - alternates left/right */}
+                    <div
+                      className={`relative aspect-[16/10] lg:aspect-auto ${index % 2 !== 0 ? "lg:order-2" : ""}`}
+                    >
+                      <img
+                        src={plan.image}
+                        alt={plan.title}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                      <div
+                        className="absolute inset-0"
+                        style={{
+                          background:
+                            "linear-gradient(135deg, rgba(96,67,118,0.15) 0%, rgba(172,115,185,0.1) 100%)",
+                        }}
+                      />
+                    </div>
+
+                    {/* Content */}
+                    <div
+                      className={`p-7 md:p-10 flex flex-col justify-center ${index % 2 !== 0 ? "lg:order-1" : ""}`}
+                    >
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
+                        {plan.title}
+                      </h3>
+                      <p className="text-gray-700 leading-relaxed text-[15px] font-medium mb-4">
+                        {plan.intro}
                       </p>
-                    ))}
+                      <div className="space-y-3 mb-6">
+                        {plan.body.map((paragraph, i) => (
+                          <p
+                            key={i}
+                            className="text-gray-600 leading-relaxed text-[15px]"
+                          >
+                            {paragraph}
+                          </p>
+                        ))}
+                      </div>
+                      <div>
+                        <Button variant="primary" size="lg" href={plan.href}>
+                          Choose plan
+                          <ArrowRight className="w-4 h-4" />
+                        </Button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}
-            </div>
-
-            <div className="mt-10">
-              <Button variant="ghost" size="lg" href="/pricing">
-                Choose a plan
-                <ArrowRight className="w-4 h-4" />
-              </Button>
             </div>
           </div>
         </section>

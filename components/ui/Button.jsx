@@ -12,7 +12,8 @@ const variants = {
     "border-2 border-primary text-primary hover:bg-primary hover:text-white",
   "outline-white":
     "border-2 border-white text-white hover:bg-white hover:text-primary",
-  ghost: "text-primary border hover:bg-primary-50",
+  ghost:
+    "bg-accent text-white hover:bg-accent-600 shadow-lg shadow-accent/25 hover:shadow-accent/40",
   white: "bg-white text-primary hover:bg-gray-100 shadow-lg",
 };
 
@@ -34,7 +35,7 @@ export default function Button({
     "inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary/50 gap-2",
     variants[variant],
     sizes[size],
-    className
+    className,
   );
 
   if (href) {

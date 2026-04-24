@@ -1,7 +1,8 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check } from "lucide-react";
+import Link from "next/link";
 
 export const metadata = {
   title: "GLP-1 Weight Loss Management Program | iWILL 'til i'mWELL",
@@ -91,29 +92,27 @@ export default function GLP1Page() {
       <main>
         {/* Hero */}
         <section className="relative overflow-hidden h-[500px] md:h-[560px]">
-          <img
-            src="/images/glp-1-weight-loss-program/weight-loss-program-min.png"
-            alt="GLP-1 Weight Loss Management Program"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
           <div
-            className="absolute inset-0"
+            className="absolute inset-0 z-[0] "
             style={{
-              background:
-                "linear-gradient(135deg, rgba(96, 67, 118, 0.75) 0%, rgba(172, 115, 185, 0.45) 100%)",
+              background: "black",
             }}
           />
+          {/* Image in front with 60% opacity */}
+          <img
+            src="/images/glp-1-weight-loss-program/weight-loss-program-min.png"
+            alt="Medical team"
+            className="absolute inset-0 w-full h-full object-cover opacity-70 z-[1]"
+          />
+          <Link
+            href="/"
+            className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Home
+          </Link>
 
-          {/* Decorative lotus */}
-          <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-15 -translate-y-1/2 translate-x-1/4 pointer-events-none hidden lg:block">
-            <img
-              src="/images/logo-favi.svg"
-              alt=""
-              className="w-full h-full object-contain"
-            />
-          </div>
-
-          <div className="relative h-full container-main section-padding flex flex-col justify-center">
+          <div className="relative z-[3] h-full container-main section-padding flex flex-col justify-center">
             <div className="max-w-2xl text-white">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-sm font-medium mb-5">
                 <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />

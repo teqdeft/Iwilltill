@@ -4,8 +4,9 @@ import { useState, useRef, useEffect } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
-import { Search, X, Pill, ArrowRight } from "lucide-react";
+import { Search, X, Pill, ArrowRight, ArrowLeft } from "lucide-react";
 import axios from "axios";
+import Link from "next/link";
 
 const PLAN_LABELS = {
   "prescription-a": "Silver Prescription Plan",
@@ -33,7 +34,7 @@ export default function SearchMedicationPage() {
       const response = await axios.post(
         "/api/search-medication",
         { query: searchTerm },
-        { headers: { "Content-Type": "application/json" } }
+        { headers: { "Content-Type": "application/json" } },
       );
       setResults(response.data.data || []);
     } catch (error) {
@@ -70,6 +71,13 @@ export default function SearchMedicationPage() {
             background: "linear-gradient(135deg, #604376 0%, #AC73B9 100%)",
           }}
         >
+          <Link
+            href="/"
+            className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Home
+          </Link>
           <div className="relative container-main section-padding text-center text-white">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
               Search Medication
