@@ -5,6 +5,14 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
+  async rewrites() {
+    return [
+      {
+        source: "/api/search-medication",
+        destination: "https://dev.iwilltilimwell.com/api/medical/search-medication",
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

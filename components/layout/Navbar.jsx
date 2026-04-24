@@ -13,6 +13,7 @@ const navLinks = [
     children: [
       { label: "Medical Care Services", href: "/wellness/medical-care" },
       { label: "Speak To A Doctor", href: "/wellness/speak-to-a-doctor" },
+      { label: "Search Medication", href: "/wellness/search-medication" },
       {
         label: "Silver Prescription Plan",
         href: "/wellness/silver-prescription-plan",

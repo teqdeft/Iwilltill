@@ -33,6 +33,7 @@ export default function Hero() {
           src="/images/logo-favi.svg"
           alt=""
           className="w-full h-full object-contain"
+          loading="lazy"
         />
       </div>
 
