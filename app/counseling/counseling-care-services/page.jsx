@@ -85,7 +85,7 @@ export default function CounsellingCareServicesPage() {
           <img
             src="/images/counseling/iwilltilimwell-services.png"
             alt="Medical team"
-            className="absolute inset-0 w-full h-full object-cover opacity-70 z-[1]"
+            className="absolute inset-0 w-full h-full object-cover opacity-100 z-[1]"
           />
             <Link
             href="/"
