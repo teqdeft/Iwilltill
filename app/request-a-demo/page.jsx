@@ -48,7 +48,7 @@ export default function RequestADemoPage() {
                 Request a Demo
               </h1>
 
-              <p className="text-base md:text-lg text-white/95 font-semibold leading-relaxed max-w-xl">
+              <p className="text-lg md:text-xl text-white/95 font-semibold leading-relaxed max-w-xl">
                 Schedule a personalized demo to see how iWILL 'til i'mWELL's
                 virtual approach supports and makes benefits easier to
                 understand and more relevant to members at every step of their

@@ -41,7 +41,7 @@ export default function ContactUsPage() {
             alt="Medical team"
             className="absolute inset-0 w-full h-full object-cover opacity-70 z-[1]"
           />
-            <Link
+          <Link
             href="/"
             className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
           >
@@ -55,7 +55,7 @@ export default function ContactUsPage() {
                 Contact Us
               </h1>
 
-              <p className="text-base md:text-lg text-white/95 font-medium leading-relaxed mb-8 max-w-2xl">
+              <p className="text-lg md:text-xl text-white/95 font-medium leading-relaxed mb-8 max-w-2xl">
                 iWILL 'til i'mWELL offers premiere services that are designed to
                 meet your medical and mental health needs. Communication with a
                 host of specialists, including Licensed Physicians, Licensed
@@ -98,7 +98,7 @@ export default function ContactUsPage() {
                   <span className="text-primary font-script">Just for You</span>
                 </h2>
 
-                <p className="text-gray-600 leading-relaxed text-[15px] md:text-base mb-8">
+                <p className="text-gray-600 leading-relaxed text-[15px] md:text-lg mb-8">
                   Schedule a personalized demo to learn how iWILL 'til i'mWELL's
                   virtual platform can support you and your company's journey to
                   sustained health.
@@ -143,7 +143,7 @@ export default function ContactUsPage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Let's Start the Conversation
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Whether you have questions, need a demo, or want to learn more,
               our team is here to help you every step of the way.
             </p>

@@ -608,7 +608,7 @@ export default function PrivacyPolicyPage() {
                 </li>
               </ul>
 
-              <h4 className="text-lg font-bold text-gray-900 mb-2">
+              <h4 className="text-xl font-bold text-gray-900 mb-2">
                 Sales of Personal Information
               </h4>
               <p className="text-gray-700 leading-relaxed text-[15px] mb-6">

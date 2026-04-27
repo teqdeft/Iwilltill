@@ -132,7 +132,7 @@ export default function WhatToExpectCarousel() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-5">
             What to <span className="text-primary">Expect?</span>
           </h2>
-          <p className="text-gray-600 leading-relaxed text-base md:text-lg">
+          <p className="text-gray-600 leading-relaxed text-lg md:text-xl">
             At iWILL 'til i'mWELL, we make accessing medical care simple,
             seamless, and tailored to your needs. Whether you need to message a
             specialist, routine, urgent, specialized, or primary care, we
@@ -187,7 +187,7 @@ export default function WhatToExpectCarousel() {
                       />
                     </div>
                     <div className="p-5 text-center">
-                      <h3 className="text-lg font-bold text-gray-900 mb-1">
+                      <h3 className="text-xl font-bold text-gray-900 mb-1">
                         {card.title}
                       </h3>
                       <p className="text-xs text-primary font-medium mb-3">

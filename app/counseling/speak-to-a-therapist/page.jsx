@@ -44,7 +44,7 @@ export default function SpeakToATherapistPage() {
             alt="Medical team"
             className="absolute inset-0 w-full h-full object-cover opacity-70 z-[1]"
           />
-            <Link
+          <Link
             href="/"
             className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
           >
@@ -61,7 +61,7 @@ export default function SpeakToATherapistPage() {
                 Counseling Care Services
               </h1>
 
-              <p className="text-base md:text-lg text-white/95 font-semibold leading-relaxed max-w-2xl">
+              <p className="text-lg md:text-xl text-white/95 font-semibold leading-relaxed max-w-2xl">
                 iWILL 'til i'mWELL offers premiere services that are designed to
                 meet your needs for mental wellbeing. Communication with Mental
                 Health Counselors, Licensed Therapists, Licensed Psychologists,
@@ -81,7 +81,7 @@ export default function SpeakToATherapistPage() {
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 uppercase tracking-wide inline-block border-b-2 border-primary pb-2 mb-6">
                 Speak To A Therapist
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px] md:text-base max-w-4xl mx-auto">
+              <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg max-w-4xl mx-auto">
                 <span className="font-bold text-gray-900">
                   iWILL 'til i'mWELL
                 </span>{" "}
@@ -94,7 +94,7 @@ export default function SpeakToATherapistPage() {
             <div className="grid md:grid-cols-3 gap-5 md:gap-6 mb-12">
               {/* In-The-Moment Care */}
               <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-7 text-center hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 transition-all duration-300">
-                <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4 leading-snug">
+                <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-4 leading-snug">
                   In-The-Moment Care
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-[14px]">
@@ -112,7 +112,7 @@ export default function SpeakToATherapistPage() {
 
               {/* Short-Term Therapy */}
               <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-7 text-center hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 transition-all duration-300">
-                <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4 leading-snug">
+                <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-4 leading-snug">
                   Short-Term Therapy
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-[14px]">
@@ -130,7 +130,7 @@ export default function SpeakToATherapistPage() {
 
               {/* Long-Term Therapy */}
               <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-7 text-center hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 transition-all duration-300">
-                <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4 leading-snug">
+                <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-4 leading-snug">
                   Long-Term Therapy
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-[14px]">
@@ -153,12 +153,12 @@ export default function SpeakToATherapistPage() {
 
             {/* Closing statements */}
             <div className="text-center space-y-4 max-w-4xl mx-auto">
-              <p className="text-primary font-bold text-base md:text-lg leading-relaxed">
+              <p className="text-primary font-bold text-lg md:text-xl leading-relaxed">
                 This comprehensive, flexible approach ensures access to
                 high-quality mental health care that's affordable, convenient,
                 and available from the comfort of your home.
               </p>
-              <p className="text-gray-700 text-[15px] md:text-base leading-relaxed">
+              <p className="text-gray-700 text-[15px] md:text-lg leading-relaxed">
                 You can also sign up for our Prescription Plan PC-B to get some
                 of your{" "}
                 <span className="font-bold text-gray-900 underline">
@@ -237,7 +237,7 @@ export default function SpeakToATherapistPage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Talk to a Therapist Today
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Access licensed mental health professionals 24/7 in English or
               Spanish — from the comfort of your home.
             </p>

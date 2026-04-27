@@ -49,7 +49,7 @@ export default function UseCases() {
                   well-being
                 </span>
               </h2>
-              <p className="text-white/75 text-base md:text-lg leading-relaxed max-w-md">
+              <p className="text-white/75 text-lg md:text-xl leading-relaxed max-w-md">
                 Choose the path that fits your needs and explore care designed
                 for individuals, families, and employer teams.
               </p>

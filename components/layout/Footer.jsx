@@ -56,7 +56,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr] gap-10 lg:gap-12 py-14 md:py-20">
             {/* Left Column - Verification & Disclaimer */}
             <div>
-              <h3 className="text-lg md:text-xl font-bold text-white inline-block border-b-2 border-white/40 pb-1.5 mb-5">
+              <h3 className="text-xl md:text-xl font-bold text-white inline-block border-b-2 border-white/40 pb-1.5 mb-5">
                 We are officially verified.
               </h3>
 
@@ -77,7 +77,7 @@ export default function Footer() {
 
               {/* Mandatory Disclaimer Card */}
               <div className="bg-[#fdf6dc] rounded-xl p-5 text-gray-800">
-                <h4 className="text-base font-bold text-gray-900 inline-block border-b-2 border-primary pb-1 mb-3">
+                <h4 className="text-lg font-bold text-gray-900 inline-block border-b-2 border-primary pb-1 mb-3">
                   Mandatory Disclaimer
                 </h4>
                 <p className="text-[13px] leading-relaxed mb-3">
@@ -108,7 +108,7 @@ export default function Footer() {
 
             {/* Middle Column - Quick Links */}
             <div>
-              <h3 className="text-lg md:text-xl font-bold text-white inline-block border-b-2 border-white/40 pb-1.5 mb-5">
+              <h3 className="text-xl md:text-xl font-bold text-white inline-block border-b-2 border-white/40 pb-1.5 mb-5">
                 Quick Links
               </h3>
               <ul className="space-y-3">
@@ -127,7 +127,7 @@ export default function Footer() {
 
             {/* Right Column - QR Code & Certifications */}
             <div>
-              <h3 className="text-lg md:text-xl font-bold text-white inline-block border-b-2 border-white/40 pb-1.5 mb-5">
+              <h3 className="text-xl md:text-xl font-bold text-white inline-block border-b-2 border-white/40 pb-1.5 mb-5">
                 Scan to Visit Our Website
               </h3>
 

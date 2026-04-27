@@ -49,7 +49,7 @@ export default function TeleVetPage() {
                 TeleVet
               </h1>
 
-              <p className="text-base md:text-lg text-white/95 font-semibold leading-relaxed mb-8 max-w-xl">
+              <p className="text-lg md:text-xl text-white/95 font-semibold leading-relaxed mb-8 max-w-xl">
                 We believe that your pets deserve the best care, no matter where
                 you are. Enjoy convenient, remote access to Licensed
                 Veterinarians for expert advice and care, all from the comfort
@@ -84,7 +84,7 @@ export default function TeleVetPage() {
               <span className="text-primary font-script">Family</span>
             </h2>
 
-            <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-base mb-10 max-w-5xl">
+            <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-lg mb-10 max-w-5xl">
               <p>
                 We understand that your pets are more than just animals, they're
                 family. That's why we offer TeleVet services to provide your
@@ -126,7 +126,7 @@ export default function TeleVetPage() {
               <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
                 {/* TeleVet Pet Care */}
                 <div>
-                  <p className="text-gray-700 leading-relaxed text-[15px] md:text-base mb-5">
+                  <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg mb-5">
                     <span className="font-bold text-gray-900">
                       TeleVet Pet Care -
                     </span>{" "}
@@ -143,7 +143,7 @@ export default function TeleVetPage() {
 
                 {/* Pet Prescription Discount */}
                 <div>
-                  <p className="text-gray-700 leading-relaxed text-[15px] md:text-base mb-5">
+                  <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg mb-5">
                     <span className="font-bold text-gray-900">
                       Pet Prescription Discount Virtual Card -
                     </span>{" "}
@@ -172,7 +172,7 @@ export default function TeleVetPage() {
                 <h3 className="text-2xl md:text-3xl font-bold text-primary leading-tight mb-4">
                   Pawsitively the Most Popular: Dogs Lead the Pack
                 </h3>
-                <p className="text-gray-700 leading-relaxed text-[15px] md:text-base">
+                <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg">
                   Approximately 86.9 million homes, or about 66% of U.S.
                   households, own pets. The most commonly owned pets are dogs,
                   with an estimated 65.1 million U.S. households sharing their
@@ -224,7 +224,7 @@ export default function TeleVetPage() {
                 <h3 className="text-2xl md:text-3xl font-bold text-primary leading-tight mb-4">
                   Purring into Second Place: For the Love of Cats
                 </h3>
-                <p className="text-gray-700 leading-relaxed text-[15px] md:text-base">
+                <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg">
                   Cats are the second most popular pet in the U.S., with an
                   estimated 42.1 million households welcoming these independent
                   yet affectionate companions into their homes. Known for their
@@ -258,7 +258,7 @@ export default function TeleVetPage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Care for Your Pet, Anytime
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Connect with licensed veterinarians 24/7 from the comfort of your
               home.
             </p>

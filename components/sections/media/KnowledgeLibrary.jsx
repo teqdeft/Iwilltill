@@ -23,7 +23,7 @@ export default function KnowledgeLibrary() {
             />
           </div>
           <div className="p-5 md:p-6">
-            <h3 className="text-lg font-bold text-gray-900 mb-2 leading-snug">
+            <h3 className="text-xl font-bold text-gray-900 mb-2 leading-snug">
               {item.title}
             </h3>
             <p className="text-sm text-gray-500 mb-5">
@@ -42,7 +42,7 @@ export default function KnowledgeLibrary() {
 
       {items.length === 0 && (
         <div className="col-span-full text-center py-16 text-gray-500">
-          <p className="text-lg font-medium">Knowledge Library coming soon.</p>
+          <p className="text-xl font-medium">Knowledge Library coming soon.</p>
           <p className="text-sm mt-1">We're preparing great content for you!</p>
         </div>
       )}

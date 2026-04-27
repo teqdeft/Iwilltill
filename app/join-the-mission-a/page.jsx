@@ -142,7 +142,7 @@ export default function JoinTheMissionPage() {
               </h2>
             </div>
 
-            <div className="space-y-4 text-center text-gray-700 leading-relaxed text-[15px] md:text-base">
+            <div className="space-y-4 text-center text-gray-700 leading-relaxed text-[15px] md:text-lg">
               <p>
                 At iWILL 'til i'mWELL, we are more than a service - we are a
                 community and we are thrilled to have you join our growing
@@ -253,7 +253,7 @@ export default function JoinTheMissionPage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Become Part of the Mission
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Join a community where care is a shared commitment and wellness is
               a shared goal.
             </p>

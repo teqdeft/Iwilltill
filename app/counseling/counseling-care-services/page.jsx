@@ -87,7 +87,7 @@ export default function CounsellingCareServicesPage() {
             alt="Medical team"
             className="absolute inset-0 w-full h-full object-cover opacity-100 z-[1]"
           />
-            <Link
+          <Link
             href="/"
             className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
           >
@@ -105,7 +105,7 @@ export default function CounsellingCareServicesPage() {
                 …but even beauty has its struggles.
               </p>
 
-              <p className="text-base md:text-lg text-white/85 leading-relaxed mb-8 max-w-xl">
+              <p className="text-lg md:text-xl text-white/85 leading-relaxed mb-8 max-w-xl">
                 Challenges test our strength and resilience, but at{" "}
                 <em>iWILL 'til i'mWELL</em>, we see them as opportunities for
                 breakthrough.
@@ -134,7 +134,6 @@ export default function CounsellingCareServicesPage() {
         </section>
         <SelfCareSection />
 
-      
         {/* Counseling Services */}
         <section className="section-padding py-16 md:py-20 bg-gray-50">
           <div className="container-main max-w-5xl">
@@ -239,7 +238,7 @@ export default function CounsellingCareServicesPage() {
                   <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
                     You may feel no once cares, but we do.
                   </h3>
-                  <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                  <p className="text-sm md:text-lg text-gray-600 leading-relaxed">
                     We're here to listen, help guide you through life's
                     challenges, and support you in making the decisions that
                     matter most.
@@ -284,7 +283,7 @@ export default function CounsellingCareServicesPage() {
                   <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
                     Compassionate care, every step of the way.
                   </h3>
-                  <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                  <p className="text-sm md:text-lg text-gray-600 leading-relaxed">
                     Whether you're navigating stress, anxiety, trauma, or any
                     other mental health challenge, we're here to provide
                     compassionate support and personalized care every step of
@@ -295,7 +294,7 @@ export default function CounsellingCareServicesPage() {
             </div>
           </div>
         </section>
-          {/* Intro Paragraph */}
+        {/* Intro Paragraph */}
         <section className="section-padding py-16 md:py-20 bg-white">
           <div className="container-main max-w-4xl">
             <div className="relative">
@@ -304,7 +303,7 @@ export default function CounsellingCareServicesPage() {
                 Cura personalis: empowering your journey to total holistic
                 wellness.
               </h2>
-              <div className="md:pl-6 space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-base">
+              <div className="md:pl-6 space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-lg">
                 <p>
                   iWILL 'til i'mWELL is{" "}
                   <span className="font-bold">rooted in "Cura Personalis"</span>{" "}
@@ -342,7 +341,6 @@ export default function CounsellingCareServicesPage() {
           </div>
         </section>
 
-
         {/* What to Expect - Carousel */}
         <WhatToExpectCounselling />
 
@@ -365,7 +363,7 @@ export default function CounsellingCareServicesPage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               We Hear. We Listen. We Care.
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Start your Counseling journey today with licensed professionals
               who prioritize your mental well-being.
             </p>

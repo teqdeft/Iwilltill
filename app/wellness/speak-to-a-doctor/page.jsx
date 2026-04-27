@@ -63,13 +63,13 @@ export default function SpeakToADoctorPage() {
             alt="Medical team"
             className="absolute inset-0 w-full h-full object-cover opacity-70 z-[1]"
           />
-            <Link
-                      href="/"
-                      className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
-                    >
-                      <ArrowLeft className="w-4 h-4" />
-                      Home
-                    </Link>
+          <Link
+            href="/"
+            className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Home
+          </Link>
 
           <div className="relative z-[3] h-full container-main section-padding flex flex-col justify-center">
             <div className="max-w-3xl text-white">
@@ -80,7 +80,7 @@ export default function SpeakToADoctorPage() {
                 SPEAK TO A DOCTOR
               </h1>
 
-              <p className="text-base md:text-lg text-white/95 font-semibold leading-relaxed max-w-2xl">
+              <p className="text-lg md:text-xl text-white/95 font-semibold leading-relaxed max-w-2xl">
                 iWILL 'til i'mWELL offers premiere services that are designed to
                 meet your medical needs. Communication with Licensed Physicians
                 in English and Spanish, 24/7, 365 days a year. The highest
@@ -99,7 +99,7 @@ export default function SpeakToADoctorPage() {
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-6 leading-tight">
                 iWILL 'til i'mWELL's Comprehensive Medical Care
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px] md:text-base max-w-4xl mx-auto">
+              <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg max-w-4xl mx-auto">
                 Our services are designed to provide convenient, accessible,
                 high-quality care, personalized care anytime, anywhere, all
                 aimed at improving health outcomes for individuals and their
@@ -114,7 +114,7 @@ export default function SpeakToADoctorPage() {
                   key={card.title}
                   className="bg-white border border-gray-200 rounded-2xl p-6 md:p-7 text-center hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 transition-all duration-300"
                 >
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4 leading-snug">
+                  <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-4 leading-snug">
                     {card.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-[14px]">
@@ -131,7 +131,7 @@ export default function SpeakToADoctorPage() {
                   key={card.title}
                   className="bg-white border border-gray-200 rounded-2xl p-6 md:p-7 text-center hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 transition-all duration-300"
                 >
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4 leading-snug">
+                  <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-4 leading-snug">
                     {card.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-[14px]">
@@ -142,7 +142,7 @@ export default function SpeakToADoctorPage() {
             </div>
 
             {/* Closing statement */}
-            <p className="text-center text-primary font-bold text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+            <p className="text-center text-primary font-bold text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
               All medical care is delivered by licensed physicians and
               healthcare professionals. All is designed to support your health
               and wellness journey at an affordable monthly value.
@@ -206,7 +206,7 @@ export default function SpeakToADoctorPage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Talk to a Doctor Today
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Access licensed physicians 24/7 in English or Spanish — from
               anywhere, at an affordable value.
             </p>

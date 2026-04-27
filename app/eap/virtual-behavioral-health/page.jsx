@@ -96,7 +96,7 @@ export default function VirtualBehavioralHealthPage() {
                 Virtual Behavioral Health
               </h1>
 
-              <p className="text-lg md:text-xl text-white/95 font-semibold mb-7 max-w-2xl leading-relaxed">
+              <p className="text-xl md:text-xl text-white/95 font-semibold mb-7 max-w-2xl leading-relaxed">
                 iWILL 'til i'mWELL Empowers Employers, Transforms Workplaces,
                 Supports Employee Well-Being and Strengthens Business Success.
               </p>
@@ -116,7 +116,7 @@ export default function VirtualBehavioralHealthPage() {
           <div className="container-main max-w-4xl">
             <div className="relative">
               <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-primary to-accent rounded-full hidden md:block" />
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed md:pl-6">
+              <p className="text-xl md:text-xl text-gray-700 leading-relaxed md:pl-6">
                 <span className="font-bold text-gray-900">
                   75% of employees report experiencing high levels of
                   work-related stress
@@ -270,7 +270,7 @@ export default function VirtualBehavioralHealthPage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Invest in Mental Wellness
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Support your employees' well-being and strengthen your business
               success with comprehensive virtual behavioral health services.
             </p>

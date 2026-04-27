@@ -24,7 +24,7 @@ export default function MediaHubPage() {
     const fetchPosts = async () => {
       try {
         const response = await axios.get(
-          "https://iwilltilimwell.com/backend/wp-json/wp/v2/posts?per_page=100"
+          "https://iwilltilimwell.com/backend/wp-json/wp/v2/posts?per_page=100",
         );
         setPosts(response.data);
       } catch (error) {
@@ -38,7 +38,7 @@ export default function MediaHubPage() {
 
   // Filter posts by active tab category
   const filteredPosts = posts.filter((post) =>
-    post.class_list?.includes(`category-${activeTab}`)
+    post.class_list?.includes(`category-${activeTab}`),
   );
 
   // Fetch single post detail
@@ -47,7 +47,7 @@ export default function MediaHubPage() {
     setDetailLoading(true);
     try {
       const response = await axios.get(
-        `https://iwilltilimwell.com/backend/wp-json/wp/v2/posts/${postId}`
+        `https://iwilltilimwell.com/backend/wp-json/wp/v2/posts/${postId}`,
       );
       setDetailPost(response.data);
     } catch (error) {
@@ -74,9 +74,13 @@ export default function MediaHubPage() {
           }}
         >
           <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-10 -translate-y-1/2 translate-x-1/4 pointer-events-none hidden lg:block">
-            <img src="/images/logo-favi.svg" alt="" className="w-full h-full object-contain" />
+            <img
+              src="/images/logo-favi.svg"
+              alt=""
+              className="w-full h-full object-contain"
+            />
           </div>
-            <Link
+          <Link
             href="/"
             className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
           >
@@ -87,7 +91,7 @@ export default function MediaHubPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
               Media Hub
             </h1>
-            <p className="text-white/80 text-base md:text-lg max-w-2xl mx-auto">
+            <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto">
               Stay informed with the latest health and wellness insights,
               updates, and stories from iWILL 'til i'mWELL.
             </p>
@@ -114,13 +118,17 @@ export default function MediaHubPage() {
           }}
         >
           <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-20 -translate-y-1/2 translate-x-1/4 pointer-events-none">
-            <img src="/images/logo-favi.svg" alt="" className="w-full h-full object-contain" />
+            <img
+              src="/images/logo-favi.svg"
+              alt=""
+              className="w-full h-full object-contain"
+            />
           </div>
           <div className="relative container-main text-center text-white max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Start Your Wellness Journey
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Access doctors, therapists, and veterinarians 24/7 at an
               affordable value.
             </p>

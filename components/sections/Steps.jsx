@@ -167,7 +167,7 @@ export default function Steps() {
 
                 <h3
                   className={cn(
-                    "text-lg font-bold mb-2 transition-colors duration-500 group-hover:text-primary",
+                    "text-xl font-bold mb-2 transition-colors duration-500 group-hover:text-primary",
                     isActive ? "text-gray-900" : "text-gray-500",
                   )}
                 >

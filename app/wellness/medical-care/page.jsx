@@ -137,7 +137,7 @@ export default function MedicalCarePage() {
                 Medical Wellness
               </h1>
 
-              <p className="text-lg md:text-xl text-white/90 leading-relaxed font-medium mb-8 max-w-xl">
+              <p className="text-xl md:text-xl text-white/90 leading-relaxed font-medium mb-8 max-w-xl">
                 Empowering you to live a healthier life with personalized care
                 and support on your own terms
               </p>
@@ -354,7 +354,7 @@ export default function MedicalCarePage() {
                   <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
                     Trusted Medical Providers
                   </h3>
-                  <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                  <p className="text-sm md:text-lg text-gray-600 leading-relaxed">
                     Our network of licensed and board-certified medical
                     providers is dedicated to delivering high-quality care
                     tailored to your needs, ensuring you receive the best
@@ -390,7 +390,7 @@ export default function MedicalCarePage() {
                   <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
                     Message A Specialist
                   </h3>
-                  <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                  <p className="text-sm md:text-lg text-gray-600 leading-relaxed">
                     Easily connect with different healthcare specialists via
                     email for personalized advice and support. Whether you have
                     questions or need follow-up care, our specialists are here
@@ -434,7 +434,7 @@ export default function MedicalCarePage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Start Your Wellness Journey Today
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Connect with trusted medical providers and take control of your
               health decisions.
             </p>

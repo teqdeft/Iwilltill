@@ -112,7 +112,7 @@ export default function PhoneCarousel() {
 
                 {/* Overlay card */}
                 <div className="absolute top-1/3 left-4 right-4 bg-black/60 backdrop-blur-sm rounded-xl p-4 text-white">
-                  <h3 className="text-base font-bold mb-2">
+                  <h3 className="text-lg font-bold mb-2">
                     {currentSlide.title}
                   </h3>
                   <p className="text-xs text-white/85 leading-relaxed">

@@ -58,7 +58,7 @@ export default function WhyChooseUs() {
                     <Icon className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-1">
                       {reason.title}
                     </h3>
                     <p className="text-sm text-gray-600 leading-relaxed">
@@ -71,7 +71,11 @@ export default function WhyChooseUs() {
           </div>
 
           <div className="mt-10">
-            <Button variant="ghost" size="lg" href="https://app.iwilltilimwell.com/register">
+            <Button
+              variant="ghost"
+              size="lg"
+              href="https://app.iwilltilimwell.com/register"
+            >
               Get Started
               <ArrowRight className="w-4 h-4" />
             </Button>

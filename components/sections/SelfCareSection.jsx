@@ -36,7 +36,7 @@ export default function SelfCareSection() {
           observer.disconnect();
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.15 },
     );
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
@@ -52,13 +52,13 @@ export default function SelfCareSection() {
         <div
           className={cn(
             "absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-primary/[0.03] blur-3xl transition-all duration-[2000ms]",
-            isVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+            isVisible ? "opacity-100 scale-100" : "opacity-0 scale-50",
           )}
         />
         <div
           className={cn(
             "absolute -bottom-32 -left-32 w-[400px] h-[400px] rounded-full bg-accent/[0.03] blur-3xl transition-all duration-[2000ms] delay-300",
-            isVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+            isVisible ? "opacity-100 scale-100" : "opacity-0 scale-50",
           )}
         />
       </div>
@@ -71,7 +71,7 @@ export default function SelfCareSection() {
               "transition-all duration-700 ease-out",
               isVisible
                 ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-6"
+                : "opacity-0 translate-y-6",
             )}
           >
             <h2 className="text-4xl md:text-5xl lg:text-[56px] font-bold text-gray-900 leading-[1.1] tracking-tight mb-5">
@@ -85,15 +85,15 @@ export default function SelfCareSection() {
 
           <p
             className={cn(
-              "text-gray-600 text-base md:text-lg leading-relaxed max-w-2xl mx-auto transition-all duration-700 ease-out delay-200",
+              "text-gray-600 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto transition-all duration-700 ease-out delay-200",
               isVisible
                 ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-6"
+                : "opacity-0 translate-y-6",
             )}
           >
             We empower you to take control of your health by providing
-            accessible, affordable, and compassionate care for your body,
-            mind, and soul — on your terms, on your time.
+            accessible, affordable, and compassionate care for your body, mind,
+            and soul — on your terms, on your time.
           </p>
         </div>
 
@@ -109,7 +109,7 @@ export default function SelfCareSection() {
                   "group text-center transition-all duration-500 ease-out",
                   isVisible
                     ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-8"
+                    : "opacity-0 translate-y-8",
                 )}
                 style={{
                   transitionDelay: isVisible ? `${300 + i * 100}ms` : "0ms",
@@ -121,7 +121,7 @@ export default function SelfCareSection() {
                     className={cn(
                       "absolute inset-0 rounded-2xl transition-all duration-500",
                       isPrimary ? "bg-primary/10" : "bg-accent/10",
-                      "group-hover:scale-125 group-hover:opacity-0"
+                      "group-hover:scale-125 group-hover:opacity-0",
                     )}
                   />
                   {/* Icon box */}
@@ -131,7 +131,7 @@ export default function SelfCareSection() {
                       isPrimary
                         ? "bg-primary-100 group-hover:bg-primary"
                         : "bg-accent/10 group-hover:bg-accent",
-                      "group-hover:shadow-lg group-hover:-translate-y-1 group-hover:rotate-3"
+                      "group-hover:shadow-lg group-hover:-translate-y-1 group-hover:rotate-3",
                     )}
                   >
                     <Icon
@@ -139,7 +139,7 @@ export default function SelfCareSection() {
                         "w-7 h-7 transition-colors duration-300",
                         isPrimary
                           ? "text-primary group-hover:text-white"
-                          : "text-accent group-hover:text-white"
+                          : "text-accent group-hover:text-white",
                       )}
                     />
                   </div>
@@ -157,14 +157,16 @@ export default function SelfCareSection() {
           <div
             className={cn(
               "flex-1 h-px bg-gradient-to-r from-transparent to-primary/20 transition-all duration-1000 origin-right",
-              isVisible ? "scale-x-100" : "scale-x-0"
+              isVisible ? "scale-x-100" : "scale-x-0",
             )}
             style={{ transitionDelay: "700ms" }}
           />
           <div
             className={cn(
               "w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center transition-all duration-500",
-              isVisible ? "opacity-100 scale-100 rotate-0" : "opacity-0 scale-50 rotate-180"
+              isVisible
+                ? "opacity-100 scale-100 rotate-0"
+                : "opacity-0 scale-50 rotate-180",
             )}
             style={{ transitionDelay: "900ms" }}
           >
@@ -177,7 +179,7 @@ export default function SelfCareSection() {
           <div
             className={cn(
               "flex-1 h-px bg-gradient-to-l from-transparent to-primary/20 transition-all duration-1000 origin-left",
-              isVisible ? "scale-x-100" : "scale-x-0"
+              isVisible ? "scale-x-100" : "scale-x-0",
             )}
             style={{ transitionDelay: "700ms" }}
           />
@@ -192,7 +194,7 @@ export default function SelfCareSection() {
                 "inline-flex items-center gap-2 px-4 py-2.5 bg-gray-50 rounded-full border border-gray-200 text-[14px] text-gray-700 font-medium hover:border-primary/40 hover:bg-white hover:shadow-sm hover:-translate-y-0.5 transition-all duration-300",
                 isVisible
                   ? "opacity-100 translate-y-0 scale-100"
-                  : "opacity-0 translate-y-4 scale-95"
+                  : "opacity-0 translate-y-4 scale-95",
               )}
               style={{
                 transitionDelay: isVisible ? `${1000 + i * 60}ms` : "0ms",
@@ -201,7 +203,7 @@ export default function SelfCareSection() {
               <span
                 className={cn(
                   "w-1.5 h-1.5 rounded-full shrink-0",
-                  i % 2 === 0 ? "bg-primary" : "bg-accent"
+                  i % 2 === 0 ? "bg-primary" : "bg-accent",
                 )}
               />
               {tag}

@@ -143,10 +143,10 @@ export default function EnterpriseEAPPage() {
                 <span className="text-accent">Business Benefits</span>
               </h1>
 
-              <p className="text-lg md:text-xl text-white/95 font-semibold mb-2">
+              <p className="text-xl md:text-xl text-white/95 font-semibold mb-2">
                 We go beyond telehealth.
               </p>
-              <p className="text-lg md:text-xl text-white/90 font-medium mb-8 max-w-2xl">
+              <p className="text-xl md:text-xl text-white/90 font-medium mb-8 max-w-2xl">
                 We transform employee care into a strategic business advantage.
               </p>
 
@@ -286,7 +286,7 @@ export default function EnterpriseEAPPage() {
                   Employee Wellbeing
                 </span>
               </h2>
-              <p className="text-gray-600 mt-4 text-base md:text-lg">
+              <p className="text-gray-600 mt-4 text-lg md:text-xl">
                 The program goes beyond treating immediate health concerns.
               </p>
             </div>
@@ -322,7 +322,7 @@ export default function EnterpriseEAPPage() {
                   Wellness Ecosystem
                 </span>
               </h2>
-              <p className="text-gray-600 leading-relaxed text-base md:text-lg">
+              <p className="text-gray-600 leading-relaxed text-lg md:text-xl">
                 The iWILL 'til i'mWELL Employee Assistance Program (EAP)
                 provides Telemedicine and confidential Mental Health Counseling.
                 These are some of our most prominent services for companies,
@@ -398,7 +398,7 @@ export default function EnterpriseEAPPage() {
                   <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
                     Supporting the Health of our Workforce
                   </h3>
-                  <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                  <p className="text-sm md:text-lg text-gray-600 leading-relaxed">
                     At iWILL 'til i'mWELL, we provide accessible healthcare that
                     empowers employees to take control of their health,
                     improving well-being and productivity. From routine care to
@@ -442,7 +442,7 @@ export default function EnterpriseEAPPage() {
                   <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
                     A Healthier Workforce Starts Here
                   </h3>
-                  <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                  <p className="text-sm md:text-lg text-gray-600 leading-relaxed">
                     We believe in the power of proactive care. With our flexible
                     telehealth services, employees can receive the medical and
                     mental health support they need, without the hassle. iWILL
@@ -477,7 +477,7 @@ export default function EnterpriseEAPPage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Transform Employee Care Today
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Give your team the healthcare support they deserve — and unlock
               measurable business benefits for your organization.
             </p>

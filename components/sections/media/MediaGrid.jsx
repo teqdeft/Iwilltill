@@ -13,8 +13,12 @@ export default function MediaGrid({ posts, loading, onReadMore }) {
   if (posts.length === 0) {
     return (
       <div className="text-center py-20 bg-white rounded-2xl border border-gray-100">
-        <p className="text-lg font-medium text-gray-500">No posts found in this category.</p>
-        <p className="text-sm mt-1 text-gray-400">Check back soon for new content!</p>
+        <p className="text-xl font-medium text-gray-500">
+          No posts found in this category.
+        </p>
+        <p className="text-sm mt-1 text-gray-400">
+          Check back soon for new content!
+        </p>
       </div>
     );
   }
@@ -39,23 +43,30 @@ export default function MediaGrid({ posts, loading, onReadMore }) {
               <div
                 className="w-full h-full flex items-center justify-center"
                 style={{
-                  background: "linear-gradient(135deg, #604376 0%, #AC73B9 100%)",
+                  background:
+                    "linear-gradient(135deg, #604376 0%, #AC73B9 100%)",
                 }}
               >
-                <img src="/images/logo-favi.svg" alt="" className="w-16 h-16 opacity-30" />
+                <img
+                  src="/images/logo-favi.svg"
+                  alt=""
+                  className="w-16 h-16 opacity-30"
+                />
               </div>
             )}
           </div>
 
           {/* Content */}
           <div className="p-5 md:p-6">
-            <h3 className="text-lg font-bold text-primary mb-2 leading-snug line-clamp-2">
+            <h3 className="text-xl font-bold text-primary mb-2 leading-snug line-clamp-2">
               {post.acf?.blog_title || post.title?.rendered || ""}
             </h3>
 
             <p className="text-sm text-gray-500 mb-4">
               {(() => {
-                const cat = post.class_list?.find((c) => c.startsWith("category-"));
+                const cat = post.class_list?.find((c) =>
+                  c.startsWith("category-"),
+                );
                 const name = cat ? cat.replace("category-", "") : "";
                 return name.charAt(0).toUpperCase() + name.slice(1);
               })()}

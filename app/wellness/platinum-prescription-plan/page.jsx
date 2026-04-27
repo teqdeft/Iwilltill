@@ -61,7 +61,7 @@ export default function PlatinumPrescriptionPlanPage() {
               >
                 Platinum Prescription Plan
               </h1>
-              <p className="text-base md:text-lg text-white/95 font-semibold">
+              <p className="text-lg md:text-xl text-white/95 font-semibold">
                 $20 Cost Medication Program
               </p>
             </div>
@@ -187,7 +187,7 @@ export default function PlatinumPrescriptionPlanPage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Access Over 1,000 Medications
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Join the Platinum Prescription Plan and take advantage of
               BestChoiceRx's enhanced medication program.
             </p>

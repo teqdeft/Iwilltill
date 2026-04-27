@@ -80,7 +80,7 @@ export default function SilverPrescriptionPlanPage() {
               >
                 Silver Prescription Plan for Urgent Care Medications
               </h1>
-              <p className="text-base md:text-lg text-white/95 font-semibold">
+              <p className="text-lg md:text-xl text-white/95 font-semibold">
                 $10 Cost Medication Program
               </p>
             </div>
@@ -100,7 +100,7 @@ export default function SilverPrescriptionPlanPage() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center p-6">
                   <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center shadow-lg max-w-xs">
-                    <p className="text-gray-900 font-semibold text-lg leading-snug mb-4">
+                    <p className="text-gray-900 font-semibold text-xl leading-snug mb-4">
                       Thirty-seven common medications.
                     </p>
                     <Button
@@ -120,7 +120,7 @@ export default function SilverPrescriptionPlanPage() {
                   Silver Prescription Plan
                 </h2>
 
-                <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-3">
                   Acute Medication Subscription Program
                 </h3>
 
@@ -154,49 +154,49 @@ export default function SilverPrescriptionPlanPage() {
         </section>
 
         {/* Our Program Covers + Drugs Like */}
-<section className="section-padding py-16 md:py-20 bg-gray-50">
-  <div className="container-main max-w-5xl">
-    {/* Our Program Covers */}
-    <div className="mb-14">
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-8">
-        Our Program Covers:
-      </h2>
+        <section className="section-padding py-16 md:py-20 bg-gray-50">
+          <div className="container-main max-w-5xl">
+            {/* Our Program Covers */}
+            <div className="mb-14">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-8">
+                Our Program Covers:
+              </h2>
 
-      <div className="flex flex-wrap gap-2.5">
-        {programCovers.map((item) => (
-          <span
-            key={item}
-            className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full border border-gray-200 text-[14px] text-gray-700 font-medium hover:border-primary/40 hover:shadow-sm transition-all duration-200"
-          >
-            <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-            {item}
-          </span>
-        ))}
-      </div>
-    </div>
+              <div className="flex flex-wrap gap-2.5">
+                {programCovers.map((item) => (
+                  <span
+                    key={item}
+                    className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full border border-gray-200 text-[14px] text-gray-700 font-medium hover:border-primary/40 hover:shadow-sm transition-all duration-200"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
 
-    {/* Drugs Like */}
-    <div>
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-8">
-        Drugs Like:
-      </h2>
+            {/* Drugs Like */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-8">
+                Drugs Like:
+              </h2>
 
-      <div className="flex flex-wrap gap-2.5">
-        {[...drugsLikeCol1, ...drugsLikeCol2, ...drugsLikeCol3].map(
-          (item) => (
-            <span
-              key={item}
-              className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full border border-gray-200 text-[14px] text-gray-700 font-medium hover:border-primary/40 hover:shadow-sm transition-all duration-200"
-            >
-              <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
-              {item}
-            </span>
-          )
-        )}
-      </div>
-    </div>
-  </div>
-</section>
+              <div className="flex flex-wrap gap-2.5">
+                {[...drugsLikeCol1, ...drugsLikeCol2, ...drugsLikeCol3].map(
+                  (item) => (
+                    <span
+                      key={item}
+                      className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full border border-gray-200 text-[14px] text-gray-700 font-medium hover:border-primary/40 hover:shadow-sm transition-all duration-200"
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                      {item}
+                    </span>
+                  ),
+                )}
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* The Program is Easy to Use */}
         <section className="section-padding py-16 md:py-20 bg-white">
@@ -266,7 +266,7 @@ export default function SilverPrescriptionPlanPage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Start Saving on Prescriptions Today
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Join the Silver Prescription Plan and access 37 common medications
               at just $10 each.
             </p>

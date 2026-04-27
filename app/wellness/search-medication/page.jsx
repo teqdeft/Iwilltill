@@ -82,7 +82,7 @@ export default function SearchMedicationPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
               Search Medication
             </h1>
-            <p className="text-white/80 text-base md:text-lg max-w-2xl mx-auto">
+            <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto">
               Find your medication and discover which prescription plan covers
               it.
             </p>
@@ -102,7 +102,7 @@ export default function SearchMedicationPage() {
                   key={plan.price}
                   className={`flex items-center gap-4 px-6 py-5 ${i < 2 ? "md:border-r md:border-white/20 border-b md:border-b-0 border-white/20" : ""}`}
                 >
-                  <p className="text-white font-semibold text-sm md:text-base leading-tight whitespace-pre-line flex-1">
+                  <p className="text-white font-semibold text-sm md:text-lg leading-tight whitespace-pre-line flex-1">
                     {plan.name}
                   </p>
                   <div className="flex items-baseline gap-1.5">
@@ -126,7 +126,7 @@ export default function SearchMedicationPage() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Type medication name to search..."
-                className="w-full pl-12 pr-12 py-4 text-base border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary bg-white shadow-sm"
+                className="w-full pl-12 pr-12 py-4 text-lg border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary bg-white shadow-sm"
               />
               {query && (
                 <button
@@ -210,7 +210,7 @@ export default function SearchMedicationPage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Start Saving on Prescriptions
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Choose the prescription plan that fits your needs and start saving
               today.
             </p>

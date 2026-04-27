@@ -98,7 +98,7 @@ export default function WhatToExpectCounselling() {
           <p className="text-xl md:text-2xl font-script text-accent mb-5">
             We Hear. We Listen. We Care.
           </p>
-          <p className="text-gray-600 leading-relaxed text-base md:text-lg">
+          <p className="text-gray-600 leading-relaxed text-lg md:text-xl">
             At iWILL 'til i'mWELL, we make accessing counseling simple,
             seamless, and tailored to your needs. Whether you're seeking
             emotional support, therapy, or specialized care, we connect you with
@@ -150,7 +150,7 @@ export default function WhatToExpectCounselling() {
                       />
                     </div>
                     <div className="p-5 text-center">
-                      <h3 className="text-lg font-bold text-gray-900 mb-1">
+                      <h3 className="text-xl font-bold text-gray-900 mb-1">
                         {card.title}
                       </h3>
                       <p className="text-xs text-primary font-medium mb-3">

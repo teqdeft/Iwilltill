@@ -102,7 +102,7 @@ export default function VirtualMedicalCarePage() {
                 Virtual Primary Care
               </h1>
 
-              <p className="text-lg md:text-xl text-white/95 font-semibold mb-7">
+              <p className="text-xl md:text-xl text-white/95 font-semibold mb-7">
                 Healthcare the way you and your employees want it.
               </p>
 
@@ -120,14 +120,14 @@ export default function VirtualMedicalCarePage() {
         <section className="section-padding py-16 md:py-20 bg-white">
           <div className="container-main max-w-5xl">
             <div className="text-center max-w-3xl mx-auto mb-12">
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+              <p className="text-xl md:text-xl text-gray-700 leading-relaxed">
                 360 degree care designed with you and your employees in mind.
               </p>
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed mt-1">
+              <p className="text-xl md:text-xl text-gray-700 leading-relaxed mt-1">
                 From medical care to behavioral health care and everything in
                 between.
               </p>
-              <p className="text-lg md:text-xl font-bold text-primary mt-3">
+              <p className="text-xl md:text-xl font-bold text-primary mt-3">
                 We are here for you.
               </p>
             </div>
@@ -272,7 +272,7 @@ export default function VirtualMedicalCarePage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Healthcare Your Way
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Give your employees convenient, comprehensive virtual primary care
               — and experience healthcare the way it should be.
             </p>

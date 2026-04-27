@@ -49,7 +49,7 @@ export default function FAQPage() {
                 Frequently Asked Questions
               </h1>
 
-              <p className="text-base md:text-lg text-white/95 leading-relaxed mb-8 max-w-xl">
+              <p className="text-lg md:text-xl text-white/95 leading-relaxed mb-8 max-w-xl">
                 Have questions? We created this space to give clear answers.
                 Whether you want to understand how care works at iWILL 'til
                 i'mWELL or what to expect from Essential Care, you will find

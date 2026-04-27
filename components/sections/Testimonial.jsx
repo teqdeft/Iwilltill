@@ -75,7 +75,8 @@ export default function Testimonial() {
   };
 
   const next = () => goTo((current + 1) % testimonials.length, "right");
-  const prev = () => goTo((current - 1 + testimonials.length) % testimonials.length, "left");
+  const prev = () =>
+    goTo((current - 1 + testimonials.length) % testimonials.length, "left");
 
   useEffect(() => {
     if (paused) return;
@@ -89,12 +90,11 @@ export default function Testimonial() {
 
   // Slide-out: current exits opposite to direction
   // Slide-in: new enters from the direction side
-  const slideOutClass =
-    animating
-      ? direction === "right"
-        ? "-translate-x-8 opacity-0"
-        : "translate-x-8 opacity-0"
-      : "translate-x-0 opacity-100";
+  const slideOutClass = animating
+    ? direction === "right"
+      ? "-translate-x-8 opacity-0"
+      : "translate-x-8 opacity-0"
+    : "translate-x-0 opacity-100";
 
   return (
     <SectionWrapper gray className="py-12 md:py-16">
@@ -110,7 +110,7 @@ export default function Testimonial() {
           <div
             className={`transition-all duration-300 ease-in-out ${slideOutClass}`}
           >
-            <blockquote className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6 italic min-h-[120px]">
+            <blockquote className="text-xl md:text-xl text-gray-700 leading-relaxed mb-6 italic min-h-[120px]">
               &ldquo;{t.quote}&rdquo;
             </blockquote>
 

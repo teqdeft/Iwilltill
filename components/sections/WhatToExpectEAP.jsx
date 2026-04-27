@@ -95,7 +95,7 @@ export default function WhatToExpectEAP() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-5">
             What to <span className="text-primary">Expect?</span>
           </h2>
-          <div className="space-y-4 text-gray-600 leading-relaxed text-base">
+          <div className="space-y-4 text-gray-600 leading-relaxed text-lg">
             <p>
               With iWILL 'til i'mWELL, employees can expect convenient,
               confidential access to a host of many different professionals
@@ -168,7 +168,7 @@ export default function WhatToExpectEAP() {
                       />
                     </div>
                     <div className="p-5 text-center">
-                      <h3 className="text-lg font-bold text-gray-900 mb-1">
+                      <h3 className="text-xl font-bold text-gray-900 mb-1">
                         {card.title}
                       </h3>
                       <p className="text-xs text-primary font-medium mb-3">

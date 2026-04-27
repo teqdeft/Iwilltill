@@ -157,7 +157,7 @@ export default function AboutUsPage() {
               </div>
             </div>
 
-            <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-base">
+            <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-lg">
               <p>
                 With a holistic approach, iWILL 'til i'mWELL empowers
                 individuals to take control of their well-being through quality
@@ -196,7 +196,7 @@ export default function AboutUsPage() {
                 <span className="text-primary font-script">Self-Discovery</span>
               </h2>
               <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary/40 rounded-full mx-auto mb-8" />
-              <p className="text-gray-900 font-semibold text-base md:text-lg mb-3">
+              <p className="text-gray-900 font-semibold text-lg md:text-xl mb-3">
                 Gain Access to Medical and Mental Healthcare Wellness Programs.
               </p>
               <div className="space-y-2 text-gray-600 leading-relaxed text-[15px]">
@@ -263,7 +263,7 @@ export default function AboutUsPage() {
                 </h2>
               </div>
 
-              <div className="space-y-3 text-gray-700 leading-relaxed text-base mt-6">
+              <div className="space-y-3 text-gray-700 leading-relaxed text-lg mt-6">
                 <p>
                   iWILL 'til i'mWELL offers premiere services that are designed
                   to meet your medical and mental health needs.
@@ -306,7 +306,7 @@ export default function AboutUsPage() {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-5 inline-block border-b-2 border-white/40 pb-2">
               We provide medical care, behavioral health care and pet care.
             </h2>
-            <p className="text-white/85 text-base md:text-lg leading-relaxed mb-12 max-w-3xl mx-auto">
+            <p className="text-white/85 text-lg md:text-xl leading-relaxed mb-12 max-w-3xl mx-auto">
               iWILL 'til I'mWELL offers premiere services that are designed to
               meet your medical and mental health needs. Communication with
               Licensed Physicians & Mental Health Specialists in English and
@@ -324,7 +324,7 @@ export default function AboutUsPage() {
                       duration={2000}
                     />
                   </div>
-                  <div className="text-sm md:text-base text-white/90 font-semibold">
+                  <div className="text-sm md:text-lg text-white/90 font-semibold">
                     {stat.label}
                   </div>
                 </div>
@@ -347,7 +347,7 @@ export default function AboutUsPage() {
 
             <div className="grid lg:grid-cols-[1.3fr_1fr] gap-10 lg:gap-16 items-start">
               {/* Left - CEO Message */}
-              <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-base">
+              <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-lg">
                 <p>
                   At iWILL 'til i'mWELL, we believe that true wellness goes
                   beyond just treating symptoms - it's about healing the whole
@@ -391,7 +391,7 @@ export default function AboutUsPage() {
                     className="w-full h-auto object-cover aspect-[4/5]"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-1">
+                <h3 className="text-xl font-bold text-gray-900 mb-1">
                   Dr. Jillandra C. Rovaris
                 </h3>
                 <p className="text-sm text-gray-600 mb-4">
@@ -425,7 +425,7 @@ export default function AboutUsPage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Take Control of Your Health Today
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Join thousands who have chosen iWILL 'til i'mWELL for accessible,
               holistic healthcare for body, mind, and soul.
             </p>

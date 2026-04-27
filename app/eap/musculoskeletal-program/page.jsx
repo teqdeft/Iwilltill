@@ -60,7 +60,7 @@ export default function IntegratedMusculoskeletalCarePage() {
                 Musculoskeletal Care
               </h1>
 
-              <p className="text-base md:text-lg text-white/90 leading-relaxed mb-8 max-w-2xl">
+              <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8 max-w-2xl">
                 Our all-in-one clinical support for chronic pain makes it easy
                 to get expert care for joints and muscles. Help your employees
                 feel better, move better, and work better leading to fewer sick
@@ -104,7 +104,7 @@ export default function IntegratedMusculoskeletalCarePage() {
                   </h2>
                 </div>
 
-                <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-base">
+                <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-lg">
                   <p>
                     Employees receive expert virtual care from Licensed Physical
                     Therapists trained to treat and prevent pain in 18 different
@@ -140,7 +140,7 @@ export default function IntegratedMusculoskeletalCarePage() {
                   </h2>
                 </div>
 
-                <p className="text-gray-700 leading-relaxed text-[15px] md:text-base mb-6">
+                <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg mb-6">
                   Your employees are surrounded by a collaborative care team
                   that prioritizes their well-being. Their journey begins with a
                   comprehensive 30 - 45 minute virtual evaluation and continues
@@ -202,7 +202,7 @@ export default function IntegratedMusculoskeletalCarePage() {
                 </center>
               </h2>
 
-              <div className="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
+              <div className="space-y-4 text-gray-700 leading-relaxed text-lg md:text-xl">
                 <p>
                   At iWILL 'til i'mWELL, we prioritize prevention and
                   whole-person care by addressing pain and related behavioral
@@ -251,7 +251,7 @@ export default function IntegratedMusculoskeletalCarePage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Move Better. Feel Better. Work Better.
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Give your employees access to expert musculoskeletal care that
               reduces sick days, boosts productivity, and lowers healthcare
               costs.

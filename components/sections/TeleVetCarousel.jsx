@@ -50,7 +50,8 @@ const cards = [
     image: "/images/televet-pet-care/dog-and-cat-v1.png",
     title: "Add Your Pet",
     subtitle: "iWILL 'til i'mWELL",
-    description: "Log into your portal, access your account and add your furry friend",
+    description:
+      "Log into your portal, access your account and add your furry friend",
   },
 ];
 
@@ -59,7 +60,8 @@ export default function TeleVetCarousel() {
 
   const scroll = (direction) => {
     if (!scrollRef.current) return;
-    const cardWidth = scrollRef.current.querySelector("[data-card]")?.offsetWidth || 280;
+    const cardWidth =
+      scrollRef.current.querySelector("[data-card]")?.offsetWidth || 280;
     const gap = 24;
     const scrollAmount = (cardWidth + gap) * 1;
     scrollRef.current.scrollBy({
@@ -77,20 +79,20 @@ export default function TeleVetCarousel() {
             What to Expect?
           </h2>
 
-          <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-base max-w-4xl mx-auto">
+          <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-lg max-w-4xl mx-auto">
             <p>
               At iWILL 'til i'mWELL, we make caring for your pet easy,
               convenient, and tailored to their needs. Whether you need advice
-              from a veterinarian, a second opinion, or help deciding if a
-              visit to the vet or ER is necessary, we connect you with
-              licensed, compassionate veterinarians dedicated to your pet's
-              health and happiness. Consultations are conducted in real-time
-              via phone or video call on your mobile device or computer.
+              from a veterinarian, a second opinion, or help deciding if a visit
+              to the vet or ER is necessary, we connect you with licensed,
+              compassionate veterinarians dedicated to your pet's health and
+              happiness. Consultations are conducted in real-time via phone or
+              video call on your mobile device or computer.
             </p>
             <p>
-              You can discuss a range of concerns, including behavioral
-              issues, training, wellness, and more, ensuring your pet gets the
-              care they deserve - whenever and wherever you need it.
+              You can discuss a range of concerns, including behavioral issues,
+              training, wellness, and more, ensuring your pet gets the care they
+              deserve - whenever and wherever you need it.
             </p>
           </div>
         </div>
@@ -137,7 +139,7 @@ export default function TeleVetCarousel() {
                   />
                 </div>
                 <div className="text-center px-2">
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 leading-tight mb-1">
+                  <h3 className="text-xl md:text-xl font-bold text-gray-900 leading-tight mb-1">
                     {card.title}
                   </h3>
                   <p className="text-sm text-gray-500 mb-3">{card.subtitle}</p>

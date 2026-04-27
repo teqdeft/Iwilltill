@@ -357,17 +357,15 @@ function FormSection({ id, title, isOpen, onToggle, children }) {
         onClick={onToggle}
         className={cn(
           "w-full flex items-center justify-between gap-4 px-6 py-5 text-left transition-colors",
-          isOpen ? "bg-gray-50" : "bg-white hover:bg-gray-50"
+          isOpen ? "bg-gray-50" : "bg-white hover:bg-gray-50",
         )}
         aria-expanded={isOpen}
       >
-        <h3 className="text-base md:text-lg font-bold text-gray-900">
-          {title}
-        </h3>
+        <h3 className="text-lg md:text-xl font-bold text-gray-900">{title}</h3>
         <ChevronDown
           className={cn(
             "w-5 h-5 text-gray-600 shrink-0 transition-transform duration-300",
-            isOpen && "rotate-180"
+            isOpen && "rotate-180",
           )}
         />
       </button>
@@ -396,7 +394,7 @@ function CheckboxField({ label, checked, onChange }) {
             "w-5 h-5 rounded border-2 transition-all duration-200 flex items-center justify-center",
             checked
               ? "bg-primary border-primary"
-              : "bg-white border-gray-300 group-hover:border-primary/50"
+              : "bg-white border-gray-300 group-hover:border-primary/50",
           )}
         >
           {checked && (
@@ -426,7 +424,7 @@ function RadioField({ name, value, label, checked, onChange }) {
             "w-5 h-5 rounded-full border-2 transition-all duration-200 flex items-center justify-center",
             checked
               ? "border-primary"
-              : "border-gray-300 group-hover:border-primary/50"
+              : "border-gray-300 group-hover:border-primary/50",
           )}
         >
           {checked && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}

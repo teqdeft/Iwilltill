@@ -29,7 +29,7 @@ export default function NotFound() {
           className="w-full h-full object-contain"
         />
       </div> */}
- <div className="pointer-events-none absolute top-1/2 right-200 animate-bounce w-[600px] h-[600px] opacity-50 -translate-y-1/2 translate-x-1/4">
+      <div className="pointer-events-none absolute top-1/2 right-200 animate-bounce w-[600px] h-[600px] opacity-50 -translate-y-1/2 translate-x-1/4">
         <img
           src="/images/logo-favi.svg"
           alt=""
@@ -51,7 +51,7 @@ export default function NotFound() {
         </h2>
 
         {/* Description */}
-        <p className="text-base md:text-lg text-white/75 leading-relaxed mb-10 max-w-md mx-auto">
+        <p className="text-lg md:text-xl text-white/75 leading-relaxed mb-10 max-w-md mx-auto">
           The page you&apos;re looking for doesn&apos;t exist or has been moved.
           Let&apos;s get you back on track to better health.
         </p>

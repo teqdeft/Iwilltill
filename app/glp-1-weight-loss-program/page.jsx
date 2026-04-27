@@ -123,7 +123,7 @@ export default function GLP1Page() {
                 GLP-1 Weight Loss Management Program
               </h1>
 
-              <p className="text-base md:text-lg text-white/95 font-semibold leading-relaxed mb-7">
+              <p className="text-lg md:text-xl text-white/95 font-semibold leading-relaxed mb-7">
                 iWILL 'til i'mWELL's Guided Steps to Lasting Weight Loss
               </p>
 
@@ -151,7 +151,7 @@ export default function GLP1Page() {
 
                 {/* Overlay card */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/85 backdrop-blur-sm rounded-2xl p-6 md:p-8 text-center shadow-xl max-w-[280px] w-[85%]">
-                  <p className="text-base md:text-lg font-bold text-gray-900 inline-block border-b-2 border-primary pb-1.5 mb-4">
+                  <p className="text-lg md:text-xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-1.5 mb-4">
                     iWILL 'til i'mWELL
                   </p>
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-5">
@@ -179,7 +179,7 @@ export default function GLP1Page() {
                   What is iWILL 'til i'mWELL Weight Loss Management Program?
                 </h2>
 
-                <p className="text-gray-700 leading-relaxed text-[15px] md:text-base mb-7">
+                <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg mb-7">
                   <span className="font-bold">
                     iWILL 'til i'mWELL's Weight Loss Management Program
                   </span>{" "}
@@ -225,7 +225,7 @@ export default function GLP1Page() {
                         {step.number}
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-lg md:text-xl font-bold text-primary leading-tight mb-2">
+                        <h3 className="text-xl md:text-xl font-bold text-primary leading-tight mb-2">
                           {step.title}
                         </h3>
                         <p className="text-gray-700 leading-relaxed text-[14px] md:text-[15px]">
@@ -377,7 +377,7 @@ export default function GLP1Page() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Start Your Weight Loss Journey
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Take the first step toward lasting, sustainable weight loss with
               personalized clinical support.
             </p>

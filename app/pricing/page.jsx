@@ -35,7 +35,7 @@ export default function PricingPage() {
             alt="Medical team"
             className="absolute inset-0 w-full h-full object-cover opacity-70 z-[1]"
           />
-            <Link
+          <Link
             href="/"
             className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
           >
@@ -49,7 +49,7 @@ export default function PricingPage() {
                 Pricing
               </h1>
 
-              <p className="text-base md:text-lg text-white/90 leading-relaxed mb-8 max-w-2xl">
+              <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8 max-w-2xl">
                 iWILL 'til i'mWELL offers premiere services that are designed to
                 meet your medical and mental health needs. We offer{" "}
                 <span className="font-bold">24/7/365 Communication</span> with
@@ -103,7 +103,7 @@ export default function PricingPage() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Ready to Get Started?
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
+            <p className="text-white/80 text-xl leading-relaxed mb-8">
               Choose the plan that fits your needs and start your wellness
               journey today.
             </p>

@@ -52,11 +52,11 @@ export default function Hero() {
                 <span className="text-accent">HealthCare!</span>
               </h1>
 
-              <p className="text-lg text-white/80 leading-relaxed  font-bold">
+              <p className="text-xl text-white/80 leading-relaxed  font-bold">
                 Talk to a Doctor, Therapist or Veterinarian Right Now!
               </p>
 
-              <p className="text-white/70 leading-relaxed text-lg">
+              <p className="text-white/70 leading-relaxed text-xl">
                 Access doctors, therapists, and board-certified providers on
                 your terms. We'll keep it simple, affordable, and on your time.
               </p>

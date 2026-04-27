@@ -15,7 +15,7 @@ export default function SectionWrapper({
         dark && "bg-brand-dark text-white",
         gray && "bg-gray-50",
         !dark && !gray && "bg-white",
-        className
+        className,
       )}
     >
       <div className="container-main">{children}</div>
@@ -36,7 +36,7 @@ export function SectionHeader({
       className={cn(
         "mb-12 md:mb-16 max-w-3xl",
         centered && "mx-auto text-center",
-        className
+        className,
       )}
     >
       {badge && (
@@ -53,7 +53,7 @@ export function SectionHeader({
         )}
       </h2>
       {description && (
-        <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+        <p className="text-gray-600 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
           {description}
         </p>
       )}

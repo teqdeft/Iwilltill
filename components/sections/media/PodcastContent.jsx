@@ -31,12 +31,11 @@ export default function PodcastContent() {
 
           {/* Content */}
           <div className="p-5 md:p-6">
-            <h3 className="text-lg font-bold text-gray-900 mb-2 leading-snug">
+            <h3 className="text-xl font-bold text-gray-900 mb-2 leading-snug">
               {item.title}
             </h3>
             <p className="text-sm text-gray-500 mb-5">
-              {item.category}{" "}
-              <span className="mx-1.5 text-gray-300">|</span>{" "}
+              {item.category} <span className="mx-1.5 text-gray-300">|</span>{" "}
               {item.date}
             </p>
             <div className="flex justify-end">
@@ -50,7 +49,7 @@ export default function PodcastContent() {
 
       {podcasts.length === 0 && (
         <div className="col-span-full text-center py-16 text-gray-500">
-          <p className="text-lg font-medium">No podcasts available yet.</p>
+          <p className="text-xl font-medium">No podcasts available yet.</p>
           <p className="text-sm mt-1">Check back soon!</p>
         </div>
       )}

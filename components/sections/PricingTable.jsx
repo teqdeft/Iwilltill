@@ -124,7 +124,7 @@ export default function PricingTable() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-3">
               Choose your <span className="text-primary font-script">Plan</span>
             </h2>
-            <p className="text-gray-600 text-sm md:text-base mt-3">
+            <p className="text-gray-600 text-sm md:text-lg mt-3">
               For a detailed description of all our services, please visit our{" "}
               <FaqLink />
             </p>
@@ -142,7 +142,7 @@ export default function PricingTable() {
                 "px-6 py-2.5 text-sm font-semibold rounded-lg transition-all duration-300",
                 activeTab === "self"
                   ? "bg-primary text-white shadow-md"
-                  : "text-gray-600 hover:text-primary"
+                  : "text-gray-600 hover:text-primary",
               )}
             >
               Self
@@ -157,7 +157,7 @@ export default function PricingTable() {
                 "px-6 py-2.5 text-sm font-semibold rounded-lg transition-all duration-300",
                 activeTab === "family"
                   ? "bg-primary text-white shadow-md"
-                  : "text-gray-600 hover:text-primary"
+                  : "text-gray-600 hover:text-primary",
               )}
             >
               Self + Family
@@ -179,7 +179,7 @@ export default function PricingTable() {
                   "group bg-white rounded-2xl border-2 p-5 md:p-6 transition-all duration-300 text-left relative overflow-hidden",
                   isSelected
                     ? "border-primary shadow-xl shadow-primary/15 -translate-y-1 ring-2 ring-primary/20"
-                    : "border-gray-200 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1"
+                    : "border-gray-200 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1",
                 )}
               >
                 {/* Selected indicator */}
@@ -203,7 +203,7 @@ export default function PricingTable() {
                         "w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-colors duration-300",
                         isSelected
                           ? "bg-primary text-white"
-                          : "bg-primary-100 text-primary"
+                          : "bg-primary-100 text-primary",
                       )}
                     >
                       <Icon className="w-5 h-5" />
@@ -216,7 +216,7 @@ export default function PricingTable() {
                     <span
                       className={cn(
                         "text-3xl md:text-4xl font-bold transition-colors duration-300",
-                        isSelected ? "text-primary" : "text-gray-900"
+                        isSelected ? "text-primary" : "text-gray-900",
                       )}
                     >
                       {plan.price}
@@ -230,7 +230,10 @@ export default function PricingTable() {
                   {/* Feature count badge when selected */}
                   {isSelected && (
                     <div className="mt-3 inline-flex items-center gap-1.5 px-2.5 py-1 bg-accent/10 rounded-full">
-                      <Check className="w-3.5 h-3.5 text-accent" strokeWidth={3} />
+                      <Check
+                        className="w-3.5 h-3.5 text-accent"
+                        strokeWidth={3}
+                      />
                       <span className="text-xs font-semibold text-accent">
                         {includedCount} of {features.length} features included
                       </span>
@@ -280,8 +283,8 @@ export default function PricingTable() {
                       selectedPlan === tier
                         ? "bg-primary text-white"
                         : selectedPlan && selectedPlan !== tier
-                        ? "text-gray-400"
-                        : "text-gray-700"
+                          ? "text-gray-400"
+                          : "text-gray-700",
                     )}
                   >
                     {tier}
@@ -302,7 +305,7 @@ export default function PricingTable() {
                       "grid grid-cols-[1fr_60px_60px_60px_60px] gap-2 px-5 py-4 items-start transition-all duration-300",
                       i !== features.length - 1 && "border-b border-gray-100",
                       selectedPlan && isIncluded && "bg-accent/5",
-                      selectedPlan && !isIncluded && "opacity-40"
+                      selectedPlan && !isIncluded && "opacity-40",
                     )}
                   >
                     <div
@@ -311,8 +314,8 @@ export default function PricingTable() {
                         selectedPlan && isIncluded
                           ? "text-gray-900"
                           : selectedPlan && !isIncluded
-                          ? "text-gray-400"
-                          : "text-gray-700"
+                            ? "text-gray-400"
+                            : "text-gray-700",
                       )}
                     >
                       <span
@@ -320,7 +323,7 @@ export default function PricingTable() {
                           "font-bold",
                           selectedPlan && isIncluded
                             ? "text-primary"
-                            : "text-gray-900"
+                            : "text-gray-900",
                         )}
                       >
                         {feature.name}
@@ -332,7 +335,7 @@ export default function PricingTable() {
                         key={tier}
                         className={cn(
                           "flex items-center justify-center pt-1 transition-all duration-300",
-                          selectedPlan === tier && "scale-110"
+                          selectedPlan === tier && "scale-110",
                         )}
                       >
                         {feature.plans[tier] ? (
@@ -342,8 +345,8 @@ export default function PricingTable() {
                               selectedPlan === tier
                                 ? "border-accent bg-accent scale-110"
                                 : selectedPlan && selectedPlan !== tier
-                                ? "border-gray-200 opacity-30"
-                                : "border-accent"
+                                  ? "border-gray-200 opacity-30"
+                                  : "border-accent",
                             )}
                           >
                             <Check
@@ -351,7 +354,7 @@ export default function PricingTable() {
                                 "w-3.5 h-3.5",
                                 selectedPlan === tier
                                   ? "text-white"
-                                  : "text-accent"
+                                  : "text-accent",
                               )}
                               strokeWidth={3}
                             />
@@ -360,7 +363,9 @@ export default function PricingTable() {
                           <span
                             className={cn(
                               "text-gray-300 transition-opacity duration-300",
-                              selectedPlan && selectedPlan !== tier && "opacity-30"
+                              selectedPlan &&
+                                selectedPlan !== tier &&
+                                "opacity-30",
                             )}
                           >
                             —
@@ -386,7 +391,7 @@ export default function PricingTable() {
                   key={addon.name}
                   className={cn(
                     "flex items-center justify-between gap-3 px-5 py-4",
-                    i !== addOns.length - 1 && "border-b border-gray-100"
+                    i !== addOns.length - 1 && "border-b border-gray-100",
                   )}
                 >
                   <span className="text-[13px] font-medium text-gray-700 flex-1">
@@ -426,7 +431,7 @@ export default function PricingTable() {
 
           {/* EAPs/Groups/Businesses */}
           <div>
-            <h3 className="text-lg md:text-xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-1 mb-5">
+            <h3 className="text-xl md:text-xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-1 mb-5">
               EAPs/Groups/Businesses
             </h3>
 
@@ -437,13 +442,18 @@ export default function PricingTable() {
                   className={cn(
                     "flex items-center justify-between gap-3 px-5 py-4",
                     i !== businessPlans.length - 1 &&
-                      "border-b border-gray-100"
+                      "border-b border-gray-100",
                   )}
                 >
                   <span className="text-[14px] font-medium text-gray-700">
                     {plan.name}
                   </span>
-                  <Link href="/request-a-demo" className="text-sm font-bold text-primary hover:underline">Request a Demo</Link>
+                  <Link
+                    href="/request-a-demo"
+                    className="text-sm font-bold text-primary hover:underline"
+                  >
+                    Request a Demo
+                  </Link>
                 </div>
               ))}
             </div>

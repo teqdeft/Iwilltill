@@ -3,10 +3,14 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 export default function CTABanner() {
   return (
-    <section className="relative overflow-hidden section-padding py-16 md:py-24 bg-[#604376]" >
+    <section className="relative overflow-hidden section-padding py-16 md:py-24 bg-[#604376]">
       {/* Decorative lotus */}
       <div className="absolute top-1/2  right-52 w-[800px] h-[800px] opacity-50 -translate-y-1/2 translate-x-1/4 pointer-events-none">
-        <img src="/images/logo-favi.svg" alt="" className="w-full h-full object-contain rotate-45" />
+        <img
+          src="/images/logo-favi.svg"
+          alt=""
+          className="w-full h-full object-contain rotate-45"
+        />
       </div>
 
       <div className="relative container-main">
@@ -24,14 +28,18 @@ export default function CTABanner() {
             Journey Today
           </h2>
 
-          <p className="text-white/70 text-lg leading-relaxed mb-8 max-w-lg">
-            Connect with trusted medical and behavioral health providers. 
-            Start feeling better with care designed to fit your 
-            schedule and your life.
+          <p className="text-white/70 text-xl leading-relaxed mb-8 max-w-lg">
+            Connect with trusted medical and behavioral health providers. Start
+            feeling better with care designed to fit your schedule and your
+            life.
           </p>
 
           <div className="flex flex-wrap gap-3">
-            <Button variant="accent" size="lg" href="https://app.iwilltilimwell.com/register">
+            <Button
+              variant="accent"
+              size="lg"
+              href="https://app.iwilltilimwell.com/register"
+            >
               Get Started
               <ArrowRight className="w-4 h-4" />
             </Button>
