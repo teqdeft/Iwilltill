@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Check, Leaf, Shield, Crown, Gem } from "lucide-react";
 import Button from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const plans = {
   self: [
@@ -442,7 +443,7 @@ export default function PricingTable() {
                   <span className="text-[14px] font-medium text-gray-700">
                     {plan.name}
                   </span>
-                  <a href="/request-a-demo" className="text-sm font-bold text-primary hover:underline">Request a Demo</a>
+                  <Link href="/request-a-demo" className="text-sm font-bold text-primary hover:underline">Request a Demo</Link>
                 </div>
               ))}
             </div>

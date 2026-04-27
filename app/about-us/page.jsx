@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import WhatToExpectEAP from "@/components/sections/WhatToExpectEAP";
 import CountUp from "@/components/ui/CountUp";
 import Link from "next/link";
+import VideoPlayer from "@/components/ui/VideoPlayer";
 
 export const metadata = {
   title: "About Us | iWILL 'til i'mWELL",
@@ -43,7 +44,7 @@ const mentalHealth = [
   "Daily Affirmations",
 ];
 
-const careServices = ["Care Coordination.", "Message Specialists."];
+const careServices = ["Care Coordination", "Message Specialists"];
 
 const televetCare = [
   "Pet Consultations",
@@ -83,13 +84,9 @@ export default function AboutUsPage() {
       <main>
         {/* Hero */}
         <section className="relative overflow-hidden h-[560px] md:h-[640px]">
-          <video
-            className="absolute inset-0 w-full h-full object-cover opacity-70 z-[0]"
+          <VideoPlayer
             src="/videos/about-us-video.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
+            className="absolute inset-0 w-full h-full object-cover opacity-70 z-[0]"
           />
           <Link
             href="/"
@@ -199,109 +196,59 @@ export default function AboutUsPage() {
                 <span className="text-primary font-script">Self-Discovery</span>
               </h2>
               <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary/40 rounded-full mx-auto mb-8" />
-              <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 md:p-8 text-left space-y-4">
-                <p className="text-gray-900 font-semibold text-base md:text-lg text-center">
-                  Gain Access to Medical and Mental Healthcare Wellness
-                  Programs.
-                </p>
-                <div className="w-full h-px bg-gray-100" />
-                <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-900 font-semibold text-base md:text-lg mb-3">
+                Gain Access to Medical and Mental Healthcare Wellness Programs.
+              </p>
+              <div className="space-y-2 text-gray-600 leading-relaxed text-[15px]">
+                <p>
                   We provide medical and mental health services to individuals
                   in need, ensuring affordability and accessibility.
                 </p>
-                <p className="text-gray-700 leading-relaxed text-[15px]">
+                <p>
                   We are expanding access to medical and mental healthcare
                   through telehealth platforms, allowing individuals to receive
                   support remotely.
                 </p>
-                <p className="text-gray-700 leading-relaxed text-[15px]">
+                <p>
                   We are partnering and collaborating with healthcare providers
                   to offer low-cost, high value virtual medical, mental health
                   and pet care.
                 </p>
-                <p className="text-gray-700 leading-relaxed text-[15px]">
-                  We also offer no- and low cost prescription plans.
-                </p>
+                <p>We also offer no- and low cost prescription plans.</p>
               </div>
             </div>
 
             {/* Four columns of services */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-              {/* Medical Health */}
-              <div>
-                <h3 className="text-base font-bold text-gray-900 mb-4 inline-block border-b-2 border-primary pb-1">
-                  Medical Health
-                </h3>
-                <ul className="space-y-2.5">
-                  {medicalHealth.map((item, i) => (
-                    <li
-                      key={i}
-                      className="flex gap-2 items-start text-[14px] text-gray-700"
-                    >
-                      <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Mental Health */}
-              <div>
-                <h3 className="text-base font-bold text-gray-900 mb-4 inline-block border-b-2 border-primary pb-1">
-                  Mental Health
-                </h3>
-                <ul className="space-y-2.5">
-                  {mentalHealth.map((item, i) => (
-                    <li
-                      key={i}
-                      className="flex gap-2 items-start text-[14px] text-gray-700"
-                    >
-                      <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Care Services */}
-              <div>
-                <h3 className="text-base font-bold text-gray-900 mb-4 inline-block border-b-2 border-primary pb-1">
-                  Care Services
-                </h3>
-                <ul className="space-y-2.5">
-                  {careServices.map((item, i) => (
-                    <li
-                      key={i}
-                      className="flex gap-2 items-start text-[14px] text-gray-700"
-                    >
-                      <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Televet Pet Care */}
-              <div>
-                <h3 className="text-base font-bold text-gray-900 mb-4 inline-block border-b-2 border-primary pb-1">
-                  TeleVet Pet Care
-                </h3>
-                <ul className="space-y-2.5">
-                  {televetCare.map((item, i) => (
-                    <li
-                      key={i}
-                      className="flex gap-2 items-start text-[14px] text-gray-700"
-                    >
-                      <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {[
+                { title: "Medical Health", items: medicalHealth },
+                { title: "Mental Health", items: mentalHealth },
+                { title: "Care Services", items: careServices },
+                { title: "TeleVet Pet Care", items: televetCare },
+              ].map(({ title, items }) => (
+                <div
+                  key={title}
+                  className="bg-white rounded-2xl border border-gray-100 p-5 hover:shadow-lg hover:border-primary/20 transition-all duration-300"
+                >
+                  <h3 className="text-sm font-bold text-white uppercase tracking-wider px-3 py-1.5 bg-primary rounded-lg inline-block mb-5">
+                    {title}
+                  </h3>
+                  <ul className="space-y-3">
+                    {items.map((item, i) => (
+                      <li
+                        key={i}
+                        className="flex gap-2.5 items-start text-[14px] text-gray-700"
+                      >
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0 mt-[7px]" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
         </section>
-
         {/* How Can We Help */}
         <section className="section-padding py-16 md:py-20 bg-white">
           <div className="container-main max-w-6xl">

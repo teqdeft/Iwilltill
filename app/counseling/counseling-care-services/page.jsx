@@ -4,6 +4,7 @@ import Button from "@/components/ui/Button";
 import WhatToExpectCounselling from "@/components/sections/WhatToExpectCounselling";
 import { ArrowRight, Check, ArrowLeft, Dot } from "lucide-react";
 import Link from "next/link";
+import SelfCareSection from "@/components/sections/SelfCareSection";
 
 export const metadata = {
   title: "Counseling Care Services | iWILL 'til i'mWELL",
@@ -131,6 +132,7 @@ export default function CounsellingCareServicesPage() {
             </div>
           </div>
         </section>
+        <SelfCareSection />
 
       
         {/* Counseling Services */}
