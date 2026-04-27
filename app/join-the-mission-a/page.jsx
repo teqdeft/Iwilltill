@@ -4,6 +4,7 @@ import Button from "@/components/ui/Button";
 import PhoneCarousel from "@/components/sections/PhoneCarousel";
 import { ArrowLeft, ArrowRight, Play } from "lucide-react";
 import Link from "next/link";
+import VideoPlayer from "@/components/ui/VideoPlayer";
 
 export const metadata = {
   title: "Join the Community | iWILL 'til i'mWELL",
@@ -85,7 +86,7 @@ export default function JoinTheMissionPage() {
       <Navbar />
       <main>
         {/* Hero with play button */}
-        <section className="relative overflow-hidden h-[540px] md:h-[600px]">
+        <section className="relative overflow-hidden h-[540px] md:h-[700px]">
           <div
             className="absolute inset-0 z-[0] "
             style={{
@@ -93,10 +94,20 @@ export default function JoinTheMissionPage() {
             }}
           />
           {/* Image in front with 60% opacity */}
-          <img
+          {/* <img
             src="/images/alternative-medicine.png"
             alt="Medical team"
             className="absolute inset-0 w-full h-full object-cover opacity-70 z-[1]"
+          /> */}
+
+          <video
+            alt="Medical team"
+            className="absolute inset-0 w-full h-full object-cover opacity-70 z-[1]"
+            src="/videos/join-community.mp4"
+            loop
+            muted
+            autoPlay
+            playsInline
           />
           <Link
             href="/"
