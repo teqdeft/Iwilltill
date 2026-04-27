@@ -310,7 +310,7 @@ export default function PricingTable() {
                   >
                     <div
                       className={cn(
-                        "text-[13px] leading-relaxed transition-colors duration-300",
+                        "text-base leading-relaxed transition-colors duration-300",
                         selectedPlan && isIncluded
                           ? "text-gray-900"
                           : selectedPlan && !isIncluded
@@ -385,7 +385,7 @@ export default function PricingTable() {
               Optional Add-Ons
             </h3>
 
-            <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+            <div className="bg-white  rounded-2xl border border-gray-200 overflow-hidden">
               {addOns.map((addon, i) => (
                 <div
                   key={addon.name}
@@ -394,7 +394,7 @@ export default function PricingTable() {
                     i !== addOns.length - 1 && "border-b border-gray-100",
                   )}
                 >
-                  <span className="text-[13px] font-medium text-gray-700 flex-1">
+                  <span className="text-sm font-medium text-gray-700 flex-1">
                     {addon.name}
                   </span>
                   <span
@@ -420,7 +420,7 @@ export default function PricingTable() {
               {footnotes.map((note, i) => (
                 <li
                   key={i}
-                  className="flex gap-2 items-start text-[13px] text-gray-700 leading-relaxed"
+                  className="flex gap-2 items-start text-sm text-gray-700 leading-relaxed"
                 >
                   <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                   <span>{note}</span>
