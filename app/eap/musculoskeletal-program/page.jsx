@@ -192,10 +192,14 @@ export default function IntegratedMusculoskeletalCarePage() {
                 Why Partner With Us
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                The Value of Partnering with{" "}
-                <span className="text-primary font-script">
-                  iWILL 'til i'mWELL
-                </span>
+                The Value of Partnering with <br />
+                <center>
+                  <img
+                    src="/images/IWTIWLogo.svg"
+                    alt="Logo"
+                    className="w-64"
+                  />
+                </center>
               </h2>
 
               <div className="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">

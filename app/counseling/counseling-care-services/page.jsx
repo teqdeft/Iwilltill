@@ -2,7 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 import WhatToExpectCounselling from "@/components/sections/WhatToExpectCounselling";
-import { ArrowRight, ChevronRight, Check, ArrowLeft } from "lucide-react";
+import { ArrowRight, Check, ArrowLeft, Dot } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
@@ -132,53 +132,7 @@ export default function CounsellingCareServicesPage() {
           </div>
         </section>
 
-        {/* Intro Paragraph */}
-        <section className="section-padding py-16 md:py-20 bg-white">
-          <div className="container-main max-w-4xl">
-            <div className="relative">
-              <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-primary to-accent rounded-full hidden md:block" />
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight md:pl-6 mb-6">
-                Cura personalis: empowering your journey to total holistic
-                wellness.
-              </h2>
-              <div className="md:pl-6 space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-base">
-                <p>
-                  iWILL 'til i'mWELL is{" "}
-                  <span className="font-bold">rooted in "Cura Personalis"</span>{" "}
-                  - a Latin term -{" "}
-                  <span className="font-bold">
-                    caring for the whole person.
-                  </span>
-                </p>
-                <p>
-                  We are committed to empowering individuals to achieve complete
-                  well-being - mentally, physically, emotionally, and
-                  spiritually.
-                </p>
-                <p>
-                  Our mission is to{" "}
-                  <span className="font-bold">
-                    empower every individual to take charge of their health
-                  </span>{" "}
-                  by providing actionable insights, evidence-based strategies,
-                  and a supportive community until they truly feel well.
-                </p>
-                <p>
-                  We embrace a holistic approach to wellness, understanding that{" "}
-                  <span className="font-bold">
-                    healing is a journey and every person's journey is unique.
-                  </span>{" "}
-                  We are dedicated to making wellness an achievable, everyday
-                  reality, inspiring everyone to{" "}
-                  <span className="font-bold">
-                    embrace their health journey with confidence and resilience.
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
+      
         {/* Counseling Services */}
         <section className="section-padding py-16 md:py-20 bg-gray-50">
           <div className="container-main max-w-5xl">
@@ -199,7 +153,7 @@ export default function CounsellingCareServicesPage() {
                   className="group bg-white rounded-2xl border border-gray-100 p-6 md:p-7 hover:shadow-lg hover:border-primary/20 transition-all duration-300 flex gap-4 items-start"
                 >
                   <div className="w-10 h-10 rounded-xl bg-primary-100 group-hover:bg-primary-200 flex items-center justify-center shrink-0 transition-colors duration-300">
-                    <ChevronRight className="w-5 h-5 text-primary" />
+                    <Dot className="w-5 h-5 text-primary" />
                   </div>
                   <p className="text-gray-700 leading-relaxed text-[15px] pt-1.5">
                     <span className="font-bold text-gray-900">
@@ -339,6 +293,53 @@ export default function CounsellingCareServicesPage() {
             </div>
           </div>
         </section>
+          {/* Intro Paragraph */}
+        <section className="section-padding py-16 md:py-20 bg-white">
+          <div className="container-main max-w-4xl">
+            <div className="relative">
+              <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-primary to-accent rounded-full hidden md:block" />
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight md:pl-6 mb-6">
+                Cura personalis: empowering your journey to total holistic
+                wellness.
+              </h2>
+              <div className="md:pl-6 space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-base">
+                <p>
+                  iWILL 'til i'mWELL is{" "}
+                  <span className="font-bold">rooted in "Cura Personalis"</span>{" "}
+                  - a Latin term -{" "}
+                  <span className="font-bold">
+                    caring for the whole person.
+                  </span>
+                </p>
+                <p>
+                  We are committed to empowering individuals to achieve complete
+                  well-being - mentally, physically, emotionally, and
+                  spiritually.
+                </p>
+                <p>
+                  Our mission is to{" "}
+                  <span className="font-bold">
+                    empower every individual to take charge of their health
+                  </span>{" "}
+                  by providing actionable insights, evidence-based strategies,
+                  and a supportive community until they truly feel well.
+                </p>
+                <p>
+                  We embrace a holistic approach to wellness, understanding that{" "}
+                  <span className="font-bold">
+                    healing is a journey and every person's journey is unique.
+                  </span>{" "}
+                  We are dedicated to making wellness an achievable, everyday
+                  reality, inspiring everyone to{" "}
+                  <span className="font-bold">
+                    embrace their health journey with confidence and resilience.
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
 
         {/* What to Expect - Carousel */}
         <WhatToExpectCounselling />

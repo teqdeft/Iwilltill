@@ -18,37 +18,37 @@ export const metadata = {
 };
 
 const medicalHealth = [
-  "Medical Consultations.",
-  "Medical Urgent Care.",
-  "Medical Primary Care.",
-  "Health Risk Assessments.",
-  "Lab Panels.",
-  "Dermatological Care.",
-  "Prescription Plans.",
-  "Musculoskeletal Care.",
+  "Medical Consultations",
+  "Medical Urgent Care",
+  "Medical Primary Care",
+  "Health Risk Assessments",
+  "Lab Panels",
+  "Dermatological Care",
+  "Prescription Plans",
+  "Musculoskeletal Care",
   "GLP-1 Medically Managed Weight Loss Program (Semaglutide)",
 ];
 
 const mentalHealth = [
-  "Crisis Management.",
-  "In-the-moment Care.",
-  "Therapy Sessions.",
-  "Psychology Visits.",
-  "Psychiatry Visits.",
-  "Mental Health Assessments.",
-  "Mood Analytics.",
-  "Personal Voice Affirmations.",
-  "Shareable Data.",
-  "Safety Plans.",
-  "Daily Affirmations.",
+  "Crisis Management",
+  "In-the-moment Care",
+  "Therapy Sessions",
+  "Psychology Visits",
+  "Psychiatry Visits",
+  "Mental Health Assessments",
+  "Mood Analytics",
+  "Personal Voice Affirmations",
+  "Shareable Data",
+  "Safety Plans",
+  "Daily Affirmations",
 ];
 
 const careServices = ["Care Coordination.", "Message Specialists."];
 
 const televetCare = [
-  "Pet Consultations.",
-  "Pet Prescription Discount Card.",
-  "Follow-up Care.",
+  "Pet Consultations",
+  "Pet Prescription Discount Card",
+  "Follow-up Care",
 ];
 
 const helpCards = [
@@ -189,34 +189,39 @@ export default function AboutUsPage() {
         {/* A Journey of Healing */}
         <section className="section-padding py-16 md:py-20 bg-gray-50">
           <div className="container-main max-w-6xl">
-            <div className="text-center max-w-3xl mx-auto mb-12">
-              <span className="inline-block px-4 py-1.5 bg-accent/10 text-accent text-xs font-semibold rounded-full uppercase tracking-wider mb-4">
+            <div className="text-center max-w-3xl mx-auto mb-14">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-accent/10 text-accent text-xs font-semibold rounded-full uppercase tracking-wider mb-4">
+                <span className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse" />
                 Our Programs
               </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-5 inline-block border-b-2 border-primary pb-2">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 A Journey of Healing and{" "}
                 <span className="text-primary font-script">Self-Discovery</span>
               </h2>
-              <div className="space-y-2 text-gray-700 leading-relaxed text-base mt-6">
-                <p className="font-semibold">
+              <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary/40 rounded-full mx-auto mb-8" />
+              <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 md:p-8 text-left space-y-4">
+                <p className="text-gray-900 font-semibold text-base md:text-lg text-center">
                   Gain Access to Medical and Mental Healthcare Wellness
                   Programs.
                 </p>
-                <p>
+                <div className="w-full h-px bg-gray-100" />
+                <p className="text-gray-700 leading-relaxed text-[15px]">
                   We provide medical and mental health services to individuals
                   in need, ensuring affordability and accessibility.
                 </p>
-                <p>
+                <p className="text-gray-700 leading-relaxed text-[15px]">
                   We are expanding access to medical and mental healthcare
                   through telehealth platforms, allowing individuals to receive
                   support remotely.
                 </p>
-                <p>
+                <p className="text-gray-700 leading-relaxed text-[15px]">
                   We are partnering and collaborating with healthcare providers
                   to offer low-cost, high value virtual medical, mental health
                   and pet care.
                 </p>
-                <p>We also offer no- and low cost prescription plans.</p>
+                <p className="text-gray-700 leading-relaxed text-[15px]">
+                  We also offer no- and low cost prescription plans.
+                </p>
               </div>
             </div>
 
@@ -225,7 +230,7 @@ export default function AboutUsPage() {
               {/* Medical Health */}
               <div>
                 <h3 className="text-base font-bold text-gray-900 mb-4 inline-block border-b-2 border-primary pb-1">
-                  Medical Health.
+                  Medical Health
                 </h3>
                 <ul className="space-y-2.5">
                   {medicalHealth.map((item, i) => (
@@ -243,7 +248,7 @@ export default function AboutUsPage() {
               {/* Mental Health */}
               <div>
                 <h3 className="text-base font-bold text-gray-900 mb-4 inline-block border-b-2 border-primary pb-1">
-                  Mental Health.
+                  Mental Health
                 </h3>
                 <ul className="space-y-2.5">
                   {mentalHealth.map((item, i) => (
@@ -261,7 +266,7 @@ export default function AboutUsPage() {
               {/* Care Services */}
               <div>
                 <h3 className="text-base font-bold text-gray-900 mb-4 inline-block border-b-2 border-primary pb-1">
-                  Care Services.
+                  Care Services
                 </h3>
                 <ul className="space-y-2.5">
                   {careServices.map((item, i) => (
@@ -279,7 +284,7 @@ export default function AboutUsPage() {
               {/* Televet Pet Care */}
               <div>
                 <h3 className="text-base font-bold text-gray-900 mb-4 inline-block border-b-2 border-primary pb-1">
-                  Televet Pet Care.
+                  TeleVet Pet Care
                 </h3>
                 <ul className="space-y-2.5">
                   {televetCare.map((item, i) => (
