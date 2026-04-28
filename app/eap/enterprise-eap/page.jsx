@@ -13,6 +13,11 @@ import {
   Brain,
   PawPrint,
   ArrowLeft,
+  Check,
+  CheckCheckIcon,
+  CheckCircle2Icon,
+  CheckCircle2,
+  CheckCircle,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -298,7 +303,7 @@ export default function EnterpriseEAPPage() {
                   className="group bg-gray-50 rounded-2xl border border-gray-100 p-6 md:p-7 hover:shadow-md hover:border-primary/20 hover:bg-white transition-all duration-300 flex gap-4 items-start"
                 >
                   <div className="w-10 h-10 rounded-xl bg-primary-100 group-hover:bg-primary-200 flex items-center justify-center shrink-0 transition-colors duration-300">
-                    <ChevronRight className="w-5 h-5 text-primary" />
+                    <CheckCircle className="w-5 h-5 text-primary" />
                   </div>
                   <p className="text-gray-700 leading-relaxed text-base pt-1.5">
                     {point}
