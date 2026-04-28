@@ -81,7 +81,7 @@ export default function SpeakToATherapistPage() {
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 uppercase tracking-wide inline-block border-b-2 border-primary pb-2 mb-6">
                 Speak To A Therapist
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg max-w-4xl mx-auto">
+              <p className="text-gray-700 leading-relaxed text-base md:text-lg max-w-4xl mx-auto">
                 <span className="font-bold text-gray-900">
                   iWILL 'til i'mWELL
                 </span>{" "}
@@ -97,7 +97,7 @@ export default function SpeakToATherapistPage() {
                 <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-4 leading-snug">
                   In-The-Moment Care
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-[14px]">
+                <p className="text-gray-600 leading-relaxed text-base">
                   iWILL 'til i'mWELL offers accessible, compassionate virtual
                   counseling to support your mental well-being, right when you
                   need it most. Our master's-level counselors provide real-time,{" "}
@@ -115,7 +115,7 @@ export default function SpeakToATherapistPage() {
                 <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-4 leading-snug">
                   Short-Term Therapy
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-[14px]">
+                <p className="text-gray-600 leading-relaxed text-base">
                   Members can receive{" "}
                   <span className="font-bold text-gray-900">
                     clinically determined, weekly therapy sessions or opt for up
@@ -133,7 +133,7 @@ export default function SpeakToATherapistPage() {
                 <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-4 leading-snug">
                   Long-Term Therapy
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-[14px]">
+                <p className="text-gray-600 leading-relaxed text-base">
                   For ongoing support,{" "}
                   <span className="font-bold text-gray-900">
                     at a discounted rate
@@ -158,11 +158,11 @@ export default function SpeakToATherapistPage() {
                 high-quality mental health care that's affordable, convenient,
                 and available from the comfort of your home.
               </p>
-              <p className="text-gray-700 text-[15px] md:text-lg leading-relaxed">
+              <p className="text-gray-700 text-base md:text-lg leading-relaxed">
                 You can also sign up for our Prescription Plan PC-B to get some
                 of your{" "}
-                <span className="font-bold text-gray-900 underline">
-                  psychotropic medications at $5.00 each
+                <span className="font-bold text-gray-900 ">
+                  psychotropic medications
                 </span>
                 .
               </p>

@@ -74,7 +74,7 @@ function StatusCell({ status }) {
       ) : (
         <ShieldX className="w-5 h-5 text-red-500 shrink-0" strokeWidth={2.2} />
       )}
-      <span className="text-[14px] text-gray-700">{status.text}</span>
+      <span className="text-base text-gray-700">{status.text}</span>
     </div>
   );
 }
@@ -122,7 +122,7 @@ export default function InsuranceDisclaimerPage() {
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 Patient Disclaimer
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-700 leading-relaxed text-base">
                 iWILL 'til i'mWELL is a virtual wellness platform that provides
                 comprehensive support for mental health, primary care, urgent
                 care, and more through telehealth. It is not a substitute for
@@ -140,7 +140,7 @@ export default function InsuranceDisclaimerPage() {
                 FAQ: Is iWILL 'til i'mWELL a replacement for traditional health
                 insurance?
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-700 leading-relaxed text-base">
                 No. iWILL 'til i'mWELL is not intended to replace major medical
                 insurance. It is a virtual care solution designed to complement
                 your current coverage or serve as an affordable option when
@@ -168,13 +168,13 @@ export default function InsuranceDisclaimerPage() {
                     }}
                   >
                     <tr>
-                      <th className="text-left p-4 md:p-5 text-white font-bold text-[14px] md:text-[15px] w-1/3">
+                      <th className="text-left p-4 md:p-5 text-white font-bold text-base md:text-base w-1/3">
                         Feature
                       </th>
-                      <th className="text-left p-4 md:p-5 text-white font-bold text-[14px] md:text-[15px] w-1/3">
+                      <th className="text-left p-4 md:p-5 text-white font-bold text-base md:text-base w-1/3">
                         iWILL 'til i'mWELL
                       </th>
-                      <th className="text-left p-4 md:p-5 text-white font-bold text-[14px] md:text-[15px] w-1/3">
+                      <th className="text-left p-4 md:p-5 text-white font-bold text-base md:text-base w-1/3">
                         Major Medical Insurance
                       </th>
                     </tr>
@@ -187,7 +187,7 @@ export default function InsuranceDisclaimerPage() {
                         key={row.feature}
                         className={i % 2 === 0 ? "bg-gray-50" : "bg-white"}
                       >
-                        <td className="p-4 md:p-5 text-[14px] md:text-[15px] text-gray-700 align-middle">
+                        <td className="p-4 md:p-5 text-base md:text-base text-gray-700 align-middle">
                           {row.feature}
                         </td>
                         <td className="p-4 md:p-5 align-middle">

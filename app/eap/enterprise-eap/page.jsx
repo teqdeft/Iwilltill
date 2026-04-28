@@ -232,7 +232,7 @@ export default function EnterpriseEAPPage() {
                 <h3 className="text-xl md:text-2xl font-bold text-primary mb-3">
                   {businessBenefits[0].title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-[15px]">
+                <p className="text-gray-600 leading-relaxed text-base">
                   {businessBenefits[0].description}
                 </p>
               </div>
@@ -265,7 +265,7 @@ export default function EnterpriseEAPPage() {
                 <h3 className="text-xl md:text-2xl font-bold text-primary mb-3">
                   {businessBenefits[1].title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-[15px]">
+                <p className="text-gray-600 leading-relaxed text-base">
                   {businessBenefits[1].description}
                 </p>
               </div>
@@ -300,7 +300,7 @@ export default function EnterpriseEAPPage() {
                   <div className="w-10 h-10 rounded-xl bg-primary-100 group-hover:bg-primary-200 flex items-center justify-center shrink-0 transition-colors duration-300">
                     <ChevronRight className="w-5 h-5 text-primary" />
                   </div>
-                  <p className="text-gray-700 leading-relaxed text-[15px] pt-1.5">
+                  <p className="text-gray-700 leading-relaxed text-base pt-1.5">
                     {point}
                   </p>
                 </div>
@@ -338,7 +338,7 @@ export default function EnterpriseEAPPage() {
                     key={item.title}
                     className="group bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-md hover:border-primary/20 transition-all duration-300 lg:text-right"
                   >
-                    <h3 className="font-bold text-gray-900 mb-2 text-[15px]">
+                    <h3 className="font-bold text-gray-900 mb-2 text-base">
                       {item.title}
                     </h3>
                     <p className="text-sm text-gray-600 leading-relaxed">
@@ -367,7 +367,7 @@ export default function EnterpriseEAPPage() {
                     key={item.title}
                     className="group bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-md hover:border-primary/20 transition-all duration-300"
                   >
-                    <h3 className="font-bold text-gray-900 mb-2 text-[15px]">
+                    <h3 className="font-bold text-gray-900 mb-2 text-base">
                       {item.title}
                     </h3>
                     <p className="text-sm text-gray-600 leading-relaxed">

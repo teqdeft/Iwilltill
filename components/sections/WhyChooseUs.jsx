@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
             Why Choose{" "}
             <span className="text-primary">iWILL &apos;til i&apos;mWELL</span>
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-10">
+          <p className="text-gray-600 text-lg leading-relaxed mb-10">
             We believe care should be accessible, simple to navigate, and
             available when you need it. Our platform connects you with trusted
             providers in one place, so you can get the right support at the
@@ -61,7 +61,7 @@ export default function WhyChooseUs() {
                     <h3 className="text-xl font-bold text-gray-900 mb-1">
                       {reason.title}
                     </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <p className="text-base text-gray-600 leading-relaxed">
                       {reason.description}
                     </p>
                   </div>

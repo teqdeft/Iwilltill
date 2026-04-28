@@ -172,7 +172,7 @@ export default function RefundPolicyPage() {
                     {section.items.map((item, i) => (
                       <li
                         key={i}
-                        className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed"
+                        className="flex gap-3 items-start text-base text-gray-700 leading-relaxed"
                       >
                         <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                         <span>

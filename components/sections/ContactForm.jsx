@@ -155,7 +155,7 @@ export default function ContactForm() {
           <div className="pt-2">
             <Button
               type="submit"
-              variant="accent"
+              variant="primary"
               disabled={!formData.agreed || loading}
               size="md"
               className="w-full sm:w-auto"

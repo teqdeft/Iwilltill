@@ -207,7 +207,7 @@ export default function FAQTabs() {
                     className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left"
                     aria-expanded={openQuestion === i}
                   >
-                    <span className="text-[14px] md:text-[15px] font-bold text-gray-900 leading-snug">
+                    <span className="text-base md:text-base font-bold text-gray-900 leading-snug">
                       {item.q}
                     </span>
                     <div
@@ -228,7 +228,7 @@ export default function FAQTabs() {
 
                   {openQuestion === i && item.a && (
                     <div className="px-5 pb-5 pt-1">
-                      <p className="text-[14px] text-gray-700 leading-relaxed">
+                      <p className="text-base text-gray-700 leading-relaxed">
                         {item.bold && (
                           <span className="font-bold text-gray-900">
                             {item.bold}
@@ -241,7 +241,7 @@ export default function FAQTabs() {
 
                   {openQuestion === i && !item.a && (
                     <div className="px-5 pb-5 pt-1">
-                      <p className="text-[14px] text-gray-500 italic leading-relaxed">
+                      <p className="text-base text-gray-500 italic leading-relaxed">
                         Answer coming soon. Contact us for more information.
                       </p>
                     </div>

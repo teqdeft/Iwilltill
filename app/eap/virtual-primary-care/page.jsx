@@ -141,7 +141,7 @@ export default function VirtualMedicalCarePage() {
                   <div className="w-9 h-9 rounded-lg bg-primary-100 group-hover:bg-primary-200 flex items-center justify-center shrink-0 transition-colors duration-300 mt-0.5">
                     <Check className="w-4 h-4 text-primary" />
                   </div>
-                  <p className="text-gray-700 leading-relaxed text-[15px]">
+                  <p className="text-gray-700 leading-relaxed text-base">
                     <span className="font-bold text-gray-900">
                       {item.title}:{" "}
                     </span>
@@ -173,7 +173,7 @@ export default function VirtualMedicalCarePage() {
                       <div className="w-7 h-7 rounded-lg bg-accent/10 group-hover:bg-accent/20 flex items-center justify-center shrink-0 transition-colors duration-300 mt-0.5">
                         <Check className="w-4 h-4 text-accent" />
                       </div>
-                      <p className="text-gray-700 leading-relaxed text-[15px] pt-0.5">
+                      <p className="text-gray-700 leading-relaxed text-base pt-0.5">
                         {benefit}
                       </p>
                     </li>
@@ -235,7 +235,7 @@ export default function VirtualMedicalCarePage() {
                       <div className="w-7 h-7 rounded-lg bg-primary-100 group-hover:bg-primary-200 flex items-center justify-center shrink-0 transition-colors duration-300 mt-0.5">
                         <Check className="w-4 h-4 text-primary" />
                       </div>
-                      <p className="text-gray-700 leading-relaxed text-[15px] pt-0.5">
+                      <p className="text-gray-700 leading-relaxed text-base pt-0.5">
                         {point}
                       </p>
                     </li>
@@ -243,7 +243,7 @@ export default function VirtualMedicalCarePage() {
                 </ul>
 
                 <div className="mt-8">
-                  <Button variant="ghost" size="lg" href="/faq">
+                  <Button variant="primary" size="lg" href="/faq">
                     Learn More
                     <ArrowRight className="w-4 h-4" />
                   </Button>

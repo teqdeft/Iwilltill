@@ -81,7 +81,7 @@ export default function PlatinumPrescriptionPlanPage() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center p-6">
                   <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center shadow-lg max-w-xs">
-                    <p className="text-gray-900 text-[15px] leading-snug mb-4">
+                    <p className="text-gray-900 text-base leading-snug mb-4">
                       Don't go without the medications you need. Over 1000 acute
                       and chronic medications.
                     </p>
@@ -103,7 +103,7 @@ export default function PlatinumPrescriptionPlanPage() {
                   Coverage
                 </h2>
 
-                <p className="text-gray-700 text-[15px] leading-relaxed mb-4">
+                <p className="text-gray-700 text-base leading-relaxed mb-4">
                   <span className="font-bold">iWILL 'til i'mWELL</span> has
                   partnered with BestChoiceRx to bring you the best prescription
                   prices possible. As a member of iWILL 'til i'mWELL, there is
@@ -115,7 +115,7 @@ export default function PlatinumPrescriptionPlanPage() {
                   prescribed CHRONIC drugs at no cost to you.
                 </p>
 
-                <p className="text-gray-700 text-[15px] leading-relaxed">
+                <p className="text-gray-700 text-base leading-relaxed">
                   You can view all medications included in this program by
                   logging into <BestChoiceLink />. Feel free to print and take
                   this formulary to your physician so they can prescribe a
@@ -137,7 +137,7 @@ export default function PlatinumPrescriptionPlanPage() {
                     This Program is Easy to Use
                   </h2>
 
-                  <p className="text-gray-700 text-[15px] leading-relaxed mb-6">
+                  <p className="text-gray-700 text-base leading-relaxed mb-6">
                     You will receive an email from iWILL 'til i'mWELL with your
                     Member/Group ID so that you can set up your BestChoiceRx
                     account. All further instructions can be found below. Just

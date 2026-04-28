@@ -98,7 +98,7 @@ export default function GoldPrescriptionPlanPage() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center p-6">
                   <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center shadow-lg max-w-xs">
-                    <p className="text-gray-900 text-[15px] leading-snug mb-4">
+                    <p className="text-gray-900 text-base leading-snug mb-4">
                       Gold Prescription Plan includes 200 chronic medications,
                       along with all prescriptions covered in the Silver
                       Prescription Plan.
@@ -123,7 +123,7 @@ export default function GoldPrescriptionPlanPage() {
                   Chronic Medication Prescription Plan
                 </h3>
 
-                <p className="text-gray-700 text-[15px] leading-relaxed mb-4">
+                <p className="text-gray-700 text-base leading-relaxed mb-4">
                   As a subscriber to{" "}
                   <span className="font-bold">iWILL 'til i'mWELL</span>,{" "}
                   <span className="text-primary font-semibold">
@@ -132,7 +132,7 @@ export default function GoldPrescriptionPlanPage() {
                   </span>
                 </p>
 
-                <p className="text-gray-700 text-[15px] leading-relaxed mb-4">
+                <p className="text-gray-700 text-base leading-relaxed mb-4">
                   That's because{" "}
                   <span className="font-bold">iWILL 'til i'mWELL</span> has
                   created a{" "}
@@ -142,7 +142,7 @@ export default function GoldPrescriptionPlanPage() {
                   , plus great discounts on all other medications.
                 </p>
 
-                <p className="text-gray-700 text-[15px] leading-relaxed">
+                <p className="text-gray-700 text-base leading-relaxed">
                   Consider us your pharmacy savings advocate. Our live Customer
                   Care team is here to help you find the lowest prices on
                   medications available.
@@ -169,7 +169,7 @@ export default function GoldPrescriptionPlanPage() {
                 ].map((item) => (
                   <span
                     key={item}
-                    className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full border border-gray-200 text-[14px] text-gray-700 font-medium hover:border-primary/40 hover:shadow-sm transition-all duration-200"
+                    className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full border border-gray-200 text-base text-gray-700 font-medium hover:border-primary/40 hover:shadow-sm transition-all duration-200"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
                     {item}
@@ -189,7 +189,7 @@ export default function GoldPrescriptionPlanPage() {
                   (item) => (
                     <span
                       key={item}
-                      className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full border border-gray-200 text-[14px] text-gray-700 font-medium hover:border-primary/40 hover:shadow-sm transition-all duration-200"
+                      className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full border border-gray-200 text-base text-gray-700 font-medium hover:border-primary/40 hover:shadow-sm transition-all duration-200"
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
                       {item}
@@ -212,7 +212,7 @@ export default function GoldPrescriptionPlanPage() {
                     The Program is Easy to Use:
                   </h2>
 
-                  <p className="text-gray-700 text-[15px] leading-relaxed mb-4">
+                  <p className="text-gray-700 text-base leading-relaxed mb-4">
                     You will receive an electronic member card that can be
                     presented at any retail pharmacy (over 70,000 in network)
                     and if on the formulary, you only pay $5.00. If it is not on
@@ -220,7 +220,7 @@ export default function GoldPrescriptionPlanPage() {
                     on a deeply discounted price.
                   </p>
 
-                  <p className="text-gray-700 text-[15px] leading-relaxed mb-6">
+                  <p className="text-gray-700 text-base leading-relaxed mb-6">
                     All future chronic or recurring medications will be mailed
                     directly to you for just $15 (see subscription details).
                     Plus, get discounts on diabetic supplies, pet meds, and

@@ -173,7 +173,7 @@ export default function Steps() {
                 >
                   {step.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-base text-gray-600 leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -181,13 +181,6 @@ export default function Steps() {
           );
         })}
       </div>
-
-      {/* <div className="text-center">
-        <Button variant="ghost" size="lg" href="https://app.iwilltilimwell.com/register">
-          Start Your Journey
-          <ArrowRight className="w-4 h-4" />
-        </Button>
-      </div> */}
     </SectionWrapper>
   );
 }

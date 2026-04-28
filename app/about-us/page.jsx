@@ -138,7 +138,7 @@ export default function AboutUsPage() {
                 <h3 className="text-sm font-bold uppercase tracking-wider text-primary mb-4">
                   Our Mission
                 </h3>
-                <p className="text-gray-700 leading-relaxed text-[15px]">
+                <p className="text-gray-700 leading-relaxed text-base">
                   To provide hope and empower individuals on their life's
                   journey through holistic care that addresses the
                   interconnected dimensions of mind, body, soul and spirit.
@@ -149,7 +149,7 @@ export default function AboutUsPage() {
                 <h3 className="text-sm font-bold uppercase tracking-wider text-primary mb-4">
                   Our Vision
                 </h3>
-                <p className="text-gray-700 leading-relaxed text-[15px]">
+                <p className="text-gray-700 leading-relaxed text-base">
                   To create a world where medical care and mental health are
                   prioritized, supported, and accessible to all, enabling
                   individuals to lead fulfilling and empowering lives.
@@ -157,7 +157,7 @@ export default function AboutUsPage() {
               </div>
             </div>
 
-            <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-lg">
+            <div className="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
               <p>
                 With a holistic approach, iWILL 'til i'mWELL empowers
                 individuals to take control of their well-being through quality
@@ -199,7 +199,7 @@ export default function AboutUsPage() {
               <p className="text-gray-900 font-semibold text-lg md:text-xl mb-3">
                 Gain Access to Medical and Mental Healthcare Wellness Programs.
               </p>
-              <div className="space-y-2 text-gray-600 leading-relaxed text-[15px]">
+              <div className="space-y-2 text-gray-600 leading-relaxed text-base">
                 <p>
                   We provide medical and mental health services to individuals
                   in need, ensuring affordability and accessibility.
@@ -237,7 +237,7 @@ export default function AboutUsPage() {
                     {items.map((item, i) => (
                       <li
                         key={i}
-                        className="flex gap-2.5 items-start text-[14px] text-gray-700"
+                        className="flex gap-2.5 items-start text-base text-gray-700"
                       >
                         <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0 mt-[7px]" />
                         <span>{item}</span>
@@ -347,7 +347,7 @@ export default function AboutUsPage() {
 
             <div className="grid lg:grid-cols-[1.3fr_1fr] gap-10 lg:gap-16 items-start">
               {/* Left - CEO Message */}
-              <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-lg">
+              <div className="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
                 <p>
                   At iWILL 'til i'mWELL, we believe that true wellness goes
                   beyond just treating symptoms - it's about healing the whole

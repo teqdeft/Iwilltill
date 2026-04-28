@@ -2,7 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 import WhatToExpectCounselling from "@/components/sections/WhatToExpectCounselling";
-import { ArrowRight, Check, ArrowLeft, Dot } from "lucide-react";
+import { ArrowRight, Check, ArrowLeft,  CheckCircle } from "lucide-react";
 import Link from "next/link";
 import SelfCareSection from "@/components/sections/SelfCareSection";
 
@@ -154,9 +154,9 @@ export default function CounsellingCareServicesPage() {
                   className="group bg-white rounded-2xl border border-gray-100 p-6 md:p-7 hover:shadow-lg hover:border-primary/20 transition-all duration-300 flex gap-4 items-start"
                 >
                   <div className="w-10 h-10 rounded-xl bg-primary-100 group-hover:bg-primary-200 flex items-center justify-center shrink-0 transition-colors duration-300">
-                    <Dot className="w-5 h-5 text-primary" />
+                    <CheckCircle className="w-5 h-5 text-primary" />
                   </div>
-                  <p className="text-gray-700 leading-relaxed text-[15px] pt-1.5">
+                  <p className="text-gray-700 leading-relaxed text-base pt-1.5">
                     <span className="font-bold text-gray-900">
                       {item.title}:{" "}
                     </span>
@@ -167,7 +167,7 @@ export default function CounsellingCareServicesPage() {
             </div>
 
             <div className="mt-10">
-              <Button variant="ghost" size="lg" href="/pricing">
+              <Button variant="primary" size="lg" href="/pricing">
                 Choose a plan
                 <ArrowRight className="w-4 h-4" />
               </Button>
@@ -201,15 +201,13 @@ export default function CounsellingCareServicesPage() {
                   <div className="w-8 h-8 rounded-lg bg-accent/10 group-hover:bg-accent/20 flex items-center justify-center shrink-0 transition-colors duration-300">
                     <Check className="w-4 h-4 text-accent" />
                   </div>
-                  <p className="text-gray-700 font-medium text-[15px]">
-                    {tool}
-                  </p>
+                  <p className="text-gray-700 font-medium text-base">{tool}</p>
                 </div>
               ))}
             </div>
 
             <div className="mt-10">
-              <Button variant="ghost" size="lg" href="/faq">
+              <Button variant="outline" size="lg" href="/faq">
                 Learn More
                 <ArrowRight className="w-4 h-4" />
               </Button>
@@ -303,7 +301,7 @@ export default function CounsellingCareServicesPage() {
                 Cura personalis: empowering your journey to total holistic
                 wellness.
               </h2>
-              <div className="md:pl-6 space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-lg">
+              <div className="md:pl-6 space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
                 <p>
                   iWILL 'til i'mWELL is{" "}
                   <span className="font-bold">rooted in "Cura Personalis"</span>{" "}

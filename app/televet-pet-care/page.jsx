@@ -63,6 +63,7 @@ export default function TeleVetPage() {
                   href="https://app.iwilltilimwell.com/login"
                 >
                   Login
+                  <ArrowRight className="w-4 h-4" />
                 </Button>
                 <Button
                   variant="accent"
@@ -70,6 +71,7 @@ export default function TeleVetPage() {
                   href="https://app.iwilltilimwell.com/register"
                 >
                   Get Started
+                  <ArrowRight className="w-4 h-4" />
                 </Button>
               </div>
             </div>
@@ -84,7 +86,7 @@ export default function TeleVetPage() {
               <span className="text-primary font-script">Family</span>
             </h2>
 
-            <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-lg mb-10 max-w-5xl">
+            <div className="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg mb-10 max-w-5xl">
               <p>
                 We understand that your pets are more than just animals, they're
                 family. That's why we offer TeleVet services to provide your
@@ -126,7 +128,7 @@ export default function TeleVetPage() {
               <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
                 {/* TeleVet Pet Care */}
                 <div>
-                  <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg mb-5">
+                  <p className="text-gray-700 leading-relaxed text-base md:text-lg mb-5">
                     <span className="font-bold text-gray-900">
                       TeleVet Pet Care -
                     </span>{" "}
@@ -135,7 +137,7 @@ export default function TeleVetPage() {
                     in real-time via phone or video on your mobile device or
                     computer.
                   </p>
-                  <Button variant="accent" size="md" href="/pricing">
+                  <Button variant="primary" size="md" href="/pricing">
                     Choose a plan
                     <ArrowRight className="w-4 h-4" />
                   </Button>
@@ -143,7 +145,7 @@ export default function TeleVetPage() {
 
                 {/* Pet Prescription Discount */}
                 <div>
-                  <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg mb-5">
+                  <p className="text-gray-700 leading-relaxed text-base md:text-lg mb-5">
                     <span className="font-bold text-gray-900">
                       Pet Prescription Discount Virtual Card -
                     </span>{" "}
@@ -152,7 +154,7 @@ export default function TeleVetPage() {
                     to 75% on prescription medications for your pet, helping you
                     save on the cost of necessary treatments
                   </p>
-                  <Button variant="accent" size="md" href="/faq">
+                  <Button variant="outline" size="md" href="/faq">
                     Learn More
                     <ArrowRight className="w-4 h-4" />
                   </Button>
@@ -172,7 +174,7 @@ export default function TeleVetPage() {
                 <h3 className="text-2xl md:text-3xl font-bold text-primary leading-tight mb-4">
                   Pawsitively the Most Popular: Dogs Lead the Pack
                 </h3>
-                <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg">
+                <p className="text-gray-700 leading-relaxed text-base md:text-lg">
                   Approximately 86.9 million homes, or about 66% of U.S.
                   households, own pets. The most commonly owned pets are dogs,
                   with an estimated 65.1 million U.S. households sharing their
@@ -224,7 +226,7 @@ export default function TeleVetPage() {
                 <h3 className="text-2xl md:text-3xl font-bold text-primary leading-tight mb-4">
                   Purring into Second Place: For the Love of Cats
                 </h3>
-                <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg">
+                <p className="text-gray-700 leading-relaxed text-base md:text-lg">
                   Cats are the second most popular pet in the U.S., with an
                   estimated 42.1 million households welcoming these independent
                   yet affectionate companions into their homes. Known for their

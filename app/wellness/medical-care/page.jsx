@@ -1,7 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
-import { ArrowLeft, ArrowRight, Dot } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, CheckCheck, CheckCircle, Dot } from "lucide-react";
 import WhatToExpectCarousel from "@/components/sections/WhatToExpectCarousel";
 import Link from "next/link";
 
@@ -199,9 +199,9 @@ export default function MedicalCarePage() {
                   className="group bg-white rounded-2xl border border-gray-100 p-6 md:p-7 hover:shadow-lg hover:border-primary/20 transition-all duration-300 flex gap-4 items-start"
                 >
                   <div className="w-10 h-10 rounded-xl bg-primary-100 group-hover:bg-primary-200 flex items-center justify-center shrink-0 transition-colors duration-300">
-                    <Dot className="w-5 h-5 text-primary" />
+                    <CheckCircle className="w-5 h-5 text-primary" />
                   </div>
-                  <p className="text-gray-700 leading-relaxed text-[15px] pt-1.5">
+                  <p className="text-gray-700 leading-relaxed text-base pt-1.5">
                     <span className="font-bold text-gray-900">
                       {item.title} -{" "}
                     </span>
@@ -212,7 +212,7 @@ export default function MedicalCarePage() {
             </div>
 
             <div className="mt-10">
-              <Button variant="ghost" size="lg" href="/pricing">
+              <Button variant="primary" size="lg" href="/pricing">
                 Choose a plan
                 <ArrowRight className="w-4 h-4" />
               </Button>
@@ -239,9 +239,9 @@ export default function MedicalCarePage() {
                   className="group bg-gray-50 rounded-2xl border border-gray-100 p-6 md:p-7 hover:shadow-lg hover:border-accent/20 hover:bg-white transition-all duration-300 flex gap-4 items-start"
                 >
                   <div className="w-10 h-10 rounded-xl bg-accent/10 group-hover:bg-accent/20 flex items-center justify-center shrink-0 transition-colors duration-300">
-                    <Dot className="w-5 h-5 text-accent" />
+                    <CheckCircle className="w-5 h-5 text-accent" />
                   </div>
-                  <p className="text-gray-700 leading-relaxed text-[15px] pt-1.5">
+                  <p className="text-gray-700 leading-relaxed text-base pt-1.5">
                     <span className="font-bold text-gray-900">
                       {item.title} -{" "}
                     </span>
@@ -252,7 +252,7 @@ export default function MedicalCarePage() {
             </div>
 
             <div className="mt-10">
-              <Button variant="ghost" size="lg" href="/faq">
+              <Button variant="outline" size="lg" href="/faq">
                 Learn More
                 <ArrowRight className="w-4 h-4" />
               </Button>
@@ -308,14 +308,14 @@ export default function MedicalCarePage() {
                       <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
                         {plan.title}
                       </h3>
-                      <p className="text-gray-700 leading-relaxed text-[15px] font-medium mb-4">
+                      <p className="text-gray-700 leading-relaxed text-base font-medium mb-4">
                         {plan.intro}
                       </p>
                       <div className="space-y-3 mb-6">
                         {plan.body.map((paragraph, i) => (
                           <p
                             key={i}
-                            className="text-gray-600 leading-relaxed text-[15px]"
+                            className="text-gray-600 leading-relaxed text-base"
                           >
                             {paragraph}
                           </p>

@@ -179,7 +179,7 @@ export default function GLP1Page() {
                   What is iWILL 'til i'mWELL Weight Loss Management Program?
                 </h2>
 
-                <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg mb-7">
+                <p className="text-gray-700 leading-relaxed text-base md:text-lg mb-7">
                   <span className="font-bold">
                     iWILL 'til i'mWELL's Weight Loss Management Program
                   </span>{" "}
@@ -200,7 +200,7 @@ export default function GLP1Page() {
                   {includesItems.map((item) => (
                     <li
                       key={item}
-                      className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed"
+                      className="flex gap-3 items-start text-base text-gray-700 leading-relaxed"
                     >
                       <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                       <span>{item}</span>
@@ -228,7 +228,7 @@ export default function GLP1Page() {
                         <h3 className="text-xl md:text-xl font-bold text-primary leading-tight mb-2">
                           {step.title}
                         </h3>
-                        <p className="text-gray-700 leading-relaxed text-[14px] md:text-[15px]">
+                        <p className="text-gray-700 leading-relaxed text-base md:text-base">
                           {step.description}
                         </p>
                       </div>
@@ -299,7 +299,7 @@ export default function GLP1Page() {
                   {whyUseItems.map((item, i) => (
                     <li
                       key={i}
-                      className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed"
+                      className="flex gap-3 items-start text-base text-gray-700 leading-relaxed"
                     >
                       <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                       <span>
@@ -331,7 +331,7 @@ export default function GLP1Page() {
                     {differentItems.map((item, i) => (
                       <li
                         key={i}
-                        className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed"
+                        className="flex gap-3 items-start text-base text-gray-700 leading-relaxed"
                       >
                         <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                         <span>

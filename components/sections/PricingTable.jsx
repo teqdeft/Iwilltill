@@ -445,7 +445,7 @@ export default function PricingTable() {
                       "border-b border-gray-100",
                   )}
                 >
-                  <span className="text-[14px] font-medium text-gray-700">
+                  <span className="text-base font-medium text-gray-700">
                     {plan.name}
                   </span>
                   <Link

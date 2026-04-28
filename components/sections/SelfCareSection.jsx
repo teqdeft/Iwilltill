@@ -191,7 +191,7 @@ export default function SelfCareSection() {
             <span
               key={tag}
               className={cn(
-                "inline-flex items-center gap-2 px-4 py-2.5 bg-gray-50 rounded-full border border-gray-200 text-[14px] text-gray-700 font-medium hover:border-primary/40 hover:bg-white hover:shadow-sm hover:-translate-y-0.5 transition-all duration-300",
+                "inline-flex items-center gap-2 px-4 py-2.5 bg-gray-50 rounded-full border border-gray-200 text-base text-gray-700 font-medium hover:border-primary/40 hover:bg-white hover:shadow-sm hover:-translate-y-0.5 transition-all duration-300",
                 isVisible
                   ? "opacity-100 translate-y-0 scale-100"
                   : "opacity-0 translate-y-4 scale-95",

@@ -79,7 +79,7 @@ export default function TeleVetCarousel() {
             What to Expect?
           </h2>
 
-          <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-lg max-w-4xl mx-auto">
+          <div className="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg max-w-4xl mx-auto">
             <p>
               At iWILL 'til i'mWELL, we make caring for your pet easy,
               convenient, and tailored to their needs. Whether you need advice

@@ -62,7 +62,7 @@ export default function TermsConditionsPage() {
         <section className="section-padding py-16 md:py-20 bg-white">
           <div className="container-main max-w-5xl">
             {/* Intro */}
-            <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] mb-12">
+            <div className="space-y-4 text-gray-700 leading-relaxed text-base mb-12">
               <p>
                 Welcome to the iWILL 'til i'mWELL LLC ("The Company") website
                 (the "Site"). The Company provides a platform for online health
@@ -92,7 +92,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 1. Medical Emergency.
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-700 leading-relaxed text-base">
                 If you are experiencing a medical emergency, please dial 911 or
                 seek immediate medical attention. The Services provided through
                 this Site are not intended for emergency care.
@@ -104,7 +104,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 2. Medical Consultations and Services.
               </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed text-[15px]">
+              <div className="space-y-4 text-gray-700 leading-relaxed text-base">
                 <p>
                   The Company facilitates access to healthcare services,
                   including consultations with independent healthcare providers
@@ -135,7 +135,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 3. Prescription Policy.
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-700 leading-relaxed text-base">
                 The Company and the Providers accessed through the platform do
                 not guarantee that prescriptions will be issued. Healthcare
                 providers do not prescribe DEA-controlled substances, lifestyle
@@ -152,7 +152,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 4. Use of the Site.
               </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed text-[15px]">
+              <div className="space-y-4 text-gray-700 leading-relaxed text-base">
                 <p>
                   Subject to your compliance with these Terms and Conditions,
                   your acknowledgment of the Privacy Policy on the Site, and
@@ -186,7 +186,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 5. Eligibility, Enrollment, and Account Security.
               </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed text-[15px]">
+              <div className="space-y-4 text-gray-700 leading-relaxed text-base">
                 <p>
                   To use the Site and access the Services, you must be of legal
                   age and not be prohibited from receiving Services under
@@ -237,7 +237,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 6. Electronic Medical Records (EMR).
               </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed text-[15px]">
+              <div className="space-y-4 text-gray-700 leading-relaxed text-base">
                 <p>
                   The Company creates and maintains an Electronic Medical Record
                   ("EMR") for each user to securely store and access personal
@@ -272,7 +272,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 7. Payments, Changes to Services, and Refunds.
               </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed text-[15px]">
+              <div className="space-y-4 text-gray-700 leading-relaxed text-base">
                 <p>
                   You are responsible for paying all fees associated with your
                   use of the Services. If a third party (such as an employer) is
@@ -407,7 +407,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 8. Site Control and Third-Party Links.
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-700 leading-relaxed text-base">
                 The Company may, at any time, modify, withdraw, suspend, or
                 discontinue any feature of the Site, including its availability.
                 The Company provides links to third-party websites for your
@@ -424,7 +424,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 9. Legal Notices.
               </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed text-[15px]">
+              <div className="space-y-4 text-gray-700 leading-relaxed text-base">
                 <p>
                   The Company does not guarantee the content, accuracy, or
                   validity of any treatment recommendations provided by
@@ -468,7 +468,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 10. Indemnification.
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-700 leading-relaxed text-base">
                 You agree to indemnify, defend, and hold harmless the Company,
                 its affiliates, employees, and agents from and against any and
                 all claims, damages, costs, and expenses (including reasonable
@@ -483,7 +483,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 11. Dispute Resolution.
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-700 leading-relaxed text-base">
                 Any dispute arising out of or related to these Terms or your use
                 of the Site shall be resolved by binding arbitration under the
                 rules of the American Arbitration Association. The arbitration
@@ -500,7 +500,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 12. Force Majeure.
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-700 leading-relaxed text-base">
                 The Company shall not be liable for delays or failures in
                 performance resulting from acts of God, war, terrorism, civil
                 unrest, severe weather, government action, or any other
@@ -513,7 +513,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 13. Notices.
               </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed text-[15px]">
+              <div className="space-y-4 text-gray-700 leading-relaxed text-base">
                 <p>
                   The Company may provide notice to you via the email address
                   you provided during registration or through a general notice
@@ -532,7 +532,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 14. Entire Agreement; Severability.
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-700 leading-relaxed text-base">
                 These Terms and the Privacy Policy constitute the entire
                 agreement between you and the Company. If any provision of these
                 Terms is found to be invalid or unenforceable, that provision
@@ -546,7 +546,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 User-Generated Content (UGC) Policy.
               </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed text-[15px]">
+              <div className="space-y-4 text-gray-700 leading-relaxed text-base">
                 <p>
                   As a health and wellness platform, the Company allows users to
                   create and share User-Generated Content ("UGC") in designated
@@ -578,19 +578,19 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 Guidelines for Acceptable UGC.
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 In order to create a positive and health-focused environment,
                 users must adhere to the following guidelines when posting UGC:
               </p>
               <ul className="space-y-3">
-                <li className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed">
+                <li className="flex gap-3 items-start text-base text-gray-700 leading-relaxed">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>
                     UGC should be relevant to health, wellness, mental health,
                     fitness, nutrition, and related topics.
                   </span>
                 </li>
-                <li className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed">
+                <li className="flex gap-3 items-start text-base text-gray-700 leading-relaxed">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>
                     Content should not contain offensive language, defamatory
@@ -598,7 +598,7 @@ export default function TermsConditionsPage() {
                     discrimination.
                   </span>
                 </li>
-                <li className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed">
+                <li className="flex gap-3 items-start text-base text-gray-700 leading-relaxed">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>
                     UGC must not include medical advice that conflicts with the
@@ -606,7 +606,7 @@ export default function TermsConditionsPage() {
                     unverified, non-evidence-based health claims.
                   </span>
                 </li>
-                <li className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed">
+                <li className="flex gap-3 items-start text-base text-gray-700 leading-relaxed">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>
                     Users must refrain from posting any sensitive or
@@ -622,7 +622,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 Content Moderation.
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-700 leading-relaxed text-base">
                 The Company reserves the right to review, monitor, edit, and
                 remove any UGC that, in our opinion, does not meet these
                 guidelines or is otherwise inappropriate for our platform. We
@@ -637,7 +637,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 Termination for Violation of UGC Policy.
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-700 leading-relaxed text-base">
                 Users who repeatedly violate the UGC guidelines may have their
                 accounts suspended or terminated, at the sole discretion of the
                 Company. This includes users who persist in posting off-topic
@@ -651,7 +651,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 DMCA Compliance.
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 The Company respects the intellectual property rights of others
                 and expects users of our Site to do the same. If you believe
                 that any material on our Site, including any user-generated
@@ -660,28 +660,28 @@ export default function TermsConditionsPage() {
                 agent. The notice must include:
               </p>
               <ul className="space-y-3">
-                <li className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed">
+                <li className="flex gap-3 items-start text-base text-gray-700 leading-relaxed">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>
                     Your contact information (name, mailing address, email
                     address, and phone number),
                   </span>
                 </li>
-                <li className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed">
+                <li className="flex gap-3 items-start text-base text-gray-700 leading-relaxed">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>
                     A description of the copyrighted work you believe has been
                     infringed,
                   </span>
                 </li>
-                <li className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed">
+                <li className="flex gap-3 items-start text-base text-gray-700 leading-relaxed">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>
                     A description of where the alleged infringing material is
                     located on our Site, including specific URLs if available,
                   </span>
                 </li>
-                <li className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed">
+                <li className="flex gap-3 items-start text-base text-gray-700 leading-relaxed">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>
                     A statement that you have a good faith belief that the use
@@ -689,7 +689,7 @@ export default function TermsConditionsPage() {
                     agent, or the law,
                   </span>
                 </li>
-                <li className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed">
+                <li className="flex gap-3 items-start text-base text-gray-700 leading-relaxed">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>
                     A statement under penalty of perjury that the information
@@ -697,7 +697,7 @@ export default function TermsConditionsPage() {
                     authorized to act on behalf of the owner, and
                   </span>
                 </li>
-                <li className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed">
+                <li className="flex gap-3 items-start text-base text-gray-700 leading-relaxed">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>Your physical or electronic signature.</span>
                 </li>
@@ -709,7 +709,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 Please direct DMCA notices to:
               </h2>
-              <div className="space-y-1.5 text-[15px] text-gray-700 leading-relaxed">
+              <div className="space-y-1.5 text-base text-gray-700 leading-relaxed">
                 <p className="font-bold">DMCA Agent</p>
                 <p className="font-bold">iWILL 'til i'mWELL LLC</p>
                 <p>123 E San Carlos St</p>
@@ -725,7 +725,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 Monitoring and Responsibility for User-Generated Content.
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-700 leading-relaxed text-base">
                 The Company may, from time to time, allow users to post, share,
                 and engage with content in community forums or peer-to-peer
                 sections of our platform.{" "}
@@ -745,7 +745,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 Removal of Infringing Content.
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-700 leading-relaxed text-base">
                 Upon receiving a valid DMCA notice, the Company will promptly
                 investigate the claim and, if deemed appropriate, remove or
                 disable access to the allegedly infringing material. In cases
@@ -761,21 +761,21 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 Counter-Notification Procedure.
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 If you believe that content you posted was removed or disabled
                 by mistake or misidentification, you may submit a
                 counter-notification to our DMCA agent. The counter-notification
                 must include:
               </p>
               <ul className="space-y-3 mb-4">
-                <li className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed">
+                <li className="flex gap-3 items-start text-base text-gray-700 leading-relaxed">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>
                     Your contact information (name, mailing address, email
                     address, and phone number),
                   </span>
                 </li>
-                <li className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed">
+                <li className="flex gap-3 items-start text-base text-gray-700 leading-relaxed">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>
                     A description of the content that was removed and the
@@ -783,7 +783,7 @@ export default function TermsConditionsPage() {
                     disabled,
                   </span>
                 </li>
-                <li className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed">
+                <li className="flex gap-3 items-start text-base text-gray-700 leading-relaxed">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>
                     A statement under penalty of perjury that you have a good
@@ -791,7 +791,7 @@ export default function TermsConditionsPage() {
                     result of mistake or misidentification,
                   </span>
                 </li>
-                <li className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed">
+                <li className="flex gap-3 items-start text-base text-gray-700 leading-relaxed">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>
                     A statement that you consent to the jurisdiction of the
@@ -803,12 +803,12 @@ export default function TermsConditionsPage() {
                     such person, and
                   </span>
                 </li>
-                <li className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed">
+                <li className="flex gap-3 items-start text-base text-gray-700 leading-relaxed">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>Your physical or electronic signature.</span>
                 </li>
               </ul>
-              <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-700 leading-relaxed text-base">
                 Upon receipt of a valid counter-notification, the Company may,
                 at its discretion, restore the content in question unless the
                 original claimant files a court action to prevent the
@@ -821,7 +821,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 Policy on Repeat Infringers.
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-700 leading-relaxed text-base">
                 The Company maintains a policy that provides for the termination
                 of user accounts in appropriate circumstances for those who are
                 deemed repeat infringers. A repeat infringer is a user who has
@@ -836,7 +836,7 @@ export default function TermsConditionsPage() {
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-5">
                 Privacy Policy.
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px]">
+              <p className="text-gray-700 leading-relaxed text-base">
                 The Company values your privacy and is committed to protecting
                 your personal information. For more details on how we collect,
                 use, and protect your data, please refer to our full Privacy

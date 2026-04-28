@@ -219,7 +219,7 @@ export default function PrivacyPolicyPage() {
                 iWILL 'til i'mWELL Privacy Policy.
               </h2>
 
-              <div className="space-y-5 text-gray-700 leading-relaxed text-[15px]">
+              <div className="space-y-5 text-gray-700 leading-relaxed text-base">
                 <p>
                   iWILL 'til i'mWELL, Inc., as well as our vendors, partners,
                   consultants, and affiliates respect the privacy of its members
@@ -294,7 +294,7 @@ export default function PrivacyPolicyPage() {
                 Acceptance.
               </h2>
 
-              <div className="space-y-5 text-gray-700 leading-relaxed text-[15px]">
+              <div className="space-y-5 text-gray-700 leading-relaxed text-base">
                 <p>
                   By using this site and the iWILL 'til i'mWELL service, you
                   signify your acceptance of this Privacy Policy, as stated. If
@@ -324,7 +324,7 @@ export default function PrivacyPolicyPage() {
                 Notice of HIPAA Privacy Practices.
               </h2>
 
-              <div className="space-y-5 text-gray-700 leading-relaxed text-[15px]">
+              <div className="space-y-5 text-gray-700 leading-relaxed text-base">
                 <p>
                   THIS NOTICE DESCRIBES HOW MEDICAL INFORMATION ABOUT YOU MAY BE
                   USED, AND DISCLOSED, AND HOW YOU CAN GET ACCESS TO THIS
@@ -412,7 +412,7 @@ export default function PrivacyPolicyPage() {
                 Privacy Notice for California Residents.
               </h2>
 
-              <div className="space-y-3 text-gray-700 leading-relaxed text-[15px] mb-6">
+              <div className="space-y-3 text-gray-700 leading-relaxed text-base mb-6">
                 <p>
                   <span className="font-bold">Effective Date:</span> 1/1/2019
                 </p>
@@ -434,7 +434,7 @@ export default function PrivacyPolicyPage() {
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                 Information We Collect
               </h3>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-6">
+              <p className="text-gray-700 leading-relaxed text-base mb-6">
                 Our Website collects information that identifies, relates to,
                 describes, references, is capable of being associated with, or
                 could reasonably be linked, directly or indirectly, with a
@@ -495,20 +495,20 @@ export default function PrivacyPolicyPage() {
                 {personalInfoExclusions.map((item, i) => (
                   <li
                     key={i}
-                    className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed"
+                    className="flex gap-3 items-start text-base text-gray-700 leading-relaxed"
                   >
                     <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
-              <ol className="space-y-3 mb-6 ml-9 list-decimal text-[15px] text-gray-700 leading-relaxed marker:text-gray-500">
+              <ol className="space-y-3 mb-6 ml-9 list-decimal text-base text-gray-700 leading-relaxed marker:text-gray-500">
                 {exclusionDetails.map((detail, i) => (
                   <li key={i}>{detail}</li>
                 ))}
               </ol>
 
-              <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] mb-6">
+              <div className="space-y-4 text-gray-700 leading-relaxed text-base mb-6">
                 <p>
                   iWILL 'til i'mWELL obtains the categories of personal
                   information listed above from the following categories of
@@ -528,7 +528,7 @@ export default function PrivacyPolicyPage() {
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 mt-10">
                 Use of Personal Information
               </h3>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 We may use, or disclose the personal information we collect for
                 one or more of the following business purposes:
               </p>
@@ -536,14 +536,14 @@ export default function PrivacyPolicyPage() {
                 {useOfInfo.map((use, i) => (
                   <li
                     key={i}
-                    className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed"
+                    className="flex gap-3 items-start text-base text-gray-700 leading-relaxed"
                   >
                     <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                     <span>{use}</span>
                   </li>
                 ))}
               </ul>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-6">
+              <p className="text-gray-700 leading-relaxed text-base mb-6">
                 iWILL 'til i'mWELL will not collect additional categories of
                 personal information or use the personal information we
                 collected for materially different, unrelated, or incompatible
@@ -554,7 +554,7 @@ export default function PrivacyPolicyPage() {
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 mt-10">
                 Sharing Personal Information
               </h3>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 iWILL 'til i'mWELL may disclose your personal information to a
                 third party for a business purpose. When we disclose personal
                 information for a business purpose, we enter a contract that
@@ -562,47 +562,47 @@ export default function PrivacyPolicyPage() {
                 that personal information confidential and not use it for any
                 purpose except performing the contract.
               </p>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-3">
+              <p className="text-gray-700 leading-relaxed text-base mb-3">
                 We share your personal information with the following categories
                 of third parties:
               </p>
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 items-start text-[15px] text-gray-700">
+                <li className="flex gap-3 items-start text-base text-gray-700">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>Service providers.</span>
                 </li>
-                <li className="flex gap-3 items-start text-[15px] text-gray-700">
+                <li className="flex gap-3 items-start text-base text-gray-700">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>Data aggregators.</span>
                 </li>
               </ul>
 
-              <p className="italic text-gray-700 leading-relaxed text-[15px] mb-3">
+              <p className="italic text-gray-700 leading-relaxed text-base mb-3">
                 Disclosures of Personal Information for a Business Purpose
               </p>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 In the preceding twelve (12) months, Company has disclosed the
                 following categories of personal information for a business
                 purpose:
               </p>
               <div className="space-y-2 mb-6">
                 {businessCategories.map((cat, i) => (
-                  <p key={i} className="text-[15px] text-gray-700">
+                  <p key={i} className="text-base text-gray-700">
                     {cat}
                   </p>
                 ))}
               </div>
 
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-3">
+              <p className="text-gray-700 leading-relaxed text-base mb-3">
                 We disclose your personal information for a business purpose to
                 the following categories of third parties:
               </p>
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 items-start text-[15px] text-gray-700">
+                <li className="flex gap-3 items-start text-base text-gray-700">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>Service providers.</span>
                 </li>
-                <li className="flex gap-3 items-start text-[15px] text-gray-700">
+                <li className="flex gap-3 items-start text-base text-gray-700">
                   <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <span>Data aggregators.</span>
                 </li>
@@ -611,7 +611,7 @@ export default function PrivacyPolicyPage() {
               <h4 className="text-xl font-bold text-gray-900 mb-2">
                 Sales of Personal Information
               </h4>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-6">
+              <p className="text-gray-700 leading-relaxed text-base mb-6">
                 Company does not sell personal information. In the preceding
                 twelve (12) months, Company has not sold personal information.
               </p>
@@ -620,17 +620,17 @@ export default function PrivacyPolicyPage() {
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 mt-10">
                 Your Rights and Choices.
               </h3>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 The CCPA and CPRA provide consumers (California residents) with
                 specific rights regarding their personal information. This
                 section describes your CCPA and CPRA rights, and explains how to
                 exercise those rights.
               </p>
 
-              <p className="italic text-gray-700 leading-relaxed text-[15px] mb-3">
+              <p className="italic text-gray-700 leading-relaxed text-base mb-3">
                 Access to Specific Information and Data Portability Rights
               </p>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 You have the right to request that iWILL 'til i'mWELL disclose
                 certain information to you about our collection and use of your
                 personal information over the past 12 months. Once we receive
@@ -642,7 +642,7 @@ export default function PrivacyPolicyPage() {
                 {accessRights.map((right, i) => (
                   <li
                     key={i}
-                    className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed"
+                    className="flex gap-3 items-start text-base text-gray-700 leading-relaxed"
                   >
                     <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                     <span>{right}</span>
@@ -654,7 +654,7 @@ export default function PrivacyPolicyPage() {
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 mt-10">
                 Deletion Request Rights.
               </h3>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 You have the right to request that iWILL 'til i'mWELL delete any
                 of your personal information that we collected from you and
                 retained, subject to certain exceptions. Once we receive and
@@ -663,11 +663,11 @@ export default function PrivacyPolicyPage() {
                 direct our service providers to delete) your personal
                 information from our records, unless an exception applies.
               </p>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 We may deny your deletion request if retaining the information
                 is necessary for us or our service provider(s) to:
               </p>
-              <ol className="space-y-3 mb-6 ml-6 list-decimal text-[15px] text-gray-700 leading-relaxed marker:text-gray-500 marker:font-semibold">
+              <ol className="space-y-3 mb-6 ml-6 list-decimal text-base text-gray-700 leading-relaxed marker:text-gray-500 marker:font-semibold">
                 {deletionExceptions.map((exception, i) => (
                   <li key={i} className="pl-2">
                     {exception}
@@ -679,23 +679,23 @@ export default function PrivacyPolicyPage() {
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 mt-10">
                 Right to Correct.
               </h3>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 You have the right to request that iWILL 'til i'mWELL corrects
                 inaccurate personal information
               </p>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 Right to Limit Use and Disclosure
               </p>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 You have the right to request that iWILL 'til i'mWELL limits the
                 use and disclosure of sensitive personal information.
               </p>
 
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 Exercising Access, Data Portability, Deletion, Correction, and
                 Limit Use and Disclosure Rights
               </p>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 To exercise the access, data portability, deletion, correction,
                 and limit use and disclosure rights described above, please
                 submit a verifiable consumer request to us by either:
@@ -704,7 +704,7 @@ export default function PrivacyPolicyPage() {
                 {verifiableRequestMethods.map((method, i) => (
                   <li
                     key={i}
-                    className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed"
+                    className="flex gap-3 items-start text-base text-gray-700 leading-relaxed"
                   >
                     <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                     <span>{method.text}</span>
@@ -712,14 +712,14 @@ export default function PrivacyPolicyPage() {
                 ))}
               </ul>
 
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 Only you, or a person registered with the California Secretary
                 of State that you authorize to act on your behalf, may make a
                 verifiable consumer request related to your personal
                 information. You may also make a verifiable consumer request on
                 behalf of your minor child.
               </p>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 You may only make a verifiable consumer request for access or
                 data portability twice within a 12-month period. The verifiable
                 consumer request must:
@@ -728,7 +728,7 @@ export default function PrivacyPolicyPage() {
                 {requestRequirements.map((req, i) => (
                   <li
                     key={i}
-                    className="flex gap-3 items-start text-[15px] text-gray-700 leading-relaxed"
+                    className="flex gap-3 items-start text-base text-gray-700 leading-relaxed"
                   >
                     <Check className="w-4 h-4 text-primary shrink-0 mt-1" />
                     <span>{req}</span>
@@ -736,7 +736,7 @@ export default function PrivacyPolicyPage() {
                 ))}
               </ul>
 
-              <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] mb-6">
+              <div className="space-y-4 text-gray-700 leading-relaxed text-base mb-6">
                 <p>
                   We cannot respond to your request or provide you with personal
                   information if we cannot verify your identity or authority to
@@ -792,7 +792,7 @@ export default function PrivacyPolicyPage() {
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 mt-10">
                 Changes to Our Privacy Notice.
               </h3>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-6">
+              <p className="text-gray-700 leading-relaxed text-base mb-6">
                 iWILL 'til i'mWELL reserves the right to amend this privacy
                 notice at our discretion and at any time. When we make changes
                 to this privacy notice, we will post the updated notice on the
@@ -807,7 +807,7 @@ export default function PrivacyPolicyPage() {
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 mt-10">
                 Contact Information.
               </h3>
-              <p className="text-gray-700 leading-relaxed text-[15px] mb-4">
+              <p className="text-gray-700 leading-relaxed text-base mb-4">
                 If you have any questions or comments about this notice, the
                 ways in which iWILL 'til i'mWELL collects and uses your
                 information described above, your choices and rights regarding
@@ -815,7 +815,7 @@ export default function PrivacyPolicyPage() {
                 please do not hesitate to contact us at:
               </p>
 
-              <div className="space-y-2 text-[15px] text-gray-700 leading-relaxed">
+              <div className="space-y-2 text-base text-gray-700 leading-relaxed">
                 <p>
                   <span className="font-bold">Phone:</span> 833-237-5455
                 </p>

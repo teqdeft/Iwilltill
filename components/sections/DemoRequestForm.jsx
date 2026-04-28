@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ChevronDown, Check } from "lucide-react";
 import Button from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
+import axios from "axios";
 
 const tailoredOptions = [
   "Employers/Employees",
@@ -79,18 +80,33 @@ export default function DemoRequestForm() {
     setSubmitting(true);
 
     try {
-      // TODO: Replace with your API endpoint
-      // const response = await fetch("/api/demo-request", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: JSON.stringify(formData),
-      // });
-      // const data = await response.json();
+      const payload = {
+        company_fields_required: true,
+        sections: {
+          how_can_we_help: {
+            audiences: formData.tailoredFor,
+            existing_customer:
+              formData.isExistingCustomer === "yes" ? "Yes" : "No",
+          },
+          interests: {
+            products: formData.productsInterested,
+          },
+          contact: {
+            first_name: formData.firstName,
+            last_name: formData.lastName,
+            email: formData.email,
+            phone_e164_like: formData.contactNumber,
+            phone_display: formData.contactNumber,
+            company_name: formData.companyName,
+            company_size: formData.companySize,
+            notes: formData.additionalInfo,
+            marketing_opt_in: formData.receiveUpdates === "yes" ? "Yes" : "No",
+          },
+        },
+      };
 
-      console.log("Form submitted:", formData);
-
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const res = await axios.post("/api/demo-request", payload);
+      console.log("response from api-;--------", res);
 
       setSubmitted(true);
     } catch (error) {
@@ -115,7 +131,7 @@ export default function DemoRequestForm() {
               Your demo request has been received. Our team will reach out to
               you shortly to schedule your personalized session.
             </p>
-            <Button variant="accent" size="lg" href="/">
+            <Button variant="primary" size="lg" href="/">
               Back to Home
             </Button>
           </div>
@@ -185,7 +201,7 @@ export default function DemoRequestForm() {
               <div className="pt-2">
                 <Button
                   type="button"
-                  variant="ghost"
+                  variant="primary"
                   size="md"
                   onClick={() => continueToNext("products")}
                 >
@@ -225,7 +241,7 @@ export default function DemoRequestForm() {
               <div className="pt-2">
                 <Button
                   type="button"
-                  variant="ghost"
+                  variant="primary"
                   size="md"
                   onClick={() => continueToNext("contact")}
                 >
@@ -402,7 +418,7 @@ function CheckboxField({ label, checked, onChange }) {
           )}
         </div>
       </div>
-      <span className="text-[14px] text-gray-700 select-none">{label}</span>
+      <span className="text-base text-gray-700 select-none">{label}</span>
     </label>
   );
 }
@@ -430,7 +446,7 @@ function RadioField({ name, value, label, checked, onChange }) {
           {checked && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
         </div>
       </div>
-      <span className="text-[14px] text-gray-700 select-none">{label}</span>
+      <span className="text-base text-gray-700 select-none">{label}</span>
     </label>
   );
 }

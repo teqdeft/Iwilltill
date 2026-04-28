@@ -193,7 +193,7 @@ export default function WhatToExpectCarousel() {
                       <p className="text-xs text-primary font-medium mb-3">
                         iWILL 'til i'mWELL
                       </p>
-                      <p className="text-sm text-gray-600 leading-relaxed">
+                      <p className="text-base text-gray-600 leading-relaxed">
                         {card.description}
                       </p>
                     </div>
@@ -221,7 +221,7 @@ export default function WhatToExpectCarousel() {
         </div>
 
         <div className="text-center mt-10">
-          <Button variant="ghost" size="lg" href="/faq">
+          <Button variant="primary" size="lg" href="/faq">
             Learn More
             <ArrowRight className="w-4 h-4" />
           </Button>

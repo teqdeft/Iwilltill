@@ -104,7 +104,7 @@ export default function IntegratedMusculoskeletalCarePage() {
                   </h2>
                 </div>
 
-                <div className="space-y-4 text-gray-700 leading-relaxed text-[15px] md:text-lg">
+                <div className="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
                   <p>
                     Employees receive expert virtual care from Licensed Physical
                     Therapists trained to treat and prevent pain in 18 different
@@ -140,7 +140,7 @@ export default function IntegratedMusculoskeletalCarePage() {
                   </h2>
                 </div>
 
-                <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg mb-6">
+                <p className="text-gray-700 leading-relaxed text-base md:text-lg mb-6">
                   Your employees are surrounded by a collaborative care team
                   that prioritizes their well-being. Their journey begins with a
                   comprehensive 30 - 45 minute virtual evaluation and continues
@@ -154,7 +154,7 @@ export default function IntegratedMusculoskeletalCarePage() {
                       <div className="w-7 h-7 rounded-lg bg-primary-100 group-hover:bg-primary-200 flex items-center justify-center shrink-0 transition-colors duration-300">
                         <Check className="w-4 h-4 text-primary" />
                       </div>
-                      <span className="text-gray-700 text-[15px] font-medium">
+                      <span className="text-gray-700 text-base font-medium">
                         {role}
                       </span>
                     </li>

@@ -129,6 +129,7 @@ export default function JoinTheMissionPage() {
                 href="https://app.iwilltilimwell.com/login"
               >
                 Login
+                <ArrowRight className="w-4 h-4" />
               </Button>
               <Button
                 variant="accent"
@@ -136,6 +137,7 @@ export default function JoinTheMissionPage() {
                 href="https://app.iwilltilimwell.com/register"
               >
                 Get Started
+                <ArrowRight className="w-4 h-4" />
               </Button>
             </div>
           </div>
@@ -153,7 +155,7 @@ export default function JoinTheMissionPage() {
               </h2>
             </div>
 
-            <div className="space-y-4 text-center text-gray-700 leading-relaxed text-[15px] md:text-lg">
+            <div className="space-y-4 text-center text-gray-700 leading-relaxed text-base md:text-lg">
               <p>
                 At iWILL 'til i'mWELL, we are more than a service - we are a
                 community and we are thrilled to have you join our growing
@@ -206,7 +208,7 @@ export default function JoinTheMissionPage() {
                     <span className="text-primary">{service.titleAccent}</span>{" "}
                     {service.titleEnd}
                   </h3>
-                  <p className="text-gray-700 leading-relaxed text-[15px]">
+                  <p className="text-gray-700 leading-relaxed text-base">
                     {service.description}
                   </p>
                 </div>

@@ -106,14 +106,14 @@ export default function PathsToWellness() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {service.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                <p className="text-lg text-gray-600 leading-relaxed mb-4">
                   {service.description}
                 </p>
                 <ul className="space-y-2.5 mb-6 flex-1">
                   {service.features.map((feature, i) => (
                     <li
                       key={i}
-                      className="flex items-start gap-2 text-sm text-gray-600"
+                      className="flex items-start gap-2 text-base text-gray-600"
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 shrink-0" />
                       {feature}
@@ -122,7 +122,7 @@ export default function PathsToWellness() {
                 </ul>
 
                 <div className="flex gap-2">
-                  <Button variant="ghost" size="sm" href={service.href}>
+                  <Button variant="primary" size="md" href={service.href}>
                     {service.ctaLabel}
                   </Button>
                   {/* <Button

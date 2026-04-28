@@ -124,11 +124,11 @@ export default function SilverPrescriptionPlanPage() {
                   Acute Medication Subscription Program
                 </h3>
 
-                <p className="text-gray-600 text-[15px] leading-relaxed mb-4">
+                <p className="text-gray-600 text-base leading-relaxed mb-4">
                   Consider us your Pharmacy Savings Advocate.
                 </p>
 
-                <p className="text-gray-700 text-[15px] leading-relaxed mb-4">
+                <p className="text-gray-700 text-base leading-relaxed mb-4">
                   As a subscriber to{" "}
                   <span className="font-bold">iWILL 'til i'mWELL</span>,{" "}
                   <span className="text-primary font-semibold">
@@ -137,14 +137,14 @@ export default function SilverPrescriptionPlanPage() {
                   </span>
                 </p>
 
-                <p className="text-gray-700 text-[15px] leading-relaxed mb-4">
+                <p className="text-gray-700 text-base leading-relaxed mb-4">
                   <span className="font-bold">iWILL 'til i'mWELL</span> has
                   created an Acute Medication Subscription Program that provides
                   37 drugs at no charge just for you, plus great discounts on
                   all other medications.
                 </p>
 
-                <p className="text-gray-700 text-[15px] leading-relaxed">
+                <p className="text-gray-700 text-base leading-relaxed">
                   Our live Customer Care team is also here to help you find the
                   lowest prices on medications available.
                 </p>
@@ -166,7 +166,7 @@ export default function SilverPrescriptionPlanPage() {
                 {programCovers.map((item) => (
                   <span
                     key={item}
-                    className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full border border-gray-200 text-[14px] text-gray-700 font-medium hover:border-primary/40 hover:shadow-sm transition-all duration-200"
+                    className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full border border-gray-200 text-base text-gray-700 font-medium hover:border-primary/40 hover:shadow-sm transition-all duration-200"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
                     {item}
@@ -186,7 +186,7 @@ export default function SilverPrescriptionPlanPage() {
                   (item) => (
                     <span
                       key={item}
-                      className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full border border-gray-200 text-[14px] text-gray-700 font-medium hover:border-primary/40 hover:shadow-sm transition-all duration-200"
+                      className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full border border-gray-200 text-base text-gray-700 font-medium hover:border-primary/40 hover:shadow-sm transition-all duration-200"
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
                       {item}
@@ -209,7 +209,7 @@ export default function SilverPrescriptionPlanPage() {
                     The Program is Easy to Use:
                   </h2>
 
-                  <p className="text-gray-700 text-[15px] leading-relaxed mb-4">
+                  <p className="text-gray-700 text-base leading-relaxed mb-4">
                     You will receive an electronic member card that can be
                     presented at any retail pharmacy (over 70,000 in network)
                     and if on the formulary, you pay nothing. If it is not on
@@ -217,7 +217,7 @@ export default function SilverPrescriptionPlanPage() {
                     on a deeply discounted price.
                   </p>
 
-                  <p className="text-gray-700 text-[15px] leading-relaxed mb-6">
+                  <p className="text-gray-700 text-base leading-relaxed mb-6">
                     Present your Rx Card to the pharmacy of your choice. Your Rx
                     Card will display your BIN, Group Number and PCN to present
                     to the pharmacist. You will pay nothing at the pharmacy.

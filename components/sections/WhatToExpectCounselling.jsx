@@ -183,7 +183,7 @@ export default function WhatToExpectCounselling() {
         </div>
 
         <div className="text-center mt-10">
-          <Button variant="ghost" size="lg" href="/faq">
+          <Button variant="primary" size="lg" href="/faq">
             Learn More
             <ArrowRight className="w-4 h-4" />
           </Button>

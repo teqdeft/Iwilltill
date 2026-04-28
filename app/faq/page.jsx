@@ -3,7 +3,7 @@ import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 import FAQTabs from "@/components/sections/FAQTabs";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
   title: "FAQ | iWILL 'til i'mWELL",
@@ -64,6 +64,7 @@ export default function FAQPage() {
                   href="https://app.iwilltilimwell.com/login"
                 >
                   Login
+                  <ArrowRight className="w-4 h-4" />
                 </Button>
                 <Button
                   variant="accent"
@@ -71,6 +72,7 @@ export default function FAQPage() {
                   href="https://app.iwilltilimwell.com/register"
                 >
                   Get Started
+                  <ArrowRight className="w-4 h-4" />
                 </Button>
               </div>
             </div>

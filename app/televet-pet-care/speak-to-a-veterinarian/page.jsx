@@ -104,12 +104,12 @@ export default function SpeakToAVeterinarianPage() {
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-6 leading-tight uppercase tracking-wide">
                 Speak to a Veterinarian
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg max-w-4xl mx-auto mb-3">
+              <p className="text-gray-700 leading-relaxed text-base md:text-lg max-w-4xl mx-auto mb-3">
                 <span className="font-bold">iWILL 'til i'mWELL</span> offers
                 convenient Virtual Veterinary Services to ensure your pets
                 receive the care they deserve.
               </p>
-              <p className="text-gray-900 font-semibold text-[15px] md:text-lg">
+              <p className="text-gray-900 font-semibold text-base md:text-lg">
                 Our Licensed Veterinarians provide virtual consultations for
               </p>
             </div>
@@ -124,7 +124,7 @@ export default function SpeakToAVeterinarianPage() {
                   <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-4 leading-snug">
                     {card.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed text-[14px]">
+                  <p className="text-gray-600 leading-relaxed text-base">
                     {card.description}
                   </p>
                 </div>

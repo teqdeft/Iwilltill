@@ -99,7 +99,7 @@ export default function SpeakToADoctorPage() {
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-6 leading-tight">
                 iWILL 'til i'mWELL's Comprehensive Medical Care
               </h2>
-              <p className="text-gray-700 leading-relaxed text-[15px] md:text-lg max-w-4xl mx-auto">
+              <p className="text-gray-700 leading-relaxed text-base md:text-lg max-w-4xl mx-auto">
                 Our services are designed to provide convenient, accessible,
                 high-quality care, personalized care anytime, anywhere, all
                 aimed at improving health outcomes for individuals and their
@@ -117,7 +117,7 @@ export default function SpeakToADoctorPage() {
                   <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-4 leading-snug">
                     {card.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed text-[14px]">
+                  <p className="text-gray-600 leading-relaxed text-base">
                     {card.description}
                   </p>
                 </div>
@@ -134,7 +134,7 @@ export default function SpeakToADoctorPage() {
                   <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-4 leading-snug">
                     {card.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed text-[14px]">
+                  <p className="text-gray-600 leading-relaxed text-base">
                     {card.description}
                   </p>
                 </div>

@@ -98,7 +98,7 @@ export default function ContactUsPage() {
                   <span className="text-primary font-script">Just for You</span>
                 </h2>
 
-                <p className="text-gray-600 leading-relaxed text-[15px] md:text-lg mb-8">
+                <p className="text-gray-600 leading-relaxed text-base md:text-lg mb-8">
                   Schedule a personalized demo to learn how iWILL 'til i'mWELL's
                   virtual platform can support you and your company's journey to
                   sustained health.
@@ -110,7 +110,7 @@ export default function ContactUsPage() {
                       <div className="w-7 h-7 rounded-lg bg-primary-100 group-hover:bg-primary-200 flex items-center justify-center shrink-0 transition-colors duration-300 mt-0.5">
                         <Check className="w-4 h-4 text-primary" />
                       </div>
-                      <p className="text-gray-700 leading-relaxed text-[15px] pt-0.5">
+                      <p className="text-gray-700 leading-relaxed text-base pt-0.5">
                         {point}
                       </p>
                     </li>
