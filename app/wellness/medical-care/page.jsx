@@ -1,7 +1,14 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
-import { ArrowLeft, ArrowRight, Check, CheckCheck, CheckCircle, Dot } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Check,
+  CheckCheck,
+  CheckCircle,
+  Dot,
+} from "lucide-react";
 import WhatToExpectCarousel from "@/components/sections/WhatToExpectCarousel";
 import Link from "next/link";
 
@@ -75,8 +82,8 @@ const prescriptionPlans = [
     intro: "Consider us your Pharmacy Savings Advocate.",
     body: [
       "As a subscriber to iWILL 'til i'mWELL, you won't have to worry about the expensive cost of 37 commonly prescribed medications.",
-      "iWILL 'til i'mWELL has created an Acute Medication Subscription Program that provides 37 drugs at no charge just for you, plus great discounts on all other medications.",
-      "Our live Customer Care team is also here to help you find the lowest prices on medications available.",
+      "iWILL 'til i'mWELL has created an Acute Medication Subscription Program that provides 37 drugs at $0 co-pay just for you, plus great discounts on all other medications.",
+      "Our live Customer Care team is here to help you find the lowest available prices on medications.",
     ],
   },
   {
@@ -84,10 +91,10 @@ const prescriptionPlans = [
     image: "/images/plans/medications.jpg",
     href: "/wellness/gold-prescription-plan",
     intro:
-      "As a subscriber to iWILL 'til i'mWELL, you won't have to worry about the expensive cost of 200 common medications.",
+      "As a subscriber to iWILL 'til i'mWELL, you won't have to worry about the high cost of 200 commonly prescribed medications.",
     body: [
-      "That's because iWILL 'til i'mWELL has created a medication subscription program that provides 200 meds at just $15.00, plus great discounts on all other medications.",
-      "Consider us your Pharmacy Savings Advocate. Our live Customer Care team is here to help you find the lowest prices on medications available.",
+      "That's because iWILL 'til i'mWELL has created a Medication Subscription Program that provides 200 medications at a $5.00 co-pay per medication, plus great discounts on all other medications.",
+      "Consider us your Pharmacy Savings Advocate. Our live Customer Care team is here to help you find the lowest available prices on medications.",
     ],
   },
   {
@@ -95,9 +102,9 @@ const prescriptionPlans = [
     image: "/images/plans/platinum-img-1.png",
     href: "/wellness/platinum-prescription-plan",
     intro:
-      "iWILL 'til i'mWELL has partnered with BestChoiceRx to bring you the best prescription prices possible.",
+      "iWILL 'til i'mWELL is bringing you the best possible prescription prices.",
     body: [
-      "As a member of iWILL 'til i'mWELL, there is no need to worry about the high cost of over 1,000 commonly prescribed medications. That's because as a member of iWILL 'til i'm WELL, you get to take advantage of BestChoiceRx's $0 ENHANCED MEDICATION PROGRAM that includes 37 ACUTE and 95 ACA (Affordable Care Act) medications, plus over 1,000 routinely prescribed CHRONIC drugs at no cost to you.",
+      " As a member of iWILL 'til i'mWELL, there is no need to worry about the high cost of over 1,000 commonly prescribed medications. That's because as a member of iWILL 'til i'mWELL  you get to take advantage of a $0 co-pay enhanced medication program that includes 37 ACUTE medications and 95 ACA (Affordable Care Act) medications, plus over 1,000 routinely prescribed chronic medications at no co-pay cost to you.",
     ],
   },
 ];
@@ -269,7 +276,7 @@ export default function MedicalCarePage() {
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                 Prescription{" "}
-                <span className="text-primary font-script">Plan</span>
+                <span className="text-primary font-script">Plans</span>
               </h2>
             </div>
 
@@ -401,13 +408,27 @@ export default function MedicalCarePage() {
               </div>
             </div>
 
-            {/* Full width image at bottom */}
-            <div className="mt-6 rounded-2xl overflow-hidden shadow-lg max-w-xl">
-              <img
-                src="/images/medical-care/iwilltilimwell-medical-11252024-002.jpg"
-                alt="Medical specialist"
-                className="w-full h-auto object-cover aspect-[4/3]"
-              />
+            {/* Full width image + card row at bottom */}
+            <div className="mt-6 md:mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-stretch">
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="/images/medical-care/iwilltilimwell-medical-11252024-002.jpg"
+                  alt="Medical specialist"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 flex flex-col justify-center">
+                <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
+                  Care Made Simple
+                </h3>
+                <p className="text-sm md:text-lg text-gray-600 leading-relaxed">
+                  iWILL 'til i'mWELL streamlines your experience with clear
+                  steps and seamless support at every stage of your journey.
+                  From booking visits to accessing prescriptions and follow-up
+                  care, everything is organized in one place so you can focus on
+                  feeling better, not on navigating the system.
+                </p>
+              </div>
             </div>
           </div>
         </section>

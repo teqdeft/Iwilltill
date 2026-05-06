@@ -95,29 +95,6 @@ export default function AboutUsPage() {
             <ArrowLeft className="w-4 h-4" />
             Home
           </Link>
-          {/* <div
-  className="absolute inset-0 z-[1]"
-  style={{
-    background: "black",
-    opacity: 0.4, // optional overlay effect
-  }}
-/> */}
-
-          {/* <div className="relative z-[3] h-full container-main section-padding flex flex-col justify-center items-center text-center">
-            <div className="max-w-4xl text-white">
-              <h1 className="text-4xl md:text-5xl lg:text-[60px] font-bold leading-[1.1] tracking-tight mb-6">
-                Wellness starts with a promise.
-              </h1>
-
-              <p className="text-2xl md:text-3xl lg:text-4xl font-script text-accent italic mb-6 leading-tight">
-                "I will keep going until I'm well!"
-              </p>
-
-              <p className="text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight">
-                We're here to help you keep that promise.
-              </p>
-            </div>
-          </div> */}
         </section>
 
         {/* Mission & Vision */}
@@ -192,7 +169,7 @@ export default function AboutUsPage() {
                 Our Programs
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                A Journey of Healing and{" "}
+                A Journey of Healing and{" "} <br />
                 <span className="text-primary font-script">Self-Discovery</span>
               </h2>
               <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary/40 rounded-full mx-auto mb-8" />

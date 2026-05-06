@@ -2,9 +2,10 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 import WhatToExpectCounselling from "@/components/sections/WhatToExpectCounselling";
-import { ArrowRight, Check, ArrowLeft,  CheckCircle } from "lucide-react";
+import { ArrowRight, Check, ArrowLeft, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import SelfCareSection from "@/components/sections/SelfCareSection";
+import BehavioralToolsSection from "@/components/sections/BehavioralToolsSection";
 
 export const metadata = {
   title: "Counseling Care Services | iWILL 'til i'mWELL",
@@ -106,7 +107,7 @@ export default function CounsellingCareServicesPage() {
               </p>
 
               <p className="text-lg md:text-xl text-white/85 leading-relaxed mb-8 max-w-xl">
-                Challenges test our strength and resilience, but at{" "}
+                Challenges test our strength and resilience, but at <br />
                 <em>iWILL 'til i'mWELL</em>, we see them as opportunities for
                 breakthrough.
               </p>
@@ -132,7 +133,6 @@ export default function CounsellingCareServicesPage() {
             </div>
           </div>
         </section>
-        <SelfCareSection />
 
         {/* Counseling Services */}
         <section className="section-padding py-16 md:py-20 bg-gray-50">
@@ -174,43 +174,54 @@ export default function CounsellingCareServicesPage() {
             </div>
           </div>
         </section>
+        <SelfCareSection />
 
         {/* Advanced Behavioral Health Tools */}
+        <BehavioralToolsSection />
+
+            {/* Intro Paragraph */}
         <section className="section-padding py-16 md:py-20 bg-white">
-          <div className="container-main max-w-5xl">
-            <div className="mb-10">
-              <span className="inline-block px-4 py-1.5 bg-accent/10 text-accent text-xs font-semibold rounded-full uppercase tracking-wider mb-4">
-                Mental Wellness Tools
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                Advanced Behavioral{" "}
-                <span className="text-primary font-script">Health Tools</span>
+          <div className="container-main max-w-4xl">
+            <div className="relative">
+              <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-primary to-accent rounded-full hidden md:block" />
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight md:pl-6 mb-6">
+                Cura personalis: empowering your journey to total holistic
+                wellness.
               </h2>
-              <p className="text-gray-600 leading-relaxed mt-4 max-w-2xl">
-                A complete toolkit to support your mental wellness journey —
-                track, reflect, and grow at your own pace.
-              </p>
-            </div>
-
-            <div className="grid sm:grid-cols-2 gap-4">
-              {behavioralTools.map((tool) => (
-                <div
-                  key={tool}
-                  className="group bg-gray-50 rounded-xl border border-gray-100 p-5 hover:shadow-md hover:border-accent/20 hover:bg-white transition-all duration-300 flex gap-3 items-center"
-                >
-                  <div className="w-8 h-8 rounded-lg bg-accent/10 group-hover:bg-accent/20 flex items-center justify-center shrink-0 transition-colors duration-300">
-                    <Check className="w-4 h-4 text-accent" />
-                  </div>
-                  <p className="text-gray-700 font-medium text-base">{tool}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-10">
-              <Button variant="outline" size="lg" href="/faq">
-                Learn More
-                <ArrowRight className="w-4 h-4" />
-              </Button>
+              <div className="md:pl-6 space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
+                <p>
+                  iWILL 'til i'mWELL is rooted in{" "}
+                  <span className="font-bold">"Cura Personalis"</span>{" "}
+                 -{" "}
+                  <span className="font-bold">
+                    caring for the whole person.
+                  </span>
+                </p>
+                <p>
+                  We are committed to empowering individuals to achieve complete
+                  well-being - mentally, physically, emotionally, and
+                  spiritually.
+                </p>
+                <p>
+                  Our mission is to{" "}
+                  <span className="font-bold">
+                    empower every individual to take charge of their health
+                  </span>{" "}
+                  by providing actionable insights, evidence-based strategies,
+                  and a supportive community until they truly feel well.
+                </p>
+                <p>
+                  We embrace a holistic approach to wellness, understanding that{" "}
+                  <span className="font-bold">
+                    healing is a journey and every person's journey is unique.
+                  </span>{" "}
+                  We are dedicated to making wellness an achievable, everyday
+                  reality, inspiring everyone to{" "}
+                  <span className="font-bold">
+                    embrace their health journey with confidence and resilience.
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -292,52 +303,7 @@ export default function CounsellingCareServicesPage() {
             </div>
           </div>
         </section>
-        {/* Intro Paragraph */}
-        <section className="section-padding py-16 md:py-20 bg-white">
-          <div className="container-main max-w-4xl">
-            <div className="relative">
-              <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-primary to-accent rounded-full hidden md:block" />
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight md:pl-6 mb-6">
-                Cura personalis: empowering your journey to total holistic
-                wellness.
-              </h2>
-              <div className="md:pl-6 space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
-                <p>
-                  iWILL 'til i'mWELL is{" "}
-                  <span className="font-bold">rooted in "Cura Personalis"</span>{" "}
-                  - a Latin term -{" "}
-                  <span className="font-bold">
-                    caring for the whole person.
-                  </span>
-                </p>
-                <p>
-                  We are committed to empowering individuals to achieve complete
-                  well-being - mentally, physically, emotionally, and
-                  spiritually.
-                </p>
-                <p>
-                  Our mission is to{" "}
-                  <span className="font-bold">
-                    empower every individual to take charge of their health
-                  </span>{" "}
-                  by providing actionable insights, evidence-based strategies,
-                  and a supportive community until they truly feel well.
-                </p>
-                <p>
-                  We embrace a holistic approach to wellness, understanding that{" "}
-                  <span className="font-bold">
-                    healing is a journey and every person's journey is unique.
-                  </span>{" "}
-                  We are dedicated to making wellness an achievable, everyday
-                  reality, inspiring everyone to{" "}
-                  <span className="font-bold">
-                    embrace their health journey with confidence and resilience.
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+    
 
         {/* What to Expect - Carousel */}
         <WhatToExpectCounselling />

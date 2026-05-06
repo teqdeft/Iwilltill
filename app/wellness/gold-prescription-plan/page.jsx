@@ -79,7 +79,7 @@ export default function GoldPrescriptionPlanPage() {
                 Gold Prescription Plan for Primary Care Medications
               </h1>
               <p className="text-lg md:text-xl text-white/95 font-semibold">
-                $15 Cost Medication Program
+                $15 a month 
               </p>
             </div>
           </div>
@@ -127,8 +127,8 @@ export default function GoldPrescriptionPlanPage() {
                   As a subscriber to{" "}
                   <span className="font-bold">iWILL 'til i'mWELL</span>,{" "}
                   <span className="text-primary font-semibold">
-                    you won't have to worry about the expensive cost of 200
-                    common medications.
+                    you won't have to worry about the high cost of 200 commonly
+                    prescribed medications.
                   </span>
                 </p>
 
@@ -137,15 +137,16 @@ export default function GoldPrescriptionPlanPage() {
                   <span className="font-bold">iWILL 'til i'mWELL</span> has
                   created a{" "}
                   <span className="text-primary font-semibold">
-                    medication subscription program that provides 200 meds
-                  </span>
-                  , plus great discounts on all other medications.
+                    Medication Subscription Program{" "}
+                  </span>{" "}
+                  that provides 200 medications at a $5.00 co-pay per
+                  medication, plus great discounts on all other medications.
                 </p>
 
                 <p className="text-gray-700 text-base leading-relaxed">
                   Consider us your pharmacy savings advocate. Our live Customer
-                  Care team is here to help you find the lowest prices on
-                  medications available.
+                  Care team is here to help you find the lowest available prices
+                  on medications.
                 </p>
               </div>
             </div>
@@ -215,7 +216,7 @@ export default function GoldPrescriptionPlanPage() {
                   <p className="text-gray-700 text-base leading-relaxed mb-4">
                     You will receive an electronic member card that can be
                     presented at any retail pharmacy (over 70,000 in network)
-                    and if on the formulary, you only pay $5.00. If it is not on
+                    and if on the formulary, you only pay $5.00 per medication.. If it is not on
                     the $5.00 formulary, your out-of-pocket cost will be based
                     on a deeply discounted price.
                   </p>

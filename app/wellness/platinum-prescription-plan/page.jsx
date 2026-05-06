@@ -62,7 +62,7 @@ export default function PlatinumPrescriptionPlanPage() {
                 Platinum Prescription Plan
               </h1>
               <p className="text-lg md:text-xl text-white/95 font-semibold">
-                $20 Cost Medication Program
+                $20 a month
               </p>
             </div>
           </div>
@@ -98,28 +98,29 @@ export default function PlatinumPrescriptionPlanPage() {
 
               {/* Right - Text */}
               <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-6 leading-snug">
-                  Platinum Prescription Plan Acute and Chronic Medication
-                  Coverage
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+                  Platinum Prescription Plan
                 </h2>
+                <h3 className="text-xl md:text-xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-6">
+                  Acute and Chronic Medication Coverage
+                </h3>
 
                 <p className="text-gray-700 text-base leading-relaxed mb-4">
-                  <span className="font-bold">iWILL 'til i'mWELL</span> has
-                  partnered with BestChoiceRx to bring you the best prescription
-                  prices possible. As a member of iWILL 'til i'mWELL, there is
-                  no need to worry about the high cost of over 1,000 commonly
-                  prescribed medications. That's because as a member of iWILL
-                  'til i'm WELL, you get to take advantage of BestChoiceRx's $0
-                  ENHANCED MEDICATION PROGRAM that includes 37 ACUTE and 95 ACA
-                  (Affordable Care Act) medications, plus over 1,000 routinely
-                  prescribed CHRONIC drugs at no cost to you.
+                  <span className="font-bold">iWILL 'til i'mWELL</span> is
+                  bringing you the best possible prescription prices. As a
+                  member of iWILL 'til i'mWELL, there is no need to worry about
+                  the high cost of over 1,000 commonly prescribed medications.
+                  That's because as a member of iWILL 'til i'mWELL you get to
+                  take advantage of a $0 co-pay enhanced medication program that
+                  includes 37 ACUTE medications and 95 ACA medications, plus
+                  over 1,000 routinely prescribed chronic medications at no
+                  co-pay cost to you.
                 </p>
 
                 <p className="text-gray-700 text-base leading-relaxed">
-                  You can view all medications included in this program by
-                  logging into <BestChoiceLink />. Feel free to print and take
-                  this formulary to your physician so they can prescribe a
-                  listed medication and help you stay within your budget.
+                  As a member, you will be able to print and take this formulary
+                  to your physician so they can prescribe a listed medication
+                  and help you stay within your budget.
                 </p>
               </div>
             </div>
@@ -139,9 +140,9 @@ export default function PlatinumPrescriptionPlanPage() {
 
                   <p className="text-gray-700 text-base leading-relaxed mb-6">
                     You will receive an email from iWILL 'til i'mWELL with your
-                    Member/Group ID so that you can set up your BestChoiceRx
-                    account. All further instructions can be found below. Just
-                    click on the "download PDF Now" button below.
+                    Member/Group ID so that you can set up your account. For
+                    more information click on the "download PDF Now" button
+                    below.
                   </p>
 
                   <Button
@@ -188,8 +189,8 @@ export default function PlatinumPrescriptionPlanPage() {
               Access Over 1,000 Medications
             </h2>
             <p className="text-white/80 text-xl leading-relaxed mb-8">
-              Join the Platinum Prescription Plan and take advantage of
-              BestChoiceRx's enhanced medication program.
+              Join the Platinum Prescription Plan and take advantage of <br /> iWILL
+              'til i'mWELL's enhanced medication program.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Button

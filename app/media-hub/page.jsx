@@ -6,7 +6,6 @@ import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 import MediaTabs from "@/components/sections/media/MediaTabs";
 import MediaGrid from "@/components/sections/media/MediaGrid";
-import PostDetail from "@/components/sections/media/PostDetail";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import axios from "axios";
 import Link from "next/link";
@@ -15,11 +14,7 @@ export default function MediaHubPage() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("blogs");
-  const [selectedPost, setSelectedPost] = useState(null);
-  const [detailPost, setDetailPost] = useState(null);
-  const [detailLoading, setDetailLoading] = useState(false);
 
-  // Fetch all posts once
   useEffect(() => {
     const fetchPosts = async () => {
       try {
@@ -36,31 +31,9 @@ export default function MediaHubPage() {
     fetchPosts();
   }, []);
 
-  // Filter posts by active tab category
   const filteredPosts = posts.filter((post) =>
     post.class_list?.includes(`category-${activeTab}`),
   );
-
-  // Fetch single post detail
-  const openPost = async (postId) => {
-    setSelectedPost(postId);
-    setDetailLoading(true);
-    try {
-      const response = await axios.get(
-        `https://iwilltilimwell.com/backend/wp-json/wp/v2/posts/${postId}`,
-      );
-      setDetailPost(response.data);
-    } catch (error) {
-      console.error("Error fetching post:", error);
-    } finally {
-      setDetailLoading(false);
-    }
-  };
-
-  const closePost = () => {
-    setSelectedPost(null);
-    setDetailPost(null);
-  };
 
   return (
     <>
@@ -102,11 +75,7 @@ export default function MediaHubPage() {
         <section className="section-padding py-12 md:py-16 bg-gray-50 min-h-[60vh]">
           <div className="container-main max-w-6xl">
             <MediaTabs activeTab={activeTab} setActiveTab={setActiveTab} />
-            <MediaGrid
-              posts={filteredPosts}
-              loading={loading}
-              onReadMore={openPost}
-            />
+            <MediaGrid posts={filteredPosts} loading={loading} />
           </div>
         </section>
 
@@ -144,15 +113,6 @@ export default function MediaHubPage() {
         </section>
       </main>
       <Footer />
-
-      {/* Detail Modal */}
-      {selectedPost && (
-        <PostDetail
-          post={detailPost}
-          loading={detailLoading}
-          onClose={closePost}
-        />
-      )}
     </>
   );
 }

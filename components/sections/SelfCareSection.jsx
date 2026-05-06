@@ -78,7 +78,7 @@ export default function SelfCareSection() {
               Self-Care is the New
               <br />
               <span className="text-primary font-script text-5xl md:text-6xl lg:text-[64px]">
-                Healthcare!
+                Mental Healthcare!
               </span>
             </h2>
           </div>
@@ -91,66 +91,13 @@ export default function SelfCareSection() {
                 : "opacity-0 translate-y-6",
             )}
           >
-            We empower you to take control of your health by providing
-            accessible, affordable, and compassionate care for your body, mind,
+            We empower you to take control of your mental health by providing
+            accessible, affordable, and compassionate care for your mind
             and soul — on your terms, on your time.
           </p>
         </div>
 
-        {/* Four service pillars */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16">
-          {highlights.map((item, i) => {
-            const Icon = item.icon;
-            const isPrimary = item.color === "primary";
-            return (
-              <div
-                key={item.label}
-                className={cn(
-                  "group text-center transition-all duration-500 ease-out",
-                  isVisible
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-8",
-                )}
-                style={{
-                  transitionDelay: isVisible ? `${300 + i * 100}ms` : "0ms",
-                }}
-              >
-                <div className="relative mx-auto mb-4 w-16 h-16">
-                  {/* Pulse ring */}
-                  <div
-                    className={cn(
-                      "absolute inset-0 rounded-2xl transition-all duration-500",
-                      isPrimary ? "bg-primary/10" : "bg-accent/10",
-                      "group-hover:scale-125 group-hover:opacity-0",
-                    )}
-                  />
-                  {/* Icon box */}
-                  <div
-                    className={cn(
-                      "relative w-full h-full rounded-2xl flex items-center justify-center transition-all duration-300",
-                      isPrimary
-                        ? "bg-primary-100 group-hover:bg-primary"
-                        : "bg-accent/10 group-hover:bg-accent",
-                      "group-hover:shadow-lg group-hover:-translate-y-1 group-hover:rotate-3",
-                    )}
-                  >
-                    <Icon
-                      className={cn(
-                        "w-7 h-7 transition-colors duration-300",
-                        isPrimary
-                          ? "text-primary group-hover:text-white"
-                          : "text-accent group-hover:text-white",
-                      )}
-                    />
-                  </div>
-                </div>
-                <p className="text-sm font-bold text-gray-900 group-hover:text-primary transition-colors duration-300">
-                  {item.label}
-                </p>
-              </div>
-            );
-          })}
-        </div>
+     
 
         {/* Animated divider */}
         <div className="flex items-center gap-4 mb-16">

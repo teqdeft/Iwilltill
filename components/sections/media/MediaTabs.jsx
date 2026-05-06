@@ -4,7 +4,7 @@ const tabs = [
   { key: "blogs", label: "Blogs" },
   { key: "articles", label: "Articles" },
   { key: "brochures", label: "Brochures" },
-  { key: "inspirational", label: "Inspirational" },
+  { key: "inspirational", label: "Inspirational Quotes" },
   { key: "podcast", label: "Podcast" },
   { key: "knowledge-library", label: "Knowledge Library" },
 ];

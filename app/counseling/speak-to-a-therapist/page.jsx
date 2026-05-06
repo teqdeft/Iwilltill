@@ -159,12 +159,9 @@ export default function SpeakToATherapistPage() {
                 and available from the comfort of your home.
               </p>
               <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-                You can also sign up for our Prescription Plan PC-B to get some
-                of your{" "}
-                <span className="font-bold text-gray-900 ">
-                  psychotropic medications
-                </span>
-                .
+                Concerned about select psychotropic medications? You can sign up
+                for one of our Prescription Plans, which offer coverage for
+                select psychotropic medications.
               </p>
             </div>
           </div>

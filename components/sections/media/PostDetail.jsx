@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
-import { X, Calendar, Folder } from "lucide-react";
+import { Calendar, Folder } from "lucide-react";
 
 const FacebookIcon = () => (
   <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
@@ -21,25 +20,7 @@ const LinkedInIcon = () => (
   </svg>
 );
 
-export default function PostDetail({ post, loading, onClose }) {
-  // Lock body scroll when modal is open
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, []);
-
-  // Close on Escape key
-  useEffect(() => {
-    const handleEsc = (e) => {
-      if (e.key === "Escape") onClose();
-    };
-    window.addEventListener("keydown", handleEsc);
-    return () => window.removeEventListener("keydown", handleEsc);
-  }, [onClose]);
-
-  // Get category from class_list
+export default function PostDetail({ post, loading }) {
   const getCategory = () => {
     if (!post?.class_list) return "Blogs";
     const cat = post.class_list.find((c) => c.startsWith("category-"));
@@ -48,7 +29,6 @@ export default function PostDetail({ post, loading, onClose }) {
     return name.charAt(0).toUpperCase() + name.slice(1);
   };
 
-  // Decode HTML entities (iframes come encoded from ACF)
   const decodeHTML = (html) => {
     if (!html) return "";
     const txt = document.createElement("textarea");
@@ -56,136 +36,100 @@ export default function PostDetail({ post, loading, onClose }) {
     return txt.value;
   };
 
+  const processShortcodes = (html) => {
+    if (!html) return "";
+    return html.replace(
+      /\[audio\s+mp3="([^"]+)"\s*\]\s*(?:\[\/audio\])?/gi,
+      (_, url) =>
+        `<audio controls preload="none" src="${url}" style="display:block;width:100%;margin:1.25rem 0;">Your browser does not support audio playback.</audio>`,
+    );
+  };
+
+  if (loading) {
+    return (
+      <div className="bg-white rounded-2xl shadow-sm text-center py-32">
+        <div className="inline-block w-8 h-8 border-[3px] border-primary/30 border-t-primary rounded-full animate-spin" />
+        <p className="text-gray-500 text-sm mt-3">Loading...</p>
+      </div>
+    );
+  }
+
+  if (!post) {
+    return (
+      <div className="bg-white rounded-2xl shadow-sm text-center py-32">
+        <p className="text-gray-500 font-medium">Post not found</p>
+      </div>
+    );
+  }
+
   const shareUrl = typeof window !== "undefined" ? window.location.href : "";
   const shareTitle = post?.acf?.blog_title || "";
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center">
-      {/* Backdrop */}
-      <div
-        className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-        onClick={onClose}
-      />
+    <article className="bg-white rounded-2xl shadow-sm p-6 md:p-10">
+      {/* Title */}
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-2">
+        {post.acf?.blog_title || post.title?.rendered || ""}
+      </h1>
 
-      {/* Modal */}
-      <div className="relative w-full max-w-4xl mx-4 my-6 md:my-10 bg-white rounded-2xl shadow-2xl max-h-[90vh] overflow-y-auto">
-        {/* Close Button */}
-        <button
-          onClick={onClose}
-          className="sticky top-4 float-right mr-4 mt-4 z-10 w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
-        >
-          <X className="w-5 h-5 text-gray-600" />
-        </button>
+      {/* Underline */}
+      <div className="w-20 h-[3px] bg-primary mb-5" />
 
-        {loading && (
-          <div className="text-center py-32 clear-both">
-            <div className="inline-block w-8 h-8 border-[3px] border-primary/30 border-t-primary rounded-full animate-spin" />
-            <p className="text-gray-500 text-sm mt-3">Loading...</p>
-          </div>
-        )}
+      {/* Meta */}
 
-        {!loading && !post && (
-          <div className="text-center py-32 clear-both">
-            <p className="text-gray-500 font-medium">Post not found</p>
-          </div>
-        )}
-
-        {!loading && post && (
-          <div className="p-6 md:p-10 pt-2 clear-both">
-            {/* Title */}
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-2 pr-10">
-              {post.acf?.blog_title || post.title?.rendered || ""}
-            </h1>
-
-            {/* Underline */}
-            <div className="w-20 h-[3px] bg-primary mb-5" />
-
-            {/* Meta */}
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-gray-500 mb-8">
-              <span className="flex items-center gap-1.5">
-                <Folder className="w-4 h-4" />
-                Category:{" "}
-                <span className="text-primary font-medium">
-                  {getCategory()}
-                </span>
-              </span>
-              <span className="flex items-center gap-1.5">
-                <Calendar className="w-4 h-4" />
-                {post.acf?.blog_date || ""}
-              </span>
-            </div>
-
-            {/* Featured Image */}
-            {(post.blog_detail_image_url || post.blog_overview_image_url) && (
-              <div className="rounded-2xl overflow-hidden shadow-md mb-8">
-                <img
-                  src={
-                    post.blog_detail_image_url || post.blog_overview_image_url
-                  }
-                  alt={post.acf?.blog_title || ""}
-                  className="w-full h-auto object-cover"
-                  loading="lazy"
-                />
-              </div>
-            )}
-
-            {/* Full Description */}
-            {post.acf?.blog_full_description && (
-              <div
-                className="prose prose-lg max-w-none
-                  prose-headings:text-gray-900 prose-headings:font-bold
-                  prose-p:text-gray-700 prose-p:leading-relaxed
-                  prose-a:text-primary prose-a:no-underline hover:prose-a:underline
-                  prose-img:rounded-xl prose-img:shadow-md
-                  prose-strong:text-gray-900
-                  prose-ul:text-gray-700 prose-ol:text-gray-700
-                  prose-blockquote:border-primary prose-blockquote:text-gray-600
-                  [&_iframe]:w-full [&_iframe]:rounded-xl [&_iframe]:my-6
-                  [&_pre]:bg-transparent [&_pre]:p-0 [&_pre]:m-0"
-                dangerouslySetInnerHTML={{
-                  __html: decodeHTML(post.acf.blog_full_description),
-                }}
-              />
-            )}
-
-            {/* Short description fallback if no full description */}
-            {!post.acf?.blog_full_description &&
-              post.acf?.blog_short_description && (
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  {post.acf.blog_short_description}
-                </p>
-              )}
-
-            {/* Social Share */}
-            <div className="flex items-center gap-3 mt-10 pt-8 border-t border-gray-200">
-              <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-[#1877F2] text-white flex items-center justify-center hover:opacity-80 transition-opacity"
-              >
-                <FacebookIcon />
-              </a>
-              <a
-                href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareTitle)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:opacity-80 transition-opacity"
-              >
-                <XTwitterIcon />
-              </a>
-              <a
-                href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-[#0A66C2] text-white flex items-center justify-center hover:opacity-80 transition-opacity"
-              >
-                <LinkedInIcon />
-              </a>
-            </div>
-          </div>
-        )}
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-gray-500 mb-8">
+        <span className="flex items-center gap-1.5">
+          <Folder className="w-4 h-4" />
+          Category:{" "}
+          <span className="text-primary font-medium">{getCategory()}</span>
+        </span>
+        <span className="flex items-center gap-1.5">
+          <Calendar className="w-4 h-4" />
+          {post.acf?.blog_date || ""}
+        </span>
       </div>
-    </div>
+
+      {/* Featured Image */}
+      {post.blog_detail_image_url && (
+        <div className="rounded-2xl overflow-hidden shadow-md mb-8 bg-gray-50">
+          <img
+            src={post.blog_detail_image_url}
+            alt={post.acf?.blog_title || ""}
+            className="w-full h-auto object-contain"
+            loading="lazy"
+          />
+        </div>
+      )}
+
+      {/* Full Description */}
+
+      {/* Full Description */}
+      {post.acf?.blog_full_description && (
+        <div
+          className="prose prose-lg max-w-none
+            prose-headings:text-gray-900 prose-headings:font-bold
+            prose-p:text-gray-700 prose-p:leading-relaxed
+            prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+            prose-img:rounded-xl prose-img:shadow-md
+            prose-strong:text-gray-900
+            prose-ul:text-gray-700 prose-ol:text-gray-700
+            prose-blockquote:border-primary prose-blockquote:text-gray-600
+            [&_iframe]:w-full [&_iframe]:rounded-xl [&_iframe]:my-6
+            [&_pre]:bg-transparent [&_pre]:p-0 [&_pre]:m-0"
+          dangerouslySetInnerHTML={{
+            __html: processShortcodes(
+              decodeHTML(post.acf.blog_full_description),
+            ),
+          }}
+        />
+      )}
+
+      {/* Fallback */}
+      {!post.acf?.blog_full_description && post.acf?.blog_short_description && (
+        <p className="text-gray-700 text-lg leading-relaxed">
+          {post.acf.blog_short_description}
+        </p>
+      )}
+    </article>
   );
 }

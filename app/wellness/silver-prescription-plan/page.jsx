@@ -12,7 +12,7 @@ export const metadata = {
     apple: "./../images/logo-favi.svg",
   },
   description:
-    "Silver Prescription Plan — $10 Cost Medication Program. Acute Medication Subscription Program by iWILL 'til i'mWELL.",
+    "Silver Prescription Plan — $10 a month . Acute Medication Subscription Program by iWILL 'til i'mWELL.",
 };
 
 const programCovers = [
@@ -116,11 +116,10 @@ export default function SilverPrescriptionPlanPage() {
 
               {/* Right - Text */}
               <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-6">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
                   Silver Prescription Plan
                 </h2>
-
-                <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl md:text-xl font-bold text-gray-900 inline-block border-b-2 border-primary pb-2 mb-6">
                   Acute Medication Subscription Program
                 </h3>
 
@@ -140,13 +139,13 @@ export default function SilverPrescriptionPlanPage() {
                 <p className="text-gray-700 text-base leading-relaxed mb-4">
                   <span className="font-bold">iWILL 'til i'mWELL</span> has
                   created an Acute Medication Subscription Program that provides
-                  37 drugs at no charge just for you, plus great discounts on
+                  37 drugs at $0 co-pay just for you, plus great discounts on
                   all other medications.
                 </p>
 
                 <p className="text-gray-700 text-base leading-relaxed">
-                  Our live Customer Care team is also here to help you find the
-                  lowest prices on medications available.
+                  Our live Customer Care team is here to help you find the
+                  lowest available prices on medications.
                 </p>
               </div>
             </div>
@@ -213,8 +212,8 @@ export default function SilverPrescriptionPlanPage() {
                     You will receive an electronic member card that can be
                     presented at any retail pharmacy (over 70,000 in network)
                     and if on the formulary, you pay nothing. If it is not on
-                    the $0.00 formulary, your out-of-pocket cost will be based
-                    on a deeply discounted price.
+                    the $0 formulary, your out-of-pocket cost will be based on a
+                    deeply discounted price.
                   </p>
 
                   <p className="text-gray-700 text-base leading-relaxed mb-6">
