@@ -81,7 +81,7 @@ export default function SilverPrescriptionPlanPage() {
                 Silver Prescription Plan for Urgent Care Medications
               </h1>
               <p className="text-lg md:text-xl text-white/95 font-semibold">
-                $10 Cost Medication Program
+                $10  a month
               </p>
             </div>
           </div>
@@ -225,7 +225,7 @@ export default function SilverPrescriptionPlanPage() {
                   <Button
                     variant="primary"
                     size="md"
-                    href="/pdf/silver-prescriptions.pdf"
+                    href="/pdf/1000 IWTIW-Enhanced-Formulary-Brochure-2025.pdf"
                     target="_blank"
                     download
                   >

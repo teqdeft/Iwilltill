@@ -109,7 +109,7 @@ export default function InsuranceDisclaimerPage() {
 
           <div className="relative h-full container-main section-padding flex flex-col justify-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight max-w-3xl">
-              Understanding iWILL 'til i'mWELL Coverage
+              Understanding <br /> iWILL 'til i'mWELL Coverage
             </h1>
           </div>
         </section>

@@ -33,7 +33,7 @@ export default function PlatinumPrescriptionPlanPage() {
       <main>
         {/* Hero */}
 
-        <section className="relative overflow-hidden h-[540px] md:h-[600px]">
+        <section className="relative overflow-hidden h-[460px] md:h-[520px]">
           <img
             src="/images/plans/platinum-img-1.png"
             alt="Platinum Prescription Plan"
