@@ -92,15 +92,13 @@ export default function SelfCareSection() {
             )}
           >
             We empower you to take control of your mental health by providing
-            accessible, affordable, and compassionate care for your mind
-            and soul — on your terms, on your time.
+            accessible, affordable, and compassionate care for your mind and
+            soul — on your terms, on your time.
           </p>
         </div>
 
-     
-
         {/* Animated divider */}
-        <div className="flex items-center gap-4 mb-16">
+        <div className="flex items-center gap-4 mb-5">
           <div
             className={cn(
               "flex-1 h-px bg-gradient-to-r from-transparent to-primary/20 transition-all duration-1000 origin-right",
@@ -130,32 +128,6 @@ export default function SelfCareSection() {
             )}
             style={{ transitionDelay: "700ms" }}
           />
-        </div>
-
-        {/* Tags with staggered reveal */}
-        <div className="flex flex-wrap justify-center gap-2.5">
-          {tags.map((tag, i) => (
-            <span
-              key={tag}
-              className={cn(
-                "inline-flex items-center gap-2 px-4 py-2.5 bg-gray-50 rounded-full border border-gray-200 text-base text-gray-700 font-medium hover:border-primary/40 hover:bg-white hover:shadow-sm hover:-translate-y-0.5 transition-all duration-300",
-                isVisible
-                  ? "opacity-100 translate-y-0 scale-100"
-                  : "opacity-0 translate-y-4 scale-95",
-              )}
-              style={{
-                transitionDelay: isVisible ? `${1000 + i * 60}ms` : "0ms",
-              }}
-            >
-              <span
-                className={cn(
-                  "w-1.5 h-1.5 rounded-full shrink-0",
-                  i % 2 === 0 ? "bg-primary" : "bg-accent",
-                )}
-              />
-              {tag}
-            </span>
-          ))}
         </div>
       </div>
     </section>

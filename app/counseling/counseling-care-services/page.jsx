@@ -133,7 +133,7 @@ export default function CounsellingCareServicesPage() {
             </div>
           </div>
         </section>
-
+        <SelfCareSection />
         {/* Counseling Services */}
         <section className="section-padding py-16 md:py-20 bg-gray-50">
           <div className="container-main max-w-5xl">
@@ -174,12 +174,11 @@ export default function CounsellingCareServicesPage() {
             </div>
           </div>
         </section>
-        <SelfCareSection />
 
         {/* Advanced Behavioral Health Tools */}
         <BehavioralToolsSection />
 
-            {/* Intro Paragraph */}
+        {/* Intro Paragraph */}
         <section className="section-padding py-16 md:py-20 bg-white">
           <div className="container-main max-w-4xl">
             <div className="relative">
@@ -191,8 +190,7 @@ export default function CounsellingCareServicesPage() {
               <div className="md:pl-6 space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
                 <p>
                   iWILL 'til i'mWELL is rooted in{" "}
-                  <span className="font-bold">"Cura Personalis"</span>{" "}
-                 -{" "}
+                  <span className="font-bold">"Cura Personalis"</span> -{" "}
                   <span className="font-bold">
                     caring for the whole person.
                   </span>
@@ -303,7 +301,6 @@ export default function CounsellingCareServicesPage() {
             </div>
           </div>
         </section>
-    
 
         {/* What to Expect - Carousel */}
         <WhatToExpectCounselling />

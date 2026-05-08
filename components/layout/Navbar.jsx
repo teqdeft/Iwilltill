@@ -75,6 +75,7 @@ const navLinks = [
     ],
   },
   { label: "Pricing", href: "/pricing" },
+  // { label: "join the community", href: "/join-the-mission-a " },
 ];
 
 export default function Navbar() {
