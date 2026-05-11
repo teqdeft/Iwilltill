@@ -263,8 +263,6 @@ export default function JoinTheMissionPage() {
             />
           </div>
           <JoinCommunitySection />
-
-          
         </section>
       </main>
       <Footer />
