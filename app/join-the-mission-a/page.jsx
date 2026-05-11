@@ -279,7 +279,7 @@ export default function JoinTheMissionPage() {
                 Get Started
                 <ArrowRight className="w-4 h-4" />
               </Button>
-              <Button variant="white" size="lg" href="/contact-us">
+              <Button variant="white" size="lg" href="/contact">
                 Contact Us
                 <ArrowRight className="w-4 h-4" />
               </Button>
