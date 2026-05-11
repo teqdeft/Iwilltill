@@ -5,6 +5,7 @@ import PhoneCarousel from "@/components/sections/PhoneCarousel";
 import { ArrowLeft, ArrowRight, Play } from "lucide-react";
 import Link from "next/link";
 import VideoPlayer from "@/components/ui/VideoPlayer";
+import JoinCommunitySection from "@/components/sections/JoinCommunitySection";
 
 export const metadata = {
   title: "Join the Community | iWILL 'til i'mWELL",
@@ -261,30 +262,9 @@ export default function JoinTheMissionPage() {
               className="w-full h-full object-contain"
             />
           </div>
+          <JoinCommunitySection />
 
-          <div className="relative container-main text-center text-white max-w-2xl mx-auto">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-              Become Part of the Mission
-            </h2>
-            <p className="text-white/80 text-xl leading-relaxed mb-8">
-              Join a community where care is a shared commitment and wellness is
-              a shared goal.
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button
-                variant="accent"
-                size="lg"
-                href="https://app.iwilltilimwell.com/register"
-              >
-                Get Started
-                <ArrowRight className="w-4 h-4" />
-              </Button>
-              <Button variant="white" size="lg" href="/contact">
-                Contact Us
-                <ArrowRight className="w-4 h-4" />
-              </Button>
-            </div>
-          </div>
+          
         </section>
       </main>
       <Footer />
