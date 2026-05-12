@@ -5,12 +5,12 @@ import { ArrowRight } from "lucide-react";
 
 export default function JoinCommunitySection() {
   const [formData, setFormData] = useState({
-    fullName: "",
+    name: "",
     email: "",
-    whyJoin: "",
+    why_join: "",
     contribution: "",
-    socialMedia: "",
-    taxDeductible: "Yes, I'd love to help",
+    social_handle: "",
+    donation_help: "Yes, I'd love to help",
     agreedToTerms: false,
   });
 
@@ -31,7 +31,7 @@ export default function JoinCommunitySection() {
 
   const validate = () => {
     const newErrors = {};
-    if (!formData.fullName.trim()) newErrors.fullName = "Full name is required";
+    if (!formData.name.trim()) newErrors.name = "Full name is required";
     if (!formData.email.trim()) {
       newErrors.email = "Email is required";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
@@ -55,25 +55,26 @@ export default function JoinCommunitySection() {
     setSubmitStatus(null);
 
     try {
-      // === API integration point ===
-      // Replace the URL below with your actual endpoint.
-      const response = await fetch("/api/join-community", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      console.log("formdata", formData);
+      const response = await fetch(
+        "https://iwilltilimwell.com/backend/wp-json/custom/v1/wellness-form",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        },
+      );
+      
 
       if (!response.ok) throw new Error("Submission failed");
 
       setSubmitStatus("success");
       setFormData({
-        fullName: "",
+        name: "",
         email: "",
-        whyJoin: "",
+        why_join: "",
         contribution: "",
-        socialMedia: "",
-        taxDeductible: "Yes, I'd love to help",
+        social_handle: "",
+        donation_help: "Yes, I'd love to help",
         agreedToTerms: false,
       });
     } catch (error) {
@@ -141,22 +142,22 @@ export default function JoinCommunitySection() {
             {/* Full Name */}
             <div>
               <label
-                htmlFor="fullName"
+                htmlFor="name"
                 className="block text-sm font-semibold text-gray-800 mb-2"
               >
                 Full Name*
               </label>
               <input
-                id="fullName"
+                id="name"
                 type="text"
-                name="fullName"
-                value={formData.fullName}
+                name="name"
+                value={formData.name}
                 onChange={handleChange}
                 placeholder="Enter Your Name"
                 className={inputBase}
               />
-              {errors.fullName && (
-                <p className="text-xs text-red-500 mt-1">{errors.fullName}</p>
+              {errors.name && (
+                <p className="text-xs text-red-500 mt-1">{errors.name}</p>
               )}
             </div>
 
@@ -185,15 +186,15 @@ export default function JoinCommunitySection() {
             {/* Why Join */}
             <div>
               <label
-                htmlFor="whyJoin"
+                htmlFor="why_join"
                 className="block text-sm font-semibold text-gray-800 mb-2"
               >
                 Tell us why you would like to be part of iWILL 'til i'mWELL:
               </label>
               <textarea
-                id="whyJoin"
-                name="whyJoin"
-                value={formData.whyJoin}
+                id="why_join"
+                name="why_join"
+                value={formData.why_join}
                 onChange={handleChange}
                 rows={5}
                 placeholder="Brief response – 2-3 sentences encouraged."
@@ -223,15 +224,15 @@ export default function JoinCommunitySection() {
             {/* Social Media */}
             <div>
               <label
-                htmlFor="socialMedia"
+                htmlFor="social_handle"
                 className="block text-sm font-semibold text-gray-800 mb-2"
               >
                 Social Media Handle (Optional):
               </label>
               <textarea
-                id="socialMedia"
-                name="socialMedia"
-                value={formData.socialMedia}
+                id="social_handle"
+                name="social_handle"
+                value={formData.social_handle}
                 onChange={handleChange}
                 rows={5}
                 placeholder="Social Media Handle (Optional):"
@@ -242,7 +243,7 @@ export default function JoinCommunitySection() {
             {/* Tax Deductible */}
             <div className="flex flex-col">
               <label
-                htmlFor="taxDeductible"
+                htmlFor="donation_help"
                 className="block text-sm font-semibold text-gray-800 mb-2"
               >
                 Are you interested in making a tax-deductible contribution to
@@ -253,9 +254,9 @@ export default function JoinCommunitySection() {
                 movement that uplifts, heals, and transforms lives.
               </label>
               <select
-                id="taxDeductible"
-                name="taxDeductible"
-                value={formData.taxDeductible}
+                id="donation_help"
+                name="donation_help"
+                value={formData.donation_help}
                 onChange={handleChange}
                 className={`${inputBase} mt-auto`}
               >
