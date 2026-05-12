@@ -6,6 +6,7 @@ import { ArrowLeft, ArrowRight, Play } from "lucide-react";
 import Link from "next/link";
 import VideoPlayer from "@/components/ui/VideoPlayer";
 import JoinCommunitySection from "@/components/sections/JoinCommunitySection";
+import CommunitySection from "@/components/sections/JoinMissionvideo";
 
 export const metadata = {
   title: "Join the Community | iWILL 'til i'mWELL",
@@ -90,63 +91,7 @@ export default function JoinTheMissionPage() {
       <Navbar />
       <main>
         {/* Hero with play button */}
-        <section className="relative overflow-hidden h-[540px] md:h-[700px]">
-          <div
-            className="absolute inset-0 z-[0] "
-            style={{
-              background: "black",
-            }}
-          />
-          {/* Image in front with 60% opacity */}
-          {/* <img
-            src="/images/alternative-medicine.png"
-            alt="Medical team"
-            className="absolute inset-0 w-full h-full object-cover opacity-70 z-[1]"
-          /> */}
-
-          <video
-            alt="Medical team"
-            className="absolute inset-0 w-full h-full object-cover opacity-70 z-[1]"
-            src="/videos/join-community.mp4"
-            loop
-            muted
-            autoPlay
-            playsInline
-          />
-          <Link
-            href="/"
-            className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Home
-          </Link>
-
-          <div className="relative z-[3] h-full container-main section-padding flex flex-col justify-center items-center text-center">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-8">
-              Join the Community
-            </h1>
-
-            <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button
-                variant="white"
-                size="md"
-                href="https://app.iwilltilimwell.com/login"
-              >
-                Login
-                <ArrowRight className="w-4 h-4" />
-              </Button>
-              <Button
-                variant="accent"
-                size="md"
-                href="https://app.iwilltilimwell.com/register"
-              >
-                Get Started
-                <ArrowRight className="w-4 h-4" />
-              </Button>
-            </div>
-          </div>
-        </section>
-
+        <CommunitySection />
         {/* Welcome Message */}
         <section className="section-padding py-16 md:py-20 bg-white">
           <div className="container-main max-w-4xl">
