@@ -20,29 +20,32 @@ export const metadata = {
 
 const journeyImages = [
   {
-    src: "/images/womens-health.png",
-    alt: "Wellness journey",
-    className: "row-span-2 aspect-[3/5]",
+    type: "video",
+    src: "/videos/healthier-happier-you.mp4",
+    alt: "Telehealth video call",
+    className: "md:row-span-2", // tall left image
   },
   {
-    src: "/images/easy-scheduling-v1.png",
-    alt: "Senior using telehealth",
-    className: "aspect-[4/3]",
+    src: "/images/join-community/events-images-iwilltilimwell-004.jpg",
+    alt: "Older woman using a tablet",
+  },
+
+  {
+    src: "/images/join-community/events-images-iwilltilimwell-002.jpg",
+    alt: "Woman in white shirt",
+    className: "md:col-span-2", // tall left image
   },
   {
-    src: "/images/alternative-medicine.png",
-    alt: "Virtual consultation",
-    className: "col-span-2 aspect-[16/9]",
+    src: "/images/join-community/events-images-iwilltilimwell-005asd.png",
+    alt: "Man enjoying sunlight",
   },
   {
-    src: "/images/sports-medicine.png",
-    alt: "Mindful wellness",
-    className: "aspect-[4/3]",
+    src: "/images/join-community/events-images-iwilltilimwell-006.jpg",
+    alt: "Woman portrait",
   },
   {
-    src: "/images/general-practitioners.png",
-    alt: "Healthcare professional",
-    className: "aspect-[4/3]",
+    src: "/images/join-community/events-images-iwilltilimwell-007.jpg",
+    alt: "Man reflecting",
   },
 ];
 
@@ -231,17 +234,29 @@ export default function JoinTheMissionPage() {
               </h2>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-              {journeyImages.map((img, i) => (
+            <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-3 md:gap-4 md:h-[600px] lg:h-[640px]">
+              {journeyImages.map((item, i) => (
                 <div
                   key={i}
-                  className={`rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ${img.className}`}
+                  className={`group rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 aspect-square md:aspect-auto ${item.className || ""}`}
                 >
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  />
+                  {item.type === "video" ? (
+                    <video
+                      src={item.src}
+                      poster={item.poster}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : (
+                    <img
+                      src={item.src}
+                      alt={item.alt}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  )}
                 </div>
               ))}
             </div>

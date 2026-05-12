@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    image: "/images/alternative-medicine.png",
+    image: "/images/televet-pet-care/iwilltilimwell-televet-11252024-001.jpg",
     title: "TeleVet - Pet Health Care",
     description:
       "Consult one of iWILL 'til i'mWELL's veterinarians when you need medical answers for your pet. Leverage the expertise of veterinary guidance to ensure your pet's health and wellness from the privacy of own home.",
