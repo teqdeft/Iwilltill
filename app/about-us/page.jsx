@@ -6,6 +6,7 @@ import WhatToExpectEAP from "@/components/sections/WhatToExpectEAP";
 import CountUp from "@/components/ui/CountUp";
 import Link from "next/link";
 import VideoPlayer from "@/components/ui/VideoPlayer";
+import AboutHeroSection from "@/components/sections/AboutHeroSection";
 
 export const metadata = {
   title: "About Us | iWILL 'til i'mWELL",
@@ -83,19 +84,7 @@ export default function AboutUsPage() {
       <Navbar />
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden h-[560px] md:h-[640px]">
-          <VideoPlayer
-            src="/videos/about-us-video.mp4"
-            className="absolute inset-0 w-full h-full object-cover opacity-70 z-[0]"
-          />
-          <Link
-            href="/"
-            className="absolute top-6 left-6 z-[4] inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full text-white text-sm font-medium hover:bg-white/25 transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Home
-          </Link>
-        </section>
+        <AboutHeroSection />
 
         {/* Mission & Vision */}
         <section className="section-padding py-16 md:py-20 bg-white">
@@ -169,7 +158,7 @@ export default function AboutUsPage() {
                 Our Programs
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                A Journey of Healing and{" "} <br />
+                A Journey of Healing and <br />
                 <span className="text-primary font-script">Self-Discovery</span>
               </h2>
               <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary/40 rounded-full mx-auto mb-8" />
