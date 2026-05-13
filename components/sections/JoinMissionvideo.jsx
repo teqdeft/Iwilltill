@@ -6,7 +6,6 @@ import { ArrowLeft, ArrowRight, Play, X } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 export default function CommunitySection() {
-  const ambientRef = useRef(null);
   const modalVideoRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -34,14 +33,12 @@ export default function CommunitySection() {
   return (
     <>
       <section className="relative overflow-hidden h-[540px] md:h-[700px] bg-black">
-        <video
-          ref={ambientRef}
-          src="/videos/join-community.mp4"
+        {/* Background image */}
+        <img
+          src="/images/join-community/bckg-therealdrjill-019-s.jpg"
+          alt=""
+          aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover opacity-70 z-[1]"
-          autoPlay
-          muted
-          loop
-          playsInline
         />
 
         <Link
@@ -64,7 +61,7 @@ export default function CommunitySection() {
             className="group mb-10 w-20 h-20 md:w-24 md:h-24 rounded-full bg-white/95 hover:bg-white flex items-center justify-center shadow-2xl ring-1 ring-white/40 transition-transform duration-200 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-white/50"
           >
             <Play
-              className="w-8 h-8 md:w-10 md:h-10 text-gray-900 ml-1"
+              className="w-8 h-8 md:w-10 md:h-10 text-gray-900 ml-1 animate-pulse"
               fill="currentColor"
             />
           </button>
