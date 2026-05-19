@@ -21,16 +21,10 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Enterprise EAP | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "iWILL 'til i'mWELL brings measurable business benefits — transforming employee care into a strategic business advantage.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("enterprise-eap");
+}
 
 const valuePillars = [
   {

@@ -7,16 +7,10 @@ import Link from "next/link";
 import SelfCareSection from "@/components/sections/SelfCareSection";
 import BehavioralToolsSection from "@/components/sections/BehavioralToolsSection";
 
-export const metadata = {
-  title: "Counseling Care Services | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "Life is beautiful — but even beauty has its struggles. Compassionate Counseling, therapy, and mental wellness support, on your terms.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("counseling-care-services");
+}
 
 const counsellingServices = [
   {

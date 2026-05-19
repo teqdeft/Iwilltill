@@ -12,16 +12,10 @@ import {
 import WhatToExpectCarousel from "@/components/sections/WhatToExpectCarousel";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Medical Wellness | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "Empowering you to live a healthier life with personalized care and support on your own terms.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("medical-care");
+}
 
 const medicalServices = [
   {

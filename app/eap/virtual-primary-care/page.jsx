@@ -4,16 +4,10 @@ import Button from "@/components/ui/Button";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Virtual Primary Care | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "Healthcare the way you and your employees want it. 360 degree care designed with you and your employees in mind.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("virtual-primary-care");
+}
 
 const services = [
   {

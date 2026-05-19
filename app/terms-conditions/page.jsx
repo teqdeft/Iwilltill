@@ -3,16 +3,10 @@ import Footer from "@/components/layout/Footer";
 import { ArrowLeft, Check } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Terms & Conditions | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "iWILL 'til i'mWELL Terms & Conditions — terms of service, refund policy, content policies, and legal information.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("terms-conditions");
+}
 
 const SupportLink = () => (
   <a

@@ -3,16 +3,10 @@ import Footer from "@/components/layout/Footer";
 import { ArrowLeft, Check } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Refund Policy | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "iWILL 'til i'mWELL Telemedicine Refund Policy — subscription commitments, billing cycles, and refund processing details.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("refund-policy");
+}
 
 const SupportLink = () => (
   <a

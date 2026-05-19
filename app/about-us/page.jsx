@@ -8,16 +8,11 @@ import Link from "next/link";
 import VideoPlayer from "@/components/ui/VideoPlayer";
 import AboutHeroSection from "@/components/sections/AboutHeroSection";
 
-export const metadata = {
-  title: "About Us | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "Wellness starts with a promise. We're here to help you keep that promise — providing holistic medical and mental healthcare for body, mind, and soul.",
-};
+
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("about-us");
+}
 
 const medicalHealth = [
   "Medical Consultations",

@@ -4,16 +4,10 @@ import DemoRequestForm from "@/components/sections/DemoRequestForm";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export const metadata = {
-  title: "Request a Demo | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "Schedule a personalized demo to see how iWILL 'til i'mWELL's virtual approach supports and makes benefits easier to understand.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("request-a-demo");
+}
 
 export default function RequestADemoPage() {
   return (

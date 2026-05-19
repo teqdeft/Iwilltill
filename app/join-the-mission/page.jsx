@@ -8,16 +8,10 @@ import VideoPlayer from "@/components/ui/VideoPlayer";
 import JoinCommunitySection from "@/components/sections/JoinCommunitySection";
 import CommunitySection from "@/components/sections/JoinMissionvideo";
 
-export const metadata = {
-  title: "Join the Community | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "Welcome to the iWILL 'til i'mWELL Community of Care. Join our growing network of individuals dedicated to health, wellness, and compassionate support.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("join-the-mission");
+}
 
 const journeyImages = [
   {

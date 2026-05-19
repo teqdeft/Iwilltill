@@ -5,16 +5,10 @@ import ContactForm from "@/components/sections/ContactForm";
 import { ArrowLeft, ArrowRight, Mail } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Speak to a Therapist | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../../images/logo-favi.svg",
-    shortcut: "./../../images/logo-favi.svg",
-    apple: "./../../images/logo-favi.svg",
-  },
-  description:
-    "Counseling Care Services — iWILL 'til i'mWELL offers premiere services designed to meet your needs for mental wellbeing with Licensed Therapists, Psychologists, and Psychiatrists.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("speak-to-a-therapist");
+}
 
 const SupportEmail = () => (
   <a

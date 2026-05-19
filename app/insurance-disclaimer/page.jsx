@@ -3,16 +3,10 @@ import Footer from "@/components/layout/Footer";
 import { ArrowLeft, ShieldCheck, ShieldX } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Insurance Disclaimer | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "Understanding iWILL 'til i'mWELL Coverage — patient disclaimer, FAQs, and a comparison with major medical insurance.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("insurance-disclaimer");
+}
 
 const comparisonRows = [
   {

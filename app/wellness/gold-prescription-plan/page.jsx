@@ -6,16 +6,10 @@ import Link from "next/link";
 import { ShieldCheck, Check } from "lucide-react";
 import { Pill } from "lucide-react";
 
-export const metadata = {
-  title: "Gold Prescription Plan | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "Gold Prescription Plan — Easiest Way to Save on Your Medications. Chronic Medication Prescription Plan by iWILL 'til i'mWELL.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("gold-prescription-plan");
+}
 
 const programCoversCol1 = [
   "Allergy",

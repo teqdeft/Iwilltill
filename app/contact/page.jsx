@@ -5,16 +5,11 @@ import ContactForm from "@/components/sections/ContactForm";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Contact Us | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "Get in touch with iWILL 'til i'mWELL. Premiere medical and mental health services in English and Spanish, 24/7, 365 days a year.",
-};
+
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("contact-us");
+}
 
 const tailoredPoints = [
   "Increase healthcare benefits awareness, utilization, and engagement.",

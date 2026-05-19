@@ -5,16 +5,10 @@ import FAQTabs from "@/components/sections/FAQTabs";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
-export const metadata = {
-  title: "FAQ | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "Frequently asked questions about iWILL 'til i'mWELL — telemedicine, virtual care, pricing, and how our services work.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("faq");
+}
 
 export default function FAQPage() {
   return (

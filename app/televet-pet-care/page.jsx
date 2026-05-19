@@ -5,16 +5,10 @@ import TeleVetCarousel from "@/components/sections/TeleVetCarousel";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "TeleVet Pet Care | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "TeleVet — Convenient, remote access to Licensed Veterinarians for expert pet care advice from the comfort of your home.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("televet-pet-care");
+}
 
 export default function TeleVetPage() {
   return (

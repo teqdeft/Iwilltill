@@ -4,16 +4,10 @@ import Button from "@/components/ui/Button";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Virtual Behavioral Health | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "iWILL 'til i'mWELL Empowers Employers, Transforms Workplaces, Supports Employee Well-Being and Strengthens Business Success.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("virtual-behavioral-health");
+}
 
 const offers = [
   {

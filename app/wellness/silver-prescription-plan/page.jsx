@@ -4,16 +4,10 @@ import Button from "@/components/ui/Button";
 import { CheckSquare, ArrowRight, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Silver Prescription Plan | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "Silver Prescription Plan — $10 a month . Acute Medication Subscription Program by iWILL 'til i'mWELL.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("silver-prescription-plan");
+}
 
 const programCovers = [
   "Antibiotics",

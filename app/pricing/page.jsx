@@ -5,16 +5,10 @@ import PricingTable from "@/components/sections/PricingTable";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Pricing | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "iWILL 'til i'mWELL offers premiere services that are designed to meet your medical and mental health needs. View our flexible affordable pricing plans.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("pricing");
+}
 
 export default function PricingPage() {
   return (

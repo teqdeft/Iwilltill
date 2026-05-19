@@ -4,16 +4,10 @@ import Button from "@/components/ui/Button";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Integrated Musculoskeletal Care | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "Our all-in-one clinical support for chronic pain makes it easy to get expert care for joints and muscles.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("musculoskeletal-program");
+}
 
 const careTeam = [
   "Acupuncturist",

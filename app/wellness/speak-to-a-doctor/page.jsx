@@ -5,16 +5,10 @@ import ContactForm from "@/components/sections/ContactForm";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Speak to a Doctor | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "Speak to a Doctor — iWILL 'til i'mWELL offers premiere medical services with Licensed Physicians in English and Spanish, 24/7, 365 days a year.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("speak-to-a-doctor");
+}
 
 const careCards = [
   {

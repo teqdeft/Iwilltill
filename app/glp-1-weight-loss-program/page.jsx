@@ -4,16 +4,10 @@ import Button from "@/components/ui/Button";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "GLP-1 Weight Loss Management Program | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "iWILL 'til i'mWELL's GLP-1 Weight Loss Management Program — a science-backed solution combining GLP-1 medications with personalized nutrition and lifestyle coaching.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("glp-1-weight-loss-program");
+}
 
 const includesItems = [
   "24/7/365 Access to Clinical Support Team.",

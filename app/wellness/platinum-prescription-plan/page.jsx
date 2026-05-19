@@ -15,16 +15,10 @@ const BestChoiceLink = () => (
   </a>
 );
 
-export const metadata = {
-  title: "Platinum Prescription Plan | iWILL 'til i'mWELL",
-  icons: {
-    icon: "./../images/logo-favi.svg",
-    shortcut: "./../images/logo-favi.svg",
-    apple: "./../images/logo-favi.svg",
-  },
-  description:
-    "Platinum Prescription Plan — $20 Cost Medication Program. Acute and Chronic Medication Coverage by iWILL 'til i'mWELL.",
-};
+import { getPageSEO } from "@/lib/wordpress";
+export async function generateMetadata() {
+  return getPageSEO("platinum-prescription-plan");
+}
 
 export default function PlatinumPrescriptionPlanPage() {
   return (
