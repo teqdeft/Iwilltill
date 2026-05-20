@@ -97,7 +97,7 @@ export default function Navbar() {
       {/* Announcement Bar */}
       {showAnnouncement && (
         <div
-          className="announcement-bar text-white text-xs sm:text-[13px] py-2.5 section-padding relative"
+          className="announcement-bar text-white text-xs sm:text-sm py-2.5 section-padding relative"
           style={{
             background:
               "linear-gradient(90deg, #3d2a4f 0%, #604376 50%, #3d2a4f 100%)",
@@ -148,22 +148,22 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden xl:flex items-center gap-0.5 flex-1 justify-center">
+          <div className="hidden xl:flex items-center gap-1 flex-1 justify-center">
             {navLinks.map((link) => (
               <div key={link.label} className="relative group">
                 {link.children ? (
                   <button
                     type="button"
-                    className="flex items-center gap-1 px-3 py-2 text-[13px] font-medium text-white/95 hover:text-white rounded-lg hover:bg-white/15 transition-all whitespace-nowrap"
+                    className="flex items-center gap-1 px-3 py-2.5 text-sm font-medium text-white/95 hover:text-white rounded-lg hover:bg-white/15 transition-all whitespace-nowrap"
                     aria-haspopup="true"
                   >
                     {link.label}
-                    <ChevronDown className="w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180" />
+                    <ChevronDown className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" />
                   </button>
                 ) : (
                   <Link
                     href={link.href}
-                    className="flex items-center gap-1 px-3 py-2 text-[13px] font-medium text-white/95 hover:text-white rounded-lg hover:bg-white/15 transition-all whitespace-nowrap"
+                    className="flex items-center gap-1 px-3 py-2.5 text-sm font-medium text-white/95 hover:text-white rounded-lg hover:bg-white/15 transition-all whitespace-nowrap"
                   >
                     {link.label}
                   </Link>
@@ -238,7 +238,7 @@ export default function Navbar() {
                   <button
                     type="button"
                     onClick={() => toggleSubmenu(link.label)}
-                    className="w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-white hover:bg-white/10 rounded-lg transition-colors"
+                    className="w-full flex items-center justify-between px-4 py-3 text-base font-medium text-white hover:bg-white/10 rounded-lg transition-colors"
                     aria-expanded={openSubmenu === link.label}
                   >
                     <span>{link.label}</span>
@@ -274,7 +274,7 @@ export default function Navbar() {
                   key={link.label}
                   href={link.href}
                   onClick={closeAll}
-                  className="block px-4 py-3 text-sm font-medium text-white hover:bg-white/10 rounded-lg transition-colors"
+                  className="block px-4 py-3 text-base font-medium text-white hover:bg-white/10 rounded-lg transition-colors"
                 >
                   {link.label}
                 </Link>
