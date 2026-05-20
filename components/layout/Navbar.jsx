@@ -32,7 +32,7 @@ const navLinks = [
     label: "Counseling",
     children: [
       {
-        label: "Counseling-Care-Services",
+        label: "Counseling Care Services",
         href: "/counseling/counseling-care-services",
       },
       {
@@ -62,7 +62,7 @@ const navLinks = [
   {
     label: "EAP",
     children: [
-      { label: "Enterprise-EAP", href: "/eap/enterprise-eap" },
+      { label: "Enterprise EAP", href: "/eap/enterprise-eap" },
       { label: "Virtual Primary Care", href: "/eap/virtual-primary-care" },
       {
         label: "Virtual Behavioral Health",
@@ -75,7 +75,7 @@ const navLinks = [
     ],
   },
   { label: "Pricing", href: "/pricing" },
-  // { label: "join the community", href: "/join-the-mission-a " },
+  { label: "Join the Community", href: "/join-the-mission" },
 ];
 
 export default function Navbar() {
@@ -96,13 +96,22 @@ export default function Navbar() {
     <header className="w-full z-50 sticky top-0">
       {/* Announcement Bar */}
       {showAnnouncement && (
-        <div className="announcement-bar text-white text-xs py-2 section-padding relative">
-          <div className="container-main flex items-center justify-center gap-3">
-            <p className="text-center pr-8">
+        <div
+          className="announcement-bar text-white text-xs sm:text-[13px] py-2.5 section-padding relative"
+          style={{
+            background:
+              "linear-gradient(90deg, #3d2a4f 0%, #604376 50%, #3d2a4f 100%)",
+          }}
+        >
+          <div className="container-main flex items-center justify-center gap-3 pr-8">
+            <p className="text-center leading-snug">
               Confidential virtual care | Medical, Behavioral | TeleVet support
-              — for individuals, families, and employees. |{" "}
-              <Link href="/request-a-demo" className="font-semibold hover:underline">
-                Request a demo
+              — for individuals, families, and employees.{" "}
+              <Link
+                href="/request-a-demo"
+                className="font-semibold underline underline-offset-2 hover:text-white/80 transition-colors ml-1"
+              >
+                Request a demo →
               </Link>
             </p>
             <button
@@ -119,51 +128,55 @@ export default function Navbar() {
 
       {/* Main Nav */}
       <nav
-        className="section-padding"
+        className="section-padding shadow-md"
         style={{
           background: "linear-gradient(135deg, #604376 0%, #AC73B9 100%)",
         }}
       >
-        <div className="container-main flex items-center justify-between h-20">
+        <div className="container-main flex items-center justify-between h-20 gap-4">
           {/* Logo */}
           <Link
             href="/"
             className="flex items-center shrink-0"
             aria-label="Home"
           >
-            <img src="/images/logo-white.svg" alt="iWILL 'til i'mWELL" className="h-16 w-auto" />
+            <img
+              src="/images/logo-white.svg"
+              alt="iWILL 'til i'mWELL"
+              className="h-14 w-auto"
+            />
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center gap-1">
+          <div className="hidden xl:flex items-center gap-0.5 flex-1 justify-center">
             {navLinks.map((link) => (
               <div key={link.label} className="relative group">
                 {link.children ? (
                   <button
                     type="button"
-                    className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-white hover:text-primary rounded-lg hover:bg-primary-50 transition-colors"
+                    className="flex items-center gap-1 px-3 py-2 text-[13px] font-medium text-white/95 hover:text-white rounded-lg hover:bg-white/15 transition-all whitespace-nowrap"
                     aria-haspopup="true"
                   >
                     {link.label}
-                    <ChevronDown className="w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180" />{" "}
+                    <ChevronDown className="w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180" />
                   </button>
                 ) : (
                   <Link
                     href={link.href}
-                    className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-white hover:text-primary rounded-lg hover:bg-primary-50 transition-colors"
+                    className="flex items-center gap-1 px-3 py-2 text-[13px] font-medium text-white/95 hover:text-white rounded-lg hover:bg-white/15 transition-all whitespace-nowrap"
                   >
                     {link.label}
                   </Link>
                 )}
 
                 {link.children && (
-                  <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                    <div className="bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[220px]">
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div className="bg-white rounded-xl shadow-2xl border border-gray-100 py-2 min-w-[240px]">
                       {link.children.map((child) => (
                         <Link
                           key={child.label}
                           href={child.href}
-                          className="block px-4 py-2.5 text-sm text-gray-700 hover:text-primary hover:bg-primary-50 transition-colors"
+                          className="block px-4 py-2.5 text-sm text-gray-700 hover:text-[#604376] hover:bg-purple-50 transition-colors whitespace-nowrap"
                         >
                           {child.label}
                         </Link>
@@ -176,7 +189,7 @@ export default function Navbar() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden xl:flex items-center gap-2 shrink-0">
             <Button
               variant="white"
               size="sm"
@@ -197,7 +210,7 @@ export default function Navbar() {
           {/* Mobile Toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 text-white hover:text-primary"
+            className="xl:hidden p-2 text-white hover:bg-white/10 rounded-lg transition-colors"
             aria-label="Toggle menu"
           >
             {mobileOpen ? (
@@ -211,12 +224,14 @@ export default function Navbar() {
         {/* Mobile Nav */}
         <div
           className={cn(
-            "lg:hidden overflow-hidden transition-all duration-300",
-            mobileOpen ? "max-h-[700px] opacity-100" : "max-h-0 opacity-0",
+            "xl:hidden overflow-hidden transition-all duration-300",
+            mobileOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0",
           )}
         >
           <div className="py-4 space-y-1 border-t border-white/10">
-            <GoogleTranslate />
+            <div className="px-2 pb-2">
+              <GoogleTranslate />
+            </div>
             {navLinks.map((link) =>
               link.children ? (
                 <div key={link.label}>
