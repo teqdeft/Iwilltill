@@ -97,7 +97,7 @@ export default function Navbar() {
       {/* Announcement Bar */}
       {showAnnouncement && (
         <div
-          className="announcement-bar text-white text-xs sm:text-sm py-2.5 section-padding relative"
+          className="announcement-bar text-white text-xs sm:text-sm py-1.5 section-padding relative"
           style={{
             background:
               "linear-gradient(90deg, #3d2a4f 0%, #604376 50%, #3d2a4f 100%)",
@@ -128,11 +128,12 @@ export default function Navbar() {
 
       {/* Main Nav */}
       <nav
-        className="section-padding shadow-md"
+        className="section-padding"
         style={{
           background: "linear-gradient(135deg, #604376 0%, #AC73B9 100%)",
         }}
       >
+        {/* TOP ROW: Logo (left) + CTAs (right) */}
         <div className="container-main flex items-center justify-between h-20 gap-4">
           {/* Logo */}
           <Link
@@ -143,12 +144,46 @@ export default function Navbar() {
             <img
               src="/images/logo-white.svg"
               alt="iWILL 'til i'mWELL"
-              className="h-14 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 
-          {/* Desktop Nav */}
-          <div className="hidden xl:flex items-center gap-1 flex-1 justify-center">
+          {/* CTA Buttons */}
+          <div className="hidden xl:flex items-center gap-2 shrink-0">
+            <Button
+              variant="white"
+              size="sm"
+              href="https://app.iwilltilimwell.com/login"
+            >
+              Login
+            </Button>
+            <Button
+              variant="accent"
+              size="sm"
+              href="https://app.iwilltilimwell.com/register"
+            >
+              Get Started
+            </Button>
+            <GoogleTranslate />
+          </div>
+
+          {/* Mobile Toggle */}
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="xl:hidden p-2 text-white hover:bg-white/10 rounded-lg transition-colors"
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </button>
+        </div>
+
+        {/* BOTTOM ROW: Page Links */}
+        <div className="hidden xl:block border-t border-white/15">
+          <div className="container-main flex items-center justify-center gap-1 py-2">
             {navLinks.map((link) => (
               <div key={link.label} className="relative group">
                 {link.children ? (
@@ -187,38 +222,6 @@ export default function Navbar() {
               </div>
             ))}
           </div>
-
-          {/* CTA Buttons */}
-          <div className="hidden xl:flex items-center gap-2 shrink-0">
-            <Button
-              variant="white"
-              size="sm"
-              href="https://app.iwilltilimwell.com/login"
-            >
-              Login
-            </Button>
-            <Button
-              variant="accent"
-              size="sm"
-              href="https://app.iwilltilimwell.com/register"
-            >
-              Get Started
-            </Button>
-            <GoogleTranslate />
-          </div>
-
-          {/* Mobile Toggle */}
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="xl:hidden p-2 text-white hover:bg-white/10 rounded-lg transition-colors"
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
-          </button>
         </div>
 
         {/* Mobile Nav */}
