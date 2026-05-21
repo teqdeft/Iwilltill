@@ -52,14 +52,6 @@ const navLinks = [
     ],
   },
   {
-    label: "About Us",
-    href: "/about-us",
-  },
-  {
-    label: "Media Hub",
-    href: "/media-hub",
-  },
-  {
     label: "EAP",
     children: [
       { label: "Enterprise EAP", href: "/eap/enterprise-eap" },
@@ -75,6 +67,15 @@ const navLinks = [
     ],
   },
   { label: "Pricing", href: "/pricing" },
+  {
+    label: "About Us",
+    href: "/about-us",
+  },
+  {
+    label: "Media Hub",
+    href: "/media-hub",
+  },
+
   { label: "Join the Community", href: "/join-the-mission" },
 ];
 
