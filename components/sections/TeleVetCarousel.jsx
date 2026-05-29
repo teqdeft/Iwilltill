@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const cards = [
   {
     image: "/images/televet-pet-care/dog-alone.png",
-    title: "My Dogs Not Well",
+    title: "My Dog is Not Well",
     subtitle: "iWILL 'til i'mWELL",
     description:
       "Whether it's a minor concern or you're unsure if an ER visit is needed, our compassionate professionals are ready to provide expert advice, guidance, and support to ensure your dog's health and well-being. Get the answers you need, quickly and easily.",

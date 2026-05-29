@@ -237,7 +237,7 @@ export default function CounsellingCareServicesPage() {
                     We Care
                   </p>
                   <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
-                    You may feel no once cares, but we do.
+                    You may feel no one cares, but we do.
                   </h3>
                   <p className="text-sm md:text-lg text-gray-600 leading-relaxed">
                     We're here to listen, help guide you through life's

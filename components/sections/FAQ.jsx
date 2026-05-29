@@ -15,7 +15,7 @@ const faqItems = [
   {
     question: "Do I need insurance to use the services?",
     answer:
-      "No insurance is required. We offer affordable self-pay plans that make healthcare accessible to everyone. However, we also work with many insurance providers. Check our pricing page for current plans and rates.",
+      "No. Insurance IS NOT required; however, you may use your insurance plan to maximize your savings. We offer affordable self-pay plans that make healthcare accessible to everyone. Check our pricing page for current plans and rates.",
   },
   {
     question: "What types of services are available?",
@@ -31,7 +31,7 @@ const faqItems = [
 
 export default function FAQ() {
   return (
-    <SectionWrapper gray  id="faq">
+    <SectionWrapper gray id="faq">
       <SectionHeader
         title="Frequently Asked Questions"
         description="Everything you need to know about our services, plans, and how to get started."

@@ -98,7 +98,7 @@ const prescriptionPlans = [
     intro:
       "iWILL 'til i'mWELL is bringing you the best possible prescription prices.",
     body: [
-      " As a member of iWILL 'til i'mWELL, there is no need to worry about the high cost of over 1,000 commonly prescribed medications. That's because as a member of iWILL 'til i'mWELL  you get to take advantage of a $0 co-pay enhanced medication program that includes 37 ACUTE medications and 95 ACA (Affordable Care Act) medications, plus over 1,000 routinely prescribed chronic medications at no co-pay cost to you.",
+      "As a member of iWILL 'til i'mWELL, there is no need to worry about the high cost of over 1,000 commonly prescribed medications. That's because as a member of iWILL 'til i'mWELL  you get to take advantage of a $0\u00A0co\u2011pay enhanced medication program that includes 37 ACUTE medications and 95 ACA (Affordable Care Act) medications, plus over 1,000 routinely prescribed chronic medications at no co-pay cost to you.",
     ],
   },
 ];
