@@ -244,9 +244,10 @@ export default function AboutUsPage() {
               </div>
             </div>
 
-            <WhatToExpectEAP />
+           
           </div>
         </section>
+           <WhatToExpectEAP />
 
         {/* Stats Banner */}
         <section

@@ -76,7 +76,7 @@ const prescriptionPlans = [
     intro: "Consider us your Pharmacy Savings Advocate.",
     body: [
       "As a subscriber to iWILL 'til i'mWELL, you won't have to worry about the expensive cost of 37 commonly prescribed medications.",
-      "iWILL 'til i'mWELL has created an Acute Medication Subscription Program that provides 37 drugs at $0 co-pay just for you, plus great discounts on all other medications.",
+      "iWILL 'til i'mWELL has created an Acute Medication Subscription Program that provides 37 drugs at $0\u00A0co\u2011pay just for you, plus great discounts on all other medications.",
       "Our live Customer Care team is here to help you find the lowest available prices on medications.",
     ],
   },
