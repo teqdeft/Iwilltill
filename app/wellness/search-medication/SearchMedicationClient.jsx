@@ -8,7 +8,6 @@ import { Search, X, Pill, ArrowRight, ArrowLeft } from "lucide-react";
 import axios from "axios";
 import Link from "next/link";
 
-
 const PLAN_LABELS = {
   "prescription-a": "Silver Prescription Plan",
   "prescription-b": "Gold Prescription Plan",
@@ -33,7 +32,7 @@ export default function SearchMedicationPage() {
     setHasSearched(true);
     try {
       const response = await axios.post(
-        "/api/search-medication",
+        "https://dev.iwilltilimwell.com/api/medical/search-medication",
         { query: searchTerm },
         { headers: { "Content-Type": "application/json" } },
       );
