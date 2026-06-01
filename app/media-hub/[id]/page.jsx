@@ -8,7 +8,6 @@ export async function generateStaticParams() {
   try {
     const res = await fetch(
       `${WP_API}/wp-json/wp/v2/posts?per_page=100&_fields=id`,
-      { next: { revalidate: 3600 } },
     );
     if (!res.ok) return [];
     const posts = await res.json();
@@ -23,7 +22,6 @@ export async function generateMetadata({ params }) {
   try {
     const res = await fetch(
       `${WP_API}/wp-json/wp/v2/posts/${params.id}?_fields=yoast_head_json`,
-      { next: { revalidate: 3600 } },
     );
     if (!res.ok) return {};
     const post = await res.json();
