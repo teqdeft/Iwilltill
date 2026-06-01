@@ -105,8 +105,11 @@ export default function DemoRequestForm() {
         },
       };
 
-      const res = await axios.post("/api/demo-request", payload);
-      console.log("response from api-;--------", res);
+      const res = await axios.post(
+        "https://iwilltilimwell.com/api/demo-request/",
+        payload,
+      );
+      
 
       setSubmitted(true);
     } catch (error) {
