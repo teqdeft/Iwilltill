@@ -21,18 +21,10 @@ export default function NotFound() {
         <div className="absolute bottom-0 right-0 w-[28rem] h-[28rem] rounded-full bg-white/5 blur-3xl" />
       </div>
 
-      {/* Decorative lotus */}
-      {/* <div className="pointer-events-none absolute top-1/2 right-20 w-[400px] h-[400px] opacity-70 -translate-y-1/2 translate-x-1/4">
-        <img
-          src="/images/logo-favi.svg"
-          alt=""
-          className="w-full h-full object-contain"
-        />
-      </div> */}
       <div className="pointer-events-none absolute top-1/2 right-200 animate-bounce w-[600px] h-[600px] opacity-50 -translate-y-1/2 translate-x-1/4">
         <img
           src="/images/logo-favi.svg"
-          alt=""
+          alt="iWILL ’til i’mWELL logo"
           className="w-full h-full object-contain"
         />
       </div>

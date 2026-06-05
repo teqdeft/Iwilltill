@@ -362,7 +362,7 @@ export default function GLP1Page() {
           <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-20 -translate-y-1/2 translate-x-1/4 pointer-events-none">
             <img
               src="/images/logo-favi.svg"
-              alt=""
+              alt="iWILL ’til i’mWELL logo"
               className="w-full h-full object-contain"
             />
           </div>

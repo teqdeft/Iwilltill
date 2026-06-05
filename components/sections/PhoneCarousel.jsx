@@ -57,7 +57,7 @@ export default function PhoneCarousel() {
       <div className="absolute top-0 right-0 w-72 h-72 opacity-10 -translate-y-1/4 pointer-events-none hidden lg:block">
         <img
           src="/images/logo-favi.svg"
-          alt=""
+          alt="iWILL ’til i’mWELL logo"
           className="w-full h-full object-contain"
         />
       </div>
@@ -124,7 +124,7 @@ export default function PhoneCarousel() {
                 <div className="absolute bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center">
                   <img
                     src="/images/logo-favi.svg"
-                    alt="iWILL lotus"
+                    alt="iWILL ’til i’mWELL logo"
                     className="w-12 h-12 mb-1"
                   />
                   <p className="text-white text-[10px] font-semibold drop-shadow-lg">

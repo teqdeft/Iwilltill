@@ -69,7 +69,7 @@ export default function MediaGrid({ posts, loading }) {
               >
                 <img
                   src="/images/logo-favi.svg"
-                  alt=""
+                  alt="iWILL ’til i’mWELL logo"
                   className="w-16 h-16 opacity-30"
                 />
               </div>

@@ -53,7 +53,7 @@ export default function PageLoader() {
           {/* Lotus logo */}
           <img
             src="/images/logo-favi.svg"
-            alt="iWILL 'til i'mWELL"
+            alt="iWILL ’til i’mWELL logo"
             className="relative w-16 h-16 object-contain animate-float"
           />
         </div>

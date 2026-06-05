@@ -93,7 +93,7 @@ export default function JoinCommunitySection() {
       <div className="absolute inset-0 -z-10">
         <img
           src="/images/join-community-bg.jpg"
-          alt=""
+          alt="join community banner overlay"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/60" />

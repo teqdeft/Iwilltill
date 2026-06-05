@@ -35,7 +35,7 @@ export default function AboutHeroSection() {
         {/* Background image */}
         <img
           src="/images/join-community/bckg-therealdrjill-019-s.jpg"
-          alt=""
+          alt="Banner image of people participating in the iWILL 'til I'm WELL community discussion"
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover opacity-70 z-[0]"
         />

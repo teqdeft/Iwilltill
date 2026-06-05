@@ -117,7 +117,7 @@ export default function SelfCareSection() {
           >
             <img
               src="/images/logo-favi.svg"
-              alt=""
+              alt="iWILL ’til i’mWELL logo"
               className="w-5 h-5 object-contain"
             />
           </div>

@@ -179,7 +179,7 @@ export default function VirtualBehavioralHealthPage() {
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 opacity-20 pointer-events-none hidden lg:block">
                   <img
                     src="/images/logo-favi.svg"
-                    alt=""
+                    alt="iWILL ’til i’mWELL logo"
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -255,7 +255,7 @@ export default function VirtualBehavioralHealthPage() {
           <div className="absolute top-1/2 right-0 w-[500px] h-[500px] opacity-20 -translate-y-1/2 translate-x-1/4 pointer-events-none">
             <img
               src="/images/logo-favi.svg"
-              alt=""
+              alt="iWILL ’til i’mWELL logo"
               className="w-full h-full object-contain"
             />
           </div>
