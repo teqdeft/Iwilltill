@@ -4,8 +4,8 @@ name: Build & Deploy to cPanel
 on:
   push:
     branches:
-      - main          # Auto-deploy when you push to main
-  workflow_dispatch:   # Manual deploy button in GitHub Actions tab
+      - main # Auto-deploy when you push to main
+  workflow_dispatch: # Manual deploy button in GitHub Actions tab
 
 # Environment
 env:
@@ -42,8 +42,9 @@ jobs:
           cat > ./out/.htaccess << 'HTACCESS'
           # Force HTTPS
           RewriteEngine On
-          RewriteCond %{HTTPS} off
-          RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+          RewriteCond %{HTTPS} off [OR]
+          RewriteCond %{HTTP_HOST} ^www\.iwilltilimwell\.com [NC]
+          RewriteRule ^(.*)$ https://iwilltilimwell.com/$1 [L,R=301]
 
           # Remove .html extension
           RewriteCond %{REQUEST_FILENAME} !-f
