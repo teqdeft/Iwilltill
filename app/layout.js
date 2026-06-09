@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL("https://iwilltilimwell.com"),
   title: "iWILL 'til i'mWELL | Medical & Mental Healthcare",
   icons: {
     icon: "/images/logo-favi.svg",
