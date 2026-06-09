@@ -115,19 +115,27 @@ export default function Hero() {
                     background: "black",
                   }}
                 />
-                {/* <img
-                  src="/images/hero-woman.png"
-                  alt="Woman using tablet for telehealth consultation"
-                  className="w-full h-auto object-cover aspect-[4/3]"
-                /> */}
-                <video
+
+                {/* <video
                   className="w-full h-auto object-cover aspect-[4/3] z-[1]"
                   src="/videos/home-hero.mov"
                   autoPlay
                   loop
                   muted
                   playsInline
-                />
+                /> */}
+                <video
+                  className="w-full h-auto object-cover aspect-[4/3] z-[1]"
+                  poster="/images/home-hero-poster.webp"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="none"
+                >
+                  <source src="/videos/home-hero.webm" type="video/webm" />
+                  <source src="/videos/home-hero.mp4" type="video/mp4" />
+                </video>
               </div>
 
               {/* Floating badge */}
