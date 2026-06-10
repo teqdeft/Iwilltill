@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 const quickLinks = [
   {
     label: "Speak to a Therapist",
-    href: "/counseling/counseling-care-services",
+    href: "/counseling/speak-to-a-therapist",
   },
   {
     label: "Speak to a Veterinarian",
