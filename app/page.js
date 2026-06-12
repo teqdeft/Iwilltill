@@ -13,7 +13,7 @@ import CTABanner from "@/components/sections/CTABanner";
 
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
-  return getPageSEO("home");
+  return getPageSEO("home","");
 }
 
 export default function HomePage() {
