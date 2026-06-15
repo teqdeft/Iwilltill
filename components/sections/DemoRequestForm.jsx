@@ -108,6 +108,11 @@ export default function DemoRequestForm() {
       const res = await axios.post(
         "https://iwilltilimwell.com/backend/api/demo-request/",
         payload,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        },
       );
 
       setSubmitted(true);
