@@ -6,7 +6,10 @@ import Link from "next/link";
 
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
-  return getPageSEO("virtual-behavioral-health");
+  return getPageSEO(
+    "virtual-behavioral-health",
+    "eap/virtual-behavioral-health",
+  );
 }
 
 const offers = [

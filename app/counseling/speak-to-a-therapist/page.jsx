@@ -7,7 +7,7 @@ import Link from "next/link";
 
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
-  return getPageSEO("speak-to-a-therapist");
+  return getPageSEO("speak-to-a-therapist", "counseling/speak-to-a-therapist");
 }
 
 const SupportEmail = () => (

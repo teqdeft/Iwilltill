@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
-  return getPageSEO("musculoskeletal-program");
+  return getPageSEO("musculoskeletal-program", "eap/musculoskeletal-program");
 }
 
 const careTeam = [

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
-  return getPageSEO("virtual-primary-care");
+  return getPageSEO("virtual-primary-care", "eap/virtual-primary-care");
 }
 
 const services = [

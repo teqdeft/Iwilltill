@@ -17,7 +17,10 @@ const BestChoiceLink = () => (
 
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
-  return getPageSEO("platinum-prescription-plan");
+  return getPageSEO(
+    "platinum-prescription-plan",
+    "wellness/platinum-prescription-plan",
+  );
 }
 
 export default function PlatinumPrescriptionPlanPage() {
@@ -183,8 +186,8 @@ export default function PlatinumPrescriptionPlanPage() {
               Access Over 1,000 Medications
             </h2>
             <p className="text-white/80 text-xl leading-relaxed mb-8">
-              Join the Platinum Prescription Plan and take advantage of <br /> iWILL
-              'til i'mWELL's enhanced medication program.
+              Join the Platinum Prescription Plan and take advantage of <br />{" "}
+              iWILL 'til i'mWELL's enhanced medication program.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Button

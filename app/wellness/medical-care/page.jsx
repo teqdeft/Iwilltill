@@ -14,7 +14,7 @@ import Link from "next/link";
 
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
-  return getPageSEO("medical-care");
+  return getPageSEO("medical-care", "wellness/medical-care");
 }
 
 const medicalServices = [

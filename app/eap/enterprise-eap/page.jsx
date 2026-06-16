@@ -23,7 +23,7 @@ import Link from "next/link";
 
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
-  return getPageSEO("enterprise-eap");
+  return getPageSEO("enterprise-eap", "eap/enterprise-eap");
 }
 
 const valuePillars = [

@@ -5,10 +5,9 @@ import ContactForm from "@/components/sections/ContactForm";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
 
-
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
-  return getPageSEO("contact-us");
+  return getPageSEO("contact-us", "contact");
 }
 
 const tailoredPoints = [

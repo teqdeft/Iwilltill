@@ -8,7 +8,10 @@ import { Pill } from "lucide-react";
 
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
-  return getPageSEO("gold-prescription-plan");
+  return getPageSEO(
+    "gold-prescription-plan",
+    "wellness/gold-prescription-plan",
+  );
 }
 
 const programCoversCol1 = [
@@ -73,7 +76,7 @@ export default function GoldPrescriptionPlanPage() {
                 Gold Prescription Plan for Primary Care Medications
               </h1>
               <p className="text-lg md:text-xl text-white/95 font-semibold">
-                $15 a month 
+                $15 a month
               </p>
             </div>
           </div>
@@ -210,9 +213,9 @@ export default function GoldPrescriptionPlanPage() {
                   <p className="text-gray-700 text-base leading-relaxed mb-4">
                     You will receive an electronic member card that can be
                     presented at any retail pharmacy (over 70,000 in network)
-                    and if on the formulary, you only pay $5.00 per medication.. If it is not on
-                    the $5.00 formulary, your out-of-pocket cost will be based
-                    on a deeply discounted price.
+                    and if on the formulary, you only pay $5.00 per medication..
+                    If it is not on the $5.00 formulary, your out-of-pocket cost
+                    will be based on a deeply discounted price.
                   </p>
 
                   <p className="text-gray-700 text-base leading-relaxed mb-6">

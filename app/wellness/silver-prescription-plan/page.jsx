@@ -6,7 +6,10 @@ import Link from "next/link";
 
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
-  return getPageSEO("silver-prescription-plan");
+  return getPageSEO(
+    "silver-prescription-plan",
+    "wellness/silver-prescription-plan",
+  );
 }
 
 const programCovers = [

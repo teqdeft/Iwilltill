@@ -7,7 +7,7 @@ import Link from "next/link";
 
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
-  return getPageSEO("speak-to-a-doctor");
+  return getPageSEO("speak-to-a-doctor", "wellness/speak-to-a-doctor");
 }
 
 const careCards = [

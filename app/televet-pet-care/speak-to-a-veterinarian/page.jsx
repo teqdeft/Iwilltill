@@ -7,7 +7,10 @@ import Link from "next/link";
 
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
-  return getPageSEO("speak-to-a-veterinarian");
+  return getPageSEO(
+    "speak-to-a-veterinarian",
+    "televet-pet-care/speak-to-a-veterinarian",
+  );
 }
 
 const vetCards = [

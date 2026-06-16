@@ -9,7 +9,10 @@ import BehavioralToolsSection from "@/components/sections/BehavioralToolsSection
 
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
-  return getPageSEO("counseling-care-services");
+  return getPageSEO(
+    "counseling-care-services",
+    "counseling/counseling-care-services",
+  );
 }
 
 const counsellingServices = [
