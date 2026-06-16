@@ -5,7 +5,7 @@ import { Check } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 const TermsLink = () => (
-  <a href="/terms" className="font-semibold text-primary hover:underline">
+  <a href="/terms-conditions" className="font-semibold text-primary hover:underline">
     terms &amp; conditions.
   </a>
 );
