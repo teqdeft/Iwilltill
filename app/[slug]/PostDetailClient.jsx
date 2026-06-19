@@ -18,17 +18,17 @@ export default function PostDetailPage() {
     const fetchPost = async () => {
       try {
         const response = await axios.get(
-          `https://iwilltilimwell.com/backend/wp-json/wp/v2/posts/${params.id}`,
+          `https://iwilltilimwell.com/backend/wp-json/wp/v2/posts?slug=${params.slug}`,
         );
-        setPost(response.data);
+        setPost(response.data?.[0] ?? null);
       } catch (error) {
         console.error("Error fetching post:", error);
       } finally {
         setLoading(false);
       }
     };
-    if (params?.id) fetchPost();
-  }, [params?.id]);
+    if (params?.slug) fetchPost();
+  }, [params?.slug]);
 
   return (
     <>

@@ -7,11 +7,11 @@ export const revalidate = 3600; // re-generate at most once per hour
 export async function generateStaticParams() {
   try {
     const res = await fetch(
-      `${WP_API}/wp-json/wp/v2/posts?per_page=100&_fields=id`,
+      `${WP_API}/wp-json/wp/v2/posts?per_page=100&_fields=slug`,
     );
     if (!res.ok) return [];
     const posts = await res.json();
-    return posts.map((post) => ({ id: String(post.id) }));
+    return posts.map((post) => ({ slug: post.slug }));
   } catch (error) {
     console.error("Error fetching posts for static params:", error);
     return [];
@@ -21,11 +21,11 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   try {
     const res = await fetch(
-      `${WP_API}/wp-json/wp/v2/posts/${params.id}?_fields=yoast_head_json`,
+      `${WP_API}/wp-json/wp/v2/posts?slug=${params.slug}&_fields=yoast_head_json`,
     );
     if (!res.ok) return {};
-    const post = await res.json();
-    const seo = post?.yoast_head_json;
+    const posts = await res.json();
+    const seo = posts?.[0]?.yoast_head_json;
     if (!seo) return {};
 
     return {

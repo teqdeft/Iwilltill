@@ -123,7 +123,7 @@ export default function MediaGrid({ posts, loading }) {
 
             <div className="flex justify-end mt-auto">
               <Link
-                href={`/media-hub/${post.id}`}
+                href={`/${post.slug}`}
                 className="px-5 py-2 border border-primary text-primary text-sm font-semibold rounded-lg hover:bg-primary hover:text-white transition-colors"
               >
                 Read More
