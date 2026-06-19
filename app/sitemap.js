@@ -52,7 +52,7 @@ export default async function sitemap() {
   }));
 
   const postUrls = posts.map((post) => ({
-    url: `${SITE_URL}/media-hub/${post.slug}/`,
+    url: `${SITE_URL}/${post.slug}/`,
     lastModified: post.modified,
   }));
 
