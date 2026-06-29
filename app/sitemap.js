@@ -51,14 +51,14 @@ export default async function sitemap() {
   }));
 
   // Homepage
-  const staticUrls = [
-    {
-      url: SITE_URL,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 1,
-    },
-  ];
+  // const staticUrls = [
+  //   {
+  //     url: SITE_URL,
+  //     lastModified: new Date(),
+  //     changeFrequency: "daily",
+  //     priority: 1,
+  //   },
+  // ];
 
-  return [...staticUrls, ...pageUrls, ...postUrls];
+  return [...pageUrls, ...postUrls];
 }
