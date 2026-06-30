@@ -7,7 +7,7 @@ import Link from "next/link";
 
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
-  return getPageSEO("contact-us", "contact");
+  return getPageSEO("contact", "contact");
 }
 
 const tailoredPoints = [
