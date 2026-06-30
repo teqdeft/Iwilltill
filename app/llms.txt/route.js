@@ -5,7 +5,17 @@ export async function GET() {
   const res = await fetch('https://iwilltilimwell.com/backend/llms.txt', {
     next: { revalidate: 86400 },
   });
-  const text = await res.text();
+
+  let text = await res.text();
+
+  // strip UTF-8 BOM Yoast prepends
+  text = text.replace(/^\uFEFF/, '');
+
+  // rewrite any backend URLs to the public frontend
+  text = text.replaceAll(
+    'https://iwilltilimwell.com/backend',
+    'https://iwilltilimwell.com'
+  );
 
   return new Response(text, {
     headers: {
