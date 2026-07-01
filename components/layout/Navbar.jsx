@@ -95,6 +95,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full z-50 sticky top-0">
+      
       {/* Announcement Bar */}
       {showAnnouncement && (
         <div

@@ -17,7 +17,13 @@ export async function GET() {
     'https://iwilltilimwell.com'
   );
 
-  return new Response(text, {
+  // remove sitemap section
+  text = text.replace(
+    /\n## Optional[\s\S]*?(?=\n## |\s*$)/g,
+    ''
+  );
+
+  return new Response(text.trim(), {
     headers: {
       'Content-Type': 'text/plain; charset=utf-8',
       'Cache-Control': 'public, max-age=3600, s-maxage=86400',

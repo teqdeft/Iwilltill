@@ -61,6 +61,54 @@ export default function RootLayout({ children }) {
           }}
         />
         {/* End Google Tag Manager */}
+        <Script
+          id="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "@id": "https://iwilltilimwell.com/#organization",
+                name: "iWILL 'til i'mWELL",
+                url: "https://iwilltilimwell.com",
+                logo: "https://iwilltilimwell.com/images/logo-favi.svg",
+                email: "support@iwilltilimwell.com",
+                description:
+                  "Telehealth platform providing virtual medical care, behavioral health services, veterinary care, prescription plans, and employee wellness solutions.",
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "@id": "https://iwilltilimwell.com/#website",
+                url: "https://iwilltilimwell.com",
+                name: "iWILL 'til i'mWELL",
+                publisher: {
+                  "@id": "https://iwilltilimwell.com/#organization",
+                },
+                inLanguage: ["en-US", "es-US"],
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "MedicalBusiness",
+                "@id": "https://iwilltilimwell.com/#medicalbusiness",
+                name: "iWILL 'til i'mWELL",
+                url: "https://iwilltilimwell.com",
+                image: "https://iwilltilimwell.com/images/logo-favi.svg",
+                description:
+                  "Telehealth platform providing virtual medical care, behavioral health services, veterinary care, prescription plans, and employee wellness solutions.",
+                availableLanguage: ["English", "Spanish"],
+                areaServed: {
+                  "@type": "Country",
+                  name: "United States",
+                },
+                parentOrganization: {
+                  "@id": "https://iwilltilimwell.com/#organization",
+                },
+              },
+            ]),
+          }}
+        />
       </head>
       <body className="min-h-screen flex flex-col">
         {/* Google Tag Manager (noscript) */}
