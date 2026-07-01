@@ -128,7 +128,7 @@ export default function Footer() {
             {/* Right Column - QR Code & Certifications */}
             <div>
               <h3 className="text-xl md:text-xl font-bold text-white inline-block border-b-2 border-white/40 pb-1.5 mb-5">
-                Scan to Visit Our Website
+                Scan to Download the App
               </h3>
 
               {/* QR Code (placeholder) */}
