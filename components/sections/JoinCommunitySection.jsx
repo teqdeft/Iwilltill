@@ -90,14 +90,14 @@ export default function JoinCommunitySection() {
   return (
     <section className="relative section-padding py-16 md:py-24 overflow-hidden">
       {/* Background image + overlay */}
-      <div className="absolute inset-0 -z-10">
+      {/* <div className="absolute inset-0 -z-10">
         <img
           src="/images/join-community-bg.jpg"
           alt="join community banner overlay"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/60" />
-      </div>
+      </div> */}
 
       <div className="container-main max-w-6xl relative">
         {/* Heading */}
