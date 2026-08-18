@@ -1,6 +1,7 @@
 import PostDetailClient from "./PostDetailClient";
 
 const WP_API = "https://iwilltilimwell.com/backend";
+const SITE_URL = "https://iwilltilimwell.com";
 
 export const revalidate = 3600; // re-generate at most once per hour
 
@@ -28,14 +29,18 @@ export async function generateMetadata({ params }) {
     const seo = posts?.[0]?.yoast_head_json;
     if (!seo) return {};
 
+    // Build the real public URL from the slug so og:url and canonical always
+    // point to the front-end page, not the WordPress /backend/ origin.
+    const publicUrl = `${SITE_URL}/${params.slug}/`;
+
     return {
       title: seo.title,
       description: seo.description,
-      alternates: { canonical: seo.canonical },
+      alternates: { canonical: publicUrl },
       openGraph: {
         title: seo.og_title,
         description: seo.og_description,
-        url: seo.og_url,
+        url: publicUrl,
         images: seo.og_image?.map((img) => ({ url: img.url })) ?? [],
       },
       twitter: {
