@@ -1,9 +1,16 @@
 const SITE_URL = "https://iwilltilimwell.com";
 const WP_API = "https://iwilltilimwell.com/backend";
 
+// WordPress returns timestamps without a timezone (e.g. "2026-06-18T07:25:01").
+// Google requires a valid W3C datetime, so convert the GMT value to full ISO.
+function toISODate(gmt, fallback) {
+  const date = new Date(gmt ? `${gmt}Z` : fallback);
+  return isNaN(date.getTime()) ? new Date(fallback).toISOString() : date.toISOString();
+}
+
 async function fetchAllPages() {
   const res = await fetch(
-    `${WP_API}/wp-json/wp/v2/pages?per_page=100&_fields=link,modified`,
+    `${WP_API}/wp-json/wp/v2/pages?per_page=100&_fields=link,modified,modified_gmt`,
     {
       cache: "no-store",
     },
@@ -18,7 +25,7 @@ async function fetchAllPages() {
 
 async function fetchAllPosts() {
   const res = await fetch(
-    `${WP_API}/wp-json/wp/v2/posts?per_page=100&_fields=slug,modified`,
+    `${WP_API}/wp-json/wp/v2/posts?per_page=100&_fields=slug,modified,modified_gmt`,
     {
       cache: "no-store",
     },
@@ -35,9 +42,11 @@ export default async function sitemap() {
   const [pages, posts] = await Promise.all([fetchAllPages(), fetchAllPosts()]);
 
   // WordPress Pages
+  const now = new Date().toISOString();
+
   const pageUrls = pages.map((page) => ({
     url: page.link.replace(`${SITE_URL}/backend`, SITE_URL),
-    lastModified: page.modified,
+    lastModified: toISODate(page.modified_gmt, now),
     changeFrequency: "weekly",
     priority: 0.8,
   }));
@@ -45,7 +54,7 @@ export default async function sitemap() {
   // Blog Posts
   const postUrls = posts.map((post) => ({
     url: `${SITE_URL}/${post.slug}/`,
-    lastModified: post.modified,
+    lastModified: toISODate(post.modified_gmt, now),
     changeFrequency: "weekly",
     priority: 0.7,
   }));
