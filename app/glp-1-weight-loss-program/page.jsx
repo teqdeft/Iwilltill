@@ -4,10 +4,22 @@ import Button from "@/components/ui/Button";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
 
-import { getPageSEO } from "@/lib/wordpress";
+import { notFound } from "next/navigation";
+
+// ⚠️ TEMPORARILY DRAFTED — this page is taken offline (returns 404) and is not
+// linked anywhere in site navigation. To bring it back live later:
+//   1. Delete the `notFound();` line inside GLP1Page() below.
+//   2. Swap generateMetadata back to the original (kept commented right under it).
 export async function generateMetadata() {
-  return getPageSEO("glp-1-weight-loss-program");
+  return {
+    title: "GLP-1 Weight Loss Program",
+    robots: { index: false, follow: false },
+  };
 }
+// import { getPageSEO } from "@/lib/wordpress";
+// export async function generateMetadata() {
+//   return getPageSEO("glp-1-weight-loss-program");
+// }
 
 const includesItems = [
   "24/7/365 Access to Clinical Support Team.",
@@ -80,6 +92,7 @@ const differentItems = [
 ];
 
 export default function GLP1Page() {
+  notFound(); // ⚠️ TEMPORARILY DRAFTED — delete this line to bring the page back live
   return (
     <>
       <Navbar />
