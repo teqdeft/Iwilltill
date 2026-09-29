@@ -135,12 +135,13 @@ export default function MedicalCarePage() {
           <div className="relative z-[3] h-full container-main section-padding flex flex-col justify-center">
             <div className="max-w-2xl text-white">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-6">
-                Medical Wellness
+                Virtual Medical Care
               </h1>
 
               <p className="text-xl md:text-xl text-white/90 leading-relaxed font-medium mb-8 max-w-xl">
-                Empowering you to live a healthier life with personalized care
-                and support on your own terms
+                Get personalized online medical consultations from the comfort
+                of your home, with convenient and accessible support tailored to
+                your healthcare needs.
               </p>
 
               <div className="flex flex-wrap gap-3">

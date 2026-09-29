@@ -103,10 +103,14 @@ export default function CounsellingCareServicesPage() {
                 …but even beauty has its struggles.
               </p>
 
-              <p className="text-lg md:text-xl text-white/85 leading-relaxed mb-8 max-w-xl">
+              <p className="text-lg md:text-xl text-white/85 leading-relaxed mb-4 max-w-xl">
                 Challenges test our strength and resilience, but at <br />
                 <em>iWILL 'til i'mWELL</em>, we see them as opportunities for
                 breakthrough.
+              </p>
+              <p className="text-lg md:text-xl text-white/85 leading-relaxed mb-4 max-w-xl">
+                Virtual wellness counseling with licensed counselors,
+                psychologists and psychiatrists.
               </p>
 
               <div className="flex flex-wrap gap-3">

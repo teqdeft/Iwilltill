@@ -91,9 +91,9 @@ export default function SelfCareSection() {
                 : "opacity-0 translate-y-6",
             )}
           >
-            We empower you to take control of your mental health by providing
-            accessible, affordable, and compassionate care for your mind and
-            soul — on your terms, on your time.
+            We empower you to take control of your mental health through
+            holistic online counseling accessible, affordable, and compassionate
+            care for your mind and soul, on your terms, on your time.
           </p>
         </div>
 
