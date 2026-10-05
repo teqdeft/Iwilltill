@@ -93,7 +93,8 @@ export default function WhatToExpectCounselling() {
       <div className="container-main">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
-            What to <span className="text-primary">Expect?</span>
+            Here are Some Examples of Concerns We Can Help You Get{" "}
+            <span className="text-primary">Through</span>
           </h2>
           <p className="text-xl md:text-2xl font-script text-accent mb-5">
             We Hear. We Listen. We Care.

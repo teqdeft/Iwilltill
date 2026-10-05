@@ -174,8 +174,9 @@ export default function MedicalCarePage() {
               <p className="text-xl md:text-2xl text-gray-700 leading-relaxed md:pl-6">
                 Healthcare should be as flexible as your lifestyle. Whether you
                 need a routine checkup, urgent care, specialized treatment, or
-                primary care, we connect you with trusted providers who match
-                your preference - giving you control over your health decisions.
+                ongoing primary care, we connect you with trusted providers
+                through virtual visits, giving you control over your health
+                decisions.
               </p>
             </div>
           </div>

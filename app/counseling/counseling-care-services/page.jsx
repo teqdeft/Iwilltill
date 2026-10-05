@@ -143,7 +143,7 @@ export default function CounsellingCareServicesPage() {
                 Our Services
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                Counseling{" "}
+                Virtual Wellness Counseling{" "}
                 <span className="text-primary font-script">Services</span>
               </h2>
             </div>
