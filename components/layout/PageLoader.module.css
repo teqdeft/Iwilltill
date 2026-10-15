@@ -1,0 +1,145 @@
+/* Fully visible for 1.6s, then fades out over 0.4s: gone at 2s */
+.loader {
+  animation: loader-out 0.4s ease-in 1.6s forwards;
+}
+
+/* Later page loads in the same session (set by the script in app/layout.js) */
+:global(html.loader-seen) .loader {
+  display: none;
+}
+
+/* Fills while the loader is fully visible, before the fade-out */
+.progress {
+  width: 0%;
+  animation: progress 1.6s ease-out forwards;
+}
+
+.spinSlow {
+  animation: spin-slow 3s linear infinite;
+}
+
+.pingSlow {
+  animation: ping-slow 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.pulseBreath {
+  animation: pulse-breath 2s ease-in-out infinite;
+}
+
+.float {
+  animation: float 2s ease-in-out infinite;
+}
+
+.fadeInUp {
+  animation: fade-in-up 0.6s ease-out 0.2s both;
+}
+
+.pulseSlow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+.pulseSlower {
+  animation: pulse-slower 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinSlow,
+  .pingSlow,
+  .pulseBreath,
+  .float,
+  .pulseSlow,
+  .pulseSlower {
+    animation: none;
+  }
+}
+
+@keyframes loader-out {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes progress {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ping-slow {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  75%,
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-breath {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes pulse-slower {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.08);
+  }
+}

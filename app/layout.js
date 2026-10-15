@@ -1,5 +1,5 @@
 import Script from "next/script";
-// import PageLoader from "@/components/layout/PageLoader";
+import PageLoader from "@/components/layout/PageLoader";
 import "./globals.css";
 
 export const metadata = {
@@ -44,8 +44,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    // suppressHydrationWarning: the loader script below may add a class to <html>
+    <html lang="en" suppressHydrationWarning>
       <head>
+        {/* PageLoader: show only on the first page of a browser session */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{if(sessionStorage.getItem("loader-seen")){document.documentElement.classList.add("loader-seen")}else{sessionStorage.setItem("loader-seen","1")}}catch(e){}`,
+          }}
+        />
         {/* Google Tag Manager */}
         <Script
           id="gtm-script"
@@ -121,7 +128,7 @@ export default function RootLayout({ children }) {
           />
         </noscript>
         {/* End Google Tag Manager (noscript) */}
-        {/* <PageLoader /> */}
+        <PageLoader />
         {children}
       </body>
     </html>
