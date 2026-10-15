@@ -6,6 +6,7 @@ import { ArrowRight, Check, ArrowLeft, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import SelfCareSection from "@/components/sections/SelfCareSection";
 import BehavioralToolsSection from "@/components/sections/BehavioralToolsSection";
+import CounselingFAQ from "@/components/sections/CounselingFAQ";
 
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
@@ -305,6 +306,9 @@ export default function CounsellingCareServicesPage() {
 
         {/* What to Expect - Carousel */}
         <WhatToExpectCounselling />
+
+        {/* FAQ */}
+        <CounselingFAQ />
 
         {/* CTA Banner */}
         <section
