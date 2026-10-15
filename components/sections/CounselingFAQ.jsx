@@ -124,7 +124,7 @@ export default function CounselingFAQ() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <SectionHeader
-        badge="FAQ"
+        badge=""
         title="Frequently Asked"
         titleAccent="Questions"
         description="Answers to common questions about virtual wellness counseling, privacy, sessions, and getting support."
