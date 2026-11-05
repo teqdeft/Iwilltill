@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 import FAQTabs from "@/components/sections/FAQTabs";
+import { faqCategories, faqPlainText } from "@/components/sections/faqData";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
@@ -10,9 +11,32 @@ export async function generateMetadata() {
   return getPageSEO("faq");
 }
 
+// FAQPage structured data, generated from the same source as the visible FAQ.
+// Any answer held back (e.g. awaiting Dr Jill's decision) is absent from the
+// data and therefore absent here too, so the schema never claims more than the
+// page shows.
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqCategories.flatMap((category) =>
+    category.questions.map((question) => ({
+      "@type": "Question",
+      name: question.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faqPlainText(question),
+      },
+    })),
+  ),
+};
+
 export default function FAQPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Navbar />
       <main>
         {/* Hero */}
