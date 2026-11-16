@@ -1,4 +1,6 @@
-// FAQ content for the central FAQ page, grouped by service category.
+// FAQ content, grouped by service category. The /faq page shows the general
+// categories; each service page shows its own categories (see PageFAQ and
+// getFaqCategories below), so every question appears on exactly one page.
 // Source: "IWTIW FAQ Content by Page", approved by Dr Jill, 3 November 2026.
 //
 // Two answers are intentionally HELD OUT of this file pending Dr Jill's decision:
@@ -1530,4 +1532,34 @@ export function faqPlainText(question) {
     }
   }
   return parts.join(" ");
+}
+
+// Pick categories by id, in the order given. Throws on an unknown id so a typo
+// fails the build instead of silently dropping a tab.
+export function getFaqCategories(ids) {
+  return ids.map((id) => {
+    const category = faqCategories.find((c) => c.id === id);
+    if (!category) throw new Error(`Unknown FAQ category id: "${id}"`);
+    return category;
+  });
+}
+
+// FAQPage structured data for the given categories, generated from the same
+// source as the visible FAQ. Any answer held back is absent from the data and
+// therefore absent here too, so the schema never claims more than the page shows.
+export function buildFaqSchema(categories) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: categories.flatMap((category) =>
+      category.questions.map((question) => ({
+        "@type": "Question",
+        name: question.q,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faqPlainText(question),
+        },
+      })),
+    ),
+  };
 }

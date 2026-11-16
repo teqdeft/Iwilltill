@@ -10,6 +10,7 @@ import {
   Dot,
 } from "lucide-react";
 import WhatToExpectCarousel from "@/components/sections/WhatToExpectCarousel";
+import PageFAQ from "@/components/sections/PageFAQ";
 import Link from "next/link";
 
 import { getPageSEO } from "@/lib/wordpress";
@@ -431,6 +432,16 @@ export default function MedicalCarePage() {
 
         {/* What to Expect */}
         <WhatToExpectCarousel />
+
+        {/* FAQ */}
+        <PageFAQ
+          categoryIds={[
+            "virtual-urgent-care",
+            "virtual-dermatology",
+            "virtual-primary-care",
+          ]}
+          description="Answers to common questions about Virtual Urgent Care, Virtual Dermatology Care, and Virtual Primary Care."
+        />
 
         {/* CTA Banner */}
         <section

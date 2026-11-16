@@ -6,7 +6,7 @@ import { ArrowRight, Check, ArrowLeft, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import SelfCareSection from "@/components/sections/SelfCareSection";
 import BehavioralToolsSection from "@/components/sections/BehavioralToolsSection";
-import CounselingFAQ from "@/components/sections/CounselingFAQ";
+import PageFAQ from "@/components/sections/PageFAQ";
 
 import { getPageSEO } from "@/lib/wordpress";
 export async function generateMetadata() {
@@ -308,7 +308,14 @@ export default function CounsellingCareServicesPage() {
         <WhatToExpectCounselling />
 
         {/* FAQ */}
-        <CounselingFAQ />
+        <PageFAQ
+          categoryIds={[
+            "virtual-counseling",
+            "virtual-psychiatry",
+            "virtual-psychology",
+          ]}
+          description="Answers to common questions about Virtual Counseling, Virtual Psychiatry, and Virtual Psychology."
+        />
 
         {/* CTA Banner */}
         <section

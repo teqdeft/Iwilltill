@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
+import PageFAQ from "@/components/sections/PageFAQ";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
 
@@ -247,6 +248,12 @@ export default function VirtualBehavioralHealthPage() {
             </div>
           </div>
         </section>
+
+        {/* FAQ */}
+        <PageFAQ
+          categoryIds={["advanced-behavioral-health-app"]}
+          description="Answers to common questions about our Advanced Behavioral Health App."
+        />
 
         {/* CTA Banner */}
         <section

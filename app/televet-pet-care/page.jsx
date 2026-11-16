@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 import TeleVetCarousel from "@/components/sections/TeleVetCarousel";
+import PageFAQ from "@/components/sections/PageFAQ";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
@@ -234,6 +235,12 @@ export default function TeleVetPage() {
 
         {/* What to Expect - Carousel */}
         <TeleVetCarousel />
+
+        {/* FAQ */}
+        <PageFAQ
+          categoryIds={["televet-pet-care"]}
+          description="Answers to common questions about TeleVet Pet Care consultations, prescriptions, and coverage."
+        />
 
         {/* CTA Banner */}
         <section

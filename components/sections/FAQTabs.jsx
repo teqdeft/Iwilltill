@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { faqCategories } from "./faqData";
+import { SectionHeader } from "@/components/ui/SectionWrapper";
 
 function ListItem({ item }) {
   if (typeof item === "string") return <>{item}</>;
@@ -119,12 +119,23 @@ function AnswerBlocks({ blocks }) {
   );
 }
 
-export default function FAQTabs() {
-  const [activeCategory, setActiveCategory] = useState(faqCategories[0].id);
+// Tabbed FAQ: category tabs on the left, accordion of questions on the right.
+// `categories` is a subset of faqCategories (see getFaqCategories in faqData),
+// passed in so each page only ships the questions it shows. When `title` is
+// given, a section heading is rendered above the tabs (used on service pages;
+// the /faq page has its own hero instead).
+export default function FAQTabs({
+  categories,
+  id,
+  title,
+  titleAccent,
+  description,
+}) {
+  const [activeCategory, setActiveCategory] = useState(categories[0].id);
   const [openQuestion, setOpenQuestion] = useState(0);
 
   const currentCategory =
-    faqCategories.find((c) => c.id === activeCategory) || faqCategories[0];
+    categories.find((c) => c.id === activeCategory) || categories[0];
 
   const handleCategoryChange = (id) => {
     setActiveCategory(id);
@@ -136,13 +147,21 @@ export default function FAQTabs() {
   };
 
   return (
-    <section className="section-padding py-16 md:py-20 bg-white">
+    <section id={id} className="section-padding py-16 md:py-20 bg-white">
       <div className="container-main max-w-6xl">
+        {title && (
+          <SectionHeader
+            title={title}
+            titleAccent={titleAccent}
+            description={description}
+          />
+        )}
+
         <div className="grid lg:grid-cols-[300px_1fr] gap-8 lg:gap-10">
           {/* Left Sidebar - Service Categories */}
           <aside>
             <div className="flex lg:flex-col gap-2 overflow-x-auto pb-2 lg:pb-0 lg:space-y-2 lg:sticky lg:top-24">
-              {faqCategories.map((category) => (
+              {categories.map((category) => (
                 <button
                   key={category.id}
                   type="button"

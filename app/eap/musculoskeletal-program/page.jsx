@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
+import PageFAQ from "@/components/sections/PageFAQ";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
 
@@ -225,6 +226,12 @@ export default function IntegratedMusculoskeletalCarePage() {
             </div>
           </div>
         </section>
+
+        {/* FAQ */}
+        <PageFAQ
+          categoryIds={["musculoskeletal-care"]}
+          description="Answers to common questions about our Musculoskeletal Care programs, care team, and who can enroll."
+        />
 
         {/* CTA Banner */}
         <section
